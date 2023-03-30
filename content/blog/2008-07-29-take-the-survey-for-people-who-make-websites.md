@@ -1,0 +1,17 @@
+--- 
+layout: post
+comments: true
+title: Take the Survey for People Who Make Websites
+tags: 
+- alistapart
+- Development
+- survey
+status: publish
+type: post
+published: true
+meta: {}
+
+---
+Take A List Apart's annual survey. I'm a huge fan, and the results are usually compelling!
+
+[![A List Apart Survey](http://aneventapart.com/webdesignsurvey/templates/ala/images/i-took-the-2008-survey.gif "A List Apart Survey")](http://alistapart.com/articles/survey2008)
