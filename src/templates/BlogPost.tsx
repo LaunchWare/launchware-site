@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, graphql, PageProps } from "gatsby";
+import { Link, graphql, PageProps, HeadFC, HeadProps } from "gatsby";
 
 import { Layout } from "../components/Layout";
 // import Seo from "../components/seo";
@@ -9,7 +9,6 @@ const BlogPostTemplate = ({
   location,
 }: PageProps<Queries.BlogPostBySlugQuery>) => {
   const queryData = data
-  console.log(queryData)
   const siteTitle = queryData?.site?.siteMetadata?.title || `Title`;
   const post = queryData.markdownRemark
   const { previous, next } = queryData
@@ -61,15 +60,14 @@ const BlogPostTemplate = ({
   );
 };
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = (props: HeadProps<Queries.BlogPostBySlugQuery>) => {
   return (
-    // <Seo
-    //   title={post.frontmatter.title}
-    //   description={post.frontmatter.description || post.excerpt}
-    // />
-    <p></p>
-  );
-};
+		<>
+			<title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
+			<meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
+		</>
+	)
+}
 
 export default BlogPostTemplate;
 
