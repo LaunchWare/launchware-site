@@ -19,9 +19,9 @@ publishedAt: '2011-05-16'
 
 Security is important. You don't want malicious users chatting on IRC about how they Pwnd your web application.
 
-<iframe width="560" height="349" src="http://www.youtube.com/embed/O2rGTXHvPCQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="349" src="https://www.youtube.com/embed/O2rGTXHvPCQ" frameborder="0" allowfullscreen></iframe>
 
-If you're using Rails and you want to be secure, you should be protecting against mass assignment. Basically, without declaring attr_accessible or attr_protected, malicious users can set any column value in your database, including foreign keys and secure data. 
+If you're using Rails and you want to be secure, you should be protecting against mass assignment. Basically, without declaring attr_accessible or attr_protected, malicious users can set any column value in your database, including foreign keys and secure data.
 
 Here's a brief introduction to how mass assignment protection works. Let's say you have a user that belongs to a group:
 
@@ -43,4 +43,4 @@ Along with this helpful change, you can also circumvent mass assignment protecti
 
 You should really only use without_protection if *you* control the inputted attributes. It isn't something you'd want to have in a controller action, generally speaking.
 
-For more information on scoped mass assignment and additional attack vectors you should be securing against, [check out the edge Rails guide on security](http://edgeguides.rubyonrails.org/security.html)
+For more information on scoped mass assignment and additional attack vectors you should be securing against, [check out the edge Rails guide on security](https://edgeguides.rubyonrails.org/security.html)

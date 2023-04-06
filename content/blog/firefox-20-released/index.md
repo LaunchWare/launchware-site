@@ -13,7 +13,7 @@ meta:
 publishedAt: '2006-10-24'
 ---
 
-<a title="Firefox" href="http://blog.enlightsolutions.com/www.getfirefox.com">Get it now!</a>
+<a title="Firefox" href="https://blog.enlightsolutions.com/www.getfirefox.com">Get it now!</a>
 
 If you're unfamiliar with it, Mozilla Firefox is an outstanding web browser used by many web professionals.  The new version includes some usability updates as well as an anti-phishing component to protect your identity.
 

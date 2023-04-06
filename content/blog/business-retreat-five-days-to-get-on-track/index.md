@@ -13,7 +13,7 @@ meta:
 publishedAt: '2007-01-29'
 ---
 
-So I haven't posted in a while. I've been very absorbed in my daytime job and at home. That's not to say the business has suffered - I've picked up a few important contracts and Enlight Solutions is beginning to gain some traction. <a href="http://www.ejaedesign.com">Jae</a> is helping me out with a new site design as well!
+So I haven't posted in a while. I've been very absorbed in my daytime job and at home. That's not to say the business has suffered - I've picked up a few important contracts and Enlight Solutions is beginning to gain some traction. <a href="https://www.ejaedesign.com">Jae</a> is helping me out with a new site design as well!
 
 What's really fallen by the wayside is the planning and goal setting. I really need to start deciding what problems Enlight Solutions needs to attack. In responding to this issue, I've taken five days off from work to do some soul searching and start narrowing things down. Before I start anything like this, I try to set some objectives and plans for what's ahead.
 <ul>

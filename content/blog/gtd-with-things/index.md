@@ -17,9 +17,9 @@ meta: {}
 publishedAt: '2008-04-26'
 ---
 
-So I'm a big fan of [David Allen's GTD System](http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1209237249&sr=8-1&tag=enlsolinc-20). For a long time, I've been looking for a personal information system that could help me get the job done. 
+So I'm a big fan of [David Allen's GTD System](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1209237249&sr=8-1&tag=enlsolinc-20). For a long time, I've been looking for a personal information system that could help me get the job done.
 
-I've been extremely impressed with the early versions of [Things](http://culturedcode.com/things/). I'm starting to get very excited about their [iCal sync feature](http://culturedcode.com/things/blog/2008/04/the-ical-sync-interface-or-how-to-implement-a-new-feature.html). 
+I've been extremely impressed with the early versions of [Things](https://culturedcode.com/things/). I'm starting to get very excited about their [iCal sync feature](https://culturedcode.com/things/blog/2008/04/the-ical-sync-interface-or-how-to-implement-a-new-feature.html).
 
 If you're looking for an electronic version of David Allen's system, this is the tightest app I've seen for it. I especially like the "Areas" feature, as most apps I've used lack this feature.
 

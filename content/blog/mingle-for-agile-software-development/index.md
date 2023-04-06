@@ -15,7 +15,7 @@ meta:
 publishedAt: '2008-03-02'
 ---
 
-<p>For a long time, I've been looking for a decent system to manage <a href="http://www.secondrotation.com">Second Rotation's</a> user stories. I have to say, I've been very impressed with <a href="http://studios.thoughtworks.com/mingle-project-intelligence">Mingle</a>. Last week, I worked on refining the story statuses for the life cycle of a user story once it is slated for an iteration. Here's what we came up with:</p>
+<p>For a long time, I've been looking for a decent system to manage <a href="https://www.secondrotation.com">Second Rotation's</a> user stories. I have to say, I've been very impressed with <a href="https://studios.thoughtworks.com/mingle-project-intelligence">Mingle</a>. Last week, I worked on refining the story statuses for the life cycle of a user story once it is slated for an iteration. Here's what we came up with:</p>
 
 <ul>
   <li><strong>Awaiting Information</strong> - the engineering team is waiting on the stakeholder for information</li>
@@ -33,6 +33,6 @@ publishedAt: '2008-03-02'
 
 <p>Eventually, I want to refine these story statuses to reflect what's done before a user story is assigned to an iteration.</p>
 
-<p>One thing I wish Mingle had that causes a major gap in my regular status reports is the ability to correlate many user stories to a project. Business stakeholders do not usually respond well to a long list of stories, so being able to report status on a project by project basis would be ideal. <a href="http://www.thoughtworks.com/">Thoughtworks</a> (the developers of Mingle) reports that this will be a feature in an <a href="http://studios.thoughtworks.com/studios-feb08.html">upcoming release</a>.</p>
+<p>One thing I wish Mingle had that causes a major gap in my regular status reports is the ability to correlate many user stories to a project. Business stakeholders do not usually respond well to a long list of stories, so being able to report status on a project by project basis would be ideal. <a href="https://www.thoughtworks.com/">Thoughtworks</a> (the developers of Mingle) reports that this will be a feature in an <a href="https://studios.thoughtworks.com/studios-feb08.html">upcoming release</a>.</p>
 
 <p>If you're managing an Agile Software Development project, I highly recommend you check out Mingle.</p>

@@ -19,11 +19,11 @@ publishedAt: '2011-04-03'
 
 So you've got a solid idea, a nice niche, and a great web application that meets your customers' needs. Now it's time to get PAID. It is all about the proverbial Benjamins after all.
 
-<object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/aTTVkh6NX50?version=3"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/aTTVkh6NX50?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390"></object>
+<object style="height: 390px; width: 640px"><param name="movie" value="https://www.youtube.com/v/aTTVkh6NX50?version=3"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="https://www.youtube.com/v/aTTVkh6NX50?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390"></object>
 
 ## Go With Braintree Payment Solutions
 
-If you're building a SaaS (Software as a Service) application then you probably need a merchant account, a payment processor, and a subscription billing system. After researching many options, Braintree Payment Solutions has a really stellar offering that really delivers in those three areas. Having been tasked with debugging payment processing issues in the past, having **one** provider to call is really convenient and simple. 
+If you're building a SaaS (Software as a Service) application then you probably need a merchant account, a payment processor, and a subscription billing system. After researching many options, Braintree Payment Solutions has a really stellar offering that really delivers in those three areas. Having been tasked with debugging payment processing issues in the past, having **one** provider to call is really convenient and simple.
 
 ## Go With Transparent Redirect
 
@@ -31,7 +31,7 @@ In addition to being an all-in-one solution, Braintree has some pretty cool tech
 
 Do you have custom attributes that you need to capture on registration in addition to the credit card data? No problem! Braintree will pass those through to your response handler.
 
-For more details, [check out their docs](http://www.braintreepaymentsolutions.com/gateway/api).
+For more details, [check out their docs](https://www.braintreepaymentsolutions.com/gateway/api).
 
 ## Implement Transparent Redirect
 
@@ -51,21 +51,21 @@ Add a column to your account/user abstraction to store Braintree's unique identi
 
 ### Custom Attributes
 
-Use Braintree's control panel to configure any custom attributes you want to store and/or forward. For more details on this, check out [their writeup](http://www.braintreepaymentsolutions.com/docs/ruby/general/custom_fields).
+Use Braintree's control panel to configure any custom attributes you want to store and/or forward. For more details on this, check out [their writeup](https://www.braintreepaymentsolutions.com/docs/ruby/general/custom_fields).
 
 ### Set up your form
 
 I'm doing some quick handwaving here - I had to create an activemodel compliant abstraction for the Braintree customer. The idea is to create a form that looks like this (hint: give plataformatec's [simple_form]() a try):
-  
+
 <script src="https://gist.github.com/901023.js?file=new.html.erb"></script>
 
 ## Integration Test
 
-This is *the* most important part of your app. You want to get paid and your customers don't want to think twice about giving you their money. Let's keep these transactions running smooth. Don't leave a gaping hole in your test suite! I use [cucumber](http://cukes.info/) for acceptance and integration testing.
+This is *the* most important part of your app. You want to get paid and your customers don't want to think twice about giving you their money. Let's keep these transactions running smooth. Don't leave a gaping hole in your test suite! I use [cucumber](https://cukes.info/) for acceptance and integration testing.
 
 ### Remote Action Problems
 
-So cucumber isn't always [rainbows and unicorns](http://sfmoto.files.wordpress.com/2008/07/unicorns_rainbows.jpg). Cucumber does this really fun thing where it assumes every form submission posts to localhost regardless of what's actually set in the html.
+So cucumber isn't always [rainbows and unicorns](https://sfmoto.files.wordpress.com/2008/07/unicorns_rainbows.jpg). Cucumber does this really fun thing where it assumes every form submission posts to localhost regardless of what's actually set in the html.
 
 To get around this, we have to hijack the local requests and basically emulate a post to Braintree directly.
 
@@ -73,7 +73,7 @@ To get around this, we have to hijack the local requests and basically emulate a
 
 ### Hack Yo' Rack
 
-But wait - more fun ensues! Braintree does this really neat and secure thing called request signing. It requires that the hash used to build the query string be ordered. By default on Ruby 1.8.7, hashes are not ordered, so we have to hack both Rack and Rack-Test a bit :-( ([Queue the sad panda](http://xil-reno.shackspace.com/Sad_Panda.jpg)).
+But wait - more fun ensues! Braintree does this really neat and secure thing called request signing. It requires that the hash used to build the query string be ordered. By default on Ruby 1.8.7, hashes are not ordered, so we have to hack both Rack and Rack-Test a bit :-( ([Queue the sad panda](https://xil-reno.shackspace.com/Sad_Panda.jpg)).
 
 Warning! Horrendous monkey patching ahead!
 
@@ -81,13 +81,13 @@ Warning! Horrendous monkey patching ahead!
 
 ### Use VCR for Deterministic Tests
 
-Phew! That was a lot of hacking to get solid cucumber tests around your app. Let's make sure that your tests aren't dependent on Braintree's sandbox being up and that your tests are generally deterministic. That way, you can run your test suite without necessarily having to be online, and you get repetitious, predictable tests. 
+Phew! That was a lot of hacking to get solid cucumber tests around your app. Let's make sure that your tests aren't dependent on Braintree's sandbox being up and that your tests are generally deterministic. That way, you can run your test suite without necessarily having to be online, and you get repetitious, predictable tests.
 
-To pull this off, I'm a huge fan of a tool called [VCR](https://github.com/myronmarston/vcr). 
+To pull this off, I'm a huge fan of a tool called [VCR](https://github.com/myronmarston/vcr).
 
 <script src="https://gist.github.com/901023.js?file=vcr.rb"></script>
 
-This tool will record web requests and responses and allows you to run your tests without hitting the remote servers. 
+This tool will record web requests and responses and allows you to run your tests without hitting the remote servers.
 
 ### Hide Your Logins, Hide Your Keys
 

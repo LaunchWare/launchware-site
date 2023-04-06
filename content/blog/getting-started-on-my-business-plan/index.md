@@ -28,7 +28,7 @@ In order to sustain myself at my current standard of living, I will have to gros
 
 How can this be accomplished? If I invest money made off of consulting revenues into the development of products over time, I can begin to transition the business into its desirable focus. I've depicted this below.
 
-<img src="http://blog.enlightsolutions.com/wp-content/uploads/2006/11/chtrevenuedistribution.jpg" />
+<img src="https://blog.enlightsolutions.com/wp-content/uploads/2006/11/chtrevenuedistribution.jpg" />
 There are numerous issues with this model, however.
 
 * How can I keep my consulting customers satisfied while making this transition?

@@ -31,7 +31,6 @@ The big takeaways I shared with the group:
 * Test all permutations of commands, switches, and flags as best you can. Sometimes, you get some weird interferences or side effects
 * Delegate to an object oriented API to keep everything testable
 * Document how you want to use the command line application first. It really helps to keep it user friendly.
-* Get the excellent book: [Build Awesome Command-Line Applications in Ruby](http://pragprog.com/book/dccar/build-awesome-command-line-applications-in-ruby)
+* Get the excellent book: [Build Awesome Command-Line Applications in Ruby](https://pragprog.com/book/dccar/build-awesome-command-line-applications-in-ruby)
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/OF4ylrYYeNw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="640" height="360" src="https://www.youtube.com/embed/OF4ylrYYeNw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>

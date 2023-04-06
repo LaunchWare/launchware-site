@@ -28,7 +28,7 @@ class ActionView::TestCase < ActiveSupport::TestCase
     def initialize
       @request = ActionController::TestRequest.new
       @response = ActionController::TestResponse.new
-      
+
       #TestCase doesn't have context of a current url so cheat a bit
       @params = {}
       send(:initialize_current_url)
@@ -37,4 +37,4 @@ class ActionView::TestCase < ActiveSupport::TestCase
 end
 </pre>
 
-I've submitted <a href="http://rails.lighthouseapp.com/projects/8994/tickets/1561-actionviewtestcase-does-not-have-current-url-context-so-url_for-will-fail-for-hashed-options">a patch to core</a> regarding this. Please +1 for the good of helper_tests!
+I've submitted <a href="https://rails.lighthouseapp.com/projects/8994/tickets/1561-actionviewtestcase-does-not-have-current-url-context-so-url_for-will-fail-for-hashed-options">a patch to core</a> regarding this. Please +1 for the good of helper_tests!

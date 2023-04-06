@@ -154,4 +154,4 @@ this.appears_before(that)
 ```
 And you're in business. \#win
 
-Follow me on Twitter at [jmondo](http://twitter.com/jmondo) for <= 140 char gems
+Follow me on Twitter at [jmondo](https://twitter.com/jmondo) for <= 140 char gems

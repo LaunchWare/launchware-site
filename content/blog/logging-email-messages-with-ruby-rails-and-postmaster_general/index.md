@@ -20,7 +20,7 @@ Rendering emails locally is a pain. Rendering all the emails in your Rails app i
 
 I frequently get requests from clients to send them a complete set of the emails sent from their applications for copywriting review. I wrote a quick gem for you to incorporate that function into your ActionMailer tests. It will log all of your emails to a central location so that you can zip them up and send them to your clients and/or stakeholders.
 
-I've called it [postmaster_general](http://github.com/dpickett/postmaster_general).
+I've called it [postmaster_general](https://github.com/dpickett/postmaster_general).
 
 Once installed (add it to your gemfile as specified in the [README](https://github.com/dpickett/postmaster_general/blob/master/README.rdoc), set the log directory like so:
 

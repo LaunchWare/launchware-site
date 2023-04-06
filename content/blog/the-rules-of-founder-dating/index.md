@@ -17,7 +17,7 @@ meta:
 publishedAt: '2009-12-23'
 ---
 
-I recently attended an excellent event put on by a few people from [BetaHouse](http://www.betahouse.org) and [TechStars](http://www.techstars.com). The premise was to meet and network with other entrepreneurs in the Boston area to potentially find cofounders for your next venture. I'm primarily a technical guy, and I'm not married to any particular idea. Finding and enticing great technical talent to join your startup is __hard__, which is a big reason why I started the consultancy. We help startups get the technology they need, but sometimes founders desire a technical partner in crime. So, if you're looking to attract solid developers or designers in your venture, here's some perspective from a technical person who's on the venture "dating" scene.
+I recently attended an excellent event put on by a few people from [BetaHouse](https://www.betahouse.org) and [TechStars](https://www.techstars.com). The premise was to meet and network with other entrepreneurs in the Boston area to potentially find cofounders for your next venture. I'm primarily a technical guy, and I'm not married to any particular idea. Finding and enticing great technical talent to join your startup is __hard__, which is a big reason why I started the consultancy. We help startups get the technology they need, but sometimes founders desire a technical partner in crime. So, if you're looking to attract solid developers or designers in your venture, here's some perspective from a technical person who's on the venture "dating" scene.
 
 ### What's your name?
 

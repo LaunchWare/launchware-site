@@ -28,6 +28,6 @@ This is how to get it done. On the command line from your Rails project's root:
 
 This is a great way to validate a data model in plain English.
 
-Not using [RSpec](http://rspec.info)? I highly recommend using it or a comparable framework to use business language as a definition for technical tests. Remember, if you follow Agile methodologies, you'll want to test before you implement any features. 
+Not using [RSpec](https://rspec.info)? I highly recommend using it or a comparable framework to use business language as a definition for technical tests. Remember, if you follow Agile methodologies, you'll want to test before you implement any features.
 
-Are you interested in learning more about [Behavior Driven Development (BDD)](http://en.wikipedia.org/wiki/Behavior_driven_development) and RSpec? Check out [Peepcode's screencast](http://peepcode.com/products/rspec-basics).
+Are you interested in learning more about [Behavior Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior_driven_development) and RSpec? Check out [Peepcode's screencast](https://peepcode.com/products/rspec-basics).

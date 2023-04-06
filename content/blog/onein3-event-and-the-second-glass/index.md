@@ -12,6 +12,6 @@ meta:
 publishedAt: '2007-03-10'
 ---
 
-A new friend invited me to a networking event in the North End sponsored by Mayor Menino's <a href="http://www.cityofboston.gov/bra/betterboston/flash/flashhome.htm">OneIn3</a>. It was a great event at the Living Room - lots of younger people and cheap drinks :-). I met many interesting people.
+A new friend invited me to a networking event in the North End sponsored by Mayor Menino's <a href="https://www.cityofboston.gov/bra/betterboston/flash/flashhome.htm">OneIn3</a>. It was a great event at the Living Room - lots of younger people and cheap drinks :-). I met many interesting people.
 
-One person of note was Tyler Balliet. He's publishing a really innovative wine magazine called <a title="The Second Glass" href="http://thesecondglass.com/">The Second Glass</a>. It takes the formality out of wine tasting and enjoying wine - I think something that my generation can really appreciate. If you're into wine with a sense of humor, I highly recommend checking out their site and magazine.
+One person of note was Tyler Balliet. He's publishing a really innovative wine magazine called <a title="The Second Glass" href="https://thesecondglass.com/">The Second Glass</a>. It takes the formality out of wine tasting and enjoying wine - I think something that my generation can really appreciate. If you're into wine with a sense of humor, I highly recommend checking out their site and magazine.

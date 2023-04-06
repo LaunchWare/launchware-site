@@ -14,12 +14,12 @@ meta:
 publishedAt: '2007-06-27'
 ---
 
-There are many great sites that publish educational material for the Ruby on Rails framework. Of note, Ryan Bates does a great job with <a href="http://railscasts.com/">Railscasts</a>. I think screencasts are a great way to learn proper programming practices. Block off some time every week to review this site. I've already found it immensely helpful.
+There are many great sites that publish educational material for the Ruby on Rails framework. Of note, Ryan Bates does a great job with <a href="https://railscasts.com/">Railscasts</a>. I think screencasts are a great way to learn proper programming practices. Block off some time every week to review this site. I've already found it immensely helpful.
 
 Here are some of my favorites:
 <ul>
-	<li><a href="http://railscasts.com/episodes/30">Pretty Page Titles</a></li>
-	<li><a href="http://railscasts.com/episodes/36">Subversion on Rails</a></li>
-	<li><a href="http://railscasts.com/episodes/41">Conditional Validations</a></li>
-	<li><a href="http://railscasts.com/episodes/48">Console Tricks</a></li>
+	<li><a href="https://railscasts.com/episodes/30">Pretty Page Titles</a></li>
+	<li><a href="https://railscasts.com/episodes/36">Subversion on Rails</a></li>
+	<li><a href="https://railscasts.com/episodes/41">Conditional Validations</a></li>
+	<li><a href="https://railscasts.com/episodes/48">Console Tricks</a></li>
 </ul>

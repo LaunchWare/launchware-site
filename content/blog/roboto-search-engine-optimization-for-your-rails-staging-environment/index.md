@@ -11,11 +11,11 @@ categories:
 publishedAt: '2012-04-23'
 ---
 
-The Google bots will thank you for not [duplicating content on the InterWeb](http://www.seomoz.org/learn-seo/duplicate-content).
+The Google bots will thank you for not [duplicating content on the InterWeb](https://www.seomoz.org/learn-seo/duplicate-content).
 
 <!--more -->
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/rcCS8AK6csg" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/rcCS8AK6csg" frameborder="0" allowfullscreen></iframe>
 
 Introducing [Roboto](https://github.com/LaunchWare/roboto), a Rails Engine for providing environment specific robots.txt files. Use this to hide your staging and QA environments from search engines.
 
@@ -45,7 +45,7 @@ Then, add roboto to your routes (config/routes.rb):
   end
 ```
 
-You can now specify environment specific robots.txt files in config/robots. So, in the case where we want to add a global disallow to our staging environment, we would create a file with the contents below at config/robots/staging.txt. If you haven't done so already, copy config/environments/production.rb to config/environments/staging.rb and configure your staging server to run in the staging environment ([Passenger](http://shriikant.blogspot.com/2010/04/configure-staging-environment-for.html), [Heroku](https://devcenter.heroku.com/articles/multiple-environments), [Unicorn](http://blog.sosedoff.com/2012/01/21/using-capistrano-unicorn-with-multistage-environment/)).
+You can now specify environment specific robots.txt files in config/robots. So, in the case where we want to add a global disallow to our staging environment, we would create a file with the contents below at config/robots/staging.txt. If you haven't done so already, copy config/environments/production.rb to config/environments/staging.rb and configure your staging server to run in the staging environment ([Passenger](https://shriikant.blogspot.com/2010/04/configure-staging-environment-for.html), [Heroku](https://devcenter.heroku.com/articles/multiple-environments), [Unicorn](https://blog.sosedoff.com/2012/01/21/using-capistrano-unicorn-with-multistage-environment/)).
 
 ```
   User-Agent: *

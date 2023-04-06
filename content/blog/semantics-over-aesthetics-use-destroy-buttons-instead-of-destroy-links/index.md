@@ -21,7 +21,7 @@ I was coding away this afternoon, and I introduced a destroy link to my codebase
 ```
 <!-- more -->
 
-Every time I write something like this, it makes me think twice. The problem with this code is that it heavily relies on JavaScript and [jquery-ujs](http://github.com/rails/jquery-ujs) to trigger the right action on the server (An HTTP DELETE request). Anchors are semantically only capable of linking to URL's with a GET request.
+Every time I write something like this, it makes me think twice. The problem with this code is that it heavily relies on JavaScript and [jquery-ujs](https://github.com/rails/jquery-ujs) to trigger the right action on the server (An HTTP DELETE request). Anchors are semantically only capable of linking to URL's with a GET request.
 
 Here's why writing a link this way is bad:
 
@@ -40,7 +40,7 @@ After properly configuring routes and a controller, this issues a GET to the wid
 * It circumvents a bunch of Rails countermeasures and makes you succeptible to exploits. Things like cross site request forgery protection aren't run on GET requests. That means a malignant user could try to impersonate another user by hijacking their session.
 * This link is even more succeptible to bots following it if you do not include a rel="nofollow" attribute.
 
-With a desire for other opinions, I turned to twitter and had a great [conversation](http://twitter.com/#!/dpickett/status/153190445931970560) with some smart folks. We were debating on how HTTP should not constrain a user's experience and that there should be an accessible way to markup links that issue a DELETE request. Ultimately, it boiled down to a decision between using a link as opposed or a button and/or form element for this type of interaction. [Kevin's tweet](http://twitter.com/#!/gisikw/status/153194635890667520) really hit home for me.
+With a desire for other opinions, I turned to twitter and had a great [conversation](https://twitter.com/#!/dpickett/status/153190445931970560) with some smart folks. We were debating on how HTTP should not constrain a user's experience and that there should be an accessible way to markup links that issue a DELETE request. Ultimately, it boiled down to a decision between using a link as opposed or a button and/or form element for this type of interaction. [Kevin's tweet](https://twitter.com/#!/gisikw/status/153194635890667520) really hit home for me.
 
 A button would look something like this:
 

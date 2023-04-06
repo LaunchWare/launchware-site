@@ -12,7 +12,7 @@ meta:
 publishedAt: '2007-01-29'
 ---
 
-So I jumped in to today's activities well-rested and motivated. Now, I'm a bit tired, but I think the results of my work today has really made some headway on this week's progress. I started with some life planning. I followed something very similar to the <a href="http://www.startupnation.com/pages/start/Step1.asp">format found on StartupNation.com</a>. I've used this format before in project team and other organization retreats and have been very happy with the outcome. What resulted is the following "personal manifesto:"
+So I jumped in to today's activities well-rested and motivated. Now, I'm a bit tired, but I think the results of my work today has really made some headway on this week's progress. I started with some life planning. I followed something very similar to the <a href="https://www.startupnation.com/pages/start/Step1.asp">format found on StartupNation.com</a>. I've used this format before in project team and other organization retreats and have been very happy with the outcome. What resulted is the following "personal manifesto:"
 
 <strong>Positive, healthy relationships</strong> – build trusting and significant relationships (both professional and personal) with people that are like me or that I like.  I want to know everyone’s name that I work with.  I want to know what’s going on with their families and just general things about their lives.  I want to help my friends reach their goals and offer advice.  When I get older, I want to help young people like me start out.
 <strong>
@@ -41,7 +41,7 @@ So where's the plan part? I'm afraid this step didn't yield anything earth shatt
 	<li>Implement It</li>
 </ul>
 </ul>
-Over the next few days, I'm hoping to make these goals <a href="http://www.goal-setting-guide.com/smart-goals.html">SMART</a> with business and sales planning.
+Over the next few days, I'm hoping to make these goals <a href="https://www.goal-setting-guide.com/smart-goals.html">SMART</a> with business and sales planning.
 
 I also spent some time today working on Objective 1 (What type of Biz to Build) - particularly in the vein of what to sell. The age old question continues to come up - should I consult or should I build a piece of software and sell it? After talking with a few people, it seemed like I might be able to do both, but that I needed a focus regardless of what I choose. I definitely think my objective will be to release some sort of software for small businesses, but we shall see how the remainder of the week works out.
 

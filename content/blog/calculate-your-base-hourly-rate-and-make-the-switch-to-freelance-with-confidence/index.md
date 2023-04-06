@@ -14,7 +14,7 @@ meta:
 publishedAt: '2007-05-25'
 ---
 
-Too cool! The team over at <a href="http://www.freelanceswitch.com">FreelanceSwitch.com</a> built a <a href="http://freelanceswitch.com/rates/">calculator</a> for you to determine your hourly rate. It asks you questions about your budget for office and personal expenses and even asks you how much profit you want to make. What a great application - I'm suprised I haven't seen someone come up with something similar sooner. I'm really impressed with their site overall (very Web 2.0) and they've definitely made a subscriber out of me.
+Too cool! The team over at <a href="https://www.freelanceswitch.com">FreelanceSwitch.com</a> built a <a href="https://freelanceswitch.com/rates/">calculator</a> for you to determine your hourly rate. It asks you questions about your budget for office and personal expenses and even asks you how much profit you want to make. What a great application - I'm suprised I haven't seen someone come up with something similar sooner. I'm really impressed with their site overall (very Web 2.0) and they've definitely made a subscriber out of me.
 
 I'm happy at my new job and I'm toning down the side work a bit, but this is a great confidence booster for anyone trying to make the switch from a salaried position to a freelancer. I do want to throw out a caution that I think my friends in sales can back me up on - you should use this calculator only to get your breakeven rate.
 
