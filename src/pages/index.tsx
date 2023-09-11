@@ -1,38 +1,17 @@
-import * as React from "react"
-import { HeadFC, PageProps, graphql } from "gatsby"
+import React from "react"
+import { LaunchWareLogo } from "../components/LaunchWareLogo"
+import { PageProps } from "gatsby"
 
-const IndexPage = (pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) => {
-  const { data } = pageProps
-  const listItems = data.allMarkdownRemark.nodes.map(article => {
-    return <li key={article.id}><a href={`/blog${article.fields?.slug}`}>{article.frontmatter?.title}</a></li>
-  })
-  return (
-    <main>
-      <h1>LaunchWare</h1>
-      {listItems && (<ol>{listItems}</ol>)}
-    </main>
-  )
+import "../css/index.css"
+
+const IndexPage = (pageProps: PageProps) => {
+  return (<div className="coming-soon-notice">
+    <div className="content-container">
+      <LaunchWareLogo />
+      <h1>Coming Soon</h1>
+      <a href="/blog">Archive Blog Content</a>
+    </div>
+  </div>)
 }
 
 export default IndexPage
-
-export const Head: HeadFC = () => <title>LaunchWare - Software Development Consulting</title>
-
-export const pageQuery = graphql`
-  query MarkdownArticlesForIndex {
-    allMarkdownRemark(
-      sort: { frontmatter: { publishedAt: DESC } }
-      limit: 1000
-    ) {
-      nodes {
-        id
-        frontmatter {
-          title
-        }
-        fields {
-          slug
-        }
-      }
-    }
-  }
-`
