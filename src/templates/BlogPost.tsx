@@ -4,30 +4,20 @@ import { Link, graphql, PageProps, HeadFC, HeadProps } from "gatsby";
 import { Layout } from "../components/Layout";
 // import Seo from "../components/seo";
 
-const BlogPostTemplate = ({
-  data,
-  location,
-}: PageProps<Queries.BlogPostBySlugQuery>) => {
-  const queryData = data
+const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) => {
+  const queryData = data;
   const siteTitle = queryData?.site?.siteMetadata?.title || `Title`;
-  const post = queryData.markdownRemark
-  const { previous, next } = queryData
+  const post = queryData.markdownRemark;
+  const { previous, next } = queryData;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+      <article className="blog-post" itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post?.frontmatter?.title}</h1>
           <p>{post?.frontmatter?.date}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post?.html || "" }}
-          itemProp="articleBody"
-        />
+        <section dangerouslySetInnerHTML={{ __html: post?.html || "" }} itemProp="articleBody" />
         <hr />
       </article>
       <nav className="blog-post-nav">
@@ -62,21 +52,17 @@ const BlogPostTemplate = ({
 
 export const Head = (props: HeadProps<Queries.BlogPostBySlugQuery>) => {
   return (
-		<>
-			<title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
-			<meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
-		</>
-	)
-}
+    <>
+      <title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
+      <meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
+    </>
+  );
+};
 
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
+  query BlogPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
     site {
       siteMetadata {
         title
