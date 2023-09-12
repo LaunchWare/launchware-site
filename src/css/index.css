@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+}
+
+a {
+  @apply text-cyan-800;
+}
+
 .coming-soon-notice {
   margin-top: 10%;
   text-align: center;
