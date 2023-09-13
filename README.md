@@ -3,11 +3,11 @@
 ## Installation
 
 ```bash
-pnpm install
+yarn install
 ```
 
 ## Running
 
 ```bash
-pnpm develop
+yarn run develop
 ```
