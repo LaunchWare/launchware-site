@@ -1,6 +1,8 @@
 {
 	"cSpell.words": [
-		"frontmatter"
+    "frontmatter",
+    "Roboto",
+    "tailwindcss"
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#4b2c8d",
