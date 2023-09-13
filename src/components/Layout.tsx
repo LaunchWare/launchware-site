@@ -1,18 +1,20 @@
 import React, { Children, PropsWithChildren, ReactNode } from "react";
+import Navbar from "./layout/Navbar";
+import { WindowLocation } from "@reach/router";
 
 export const Layout = ({
   location,
   title,
   children,
 }: {
-  location: string;
+  location: WindowLocation<unknown>;
   title: string;
   children: ReactNode;
 }) => {
   return (
-    <div className="site">
-      <h1>LaunchWare</h1>
-      {children}
-    </div>
+    <>
+      <Navbar />
+      <div className="site">{children}</div>
+    </>
   );
 };

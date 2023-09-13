@@ -1,0 +1,63 @@
+.primary-nav {
+  @apply bg-white text-launch-black-90;
+}
+
+.primary-nav_mobile-button {
+  @apply absolute inset-y-0 right-0 flex items-center sm:hidden;
+}
+
+.primary-nav_mobile-button-container {
+  @apply relative flex h-16 justify-between
+}
+
+.primary-nav_mobile-button-disclosure {
+  @apply relative inline-flex items-center justify-center px-2;
+}
+
+.primary-nav_mobile-button-icon {
+  @apply block h-6 w-6;
+}
+
+.primary-nav_mobile-button-spacer {
+  @apply absolute -inset-0.5;
+}
+
+.primary-nav_mobile-button-accessible-message {
+  @apply sr-only;
+}
+
+.menu__desktop {
+  @apply ml-6 hidden md:flex sm:space-x-8 mx-4 my-4 items-center;
+}
+
+.menu-item__desktop {
+  @apply hover:text-launch-orange;
+}
+
+.primary-nav_logo {
+  @apply flex flex-shrink-0 items-center;
+}
+
+.primary-nav_container {
+  @apply mx-auto max-w-7xl pad-container;
+}
+
+.primary-nav-container__desktop {
+  @apply flex flex-1 items-center justify-start sm:items-stretch sm:justify-between;
+}
+
+.primary-nav-container__desktop {
+  @apply pl-6;
+}
+
+.primary-nav_disclosure-panel {
+  @apply space-y-1 pb-4 shadow-md;
+}
+
+.primary-nav_disclosure-panel-item {
+  @apply block border-l-4 border-transparent py-2 pl-3 pr-4 text-base;
+}
+
+.menu-item__mobile-button {
+  @apply mx-2 text-center;
+}
