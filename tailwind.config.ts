@@ -15,11 +15,14 @@ export default {
       colors: {
         white: "#ffffff",
         "launch-orange": "#F06449",
+        "launch-black": "#2D2327",
         "launch-black-90": "#41393C",
         "launch-black-80": "#554D50",
         "launch-black-70": "#696164",
         "launch-black-60": "#7D7779",
         "launch-black-50": "#918B8E",
+        "launch-black-30": "#B9B5B7",
+        "launch-black-10": "#E2E0E1",
       },
     }
   },

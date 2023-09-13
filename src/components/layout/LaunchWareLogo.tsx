@@ -1,12 +1,13 @@
 import React from "react";
 
-export const LaunchWareLogo = () => {
+export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
   return (
     <svg
       width="161"
       height="14"
       viewBox="0 0 161 14"
-      fill="none"
+      fill="white"
+      className={`logo ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clip-path="url(#clip0_249_454)">

@@ -46,10 +46,6 @@
   @apply flex flex-1 items-center justify-start sm:items-stretch sm:justify-between;
 }
 
-.primary-nav-container__desktop {
-  @apply pl-6;
-}
-
 .primary-nav_disclosure-panel {
   @apply space-y-1 pb-4 shadow-md;
 }

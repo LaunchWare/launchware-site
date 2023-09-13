@@ -1,9 +1,9 @@
 import React from "react";
-import { LaunchWareLogo } from "../components/LaunchWareLogo";
+import { LaunchWareLogo } from "../components/layout/LaunchWareLogo";
 import { PageProps } from "gatsby";
 
 import "../css/index.css";
-import { Layout } from "../components/Layout";
+import { Layout } from "../components/layout/Layout";
 
 const IndexPage = (pageProps: PageProps) => {
   return (

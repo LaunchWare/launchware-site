@@ -1,5 +1,7 @@
 import React, { Children, PropsWithChildren, ReactNode } from "react";
-import Navbar from "./layout/Navbar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 import { WindowLocation } from "@reach/router";
 
 export const Layout = ({
@@ -15,6 +17,7 @@ export const Layout = ({
     <>
       <Navbar />
       <div className="site">{children}</div>
+      <Footer />
     </>
   );
 };

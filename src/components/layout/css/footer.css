@@ -1,0 +1,19 @@
+.footer {
+  @apply bg-launch-black pt-20 pb-4 text-launch-black-10;
+}
+
+.footer_container {
+  @apply pad-container;
+}
+
+.footer_headline {
+  @apply font-semibold;
+}
+
+.footer_logo {
+  @apply block mb-12;
+}
+
+.footer_copyright-notice {
+  @apply text-launch-black-30 ;
+}

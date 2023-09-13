@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql, PageProps, HeadFC, HeadProps } from "gatsby";
 
-import { Layout } from "../components/Layout";
+import { Layout } from "../components/layout/Layout";
 // import Seo from "../components/seo";
 
 const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) => {

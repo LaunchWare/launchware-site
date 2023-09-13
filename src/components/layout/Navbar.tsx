@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import "../../css/index.css"
 import "./css/navbar.css";
 
-import { LaunchWareLogo } from '../LaunchWareLogo'
+import { LaunchWareLogo } from './LaunchWareLogo'
 import { Link } from 'gatsby';
 
 function classNames(...classes: string[]) {
