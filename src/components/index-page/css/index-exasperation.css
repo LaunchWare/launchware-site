@@ -1,0 +1,35 @@
+.index-exasperation {
+  @apply flex justify-center w-full xl:py-16 py-4;
+  @apply xl:bg-launch-black bg-[#F5F5F5] relative z-20;
+}
+
+.index-exasperation__contents {
+  @apply flex flex-col justify-between items-center w-full max-w-7xl xl:flex-row xl:px-10;
+  @apply relative z-40 xl:flex-row flex-col-reverse flex-wrap;
+}
+
+.index-exasperation__decorative-circle {
+  @apply -z-10 absolute -left-60 bottom-40 hidden xl:block;
+}
+
+.index-exasperation__text-container {
+  @apply flex flex-col xl:items-start px-4 pt-8 xl:p-0;
+  @apply max-w-md xl:text-white;
+}
+
+.index-exasperation__heading {
+  @apply text-3xl text-left;
+}
+
+.index-exasperation__text {
+  @apply pt-4;
+  @apply text-lg;
+}
+
+.index-exasperation__image-container {
+  @apply px-4 py-8 xl:p-0;
+}
+
+.index-exasperation__image {
+  @apply rounded-3xl;
+}
