@@ -6,7 +6,7 @@
 
 @layer utilities {
   .pad-container {
-    @apply px-2 sm:px-10 max-w-7xl;
+    @apply px-4 sm:px-10 max-w-7xl mx-auto;
   }
 }
 
