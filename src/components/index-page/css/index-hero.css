@@ -1,0 +1,33 @@
+.index-hero {
+  @apply parent-section;
+  @apply bg-white relative z-30;
+}
+
+.index-hero__contents {
+  @apply contents-container;
+}
+
+.index-hero__text-container {
+  @apply flex flex-col md:items-start px-4 pt-8 md:p-0;
+  @apply md:text-left text-center;
+}
+
+.index-hero__heading {
+  @apply text-3xl mb-6 px-6 md:px-0;
+}
+
+.index-hero__text {
+  @apply text-lg px-6 md:px-0;
+}
+
+.index-hero__image-container {
+  @apply px-4 py-8 md:p-0;
+}
+
+.index-hero__image {
+  @apply rounded-image;
+}
+
+.index-hero__button {
+  @apply xl:mt-12 mt-4;
+}

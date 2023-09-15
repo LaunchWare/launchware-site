@@ -1,16 +1,13 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 export default {
   purge: [],
   darkMode: false,
-  content: [
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        "inter": ["Inter", "Roboto", "sans-serif", ...fontFamily.sans]
+        inter: ["Inter", "Roboto", "sans-serif", ...fontFamily.sans],
       },
       colors: {
         white: "#ffffff",
@@ -23,8 +20,9 @@ export default {
         "launch-black-50": "#918B8E",
         "launch-black-30": "#B9B5B7",
         "launch-black-10": "#E2E0E1",
+        "launch-neutral-20": "#F9FAFB",
       },
-    }
+    },
   },
   variants: {
     extend: {},
