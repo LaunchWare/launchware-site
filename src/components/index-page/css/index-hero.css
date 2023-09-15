@@ -1,11 +1,10 @@
-
 .index-hero {
-  @apply flex justify-center w-full xl:py-16 py-4;
+  @apply parent-section;
   @apply bg-white relative z-30;
 }
 
 .index-hero__contents {
-  @apply flex flex-col justify-between items-center w-full max-w-7xl md:flex-row md:px-10;
+  @apply contents-container;
 }
 
 .index-hero__text-container {
@@ -26,9 +25,9 @@
 }
 
 .index-hero__image {
-  @apply rounded-3xl;
+  @apply rounded-image;
 }
 
 .index-hero__button {
-  @apply md:mt-12 mt-4;
+  @apply xl:mt-12 mt-4;
 }

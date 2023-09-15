@@ -5,7 +5,11 @@ export default {
       files: ["*.ts", "*.tsx"],
       processor: "@graphql-eslint/graphql",
       parser: "@typescript-eslint/parser",
-      extends: ["@launchware/eslint-config-react", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+      extends: [
+        "@launchware/eslint-config-react",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+      ],
       env: {
         es6: true,
       },
