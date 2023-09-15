@@ -6,6 +6,6 @@ export const companyContactInformation = {
     streetAddress2: "3rd Floor",
     city: "Boston",
     state: "MA",
-    zipCode: "02021"
-  }
-}
+    zipCode: "02021",
+  },
+};

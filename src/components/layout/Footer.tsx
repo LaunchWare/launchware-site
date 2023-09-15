@@ -71,7 +71,14 @@ const Footer = () => {
             <p className="footer_opt-in-terms">By submitting this form, you confirm that you have read and agree to the Terms & Conditions.</p>
           </form>
         </div>
-        <p className="footer_copyright-notice">&copy; {new Date().getFullYear()} LaunchWare. All rights reserved.</p>
+
+        <div className="footer_legal">
+          <p className="footer_copyright-notice">&copy; {new Date().getFullYear()} LaunchWare. All rights reserved.</p>
+          <ul className="footer_legal-links">
+            <li><Link to="/disclaimer">Disclaimer</Link></li>
+            <li><Link to="/cookies">Cookies</Link></li>
+          </ul>
+        </div>
       </div>
     </footer >
   )
