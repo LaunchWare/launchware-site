@@ -1,20 +1,20 @@
 .index-exasperation {
-  @apply flex justify-center w-full xl:py-16 py-4;
-  @apply xl:bg-launch-black bg-[#F5F5F5] relative z-20;
+  @apply flex justify-center w-full md:py-16 py-4;
+  @apply md:bg-launch-black bg-[#F5F5F5] relative z-20;
 }
 
 .index-exasperation__contents {
-  @apply flex flex-col justify-between items-center w-full max-w-7xl xl:flex-row xl:px-10;
-  @apply relative z-40 xl:flex-row flex-col-reverse flex-wrap;
+  @apply flex flex-col justify-between items-center w-full max-w-7xl md:flex-row md:px-10;
+  @apply relative z-40 md:flex-row flex-col-reverse flex-wrap;
 }
 
 .index-exasperation__decorative-circle {
-  @apply -z-10 absolute -left-60 bottom-40 hidden xl:block;
+  @apply -z-10 absolute -left-60 bottom-40 hidden md:block;
 }
 
 .index-exasperation__text-container {
-  @apply flex flex-col xl:items-start px-4 pt-8 xl:p-0;
-  @apply max-w-md xl:text-white;
+  @apply flex flex-col md:items-start px-4 pt-8 md:p-0;
+  @apply max-w-md md:text-white;
 }
 
 .index-exasperation__heading {
@@ -27,7 +27,7 @@
 }
 
 .index-exasperation__image-container {
-  @apply px-4 py-8 xl:p-0;
+  @apply px-4 py-8 md:p-0;
 }
 
 .index-exasperation__image {
