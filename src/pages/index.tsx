@@ -10,15 +10,8 @@ import "../css/index.css";
 const IndexPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Home">
-        <IndexHero />
-        <IndexExasperation />
-        <div className="coming-soon-notice">
-          <div className="content-container">
-            <LaunchWareLogo />
-            <h1>Coming Soon</h1>
-            <a href="/blog">Archive Blog Content</a>
-          </div>
-        </div>
+      <IndexHero />
+      <IndexExasperation />
     </Layout>
   );
 };
