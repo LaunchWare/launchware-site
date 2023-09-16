@@ -6,6 +6,7 @@ import { CompanySocialIcon } from "../social/CompanySocialIcon"
 import { companyContactInformation } from "../../configuration/companyContactInformation"
 
 import "./css/footer.css"
+import { TrackingCodes } from "./TrackingCodes"
 
 const Footer = () => {
   const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
@@ -80,6 +81,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <TrackingCodes />
     </footer >
   )
 }
