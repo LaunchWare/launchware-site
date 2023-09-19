@@ -2,6 +2,11 @@ import React, { Children, PropsWithChildren, ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
 import { WindowLocation } from "@reach/router";
 
 export const Layout = ({
@@ -13,11 +18,16 @@ export const Layout = ({
   title: string;
   children: ReactNode;
 }) => {
+
+  const queryClient = new QueryClient()
+
   return (
     <>
-      <Navbar />
-      <div className="site">{children}</div>
-      <Footer />
+      <QueryClientProvider client={queryClient}>
+        <Navbar />
+        <div className="site">{children}</div>
+        <Footer />
+      </QueryClientProvider>
     </>
   );
 };
