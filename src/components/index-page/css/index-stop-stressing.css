@@ -1,0 +1,30 @@
+.index-stop-stressing {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.index-stop-stressing__contents {
+  @apply contents-container;
+  @apply lg:flex-row md:flex-col flex-col-reverse;
+}
+
+.index-stop-stressing__text-container {
+  @apply flex flex-col md:items-start md:px-8 lg:p-0;
+  @apply lg:max-w-md;
+}
+
+.index-stop-stressing__heading {
+  @apply text-4xl font-semibold text-left md:w-2/3 w-4/5;
+}
+
+.index-stop-stressing__text {
+  @apply pt-4;
+}
+
+.index-stop-stressing__image-container {
+  @apply md:px-8 py-8 lg:p-0;
+}
+
+.index-stop-stressing__image {
+  @apply rounded-image;
+}
