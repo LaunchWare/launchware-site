@@ -1,5 +1,19 @@
 {
-  "cSpell.words": ["frontmatter", "Roboto", "tailwindcss"],
+  "cSpell.words": [
+    "fortawesome",
+    "frontmatter",
+    "lpignore",
+    "Roboto",
+    "tailwindcss",
+    "WGNPB"
+  ],
+  "cSpell.words": [
+    "fortawesome",
+    "frontmatter",
+    "lpignore",
+    "Roboto",
+    "tailwindcss"
+  ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#4b2c8d",
     "activityBar.background": "#4b2c8d",
@@ -19,5 +33,8 @@
     "titleBar.inactiveBackground": "#36206699",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#362066"
+  "peacock.color": "#362066",
+  "files.associations": {
+    "*.css": "postcss"
+  }
 }

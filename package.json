@@ -23,13 +23,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/react": "^2.3.0",
     "eslint": "^8.47.0",
     "gatsby": "^5.10.0",
     "gatsby-plugin-feed": "^5.10.0",
-    "gatsby-plugin-google-gtag": "^5.10.0",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-manifest": "^5.10.0",
     "gatsby-plugin-mdx": "^5.10.0",
@@ -43,7 +45,8 @@
     "gatsby-transformer-sharp": "^5.10.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11"
   },
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.18.0",
@@ -51,6 +54,7 @@
     "@types/node": "^18.15.8",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
+    "@types/react-gtm-module": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "autoprefixer": "^10.4.15",

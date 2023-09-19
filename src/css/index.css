@@ -6,7 +6,19 @@
 
 @layer utilities {
   .pad-container {
-    @apply px-2 sm:px-10 max-w-7xl;
+    @apply px-4 sm:px-10 max-w-7xl mx-auto;
+  }
+
+  .parent-section {
+    @apply flex justify-center w-full xl:py-16 py-4;
+  }
+
+  .contents-container {
+    @apply flex flex-col justify-between items-center w-full max-w-7xl md:flex-row md:px-10;
+  }
+
+  .rounded-image {
+    @apply rounded-3xl;
   }
 
   .parent-section {
@@ -59,4 +71,9 @@ body {
 .coming-soon-notice svg {
   display: block;
   margin: auto;
+}
+
+[data-lastpass-icon-root],
+[data-lastpass-root] {
+  display: none !important;
 }

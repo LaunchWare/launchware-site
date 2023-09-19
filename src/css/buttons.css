@@ -1,3 +1,8 @@
-.button {
+.button,
+input.button {
   @apply bg-launch-orange text-white font-bold py-2 px-3 rounded-md hover:text-launch-orange hover:bg-white border-launch-orange border-x-2 border-y-2;
+}
+
+.button__full-width {
+  @apply w-full;
 }
