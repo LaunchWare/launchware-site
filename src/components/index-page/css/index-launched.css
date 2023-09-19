@@ -8,12 +8,16 @@
   @apply flex-wrap;
 }
 
+.index-launched__heading-container {
+  @apply px-4 lg:p-0;
+}
+
 .index-launched__heading {
-  @apply text-4xl font-semibold max-w-md md:px-4 lg:p-0;
+  @apply text-4xl font-semibold max-w-md;
 }
 
 .index-launched__columns-container {
-  @apply w-full flex sm:items-center sm:flex-col;
+  @apply w-full md:flex;
   @apply lg:space-x-7 md:items-start md:flex-row;
 }
 
