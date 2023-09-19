@@ -18,7 +18,7 @@
 }
 
 .index-exasperation__heading {
-  @apply text-3xl text-left;
+  @apply text-4xl text-left;
 }
 
 .index-exasperation__text {
