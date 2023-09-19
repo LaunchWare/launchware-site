@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-import arrowForward from "../../assets/images/arrow_forward.png"
+import arrowForward from "../../assets/images/arrow_forward.png";
 import "./css/index-stop-stressing.css";
 
 export const IndexStopStressing = () => (

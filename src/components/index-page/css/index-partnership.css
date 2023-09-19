@@ -9,7 +9,7 @@
 }
 
 .index-partnership__decorative-circle {
-  @apply absolute -z-10 -right-48 lg:-top-72 md:top-96 hidden md:inline;
+  @apply absolute -z-10 -right-48 lg:-top-72 md:top-80 hidden md:inline;
 }
 
 .index-partnership__image-container {

@@ -6,8 +6,10 @@ import { IndexExasperation } from "../components/index-page/IndexExasperation";
 import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
 import { IndexLogos } from "../components/index-page/IndexLogos";
+import { IndexMoreMomentum } from "../components/index-page/IndexMoreMomentum";
 import { IndexPartnership } from "../components/index-page/IndexPartnership";
 import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
+import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
 import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
 
@@ -21,6 +23,8 @@ const IndexPage = (pageProps: PageProps) => {
       <IndexLogos />
       <IndexBuiltForYou />
       <IndexShipFaster />
+      <IndexMoreMomentum />
+      <IndexStopStressing />
     </Layout>
   );
 };
