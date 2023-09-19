@@ -1,6 +1,6 @@
 .index-partnership {
   @apply parent-section;
-  @apply bg-launch-neutral-20 relative z-30 md:overflow-x-clip;
+  @apply bg-launch-neutral-30 relative z-30 md:overflow-x-clip;
 }
 
 .index-partnership__contents {
@@ -13,7 +13,7 @@
 }
 
 .index-partnership__image-container {
-  @apply px-4 py-8 lg:p-0 w-full lg:w-7/12;
+  @apply py-8 lg:p-0 w-full lg:w-7/12;
 }
 
 .index-partnership__image {
@@ -21,7 +21,7 @@
 }
 
 .index-partnership__text-container {
-  @apply flex flex-col md:items-start px-4 lg:pr-12;
+  @apply flex flex-col md:items-start lg:pr-12;
   @apply text-left w-full lg:w-5/12;
 }
 
@@ -30,9 +30,9 @@
 }
 
 .index-partnership__text {
-  @apply text-lg mb-4 leading-relaxed;
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
 }
 
 .index-partnership__list-item {
-  @apply text-lg;
+  @apply text-base text-launch-black-80;
 }

@@ -1,0 +1,50 @@
+.index-ship-faster {
+  @apply parent-section;
+  @apply bg-launch-black;
+
+  .index-ship-faster__contents {
+    @apply contents-container;
+    @apply flex-wrap;
+
+    .index-ship-faster__heading-container {
+      @apply text-launch-neutral-10;
+
+      .index-ship-faster__heading {
+        @apply text-4xl font-semibold max-w-md mb-5;
+      }
+    }
+
+    .index-ship-faster__grid {
+      @apply grid md:grid-rows-2 md:grid-flow-col items-start gap-6 pt-12;
+
+      .index-ship-faster__card {
+        @apply p-6 bg-launch-neutral-10 rounded-xl;
+
+        .index-ship-faster__image-container {
+          @apply py-6 w-full;
+        }
+
+        .index-ship-faster__image {
+          @apply rounded-image;
+        }
+
+        .index-ship-faster__card-heading {
+          @apply text-4xl text-left w-full;
+          @apply text-lg font-semibold;
+        }
+
+        .index-ship-faster__text {
+          @apply text-base text-launch-black-80 py-4 w-full leading-relaxed;
+        }
+
+        .index-ship-faster__ordered-list {
+          @apply list-decimal ml-4;
+        }
+      }
+    }
+
+    .index-ship-faster__tagline {
+      @apply tagline;
+    }
+  }
+}

@@ -13,7 +13,7 @@
 }
 
 .index-exasperation__text-container {
-  @apply flex flex-col md:items-start px-4 md:px-8 pt-8 lg:p-0;
+  @apply flex flex-col md:items-start md:px-8 pt-8 lg:p-0;
   @apply lg:max-w-md md:text-white;
 }
 
@@ -23,11 +23,10 @@
 
 .index-exasperation__text {
   @apply pt-4;
-  @apply text-lg;
 }
 
 .index-exasperation__image-container {
-  @apply px-4 md:px-8 py-8 lg:p-0;
+  @apply md:px-8 py-8 lg:p-0;
 }
 
 .index-exasperation__image {
