@@ -8,6 +8,13 @@ import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema"
 import { useGeneralOptIn } from "./hooks/useGeneralOptIn"
 import { Spinner } from "../spinner/Spinner"
 
+
+declare global {
+  interface Window {
+    vgo: (command: string, ...args: unknown[]) => void;
+  }
+}
+
 export const OptInForm = () => {
   const { handleSubmit, register, formState: { errors } } = useForm<OptInFormSchema>({
     mode: "onBlur",
@@ -18,6 +25,10 @@ export const OptInForm = () => {
 
   const onSubmit = (data: OptInFormSchema) => {
     mutate(data)
+    if (window.vgo) {
+      window.vgo("setEmail", data.email)
+      window.vgo("process")
+    }
   }
 
   const formContent = <>
