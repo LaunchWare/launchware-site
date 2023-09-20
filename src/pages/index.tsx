@@ -1,6 +1,7 @@
 import React from "react";
 import { PageProps } from "gatsby";
 
+import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
 import { IndexExasperation } from "../components/index-page/IndexExasperation";
 import { IndexHero } from "../components/index-page/IndexHero";
@@ -25,6 +26,7 @@ const IndexPage = (pageProps: PageProps) => {
       <IndexShipFaster />
       <IndexMoreMomentum />
       <IndexStopStressing />
+      <IndexBestProducts />
     </Layout>
   );
 };
