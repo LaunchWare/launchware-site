@@ -1,5 +1,7 @@
 import React from "react";
+
 import { PageProps } from "gatsby";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
@@ -8,6 +10,7 @@ import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
 import { IndexLogos } from "../components/index-page/IndexLogos";
 import { IndexMoreMomentum } from "../components/index-page/IndexMoreMomentum";
+import { IndexOneSmallStep } from "../components/index-page/IndexOneSmallStep";
 import { IndexPartnership } from "../components/index-page/IndexPartnership";
 import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
 import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
@@ -15,19 +18,24 @@ import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
 
 const IndexPage = (pageProps: PageProps) => {
+  const queryClient = new QueryClient();
+
   return (
-    <Layout location={pageProps.location} title="Home">
-      <IndexHero />
-      <IndexExasperation />
-      <IndexLaunched />
-      <IndexPartnership />
-      <IndexLogos />
-      <IndexBuiltForYou />
-      <IndexShipFaster />
-      <IndexMoreMomentum />
-      <IndexStopStressing />
-      <IndexBestProducts />
-    </Layout>
+    <QueryClientProvider client={queryClient}>
+      <Layout location={pageProps.location} title="Home">
+        <IndexHero />
+        <IndexExasperation />
+        <IndexLaunched />
+        <IndexPartnership />
+        <IndexLogos />
+        <IndexBuiltForYou />
+        <IndexShipFaster />
+        <IndexMoreMomentum />
+        <IndexStopStressing />
+        <IndexBestProducts />
+        <IndexOneSmallStep />
+      </Layout>
+    </QueryClientProvider>
   );
 };
 

@@ -42,9 +42,5 @@
         }
       }
     }
-
-    .index-ship-faster__tagline {
-      @apply tagline;
-    }
   }
 }

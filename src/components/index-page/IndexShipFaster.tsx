@@ -1,12 +1,13 @@
 import React from "react";
 
+import { Tagline } from "../general/Tagline";
 import "./css/index-ship-faster.css";
 
 export const IndexShipFaster = () => (
   <section className="index-ship-faster">
     <div className="index-ship-faster__contents">
       <div className="index-ship-faster__heading-container">
-        <div className="index-ship-faster__tagline">Tagline</div>
+        <Tagline tagline="Tagline" />
         <h2 className="index-ship-faster__heading">Ship websites faster</h2>
         <p className="index-ship-faster__text">
           Sometimes, getting started is the hardest part. That’s why we make it easy for us to begin
@@ -15,7 +16,7 @@ export const IndexShipFaster = () => (
       </div>
       <div className="index-ship-faster__grid">
         <div className="index-ship-faster__card">
-          <div className="index-ship-faster__tagline">For teams with an existing product</div>
+          <Tagline tagline="For teams with an existing product" />
           <div className="index-ship-faster__image-container">
             <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
           </div>
@@ -38,8 +39,7 @@ export const IndexShipFaster = () => (
           </p>
         </div>
         <div className="index-ship-faster__card">
-          <div className="index-ship-faster__tagline">For teams with an existing product</div>
-
+          <Tagline tagline="For teams with an existing product" />
           <div className="index-ship-faster__image-container">
             <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
           </div>
@@ -63,9 +63,7 @@ export const IndexShipFaster = () => (
           </p>
         </div>
         <div className="index-ship-faster__card">
-          <div className="index-ship-faster__tagline">
-            For teams with an idea or concept for a software product
-          </div>
+          <Tagline tagline="For teams with an idea or concept for a software product" />
           <div className="index-ship-faster__image-container">
             <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
           </div>
@@ -78,7 +76,6 @@ export const IndexShipFaster = () => (
             Enter our Flight Plan engagement—how smart leaders map out their software development
             journey.
           </p>
-          {/* <p className="index-ship-faster__text"></p> */}
           Here’s how it works:
           <ol className="index-ship-faster__ordered-list">
             <li>
@@ -100,10 +97,7 @@ export const IndexShipFaster = () => (
           </p>
         </div>
         <div className="index-ship-faster__card">
-          <div className="index-ship-faster__tagline">
-            For teams with an idea or concept for a software product
-          </div>
-
+          <Tagline tagline="For teams with an idea or concept for a software product" />
           <div className="index-ship-faster__image-container">
             <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
           </div>

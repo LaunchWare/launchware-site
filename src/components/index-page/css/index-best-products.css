@@ -5,7 +5,7 @@
 
 .index-best-products__contents {
   @apply contents-container;
-  @apply flex-col lg:flex-row md:pt-4;
+  @apply flex-col lg:flex-row lg:space-x-16 md:pt-4;
 }
 
 .index-best-products__image-container {
