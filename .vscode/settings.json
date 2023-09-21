@@ -1,18 +1,19 @@
 {
   "cSpell.words": [
+    "actid",
+    "codepaths",
     "fortawesome",
     "frontmatter",
+    "hookform",
+    "launchware",
     "lpignore",
+    "prismjs",
     "Roboto",
     "tailwindcss",
+    "tanstack",
+    "tsbuildinfo",
+    "Typegen",
     "WGNPB"
-  ],
-  "cSpell.words": [
-    "fortawesome",
-    "frontmatter",
-    "lpignore",
-    "Roboto",
-    "tailwindcss"
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#4b2c8d",

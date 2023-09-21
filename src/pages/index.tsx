@@ -1,8 +1,8 @@
 import React from "react";
 import { PageProps } from "gatsby";
 
+import { Exasperation } from "../components/index-page/Exasperation";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
-import { IndexExasperation } from "../components/index-page/IndexExasperation";
 import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
 import { IndexLogos } from "../components/index-page/IndexLogos";
@@ -17,7 +17,7 @@ const IndexPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Home">
       <IndexHero />
-      <IndexExasperation />
+      <Exasperation />
       <IndexLaunched />
       <IndexPartnership />
       <IndexLogos />
