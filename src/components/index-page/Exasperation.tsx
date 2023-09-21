@@ -1,6 +1,6 @@
 import React from "react";
 
-import decorativeCircle from "../../assets/images/decorative-circle.png";
+import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/exasperation.css";
 
 export const Exasperation = () => (

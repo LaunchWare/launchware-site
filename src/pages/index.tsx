@@ -8,6 +8,8 @@ import { IndexLaunched } from "../components/index-page/IndexLaunched";
 import { IndexLogos } from "../components/index-page/IndexLogos";
 import { IndexPartnership } from "../components/index-page/IndexPartnership";
 import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
+import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
+import { MoreMomentum } from "../components/index-page/MoreMomentum";
 import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
 
@@ -21,6 +23,8 @@ const IndexPage = (pageProps: PageProps) => {
       <IndexLogos />
       <IndexBuiltForYou />
       <IndexShipFaster />
+      <MoreMomentum />
+      <IndexStopStressing />
     </Layout>
   );
 };
