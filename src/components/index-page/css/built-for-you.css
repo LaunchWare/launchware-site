@@ -1,0 +1,52 @@
+.built-for-you {
+  @apply parent-section;
+  @apply bg-launch-neutral-20 relative -z-10;
+}
+
+.built-for-you__contents {
+  @apply contents-container;
+  @apply flex-wrap relative;
+}
+
+.built-for-you__decorative-square {
+  @apply z-10 absolute hidden md:block;
+  @apply -left-60 -bottom-60;
+}
+
+.built-for-you__heading-container {
+  @apply pb-6 lg:p-0;
+}
+
+.built-for-you__heading {
+  @apply text-4xl font-semibold;
+}
+
+.built-for-you__cards-container {
+  @apply w-full md:flex pt-12;
+  @apply lg:space-x-6 md:space-x-4 space-y-8 md:space-y-0 md:items-stretch md:flex-row;
+}
+
+.built-for-you__card-heading {
+  @apply text-4xl text-left w-full;
+}
+
+.built-for-you__card {
+  @apply flex flex-col p-6;
+  @apply md:w-1/3 md:text-left;
+  @apply bg-white rounded-xl shadow-lg;
+}
+
+.built-for-you__card-heading {
+  @apply text-lg font-semibold pt-4;
+}
+
+.built-for-you__text {
+  @apply text-base text-launch-black-80 pt-4 w-full;
+}
+
+.built-for-you__image-container {
+  @apply w-full;
+}
+
+.built-for-you__image {
+}

@@ -17,11 +17,11 @@
 }
 
 .index-hero__text {
-  @apply text-lg px-6 md:px-0;
+  @apply text-base text-launch-black-80 px-6 md:px-0;
 }
 
 .index-hero__image-container {
-  @apply px-4 py-8 md:p-0;
+  @apply py-8;
 }
 
 .index-hero__image {

@@ -1,35 +1,34 @@
-.index-exasperation {
+.exasperation {
   @apply parent-section;
   @apply md:bg-launch-black bg-launch-neutral-20 relative z-20;
 }
 
-.index-exasperation__contents {
+.exasperation__contents {
   @apply contents-container;
   @apply relative z-40 lg:flex-row md:flex-col flex-col-reverse;
 }
 
-.index-exasperation__decorative-circle {
+.exasperation__decorative-circle {
   @apply -z-10 absolute -left-32 -top-80 hidden md:block;
 }
 
-.index-exasperation__text-container {
-  @apply flex flex-col md:items-start px-4 md:px-8 pt-8 lg:p-0;
+.exasperation__text-container {
+  @apply flex flex-col md:items-start md:px-8 pt-8 lg:p-0;
   @apply lg:max-w-md md:text-white;
 }
 
-.index-exasperation__heading {
+.exasperation__heading {
   @apply text-4xl font-semibold text-left;
 }
 
-.index-exasperation__text {
+.exasperation__text {
   @apply pt-4;
-  @apply text-lg;
 }
 
-.index-exasperation__image-container {
-  @apply px-4 md:px-8 py-8 lg:p-0;
+.exasperation__image-container {
+  @apply md:px-8 py-8 lg:p-0;
 }
 
-.index-exasperation__image {
+.exasperation__image {
   @apply rounded-image;
 }
