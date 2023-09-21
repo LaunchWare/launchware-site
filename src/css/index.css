@@ -21,11 +21,6 @@
   .rounded-image {
     @apply rounded-3xl;
   }
-
-  .tagline {
-    @apply bg-launch-primary-10 text-launch-orange font-semibold;
-    @apply inline-block px-2 py-1 mb-5 rounded-md;
-  }
 }
 
 @font-face {

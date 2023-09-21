@@ -18,6 +18,7 @@ export default {
         "launch-black-70": "#696164",
         "launch-black-60": "#7D7779",
         "launch-black-50": "#918B8E",
+        "launch-black-40": "#A5A0A3",
         "launch-black-30": "#B9B5B7",
         "launch-black-10": "#E2E0E1",
         "launch-neutral-10": "#FFFFFF",

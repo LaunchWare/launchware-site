@@ -44,7 +44,3 @@
 .index-ship-faster__ordered-list {
   @apply list-decimal ml-4;
 }
-
-.index-ship-faster__tagline {
-  @apply tagline;
-}
