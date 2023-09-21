@@ -1,8 +1,9 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 
-import arrowForward from "../../assets/images/arrow_forward.png";
 import "./css/index-best-products.css";
 
 export const IndexBestProducts = () => (
@@ -23,7 +24,7 @@ export const IndexBestProducts = () => (
         <p className="index-best-products__text">
           <Link className="index-best-products__link" to="#">
             <span>Get the workbook</span>
-            <img className="index-best-products__arrow-forward" src={arrowForward} />
+            <FontAwesomeIcon icon={faArrowRight} />
           </Link>
         </p>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 
 import { PageProps } from "gatsby";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { Exasperation } from "../components/index-page/Exasperation";
 import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
@@ -18,24 +17,20 @@ import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
 
 const IndexPage = (pageProps: PageProps) => {
-  const queryClient = new QueryClient();
-
   return (
-    <QueryClientProvider client={queryClient}>
-      <Layout location={pageProps.location} title="Home">
-        <IndexHero />
-        <Exasperation />
-        <IndexLaunched />
-        <IndexPartnership />
-        <IndexLogos />
-        <IndexBuiltForYou />
-        <IndexShipFaster />
-        <MoreMomentum />
-        <IndexStopStressing />
-        <IndexBestProducts />
-        <IndexOneSmallStep />
-      </Layout>
-    </QueryClientProvider>
+    <Layout location={pageProps.location} title="Home">
+      <IndexHero />
+      <Exasperation />
+      <IndexLaunched />
+      <IndexPartnership />
+      <IndexLogos />
+      <IndexBuiltForYou />
+      <IndexShipFaster />
+      <MoreMomentum />
+      <IndexStopStressing />
+      <IndexBestProducts />
+      <IndexOneSmallStep />
+    </Layout>
   );
 };
 
