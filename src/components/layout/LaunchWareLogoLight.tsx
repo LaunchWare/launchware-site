@@ -1,8 +1,8 @@
 import React from "react"
 export const LaunchWareLogoLight = ({ className = "" }: { className?: string }) => (
   <svg className={`${className}`} width="161" height="14" viewBox="0 0 161 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_249_1101)">
-      <g clip-path="url(#clip1_249_1101)">
+    <g clipPath="url(#clip0_249_1101)">
+      <g clipPath="url(#clip1_249_1101)">
         <path d="M3.78067 10.6894H9.69547L8.70614 13.8837H0V0.110352H3.78067V10.6962V10.6894Z" fill="white" />
         <path d="M41.5452 0.110352V9.29485C41.5452 12.97 39.7715 14.0004 35.6092 14.0004C29.9417 14.0004 29.334 12.6059 29.334 9.29485V0.110352H33.1147V9.21928C33.1147 10.7787 34.0192 10.7993 35.6092 10.7993C37.1992 10.7993 37.7645 10.6687 37.7645 9.05441V0.110352H41.5452Z" fill="white" />
         <path d="M49.9047 13.8905H46.124V0.110352H52.5123L56.5756 10.6962H56.724L56.4979 0.110352H60.2786V13.8905H53.8338L49.827 3.30466H49.6715L49.8976 13.8905H49.9047Z" fill="white" />
