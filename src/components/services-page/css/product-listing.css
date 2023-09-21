@@ -63,7 +63,3 @@
 .product-listing__text {
   @apply text-base text-launch-black-80 pb-4 w-full leading-relaxed;
 }
-
-.product-listing__learn-more {
-  @apply flex text-launch-orange font-semibold pt-4;
-}

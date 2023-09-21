@@ -1,5 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
+
+import { Link } from "gatsby";
 
 import decorativeCircle from "../../assets/images/decorative-circle.png";
 import "./css/product-listing.css";
@@ -19,24 +20,24 @@ export const ProductListing = () => {
           <h2 className="product-listing__heading">
             Professional development services to meet your needs
           </h2>
-          <div className="product-listing__icon-card-container">
-            <div className="product-listing__icon-card">
+          <ul className="product-listing__icon-card-container">
+            <p className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
-              <h4 className="product-listing__icon-card-heading">Code Audit</h4>
-            </div>
-            <div className="product-listing__icon-card">
+              <h3 className="product-listing__icon-card-heading">Code Audit</h3>
+            </p>
+            <p className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
-              <h4 className="product-listing__icon-card-heading">Flight Plan</h4>
-            </div>
-            <div className="product-listing__icon-card">
+              <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
+            </p>
+            <p className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
-              <h4 className="product-listing__icon-card-heading">Staff Augmentation</h4>
-            </div>
-            <div className="product-listing__icon-card">
+              <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
+            </p>
+            <p className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
-              <h4 className="product-listing__icon-card-heading">Custom Development</h4>
-            </div>
-          </div>
+              <h3 className="product-listing__icon-card-heading">Custom Development</h3>
+            </p>
+          </ul>
         </div>
 
         <div className="product-listing__grid">
@@ -46,7 +47,7 @@ export const ProductListing = () => {
 
           <div className="product-listing__text-container">
             <div className="product-listing__card">
-              <h4 className="product-listing__card-heading">Code Audit</h4>
+              <h3 className="product-listing__card-heading">Code Audit</h3>
               <p className="product-listing__text">
                 Even seasoned software teams can encounter technical roadblocks that slow down
                 innovation. Our Code Audit Engagement is designed to shine a light on those hidden
@@ -63,12 +64,12 @@ export const ProductListing = () => {
                 most critical areas first. With these insights, you’ll gain clarity, recapture
                 missed opportunities, and set a definitive course for success.
               </p>
-              <Link className="product-listing__learn-more" to="#">
-                <span>Learn More</span>
+              <Link to="#">
+                <button className="product-listing__button button">Book my launch call</button>
               </Link>
             </div>
             <div className="product-listing__card">
-              <h4 className="product-listing__card-heading">Flight Plan</h4>
+              <h3 className="product-listing__card-heading">Flight Plan</h3>
               <p className="product-listing__text">
                 Business leaders brim with innovative software ideas. But it’s not easy to turn a
                 visionary idea into something your team can efficiently execute.
@@ -90,15 +91,15 @@ export const ProductListing = () => {
                 Flight Plan becomes an indispensable guide, ensuring a confident and impactful
                 software launch.
               </p>
-              <Link className="product-listing__learn-more" to="#">
-                <span>Learn More</span>
+              <Link to="#">
+                <button className="product-listing__button button">Book my launch call</button>
               </Link>
             </div>
           </div>
 
           <div className="product-listing__text-container">
             <div className="product-listing__card">
-              <h4 className="product-listing__card-heading">Staff Augmentation</h4>
+              <h3 className="product-listing__card-heading">Staff Augmentation</h3>
               <p className="product-listing__text">
                 Too much work and too little time? No one wins when your engineering teams get
                 stretched thin.
@@ -116,12 +117,12 @@ export const ProductListing = () => {
                 for. Together, we ensure that your projects not only stay on track but also achieve
                 excellence, every single time.
               </p>
-              <Link className="product-listing__learn-more" to="#">
-                <span>Learn More</span>
+              <Link to="#">
+                <button className="product-listing__button button">Book my launch call</button>
               </Link>
             </div>
             <div className="product-listing__card">
-              <h4 className="product-listing__card-heading">Custom Development </h4>
+              <h3 className="product-listing__card-heading">Custom Development </h3>
               <p className="product-listing__text">
                 Transforming an idea into a tangible software solution requires more than just
                 vision. It demands the expertise, dedication, and finesse of a seasoned development
@@ -139,8 +140,8 @@ export const ProductListing = () => {
                 competitive job market. Simply entrust your idea with us, and together, we’ll
                 transform your idea into a successful digital reality.
               </p>
-              <Link className="product-listing__learn-more" to="#">
-                <span>Learn More</span>
+              <Link to="#">
+                <button className="product-listing__button button">Book my launch call</button>
               </Link>
             </div>
           </div>
