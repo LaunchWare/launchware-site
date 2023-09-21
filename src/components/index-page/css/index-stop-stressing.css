@@ -28,3 +28,7 @@
 .index-stop-stressing__image {
   @apply rounded-image;
 }
+
+.index-stop-stressing__learn-more {
+  @apply flex flex-row items-center space-x-2 text-launch-orange font-semibold;
+}
