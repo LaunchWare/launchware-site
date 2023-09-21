@@ -18,9 +18,9 @@ export const IndexLaunched = () => (
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h4 className="index-launched__column-heading">
+          <h3 className="index-launched__column-heading">
             Get a proven and transparent plan to take you where you want to go
-          </h4>
+          </h3>
           <p className="index-launched__text">
             You have a vision, and you need a partnership that can bring a clear path to get your
             software launched.
@@ -40,9 +40,9 @@ export const IndexLaunched = () => (
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h4 className="index-launched__column-heading">
+          <h3 className="index-launched__column-heading">
             Skip the technical guesswork with an experienced team
-          </h4>
+          </h3>
           <p className="index-launched__text">
             You don’t have time to experiment with talent that might meet your needs.
           </p>
@@ -60,9 +60,9 @@ export const IndexLaunched = () => (
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h4 className="index-launched__column-heading">
+          <h3 className="index-launched__column-heading">
             Scale easily without hiring and managing engineers
-          </h4>
+          </h3>
           <p className="index-launched__text">
             You need flexibility and room to grow, without the typical HR hassle.
           </p>
