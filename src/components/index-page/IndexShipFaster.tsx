@@ -8,7 +8,7 @@ export const IndexShipFaster = () => (
       <div className="index-ship-faster__heading-container">
         <div className="index-ship-faster__tagline">Tagline</div>
         <h2 className="index-ship-faster__heading">Ship websites faster</h2>
-        <p className="index-ship-faster__text">
+        <p>
           Sometimes, getting started is the hardest part. That’s why we make it easy for us to begin
           the journey together.
         </p>
