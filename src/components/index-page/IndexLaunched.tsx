@@ -1,7 +1,9 @@
-import { Link } from "gatsby";
 import React from "react";
 
-import arrowForward from "../../assets/images/arrow_forward.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "gatsby";
+
 import "./css/index-launched.css";
 
 export const IndexLaunched = () => (
@@ -32,7 +34,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>
@@ -52,7 +54,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>
@@ -72,7 +74,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>

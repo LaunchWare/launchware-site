@@ -1,7 +1,9 @@
 import React from "react";
 
-import checkIcon from "../../assets/images/check.png";
-import decorativeCircle from "../../assets/images/decorative-circle.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
+import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/index-partnership.css";
 
 export const IndexPartnership = () => (
@@ -33,15 +35,15 @@ export const IndexPartnership = () => (
         </p>
         <ul>
           <li className="index-partnership__list-item">
-            <img alt="checkmark icon" role="listitem" src={checkIcon} />
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
             <span>A proven process</span>
           </li>
           <li className="index-partnership__list-item">
-            <img alt="checkmark icon" role="listitem" src={checkIcon} />
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
             <span>Decades of tech experience</span>
           </li>
           <li className="index-partnership__list-item">
-            <img alt="checkmark icon" role="listitem" src={checkIcon} />
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
             <span>Regular review and adaptation</span>
           </li>
         </ul>
