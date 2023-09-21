@@ -27,7 +27,7 @@
 }
 
 .footer_group__last {
-  @apply lg:col-span-2 col-span-1 order-2 lg:order-4 my-12 lg:my-0 max-w-sm mx-auto;
+  @apply lg:col-span-2 col-span-1 order-2 lg:order-4 my-12 lg:my-0 max-w-sm mx-auto w-full;
 }
 
 .footer_headline {
@@ -78,8 +78,16 @@
   @apply text-launch-black-50;
 }
 
+.footer_opt-in-email-container {
+  @apply bg-launch-black block relative w-full;
+}
+
 .footer_opt-in-email {
-  @apply bg-launch-black border-white border rounded-md block w-full py-1 pl-2 focus:ring-white focus:outline-none focus:ring-2;
+  @apply bg-launch-black w-full rounded-md border-white py-1 pl-2 border focus:ring-white focus:outline-none focus:ring-2 ;
+}
+
+.footer_spinner {
+  @apply absolute top-1/4 right-2;
 }
 
 .footer_button {

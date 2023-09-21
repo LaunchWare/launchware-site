@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -7,12 +7,15 @@ import "./css/navbar.css";
 
 import { LaunchWareLogo } from './LaunchWareLogo'
 import { Link } from 'gatsby';
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
+import { useBookCallModal } from '../book-call/hooks/useBookCallModal';
 
 export default function Navbar() {
+  const { setModalVisibility, modal } = useBookCallModal()
+  const clickHandler: MouseEventHandler = (event) => {
+    event.preventDefault()
+    setModalVisibility(true)
+  }
+
   return (
     <Disclosure as="nav" className="primary-nav">
       {({ open }) => (
@@ -51,7 +54,7 @@ export default function Navbar() {
                   >
                     About
                   </a>
-                  <a href="#" className="menu-item__desktop menu-item__desktop-button button">Book Launch Call</a>
+                  <a href="#" onClick={clickHandler} className="menu-item__desktop menu-item__desktop-button button">Book Launch Call</a>
 
                 </div>
               </div>
@@ -84,6 +87,7 @@ export default function Navbar() {
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
+          {modal}
         </>
       )
       }

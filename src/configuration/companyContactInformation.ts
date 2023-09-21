@@ -8,4 +8,5 @@ export const companyContactInformation = {
     state: "MA",
     zipCode: "02021",
   },
+  launchCallUrl: "https://calendly.com/dan-at-launch-academy/your-launch-call?primary_color=F06449",
 };

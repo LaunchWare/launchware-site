@@ -1,0 +1,20 @@
+.calendly-inline-widget {
+  overflow: hidden;
+  position: relative;
+
+  & iframe {
+    display: block;
+    margin: 0 auto;
+    top: 32px;
+    left: 0;
+    border: 0;
+    width: 75%;
+    min-height: 1600px;
+  }
+}
+
+@media screen(lg) {
+  .calendly-inline-widget {
+    min-width: 300px;
+  }
+}
