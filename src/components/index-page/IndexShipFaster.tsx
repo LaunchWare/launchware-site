@@ -79,8 +79,8 @@ export const IndexShipFaster = () => (
           Here’s how it works:
           <ol className="index-ship-faster__ordered-list">
             <li>
-              We kick things off with our 'Jobs to Be Done Workshop', honing in on your target
-              audience and the unique solutions your product promises them.
+              We kick things off with our &lsquo;Jobs to Be Done Workshop&rsquo;, honing in on your
+              target audience and the unique solutions your product promises them.
             </li>
             <li>
               Our seasoned team then crafts intuitive wireframes, creates clear user stories, and

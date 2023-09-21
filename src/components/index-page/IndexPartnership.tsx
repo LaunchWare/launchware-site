@@ -1,6 +1,9 @@
 import React from "react";
 
-import decorativeCircle from "../../assets/images/decorative-circle.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
+import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/index-partnership.css";
 
 export const IndexPartnership = () => (
@@ -31,9 +34,18 @@ export const IndexPartnership = () => (
           other week for you to review.
         </p>
         <ul>
-          <li className="index-partnership__list-item">A proven process</li>
-          <li className="index-partnership__list-item">Decades of tech experience</li>
-          <li className="index-partnership__list-item">Regular review and adaptation</li>
+          <li className="index-partnership__list-item">
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+            <span>A proven process</span>
+          </li>
+          <li className="index-partnership__list-item">
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+            <span>Decades of tech experience</span>
+          </li>
+          <li className="index-partnership__list-item">
+            <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+            <span>Regular review and adaptation</span>
+          </li>
         </ul>
       </div>
       <div className="index-partnership__image-container">

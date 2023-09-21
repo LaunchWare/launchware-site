@@ -10,8 +10,8 @@ export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
       className={`logo ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_249_454)">
-        <g clip-path="url(#clip1_249_454)">
+      <g clipPath="url(#clip0_249_454)">
+        <g clipPath="url(#clip1_249_454)">
           <path
             d="M3.78067 10.6889H9.69547L8.70614 13.8832H0V0.109863H3.78067V10.6957V10.6889Z"
             fill="#2D2327"

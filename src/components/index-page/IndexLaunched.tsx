@@ -1,23 +1,28 @@
-import { Link } from "gatsby";
 import React from "react";
 
-import arrowForward from "../../assets/images/arrow_forward.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "gatsby";
+
 import "./css/index-launched.css";
 
 export const IndexLaunched = () => (
   <section className="index-launched">
     <div className="index-launched__contents">
       <div className="index-launched__heading-container">
-        <h2 className="index-launched__heading">Go from stuck and stalled out to LAUNCHED</h2>
+        <h2 className="index-launched__heading">
+          Go from stuck and stalled out to{" "}
+          <span className="index-launched__uppercase">launched</span>
+        </h2>
       </div>
       <div className="index-launched__columns-container">
         <div className="index-launched__column">
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h2 className="index-launched__column-heading">
+          <h4 className="index-launched__column-heading">
             Get a proven and transparent plan to take you where you want to go
-          </h2>
+          </h4>
           <p className="index-launched__text">
             You have a vision, and you need a partnership that can bring a clear path to get your
             software launched.
@@ -29,7 +34,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>
@@ -37,9 +42,9 @@ export const IndexLaunched = () => (
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h2 className="index-launched__column-heading">
+          <h4 className="index-launched__column-heading">
             Skip the technical guesswork with an experienced team
-          </h2>
+          </h4>
           <p className="index-launched__text">
             You don’t have time to experiment with talent that might meet your needs.
           </p>
@@ -49,7 +54,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>
@@ -57,9 +62,9 @@ export const IndexLaunched = () => (
           <div className="index-launched__image-container">
             <img className="index-launched__image" src="https://placehold.co/378x330" />
           </div>
-          <h2 className="index-launched__column-heading">
+          <h4 className="index-launched__column-heading">
             Scale easily without hiring and managing engineers
-          </h2>
+          </h4>
           <p className="index-launched__text">
             You need flexibility and room to grow, without the typical HR hassle.
           </p>
@@ -69,7 +74,7 @@ export const IndexLaunched = () => (
           <p className="index-launched__text">
             <Link className="index-launched__learn-more" to="#">
               <span>Learn More</span>
-              <img className="index-launched__arrow-forward" src={arrowForward} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </p>
         </div>

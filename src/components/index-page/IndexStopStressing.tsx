@@ -1,8 +1,9 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 
-import arrowForward from "../../assets/images/arrow_forward.png";
 import "./css/index-stop-stressing.css";
 
 export const IndexStopStressing = () => (
@@ -26,9 +27,9 @@ export const IndexStopStressing = () => (
           right products.
         </p>
         <p className="index-stop-stressing__text">
-          <Link className="index-launched__learn-more" to="#">
+          <Link className="index-stop-stressing__learn-more" to="#">
             <span>Learn More</span>
-            <img className="index-launched__arrow-forward" src={arrowForward} />
+            <FontAwesomeIcon icon={faArrowRight} />
           </Link>
         </p>
       </div>
