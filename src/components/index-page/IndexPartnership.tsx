@@ -1,5 +1,6 @@
 import React from "react";
 
+import checkIcon from "../../assets/images/check.png";
 import decorativeCircle from "../../assets/images/decorative-circle.png";
 import "./css/index-partnership.css";
 
@@ -32,9 +33,18 @@ export const IndexPartnership = () => {
             software every other week for you to review.
           </p>
           <ul>
-            <li className="index-partnership__list-item">A proven process</li>
-            <li className="index-partnership__list-item">Decades of tech experience</li>
-            <li className="index-partnership__list-item">Regular review and adaptation</li>
+            <li className="index-partnership__list-item">
+              <img alt="checkmark icon" role="listitem" src={checkIcon} />
+              <span>A proven process</span>
+            </li>
+            <li className="index-partnership__list-item">
+              <img alt="checkmark icon" role="listitem" src={checkIcon} />
+              <span>Decades of tech experience</span>
+            </li>
+            <li className="index-partnership__list-item">
+              <img alt="checkmark icon" role="listitem" src={checkIcon} />
+              <span>Regular review and adaptation</span>
+            </li>
           </ul>
         </div>
         <div className="index-partnership__image-container">
