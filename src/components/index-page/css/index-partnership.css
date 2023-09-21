@@ -34,5 +34,5 @@
 }
 
 .index-partnership__list-item {
-  @apply text-base text-launch-black-80;
+  @apply text-lg flex space-x-2 pt-3;
 }

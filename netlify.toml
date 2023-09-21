@@ -1,0 +1,6 @@
+[functions]
+  directory = "functions"
+  included_files = ["functions/.env"]
+[dev]
+  framework = "gatsby"
+  functionsPort = 7000
