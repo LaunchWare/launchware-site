@@ -7,6 +7,7 @@ import { companyContactInformation } from "../../configuration/companyContactInf
 
 import "./css/footer.css"
 import { TrackingCodes } from "./TrackingCodes"
+import { OptInForm } from "../opt-in/OptInForm"
 
 const Footer = () => {
   const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
@@ -65,12 +66,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <form className="footer_group footer_group__last">
-            <h3 className="footer_headline">Stay in our orbit</h3>
-            <input type="email" placeholder="Email" className="footer_opt-in-email" />
-            <input type="submit" className="button button__full-width footer_button" value="Submit" data-lpignore="true" />
-            <p className="footer_opt-in-terms">By submitting this form, you confirm that you have read and agree to the Terms & Conditions.</p>
-          </form>
+          <OptInForm />
         </div>
 
         <div className="footer_legal">
