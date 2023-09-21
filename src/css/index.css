@@ -10,24 +10,12 @@
   }
 
   .parent-section {
-    @apply flex justify-center w-full xl:py-16 py-4;
-  }
-
-  .contents-container {
-    @apply flex flex-col justify-between items-center w-full max-w-7xl md:flex-row md:px-10;
-  }
-
-  .rounded-image {
-    @apply rounded-3xl;
-  }
-
-  .parent-section {
     @apply flex justify-center w-full lg:py-16 py-4;
   }
 
   .contents-container {
     @apply flex flex-col justify-between items-center;
-    @apply w-full max-w-7xl md:flex-row md:px-10
+    @apply w-full max-w-7xl md:flex-row md:px-10;
   }
 
   .rounded-image {
