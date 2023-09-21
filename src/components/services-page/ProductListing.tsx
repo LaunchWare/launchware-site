@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-import decorativeCircle from "../../assets/images/decorative-circle.png";
+import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/product-listing.css";
 
 export const ProductListing = () => {
