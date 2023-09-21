@@ -18,7 +18,7 @@
       @apply grid md:grid-rows-2 md:grid-flow-col items-start gap-6 pt-12;
 
       .index-ship-faster__card {
-        @apply p-6 bg-launch-neutral-10 rounded-xl;
+        @apply p-6 bg-launch-neutral-10 rounded-xl h-full;
 
         .index-ship-faster__image-container {
           @apply py-6 w-full;

@@ -78,12 +78,11 @@ export const IndexShipFaster = () => (
             Enter our Flight Plan engagement—how smart leaders map out their software development
             journey.
           </p>
-          {/* <p className="index-ship-faster__text"></p> */}
           Here’s how it works:
           <ol className="index-ship-faster__ordered-list">
             <li>
-              We kick things off with our 'Jobs to Be Done Workshop', honing in on your target
-              audience and the unique solutions your product promises them.
+              We kick things off with our &lsquo;Jobs to Be Done Workshop&rsquo;, honing in on your
+              target audience and the unique solutions your product promises them.
             </li>
             <li>
               Our seasoned team then crafts intuitive wireframes, creates clear user stories, and

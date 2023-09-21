@@ -4,13 +4,25 @@ import "./css/index-logos.css";
 
 export const IndexLogos = () => (
   <section className="index-logos">
-    <div className="index-logos__contents">
-      <img className="" src="https://placehold.co/193x128" />
-      <img className="" src="https://placehold.co/193x128" />
-      <img className="" src="https://placehold.co/193x128" />
-      <img className="" src="https://placehold.co/193x128" />
-      <img className="" src="https://placehold.co/193x128" />
-      <img className="" src="https://placehold.co/193x128" />
-    </div>
+    <ul className="index-logos__contents">
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+      <li>
+        <img className="" src="https://placehold.co/193x128" />
+      </li>
+    </ul>
   </section>
 );
