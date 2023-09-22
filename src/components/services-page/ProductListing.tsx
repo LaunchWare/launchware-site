@@ -21,22 +21,22 @@ export const ProductListing = () => {
             Professional development services to meet your needs
           </h2>
           <ul className="product-listing__icon-card-container">
-            <p className="product-listing__icon-card">
+            <li className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
               <h3 className="product-listing__icon-card-heading">Code Audit</h3>
-            </p>
-            <p className="product-listing__icon-card">
+            </li>
+            <li className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
               <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
-            </p>
-            <p className="product-listing__icon-card">
+            </li>
+            <li className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
               <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
-            </p>
-            <p className="product-listing__icon-card">
+            </li>
+            <li className="product-listing__icon-card">
               <img className="product-listing__icon" src="https://placehold.co/38x27" />
               <h3 className="product-listing__icon-card-heading">Custom Development</h3>
-            </p>
+            </li>
           </ul>
         </div>
 
