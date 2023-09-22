@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import TagManager from 'react-gtm-module'
 
@@ -7,7 +7,9 @@ export const TrackingCodes = () => {
     gtmId: "GTM-WGNPB4RJ"
   }
 
-  TagManager.initialize(tagManagerArgs)
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs)
+  }, [])
 
   return <></>
 }
