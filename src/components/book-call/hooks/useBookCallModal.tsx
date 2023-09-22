@@ -17,18 +17,26 @@ declare global {
 }
 
 export const useBookCallModal = () => {
-  const divRef = useRef<HTMLDivElement>(null)
-  const ModalContent = () => {
-    return (<>
-      <h2>Book Your Launch Call</h2>
-      <p>Let's chat about your custom software development project.</p>
-      <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
-    </>)
-  }
-  const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
-  const [calendlyInitialized, setCalendlyInitialized] = useState(false)
+  const [isClient, setClient] = useState(false);
 
   useEffect(() => {
+    setClient(true);
+  }, []);
+
+  const url = companyContactInformation.launchCallUrl
+
+  if (isClient) {
+    const divRef = useRef<HTMLDivElement>(null)
+    const ModalContent = () => {
+      return (<>
+        <h2>Book Your Launch Call</h2>
+        <p>Let's chat about your custom software development project.</p>
+        <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
+      </>)
+    }
+    const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
+    const [calendlyInitialized, setCalendlyInitialized] = useState(false)
+
     if (!window.Calendly && !calendlyInitialized) {
       const tag = document.createElement("script")
       tag.async = true
@@ -41,20 +49,17 @@ export const useBookCallModal = () => {
         setModalVisibility(false)
       }
     })
-    setCalendlyInitialized(true)
-  }, [location, calendlyInitialized, setCalendlyInitialized, setModalVisibility])
 
-  const url = companyContactInformation.launchCallUrl
-
-  useEffect(() => {
     if (isModalVisible && !!divRef?.current) {
       window.Calendly.initInlineWidget({
         url: `${url}&hide_event_type_details=1`,
         parentElement: divRef.current,
       })
     }
-  }, [isModalVisible, location, url, divRef?.current])
+    setCalendlyInitialized(true)
 
 
-  return { setModalVisibility, isModalVisible, modal }
+    return { setModalVisibility, isModalVisible, modal }
+  }
+  return {}
 }

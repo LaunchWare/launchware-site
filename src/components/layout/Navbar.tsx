@@ -13,7 +13,9 @@ export default function Navbar() {
   const { setModalVisibility, modal } = useBookCallModal()
   const clickHandler: MouseEventHandler = (event) => {
     event.preventDefault()
-    setModalVisibility(true)
+    if (setModalVisibility) {
+      setModalVisibility(true)
+    }
   }
 
   return (
