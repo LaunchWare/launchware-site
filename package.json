@@ -12,7 +12,7 @@
     "react native"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "yarn run gatsby build",
     "clean": "gatsby clean",
     "develop": "netlify dev",
     "lint": "yarn run lint:syntax && yarn run lint:style",
