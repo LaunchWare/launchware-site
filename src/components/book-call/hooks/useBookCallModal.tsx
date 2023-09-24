@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react"
+import React, { MouseEventHandler, useEffect, useRef, useState } from "react"
 import { useModal } from "@launchware/replicator"
 import { companyContactInformation } from "../../../configuration/companyContactInformation"
 
@@ -56,5 +56,12 @@ export const useBookCallModal = () => {
 
   }, [calendlyInitialized, isModalVisible, setModalVisibility, url])
 
-  return { setModalVisibility, isModalVisible, modal }
+  const clickHandler: MouseEventHandler = (event) => {
+    event.preventDefault()
+    if (setModalVisibility) {
+      setModalVisibility(true)
+    }
+  }
+
+  return { clickHandler, isModalVisible, modal }
 }
