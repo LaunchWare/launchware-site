@@ -18,31 +18,33 @@ declare global {
 
 export const useBookCallModal = () => {
   const [isClient, setClient] = useState(false);
+  const divRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setClient(true);
-  }, []);
+  }, [setClient]);
+
+ const ModalContent = () => {
+    return (<>
+      <h2>Book Your Launch Call</h2>
+      <p>Let's chat about your custom software development project.</p>
+      <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
+    </>)
+  }
+
+  const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
+  const [calendlyInitialized, setCalendlyInitialized] = useState(false)
 
   const url = companyContactInformation.launchCallUrl
 
   if (isClient) {
-    const divRef = useRef<HTMLDivElement>(null)
-    const ModalContent = () => {
-      return (<>
-        <h2>Book Your Launch Call</h2>
-        <p>Let's chat about your custom software development project.</p>
-        <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
-      </>)
-    }
-    const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
-    const [calendlyInitialized, setCalendlyInitialized] = useState(false)
-
     if (!window.Calendly && !calendlyInitialized) {
       const tag = document.createElement("script")
       tag.async = true
       tag.src = "https://assets.calendly.com/assets/external/widget.js"
       const body = document.getElementsByTagName("body")[0]
       body.appendChild(tag)
+      setCalendlyInitialized(true)
     }
     window.addEventListener("message", (e) => {
       if (e.data.event && e.data.event.indexOf("calendly")) {
@@ -56,8 +58,6 @@ export const useBookCallModal = () => {
         parentElement: divRef.current,
       })
     }
-    setCalendlyInitialized(true)
-
 
     return { setModalVisibility, isModalVisible, modal }
   }
