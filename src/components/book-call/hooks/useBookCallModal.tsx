@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from "react"
-import { Modal, useModal } from "@launchware/replicator"
+import { useModal } from "@launchware/replicator"
 import { companyContactInformation } from "../../../configuration/companyContactInformation"
 
 import "@launchware/replicator/dist/css/Modal/modal.css"
@@ -17,12 +17,7 @@ declare global {
 }
 
 export const useBookCallModal = () => {
-  const [isClient, setClient] = useState(false);
   const divRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    setClient(true);
-  }, [setClient]);
 
  const ModalContent = () => {
     return (<>
@@ -37,14 +32,13 @@ export const useBookCallModal = () => {
 
   const url = companyContactInformation.launchCallUrl
 
-  if (isClient) {
-    if (!window.Calendly && !calendlyInitialized) {
+  useEffect(() => {
+    if (document && !window.Calendly && !calendlyInitialized) {
       const tag = document.createElement("script")
       tag.async = true
       tag.src = "https://assets.calendly.com/assets/external/widget.js"
       const body = document.getElementsByTagName("body")[0]
       body.appendChild(tag)
-      setCalendlyInitialized(true)
     }
     window.addEventListener("message", (e) => {
       if (e.data.event && e.data.event.indexOf("calendly")) {
@@ -57,9 +51,10 @@ export const useBookCallModal = () => {
         url: `${url}&hide_event_type_details=1`,
         parentElement: divRef.current,
       })
+      setCalendlyInitialized(true)
     }
 
-    return { setModalVisibility, isModalVisible, modal }
-  }
-  return {}
+  }, [calendlyInitialized, isModalVisible, setModalVisibility, url])
+
+  return { setModalVisibility, isModalVisible, modal }
 }
