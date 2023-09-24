@@ -2008,10 +2008,10 @@
   resolved "https://registry.yarnpkg.com/@launchware/eslint-config-react/-/eslint-config-react-0.0.3.tgz#fb20e515c35f3160869972b2a6d8012ad2649eda"
   integrity sha512-0q9cnahCe7APu1G0UI7T5cPPKX33ypeDSJW3LLZZC71yyB7SZiPa18knu2eJ7+g3guCaX8ORBGtSHqq7HJGlkQ==
 
-"@launchware/replicator@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@launchware/replicator/-/replicator-0.0.5.tgz#62efabd959673eaeec16da4e5659816541bcdd78"
-  integrity sha512-DC4LsJD3DkmUr504vI+vHd42SLWl+7H3hqEC2yBIsV5xBkAmobzsmFhSNUqybXO08i20lwf95dxxb9SttyTr+g==
+"@launchware/replicator@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@launchware/replicator/-/replicator-0.0.6.tgz#24d99331582b235944e6a014d02fbdc504b12d7e"
+  integrity sha512-P8ftBN/1vyRcm86EgVLb21qJ7WnUQ0F6+z4eX+4Np7W6Ni+lEAFeGaX97E4855QNnxJIfsY9SQkmquz+g2PWkw==
 
 "@lezer/common@^0.15.0", "@lezer/common@^0.15.7":
   version "0.15.12"
