@@ -19,7 +19,7 @@ declare global {
 export const useBookCallModal = () => {
   const divRef = useRef<HTMLDivElement>(null)
 
- const ModalContent = () => {
+  const ModalContent = () => {
     return (<>
       <h2>Book Your Launch Call</h2>
       <p>Let's chat about your custom software development project.</p>

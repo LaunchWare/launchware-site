@@ -28,6 +28,6 @@
   @apply rounded-image;
 }
 
-.index-hero__button[type='button'] {
+.index-hero__button[type="button"] {
   @apply xl:mt-12 mt-4;
 }
