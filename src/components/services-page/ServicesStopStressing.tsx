@@ -43,8 +43,12 @@ export const ServicesStopStressing = () => {
           role="presentation"
           src={decorativeSquare}
         />
-        <ThreeCardSection sectionContents={sectionContents} />;
-        <button className="services-stop-stressing__button button" type="button" onClick={clickHandler}>
+        <ThreeCardSection sectionContents={sectionContents} />
+        <button
+          className="services-stop-stressing__button button"
+          type="button"
+          onClick={clickHandler}
+        >
           Book my launch call
         </button>
       </div>

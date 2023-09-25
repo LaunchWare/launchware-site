@@ -16,18 +16,18 @@ export const AreWeAFit = () => {
           <h2 className="are-we-a-fit__heading">Are we a fit?</h2>
           <p className="are-we-a-fit__text">
             LaunchWare seeks partners, not transactions, and the best partnerships are forged on the
-            basis of common ideals and beliefs. When it comes to software, we&#8217;re unapologetically
-            focused on finding partnerships that work for both sides of the relationship, where both
-            parties are intensely focused on building remarkable software.
+            basis of common ideals and beliefs. When it comes to software, we&#8217;re
+            unapologetically focused on finding partnerships that work for both sides of the
+            relationship, where both parties are intensely focused on building remarkable software.
           </p>
           <p className="are-we-a-fit__text">
-            If you&#8217;re wanting a relationship with a software team where we work collaboratively and
-            iteratively to build the right software product for the people you serve, you&#8217;re in the
-            right place.
+            If you&#8217;re wanting a relationship with a software team where we work
+            collaboratively and iteratively to build the right software product for the people you
+            serve, you&#8217;re in the right place.
           </p>
           <p className="are-we-a-fit__text">
-            We&#8217;re eager to collaborate with clients passionate about deploying impactful software
-            products using a methodical, data-driven approach.
+            We&#8217;re eager to collaborate with clients passionate about deploying impactful
+            software products using a methodical, data-driven approach.
           </p>
           <p className="are-we-a-fit__text">
             Here&#8217;s what makes you an ideal partner for LaunchWare:
@@ -43,8 +43,8 @@ export const AreWeAFit = () => {
             <li className="are-we-a-fit__list-item">
               <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
               <span>
-                You&#8217;re enthusiastic about co-creating a shared vision for your product, rather than
-                handing off a list of requirements.
+                You&#8217;re enthusiastic about co-creating a shared vision for your product, rather
+                than handing off a list of requirements.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
@@ -57,13 +57,15 @@ export const AreWeAFit = () => {
             <li className="are-we-a-fit__list-item">
               <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
               <span>
-                You&#8217;re willing to be actively involved in the development process, from planning to
-                deployment.
+                You&#8217;re willing to be actively involved in the development process, from
+                planning to deployment.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
               <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
-              <span>You&#8217;re searching for a long-lasting partnership, not just a one-off gig.</span>
+              <span>
+                You&#8217;re searching for a long-lasting partnership, not just a one-off gig.
+              </span>
             </li>
             <li className="are-we-a-fit__list-item">
               <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
@@ -75,8 +77,8 @@ export const AreWeAFit = () => {
             <li className="are-we-a-fit__list-item">
               <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
               <span>
-                You understand the importance of risk management; although we can&#8217;t foresee all
-                obstacles, we can certainly prepare and adapt.
+                You understand the importance of risk management; although we can&#8217;t foresee
+                all obstacles, we can certainly prepare and adapt.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
@@ -88,8 +90,8 @@ export const AreWeAFit = () => {
             </li>
           </ul>
           <p className="are-we-a-fit__text">
-            Let&#8217;s build something great together, and have some fun in the process. If our values
-            resonate with yours, we&#8217;d love to hear from you.
+            Let&#8217;s build something great together, and have some fun in the process. If our
+            values resonate with yours, we&#8217;d love to hear from you.
           </p>
           <input
             className="are-we-a-fit__button button"
