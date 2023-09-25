@@ -18,7 +18,7 @@
 
 .software-exists-to__text-container {
   @apply flex flex-col items-stretch lg:pl-1;
-  @apply text-left w-full lg:w-5/12;
+  @apply text-left mx-auto lg:w-5/12;
 }
 
 .software-exists-to__heading {
