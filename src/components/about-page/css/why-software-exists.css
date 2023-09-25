@@ -1,46 +1,46 @@
-.software-exists-to {
+.why-software-exists {
   @apply parent-section;
   @apply lg:py-0 bg-launch-neutral-30;
 }
 
-.software-exists-to__contents {
+.why-software-exists__contents {
   @apply contents-container;
   @apply flex-col-reverse lg:flex-row lg:space-x-6;
 }
 
-.software-exists-to__image-container {
+.why-software-exists__image-container {
   @apply pt-8 lg:p-0 lg:w-7/12;
 }
 
-.software-exists-to__image {
+.why-software-exists__image {
   @apply rounded-image lg:rounded-none mx-auto;
 }
 
-.software-exists-to__text-container {
+.why-software-exists__text-container {
   @apply flex flex-col items-stretch lg:pl-1;
   @apply text-left w-full lg:w-5/12;
 }
 
-.software-exists-to__heading {
+.why-software-exists__heading {
   @apply text-4xl mb-6 font-semibold;
 }
 
-.software-exists-to__text {
+.why-software-exists__text {
   @apply text-base text-launch-black-80 mb-4 leading-relaxed;
 }
 
-.software-exists-to__list {
+.why-software-exists__list {
   @apply pb-2 pl-8;
 }
 
-.software-exists-to__list-item {
+.why-software-exists__list-item {
   @apply text-launch-black-80 list-disc pb-2;
 }
 
-.software-exists-to__semibold {
+.why-software-exists__semibold {
   @apply font-semibold;
 }
 
-.software-exists-to__button {
+.why-software-exists__button {
   @apply mt-2;
 }
