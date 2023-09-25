@@ -1,5 +1,5 @@
-import React, { FC, useEffect, useRef, useState } from "react"
-import { Modal, useModal } from "@launchware/replicator"
+import React, { MouseEventHandler, useEffect, useRef, useState } from "react"
+import { useModal } from "@launchware/replicator"
 import { companyContactInformation } from "../../../configuration/companyContactInformation"
 
 import "@launchware/replicator/dist/css/Modal/modal.css"
@@ -17,27 +17,23 @@ declare global {
 }
 
 export const useBookCallModal = () => {
-  const [isClient, setClient] = useState(false);
+  const divRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    setClient(true);
-  }, []);
+ const ModalContent = () => {
+    return (<>
+      <h2>Book Your Launch Call</h2>
+      <p>Let's chat about your custom software development project.</p>
+      <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
+    </>)
+  }
+
+  const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
+  const [calendlyInitialized, setCalendlyInitialized] = useState(false)
 
   const url = companyContactInformation.launchCallUrl
 
-  if (isClient) {
-    const divRef = useRef<HTMLDivElement>(null)
-    const ModalContent = () => {
-      return (<>
-        <h2>Book Your Launch Call</h2>
-        <p>Let's chat about your custom software development project.</p>
-        <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
-      </>)
-    }
-    const { modal, isVisible: isModalVisible, setVisibility: setModalVisibility, } = useModal(ModalContent)
-    const [calendlyInitialized, setCalendlyInitialized] = useState(false)
-
-    if (!window.Calendly && !calendlyInitialized) {
+  useEffect(() => {
+    if (document && !window.Calendly && !calendlyInitialized) {
       const tag = document.createElement("script")
       tag.async = true
       tag.src = "https://assets.calendly.com/assets/external/widget.js"
@@ -55,11 +51,17 @@ export const useBookCallModal = () => {
         url: `${url}&hide_event_type_details=1`,
         parentElement: divRef.current,
       })
+      setCalendlyInitialized(true)
     }
-    setCalendlyInitialized(true)
 
+  }, [calendlyInitialized, isModalVisible, setModalVisibility, url])
 
-    return { setModalVisibility, isModalVisible, modal }
+  const clickHandler: MouseEventHandler = (event) => {
+    event.preventDefault()
+    if (setModalVisibility) {
+      setModalVisibility(true)
+    }
   }
-  return {}
+
+  return { clickHandler, isModalVisible, modal }
 }
