@@ -9,6 +9,7 @@ export default {
         "@launchware/eslint-config-react",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
+        "@tanstack/query"
       ],
       env: {
         es6: true,
@@ -17,7 +18,7 @@ export default {
     {
       files: ["*.graphql"],
       parser: "@graphql-eslint/eslint-plugin",
-      plugins: ["@graphql-eslint", "@tanstack/query"],
+      plugins: ["@graphql-eslint"],
       rules: {
         "@graphql-eslint/no-anonymous-operations": "error",
         "@graphql-eslint/naming-convention": [

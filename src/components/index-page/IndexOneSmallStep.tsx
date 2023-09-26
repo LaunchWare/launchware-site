@@ -42,6 +42,14 @@ export const IndexOneSmallStep = () => {
     });
   };
 
+  const errorClassName = (fieldName: keyof ContactInquiryFormValues): string => {
+    if (errors[fieldName]) {
+      return "index-one-small-step__input_error";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <section className="index-one-small-step">
       <div className="index-one-small-step__contents">
@@ -62,7 +70,7 @@ export const IndexOneSmallStep = () => {
           </p>
           <form className="index-one-small-step__form" onSubmit={handleSubmit(onSubmit)}>
             <input
-              className={`index-one-small-step__input ${errors.name ? "index-one-small-step__input__error" : ""}`}
+              className={`index-one-small-step__input ${errorClassName("name")}`}
               placeholder="Your name"
               type="text"
               id="name"
@@ -70,15 +78,17 @@ export const IndexOneSmallStep = () => {
             />
             {errors.name && <p className="index-one-small-step__error">Name required</p>}
             <input
-              className={`index-one-small-step__input ${errors.organization ? "index-one-small-step__input__error" : ""}`}
+              className={`index-one-small-step__input ${errorClassName("organization")}`}
               placeholder="Your organization or project name"
               type="text"
               id="organization"
               {...register("organization", { required: true })}
             />
-            {errors.organization && <p className="index-one-small-step__error">Organization or project name required</p>}
+            {errors.organization && (
+              <p className="index-one-small-step__error">Organization or project name required</p>
+            )}
             <input
-              className={`index-one-small-step__input ${errors.email ? "index-one-small-step__input__error" : ""}`}
+              className={`index-one-small-step__input ${errorClassName("email")}`}
               placeholder="Your email"
               type="text"
               id="email"
@@ -99,15 +109,13 @@ export const IndexOneSmallStep = () => {
               {...register("projectDescription")}
             />
             <select
-              className={`index-one-small-step__select ${errors.inquiryLeadType ? "index-one-small-step__input__error" : ""}`}
+              className={`index-one-small-step__select ${errorClassName("inquiryLeadType")}`}
               id="inquiryLeadType"
               {...register("inquiryLeadType")}
             >
               <option>How did you hear about us?</option>
               <option>From a client of LaunchWare</option>
-              <option>
-                From an alum of Launch Academy
-              </option>
+              <option>From an alum of Launch Academy</option>
             </select>
             <input className="button" type="submit" value="Send message" />
           </form>
@@ -116,6 +124,6 @@ export const IndexOneSmallStep = () => {
           <img className="index-one-small-step__image" src="https://placehold.co/602x794" />
         </div>
       </div>
-    </section >
+    </section>
   );
 };
