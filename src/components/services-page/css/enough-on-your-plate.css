@@ -1,0 +1,47 @@
+.enough-on-your-plate {
+  @apply parent-section;
+  @apply bg-launch-black text-launch-neutral-10;
+}
+
+.enough-on-your-plate__contents {
+  @apply contents-container;
+  @apply lg:flex-row md:flex-col flex-col-reverse;
+}
+
+.enough-on-your-plate__text-container {
+  @apply flex flex-col md:items-start;
+  @apply lg:max-w-md;
+}
+
+.enough-on-your-plate__heading {
+  @apply text-4xl font-semibold text-left;
+}
+
+.enough-on-your-plate__text {
+  @apply pt-4;
+}
+
+.enough-on-your-plate__grid {
+  @apply grid md:grid-rows-2 md:grid-cols-2 md:grid-flow-col items-start gap-2 pt-4;
+}
+
+.enough-on-your-plate__grid-card {
+  @apply bg-launch-neutral-10 text-launch-orange font-semibold;
+  @apply flex p-2 mr-auto rounded-md w-full md:h-full items-center;
+}
+
+.enough-on-you-plate__card-text {
+  @apply my-auto;
+}
+
+.enough-on-you-plate__icon {
+  @apply h-8 w-8 p-1 mr-4 bg-launch-primary-10 rounded-md;
+}
+
+.enough-on-your-plate__image-container {
+  @apply md:px-8 py-8 lg:p-0;
+}
+
+.enough-on-your-plate__image {
+  @apply rounded-image;
+}
