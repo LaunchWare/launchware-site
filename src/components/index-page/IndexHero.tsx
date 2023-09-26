@@ -1,7 +1,7 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
 
-import "./css/index-hero.css";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+import "./css/index-hero.css";
 
 export const IndexHero = () => {
   const { modal, clickHandler } = useBookCallModal();
