@@ -1,0 +1,42 @@
+.are-we-a-fit {
+  @apply parent-section;
+  @apply bg-launch-neutral-30;
+}
+
+.are-we-a-fit__contents {
+  @apply contents-container;
+  @apply flex-col lg:flex-row;
+}
+
+.are-we-a-fit__image-container {
+  @apply pt-8 lg:p-0 lg:w-full lg:w-1/2;
+}
+
+.are-we-a-fit__image {
+  @apply rounded-image mx-auto;
+}
+
+.are-we-a-fit__text-container {
+  @apply flex flex-col items-stretch lg:pr-12;
+  @apply text-left w-full lg:w-1/2;
+}
+
+.are-we-a-fit__heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.are-we-a-fit__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.are-we-a-fit__list {
+  @apply mb-4;
+}
+
+.are-we-a-fit__list-item {
+  @apply flex items-start space-x-2 text-launch-black-80 flex space-y-3;
+}
+
+.are-we-a-fit__check {
+  @apply text-launch-orange pt-4;
+}
