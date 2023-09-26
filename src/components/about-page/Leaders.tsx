@@ -1,4 +1,6 @@
 import React from "react";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./css/leaders.css";
 
@@ -49,6 +51,9 @@ export const Leaders = () => (
               his evenings diving into new technological realms and hunting for new ways to uplift
               those around him.
             </p>
+            <ul className="leaders__social-icons">
+              <li><a href="https://www.linkedin.com/in/danpickett"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            </ul>
           </div>
         </div>
         <div className="leaders__card">
@@ -90,6 +95,9 @@ export const Leaders = () => (
               fulfilling as its technical aspects. He’s a well-rounded leader who knows how to
               balance human considerations with business imperatives.
             </p>
+            <ul className="leaders__social-icons">
+              <li><a href="https://www.linkedin.com/in/billr578"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            </ul>
           </div>
         </div>
       </div>
