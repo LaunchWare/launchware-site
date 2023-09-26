@@ -2,6 +2,8 @@ import React from "react";
 import { PageProps } from "gatsby";
 
 import { AboutHero } from "../components/about-page/AboutHero";
+import { BetterWay } from "../components/about-page/BetterWay";
+import { Leaders } from "../components/about-page/Leaders";
 import { OurBeliefs } from "../components/about-page/OurBeliefs";
 import { VisionToReality } from "../components/about-page/VisionToReality";
 import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists";
@@ -15,6 +17,8 @@ const AboutPage = (pageProps: PageProps) => {
       <WhySoftwareExists />
       <OurBeliefs />
       <VisionToReality />
+      <BetterWay />
+      <Leaders />
     </Layout>
   );
 };

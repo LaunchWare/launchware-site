@@ -15,8 +15,8 @@ interface ThreeCardProps {
 export const ThreeCardSection: FC<ThreeCardProps> = ({
   sectionContents: { sectionHeading, cards },
 }) => {
-  const cardList = cards.map((card) => (
-    <div className="three-card-section__card">
+  const cardList = cards.map((card, index) => (
+    <div className="three-card-section__card" key={index}>
       <div className="three-card-section__image-container">
         <img className="three-card-section__image" src="https://placehold.co/104x104" />
       </div>
