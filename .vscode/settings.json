@@ -34,9 +34,6 @@
     "titleBar.inactiveBackground": "#36206699",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "eslint.options": {
-    "overrideConfigFile": "./.eslintrc.ts"
-  },
   "peacock.color": "#362066",
   "files.associations": {
     "*.css": "postcss"

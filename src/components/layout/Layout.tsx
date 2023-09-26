@@ -27,7 +27,6 @@ export const Layout = ({
         <Navbar />
         <div className="site">{children}</div>
         <Footer />
-        <div id="portal"></div>
       </QueryClientProvider>
     </>
   );

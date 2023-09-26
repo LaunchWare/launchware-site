@@ -10,7 +10,13 @@ import { Link } from 'gatsby';
 import { useBookCallModal } from '../book-call/hooks/useBookCallModal';
 
 export default function Navbar() {
-  const { clickHandler, modal } = useBookCallModal()
+  const { setModalVisibility, modal } = useBookCallModal()
+  const clickHandler: MouseEventHandler = (event) => {
+    event.preventDefault()
+    if (setModalVisibility) {
+      setModalVisibility(true)
+    }
+  }
 
   return (
     <Disclosure as="nav" className="primary-nav">
@@ -37,7 +43,13 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className="menu__desktop">
-                  <Link to="/services" className="menu-item__desktop">Services</Link>
+                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  <a
+                    href="#"
+                    className="menu-item__desktop"
+                  >
+                    Services
+                  </a>
                   <a
                     href="#"
                     className="menu-item__desktop"
@@ -55,8 +67,8 @@ export default function Navbar() {
             <div className="primary-nav_disclosure-panel">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
-                as={Link}
-                to="/services"
+                as="a"
+                href="#"
                 className="primary-nav_disclosure-panel-item"
               >
                 Services
@@ -71,7 +83,6 @@ export default function Navbar() {
 
               <Disclosure.Button
                 href="#"
-                onClick={clickHandler}
                 as="a"
                 className="primary-nav_disclosure-panel-item menu-item__desktop menu-item__mobile-button button">
                 Book Launch Call
