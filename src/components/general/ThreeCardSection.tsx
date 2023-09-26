@@ -20,7 +20,7 @@ export const ThreeCardSection: FC<ThreeCardProps> = ({
       <div className="three-card-section__image-container">
         <img className="three-card-section__image" src="https://placehold.co/104x104" />
       </div>
-      <h2 className="three-card-section__card-heading">{cards[0].heading}</h2>
+      <h2 className="three-card-section__card-heading">{card.heading}</h2>
       {card.paragraphs.map((paragraph) => (
         <p className="three-card-section__text" key={card.heading}>
           {paragraph}

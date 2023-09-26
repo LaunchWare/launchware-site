@@ -14,5 +14,5 @@
 }
 
 .services-stop-stressing__button {
-  @apply text-center mx-auto mt-12;
+  @apply text-center w-full lg:w-auto mx-auto mt-12;
 }
