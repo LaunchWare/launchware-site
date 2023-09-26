@@ -1,5 +1,5 @@
 .footer {
-  @apply bg-launch-black pt-20 pb-4 text-launch-black-10 z-50 relative;
+  @apply bg-launch-black pt-20 pb-4 text-launch-black-10 relative z-50;
 }
 
 .footer_container {
