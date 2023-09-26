@@ -3,6 +3,7 @@ import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { Tagline } from "../general/Tagline";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import alternateCircle from "../../assets/images/alternate_circle.png";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
@@ -42,13 +43,8 @@ export const IndexOneSmallStep = () => {
     });
   };
 
-  const errorClassName = (fieldName: keyof ContactInquiryFormValues): string => {
-    if (errors[fieldName]) {
-      return "index-one-small-step__input_error";
-    } else {
-      return "";
-    }
-  };
+  const blockClassName = "index-one-small-step";
+  const errorClassPrefix = `${blockClassName}__input`;
 
   return (
     <section className="index-one-small-step">
@@ -70,7 +66,12 @@ export const IndexOneSmallStep = () => {
           </p>
           <form className="index-one-small-step__form" onSubmit={handleSubmit(onSubmit)}>
             <input
-              className={`index-one-small-step__input ${errorClassName("name")}`}
+              className={getFieldClassName({
+                fieldName: "name",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your name"
               type="text"
               id="name"
@@ -78,7 +79,12 @@ export const IndexOneSmallStep = () => {
             />
             {errors.name && <p className="index-one-small-step__error">Name required</p>}
             <input
-              className={`index-one-small-step__input ${errorClassName("organization")}`}
+              className={getFieldClassName({
+                fieldName: "organization",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your organization or project name"
               type="text"
               id="organization"
@@ -88,7 +94,12 @@ export const IndexOneSmallStep = () => {
               <p className="index-one-small-step__error">Organization or project name required</p>
             )}
             <input
-              className={`index-one-small-step__input ${errorClassName("email")}`}
+              className={getFieldClassName({
+                fieldName: "email",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your email"
               type="text"
               id="email"
@@ -109,7 +120,12 @@ export const IndexOneSmallStep = () => {
               {...register("projectDescription")}
             />
             <select
-              className={`index-one-small-step__select ${errorClassName("inquiryLeadType")}`}
+              className={getFieldClassName({
+                fieldName: "inquiryLeadType",
+                errors,
+                className: `${blockClassName}__select`,
+                errorClassPrefix,
+              })}
               id="inquiryLeadType"
               {...register("inquiryLeadType")}
             >
