@@ -52,7 +52,11 @@ export const Leaders = () => (
               those around him.
             </p>
             <ul className="leaders__social-icons">
-              <li><a href="https://www.linkedin.com/in/danpickett"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/danpickett">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -96,7 +100,11 @@ export const Leaders = () => (
               balance human considerations with business imperatives.
             </p>
             <ul className="leaders__social-icons">
-              <li><a href="https://www.linkedin.com/in/billr578"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/billr578">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

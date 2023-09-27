@@ -1,0 +1,68 @@
+.get-in-touch {
+  @apply parent-section;
+  @apply bg-launch-neutral-10 relative z-30 overflow-clip;
+}
+
+.get-in-touch__contents {
+  @apply contents-container;
+  @apply relative flex-col;
+}
+
+.get-in-touch__alternate-circle {
+  @apply absolute -z-10 -left-72 md:-top-48 hidden md:inline;
+}
+
+.get-in-touch__section-heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.get-in-touch__text_center {
+  @apply text-launch-black-80 text-center max-w-lg;
+}
+
+.get-in-touch__card {
+  @apply flex flex-col lg:flex-row w-full p-6 lg:p-16 bg-launch-neutral-10 rounded-xl mt-8;
+  @apply bg-launch-neutral-30 md:bg-launch-neutral-10 space-y-4 lg:space-y-0;
+}
+
+.get-in-touch__text-container {
+  @apply flex flex-col md:items-start md:pr-16;
+  @apply text-left w-full lg:w-1/2;
+}
+
+.get-in-touch__list {
+  @apply text-launch-black-80 pb-4;
+}
+
+.get-in-touch__list-item {
+  @apply flex items-start text-launch-black-80 space-x-3 pt-3;
+}
+
+.get-in-touch__icon {
+  @apply text-launch-orange pt-1;
+}
+
+.get-in-touch__heading {
+  @apply text-lg font-semibold;
+}
+
+.get-in-touch__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.get-in-touch__form {
+  @apply flex flex-col w-full space-y-3 pt-2;
+}
+
+.get-in-touch__input {
+  @apply w-full py-2 px-3 rounded-md;
+  @apply border border-launch-black-10 shadow-md text-launch-black-40;
+}
+
+.get-in-touch__input_error {
+  @apply focus:ring-2 focus:ring-launch-orange;
+}
+
+.get-in-touch__error {
+  @apply text-launch-orange px-3;
+}
