@@ -26,7 +26,7 @@ export const IndexOneSmallStep = () => {
     },
   });
 
-  const { mutate: postContactInquiry, error: backendErrors } = usePostContactInquiry();
+  const { mutate: postContactInquiry, error: backendErrors, isSuccess, isLoading } = usePostContactInquiry();
 
   const onSubmit: SubmitHandler<ContactInquiryFormValues> = (formValues) => {
     postContactInquiry(formValues, {
@@ -45,6 +45,102 @@ export const IndexOneSmallStep = () => {
 
   const blockClassName = "index-one-small-step";
   const errorClassPrefix = `${blockClassName}__input`;
+  const formContent = <form className="index-one-small-step__form" data-netlify="true"
+    name="giantLeapInquiry" onSubmit={handleSubmit(onSubmit)} netlify-honeypot="emailAddress">
+    <input
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "firstName",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Your first name"
+      type="text"
+      id="firstName"
+      {...register("firstName", { required: true })}
+    />
+    {errors.firstName && <p className="index-one-small-step__error">First name required</p>}
+    <input
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "lastName",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Your last name"
+      type="text"
+      id="lastName"
+      {...register("lastName", { required: true })}
+    />
+    {errors.lastName && <p className="index-one-small-step__error">Last name required</p>}
+    <input
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "organization",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Your organization or project name"
+      type="text"
+      id="organization"
+      {...register("organization", { required: true })}
+    />
+    {errors.organization && <p className="index-one-small-step__error">Organization or project name required</p>}
+    <input
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "email",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Your email"
+      type="text"
+      id="email"
+      {...register("email", { required: true })}
+    />
+    {errors.email && <p className="index-one-small-step__error">Email required</p>}
+    <input
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "phone",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Your phone number"
+      type="text"
+      id="phone"
+      {...register("phone")}
+    />
+    <textarea
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "projectDescription",
+        className: "index-one-small-step__input"
+      })}
+      placeholder="Tell us about your project"
+      id="projectDescription"
+      {...register("projectDescription")}
+    />
+    <select
+      className={getFieldClassName({
+        errorClassPrefix,
+        errors,
+        fieldName: "inquiryLeadType",
+        className: "index-one-small-step__input"
+      })}
+      id="inquiryLeadType"
+      {...register("inquiryLeadType")}
+    >
+      <option>How did you hear about us?</option>
+      <option>From a client of LaunchWare</option>
+      <option>
+        From an alum of Launch Academy
+      </option>
+    </select>
+    <input type="hidden" value="giantLeapInquiry" {...register("form-name")} />
+    <input className="button" type="submit" disabled={isLoading} value="Send message" />
+  </form>
 
   return (
     <section className="index-one-small-step">
@@ -64,77 +160,7 @@ export const IndexOneSmallStep = () => {
             Fill out the form below and tell us more about your project. We’ll get back to you
             within a business day to start making your vision a reality.
           </p>
-          <form className="index-one-small-step__form" onSubmit={handleSubmit(onSubmit)}>
-            <input
-              className={getFieldClassName({
-                fieldName: "name",
-                errors,
-                className: `${blockClassName}__input`,
-                errorClassPrefix,
-              })}
-              placeholder="Your name"
-              type="text"
-              id="name"
-              {...register("name", { required: true })}
-            />
-            {errors.name && <p className="index-one-small-step__error">Name required</p>}
-            <input
-              className={getFieldClassName({
-                fieldName: "organization",
-                errors,
-                className: `${blockClassName}__input`,
-                errorClassPrefix,
-              })}
-              placeholder="Your organization or project name"
-              type="text"
-              id="organization"
-              {...register("organization", { required: true })}
-            />
-            {errors.organization && (
-              <p className="index-one-small-step__error">Organization or project name required</p>
-            )}
-            <input
-              className={getFieldClassName({
-                fieldName: "email",
-                errors,
-                className: `${blockClassName}__input`,
-                errorClassPrefix,
-              })}
-              placeholder="Your email"
-              type="text"
-              id="email"
-              {...register("email", { required: true })}
-            />
-            {errors.email && <p className="index-one-small-step__error">Email required</p>}
-            <input
-              className="index-one-small-step__input"
-              placeholder="Your phone number"
-              type="text"
-              id="phone"
-              {...register("phone")}
-            />
-            <textarea
-              className="index-one-small-step__textarea"
-              placeholder="Tell us about your project"
-              id="projectDescription"
-              {...register("projectDescription")}
-            />
-            <select
-              className={getFieldClassName({
-                fieldName: "inquiryLeadType",
-                errors,
-                className: `${blockClassName}__select`,
-                errorClassPrefix,
-              })}
-              id="inquiryLeadType"
-              {...register("inquiryLeadType")}
-            >
-              <option>How did you hear about us?</option>
-              <option>From a client of LaunchWare</option>
-              <option>From an alum of Launch Academy</option>
-            </select>
-            <input className="button" type="submit" value="Send message" />
-          </form>
+          {isSuccess ? <p className="index-one-small-step__text">Thanks for your inquiry. We'll be in touch!</p> : formContent}
         </div>
         <div className="index-one-small-step__image-container">
           <img className="index-one-small-step__image" src="https://placehold.co/602x794" />
