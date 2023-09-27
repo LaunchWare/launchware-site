@@ -56,14 +56,14 @@ export const ProductListing = () => {
               </p>
               <p className="product-listing__text">
                 Our Code Audit process thoroughly explores your codebase and analyzes the
-                processes and the team behind it. It&APOS;s more than just identifying what&APOS;s
-                wrong. It&APOS;s about understanding what you have and creating a strategy for
+                processes and the team behind it. It's more than just identifying what's
+                wrong. It's about understanding what you have and creating a strategy for
                 where you want to go.
               </p>
               <p className="product-listing__text">
                 Following our in-depth assessment, you're presented with a comprehensive
                 report—highlighting the bottlenecks and also offering solutions, starting with the
-                most critical areas first. With these insights, you&APOS;ll gain clarity,
+                most critical areas first. With these insights, you'll gain clarity,
                 recapture missed opportunities, and set a definitive course for success.
               </p>
               <button
@@ -77,12 +77,12 @@ export const ProductListing = () => {
             <div className="product-listing__card">
               <h3 className="product-listing__card-heading">Flight Plan</h3>
               <p className="product-listing__text">
-                Business leaders brim with innovative software ideas. But it&APOS;s not easy to
+                Business leaders brim with innovative software ideas. But it's not easy to
                 turn a visionary idea into something your team can efficiently execute.
               </p>
               <p className="product-listing__text">
                 Enter our Flight Plan engagement—how smart leaders map out their software
-                development journey. We&APOS;ll kick things off with our 'Jobs to Be Done
+                development journey. We'll kick things off with our 'Jobs to Be Done
                 Workshop', honing in on your target audience and the unique solutions your product
                 promises them.
               </p>
@@ -90,7 +90,7 @@ export const ProductListing = () => {
                 From there, our seasoned team will craft intuitive wireframes, create clear user
                 stories, and lay out a strategic project plan. This blueprint will illuminate the
                 path for the initial iterations and ensure your software resonates with the
-                audience it&apos;s meant for.
+                audience it's meant for.
               </p>
               <p className="product-listing__text">
                 For organizations wanting to make their vision for their software a reality, the
@@ -115,14 +115,14 @@ export const ProductListing = () => {
                 stretched thin.
               </p>
               <p className="product-listing__text">
-                LaunchWare&APOS;s Staff Augmentation is not just getting an extra set of hands.
-                It&APOS;s about enhancing your team&APOS;s capabilities. By seamlessly integrating
-                our skilled professionals into your environment, we don&APOS;t just fill the gap –
-                we become an intrinsic part of your team that&APOS;s busy getting things shipped.
+                LaunchWare's Staff Augmentation is not just getting an extra set of hands.
+                It's about enhancing your team's capabilities. By seamlessly integrating
+                our skilled professionals into your environment, we don't just fill the gap –
+                we become an intrinsic part of your team that's busy getting things shipped.
               </p>
               <p className="product-listing__text">
-                We&APOS;ll pull from our team of senior and junior developers to make sure we
-                match you with the right people for your project. Then, we&APOS;ll immerse
+                We'll pull from our team of senior and junior developers to make sure we
+                match you with the right people for your project. Then, we'll immerse
                 ourselves in understanding your codebase, your unique processes, and the
                 milestones you're aiming for. Together, we ensure that your projects not only stay
                 on track but also achieve excellence, every single time.
@@ -143,7 +143,7 @@ export const ProductListing = () => {
                 development team.
               </p>
               <p className="product-listing__text">
-                That&APOS;s where LaunchWare&APOS;s Custom Development comes in. Imagine
+                That's where LaunchWare's Custom Development comes in. Imagine
                 harnessing the collective experience of a team that has successfully launched
                 dozens of software products. With us, every phase of the journey—from nascent
                 design stages, through development, all the way to triumphant deployment—is
@@ -152,7 +152,7 @@ export const ProductListing = () => {
               <p className="product-listing__text">
                 The best part? You bypass the hurdles of recruitment, hiring, and team management.
                 No more paying hefty recruiter fees or trying to hire talented developers in a
-                competitive job market. Simply entrust your idea with us, and together, we&APOS;ll
+                competitive job market. Simply entrust your idea with us, and together, we'll
                 transform your idea into a successful digital reality.
               </p>
               <button
