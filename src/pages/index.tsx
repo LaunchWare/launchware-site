@@ -2,6 +2,8 @@ import React from "react";
 
 import { PageProps } from "gatsby";
 
+import "../css/index.css";
+
 import { Exasperation } from "../components/index-page/Exasperation";
 import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
@@ -14,7 +16,6 @@ import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
 import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
 import { MoreMomentum } from "../components/index-page/MoreMomentum";
 import { Layout } from "../components/layout/Layout";
-import "../css/index.css";
 
 const IndexPage = (pageProps: PageProps) => {
   return (
