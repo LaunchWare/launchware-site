@@ -1,6 +1,6 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
-export default {
+module.exports = {
   purge: [],
   content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -23,7 +23,7 @@ export default {
         "launch-neutral-10": "#FFFFFF",
         "launch-neutral-20": "#F9FAFB",
         "launch-neutral-30": "#F5F5F5",
-        "launch-primary-10": "#FFF7F6"
+        "launch-primary-10": "#FFF7F6",
       },
     },
   },
