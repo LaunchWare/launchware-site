@@ -39,7 +39,7 @@
   @apply border-r-[0.75rem] border-launch-neutral-10 text-launch-black-40 pr-6;
 }
 
-.index-one-small-step__input__error {
+.index-one-small-step__input_error {
   @apply focus:ring-2 focus:ring-launch-orange;
 }
 

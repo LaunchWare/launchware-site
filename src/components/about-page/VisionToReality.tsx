@@ -1,12 +1,15 @@
 import React from "react";
 
-import decorativeSquare from "../../assets/images/decorative_square.png";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
-import "./css/more-momentum.css";
+import alternateCircle from "../../assets/images/alternate_circle.png";
+import "./css/vision-to-reality.css";
 
-export const MoreMomentum = () => {
+export const VisionToReality = () => {
+  const { modal, clickHandler } = useBookCallModal();
+
   const sectionContents = {
-    sectionHeading: "Build Your Application with More Momentum and Less Stress",
+    sectionHeading: "Make your vision a reality.",
     cards: [
       {
         heading: "Request your launch call",
@@ -30,16 +33,20 @@ export const MoreMomentum = () => {
   };
 
   return (
-    <section className="more-momentum">
-      <div className="more-momentum__contents">
+    <section className="vision-to-reality">
+      <div className="vision-to-reality__contents">
         <img
           alt=""
-          className="more-momentum__decorative-square"
+          className="vision-to-reality__decorative-circle"
           role="presentation"
-          src={decorativeSquare}
+          src={alternateCircle}
         />
         <ThreeCardSection sectionContents={sectionContents} />
+        <button className="vision-to-reality__button button" type="button" onClick={clickHandler}>
+          Get my quick process review
+        </button>
       </div>
+      {modal}
     </section>
   );
 };

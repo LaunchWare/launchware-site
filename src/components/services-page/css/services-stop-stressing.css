@@ -1,0 +1,18 @@
+.services-stop-stressing {
+  @apply parent-section;
+  @apply bg-launch-neutral-10 relative z-10 md:overflow-x-clip;
+}
+
+.services-stop-stressing__contents {
+  @apply contents-container;
+  @apply flex-wrap relative;
+}
+
+.services-stop-stressing__decorative-square {
+  @apply z-10 absolute hidden md:block;
+  @apply -left-60 -bottom-60;
+}
+
+.services-stop-stressing__button {
+  @apply text-center w-full lg:w-auto mx-auto mt-12;
+}

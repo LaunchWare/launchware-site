@@ -3,6 +3,7 @@ import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { Tagline } from "../general/Tagline";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import alternateCircle from "../../assets/images/alternate_circle.png";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
@@ -42,6 +43,9 @@ export const IndexOneSmallStep = () => {
     });
   };
 
+  const blockClassName = "index-one-small-step";
+  const errorClassPrefix = `${blockClassName}__input`;
+
   return (
     <section className="index-one-small-step">
       <div className="index-one-small-step__contents">
@@ -62,7 +66,12 @@ export const IndexOneSmallStep = () => {
           </p>
           <form className="index-one-small-step__form" onSubmit={handleSubmit(onSubmit)}>
             <input
-              className={`index-one-small-step__input ${errors.name ? "index-one-small-step__input__error" : ""}`}
+              className={getFieldClassName({
+                fieldName: "name",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your name"
               type="text"
               id="name"
@@ -70,15 +79,27 @@ export const IndexOneSmallStep = () => {
             />
             {errors.name && <p className="index-one-small-step__error">Name required</p>}
             <input
-              className={`index-one-small-step__input ${errors.organization ? "index-one-small-step__input__error" : ""}`}
+              className={getFieldClassName({
+                fieldName: "organization",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your organization or project name"
               type="text"
               id="organization"
               {...register("organization", { required: true })}
             />
-            {errors.organization && <p className="index-one-small-step__error">Organization or project name required</p>}
+            {errors.organization && (
+              <p className="index-one-small-step__error">Organization or project name required</p>
+            )}
             <input
-              className={`index-one-small-step__input ${errors.email ? "index-one-small-step__input__error" : ""}`}
+              className={getFieldClassName({
+                fieldName: "email",
+                errors,
+                className: `${blockClassName}__input`,
+                errorClassPrefix,
+              })}
               placeholder="Your email"
               type="text"
               id="email"
@@ -99,15 +120,18 @@ export const IndexOneSmallStep = () => {
               {...register("projectDescription")}
             />
             <select
-              className={`index-one-small-step__select ${errors.inquiryLeadType ? "index-one-small-step__input__error" : ""}`}
+              className={getFieldClassName({
+                fieldName: "inquiryLeadType",
+                errors,
+                className: `${blockClassName}__select`,
+                errorClassPrefix,
+              })}
               id="inquiryLeadType"
               {...register("inquiryLeadType")}
             >
               <option>How did you hear about us?</option>
               <option>From a client of LaunchWare</option>
-              <option>
-                From an alum of Launch Academy
-              </option>
+              <option>From an alum of Launch Academy</option>
             </select>
             <input className="button" type="submit" value="Send message" />
           </form>
@@ -116,6 +140,6 @@ export const IndexOneSmallStep = () => {
           <img className="index-one-small-step__image" src="https://placehold.co/602x794" />
         </div>
       </div>
-    </section >
+    </section>
   );
 };
