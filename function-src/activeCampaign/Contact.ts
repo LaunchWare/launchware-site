@@ -3,28 +3,50 @@ import got, { Got, Response } from "got"
 
 export class Contact {
   email: string;
+  firstName?: string;
+  lastName?: string;
+  phone?: string;
+
   configuration: Configuration;
   private gotClient: Got
 
-  constructor({ email }) {
+  constructor({ email, firstName, lastName, phone }:
+    { email: string, firstName?: string, lastName?: string, phone?: string }) {
+
     this.email = email;
+    this.firstName = firstName
+    this.lastName = lastName
+    this.phone = phone
     this.configuration = new Configuration();
+  }
+
+  get postJson() {
+    return {
+      contact: {
+        email: this.email, firstName: this.firstName, lastName: this.lastName, phone: this.phone
+      }
+    }
   }
 
   async create() {
     return this.getClient().post("contacts", {
-      json: { contact: { email: this.email } }
+      json: this.postJson
     }).then((resp: Response) => {
       console.log(resp)
       return true
     }).catch((error) => {
       if (error.response?.statusCode === 422) {
-        console.error(error.response.body)
-        return true
+        return this.sync().then(() => true).catch((error) => { throw error })
       }
       else {
         throw error
       }
+    })
+  }
+
+  sync() {
+    return this.getClient().post("contact/sync", {
+      json: this.postJson
     })
   }
 
