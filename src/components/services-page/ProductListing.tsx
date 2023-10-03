@@ -1,6 +1,10 @@
 import React from "react";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+import { BinaryIcon } from "../icons/BinaryIcon";
+import { CodingScriptIcon } from "../icons/CodingScriptIcon";
+import { CommunityIcon } from "../icons/CommunityIcon";
+import { DocsSignIcon } from "../icons/DocsSignIcon";
 import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/product-listing.css";
 
@@ -23,19 +27,19 @@ export const ProductListing = () => {
           </h2>
           <ul className="product-listing__icon-card-container">
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <BinaryIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Code Audit</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <DocsSignIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <CommunityIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <CodingScriptIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Custom Development</h3>
             </li>
           </ul>
@@ -55,16 +59,15 @@ export const ProductListing = () => {
                 challenges.
               </p>
               <p className="product-listing__text">
-                Our Code Audit process thoroughly explores your codebase and analyzes the
-                processes and the team behind it. It's more than just identifying what's
-                wrong. It's about understanding what you have and creating a strategy for
-                where you want to go.
+                Our Code Audit process thoroughly explores your codebase and analyzes the processes
+                and the team behind it. It's more than just identifying what's wrong. It's about
+                understanding what you have and creating a strategy for where you want to go.
               </p>
               <p className="product-listing__text">
                 Following our in-depth assessment, you're presented with a comprehensive
                 report—highlighting the bottlenecks and also offering solutions, starting with the
-                most critical areas first. With these insights, you'll gain clarity,
-                recapture missed opportunities, and set a definitive course for success.
+                most critical areas first. With these insights, you'll gain clarity, recapture
+                missed opportunities, and set a definitive course for success.
               </p>
               <button
                 type="button"
@@ -77,20 +80,20 @@ export const ProductListing = () => {
             <div className="product-listing__card">
               <h3 className="product-listing__card-heading">Flight Plan</h3>
               <p className="product-listing__text">
-                Business leaders brim with innovative software ideas. But it's not easy to
-                turn a visionary idea into something your team can efficiently execute.
+                Business leaders brim with innovative software ideas. But it's not easy to turn a
+                visionary idea into something your team can efficiently execute.
               </p>
               <p className="product-listing__text">
                 Enter our Flight Plan engagement—how smart leaders map out their software
-                development journey. We'll kick things off with our 'Jobs to Be Done
-                Workshop', honing in on your target audience and the unique solutions your product
-                promises them.
+                development journey. We'll kick things off with our 'Jobs to Be Done Workshop',
+                honing in on your target audience and the unique solutions your product promises
+                them.
               </p>
               <p className="product-listing__text">
                 From there, our seasoned team will craft intuitive wireframes, create clear user
                 stories, and lay out a strategic project plan. This blueprint will illuminate the
-                path for the initial iterations and ensure your software resonates with the
-                audience it's meant for.
+                path for the initial iterations and ensure your software resonates with the audience
+                it's meant for.
               </p>
               <p className="product-listing__text">
                 For organizations wanting to make their vision for their software a reality, the
@@ -115,17 +118,17 @@ export const ProductListing = () => {
                 stretched thin.
               </p>
               <p className="product-listing__text">
-                LaunchWare's Staff Augmentation is not just getting an extra set of hands.
-                It's about enhancing your team's capabilities. By seamlessly integrating
-                our skilled professionals into your environment, we don't just fill the gap –
-                we become an intrinsic part of your team that's busy getting things shipped.
+                LaunchWare's Staff Augmentation is not just getting an extra set of hands. It's
+                about enhancing your team's capabilities. By seamlessly integrating our skilled
+                professionals into your environment, we don't just fill the gap – we become an
+                intrinsic part of your team that's busy getting things shipped.
               </p>
               <p className="product-listing__text">
-                We'll pull from our team of senior and junior developers to make sure we
-                match you with the right people for your project. Then, we'll immerse
-                ourselves in understanding your codebase, your unique processes, and the
-                milestones you're aiming for. Together, we ensure that your projects not only stay
-                on track but also achieve excellence, every single time.
+                We'll pull from our team of senior and junior developers to make sure we match you
+                with the right people for your project. Then, we'll immerse ourselves in
+                understanding your codebase, your unique processes, and the milestones you're aiming
+                for. Together, we ensure that your projects not only stay on track but also achieve
+                excellence, every single time.
               </p>
               <button
                 type="button"
@@ -139,15 +142,14 @@ export const ProductListing = () => {
               <h3 className="product-listing__card-heading">Custom Development </h3>
               <p className="product-listing__text">
                 Transforming an idea into a tangible software solution requires more than just
-                vision. It demands the expertise, dedication, and finesse of a seasoned
-                development team.
+                vision. It demands the expertise, dedication, and finesse of a seasoned development
+                team.
               </p>
               <p className="product-listing__text">
-                That's where LaunchWare's Custom Development comes in. Imagine
-                harnessing the collective experience of a team that has successfully launched
-                dozens of software products. With us, every phase of the journey—from nascent
-                design stages, through development, all the way to triumphant deployment—is
-                meticulously catered for.
+                That's where LaunchWare's Custom Development comes in. Imagine harnessing the
+                collective experience of a team that has successfully launched dozens of software
+                products. With us, every phase of the journey—from nascent design stages, through
+                development, all the way to triumphant deployment—is meticulously catered for.
               </p>
               <p className="product-listing__text">
                 The best part? You bypass the hurdles of recruitment, hiring, and team management.

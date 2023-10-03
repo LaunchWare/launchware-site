@@ -25,7 +25,7 @@
 }
 
 .index-ship-faster__image-container {
-  @apply py-6 w-full;
+  @apply py-6;
 }
 
 .index-ship-faster__image {

@@ -16,10 +16,10 @@ const AboutPage = (pageProps: PageProps) => {
     <Layout location={pageProps.location} title="About">
       <AboutHero />
       <WhySoftwareExists />
-      <OurBeliefs />
-      <VisionToReality />
       <BetterWay />
       <Leaders />
+      <OurBeliefs />
+      <VisionToReality />
     </Layout>
   );
 };
