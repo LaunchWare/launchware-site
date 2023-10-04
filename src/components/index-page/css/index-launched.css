@@ -9,7 +9,7 @@
 }
 
 .index-launched__heading {
-  @apply text-4xl font-semibold max-w-md;
+  @apply text-4xl max-w-md;
 }
 
 .index-launched__uppercase {
@@ -22,7 +22,7 @@
 }
 
 .index-launched__column-heading {
-  @apply text-4xl text-left w-full;
+  @apply text-4xl text-left w-full alternative-headline;
 }
 
 .index-launched__column {
@@ -31,7 +31,7 @@
 }
 
 .index-launched__column-heading {
-  @apply text-lg font-semibold py-4;
+  @apply text-lg py-4;
 }
 
 .index-launched__text {

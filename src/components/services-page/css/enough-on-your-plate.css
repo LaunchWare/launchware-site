@@ -14,7 +14,7 @@
 }
 
 .enough-on-your-plate__heading {
-  @apply text-4xl font-semibold text-left;
+  @apply text-4xl text-left;
 }
 
 .enough-on-your-plate__text {

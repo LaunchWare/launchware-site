@@ -17,11 +17,11 @@ export const TrustedByTheBest = () => (
       <div className="trusted-by-the-best__text-container">
         <div className="trusted-by-the-best__heading-container">
           <Tagline tagline="Testimonials" />
-          <h3 className="trusted-by-the-best__heading">[Trusted by the Best]</h3>
+          <h3 className="trusted-by-the-best__heading">Trusted by the Best</h3>
         </div>
         <ul className="trusted-by-the-best__cards-container">
-          <li className="trusted-by-the-best__card trusted-by-the-best__text">
-            <p>
+          <li className="trusted-by-the-best__card">
+            <p className="trusted-by-the-best__text">
               &#8220;Something flattering and coherent about the team and the results they
               delivered.&#8221;
             </p>
@@ -34,7 +34,7 @@ export const TrustedByTheBest = () => (
             </div>
           </li>
           <li className="trusted-by-the-best__card">
-            <p>
+            <p className="trusted-by-the-best__text">
               &#8220;They showed up and did exactly what I thought they were going to do and
               I&#8217;m thrilled.&#8221;
             </p>
@@ -47,7 +47,7 @@ export const TrustedByTheBest = () => (
             </div>
           </li>
           {/* <li className="trusted-by-the-best__card">
-            
+
             <div>
               <UserCircleIcon className="" />
               <p className="trusted-by-the-best__card-name"></p>
@@ -55,7 +55,7 @@ export const TrustedByTheBest = () => (
             </div>
           </li>
           <li className="trusted-by-the-best__card">
-            
+
             <div>
               <UserCircleIcon className="" />
               <p className="trusted-by-the-best__card-name"></p>

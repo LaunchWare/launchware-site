@@ -17,7 +17,7 @@
 }
 
 .product-listing__heading {
-  @apply text-3xl font-semibold text-center max-w-lg mx-auto;
+  @apply text-3xl text-center max-w-lg mx-auto;
 }
 
 .product-listing__icon-card-container {
@@ -33,7 +33,7 @@
 }
 
 .product-listing__icon-card-heading {
-  @apply text-lg font-semibold pl-3 w-5/6 my-auto;
+  @apply text-lg pl-3 w-5/6 my-auto alternative-headline;
 }
 
 .product-listing__grid {
@@ -49,7 +49,7 @@
 }
 
 .product-listing__card-heading {
-  @apply text-lg font-semibold w-full text-center mx-auto pb-4;
+  @apply text-lg w-full text-center mx-auto pb-4 alternative-headline;
 }
 
 .product-listing__image-container {

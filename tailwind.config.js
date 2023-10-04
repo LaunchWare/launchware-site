@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "Roboto", "sans-serif", ...fontFamily.sans],
+        kanit: ["Kanit", "Roboto", "Arial", "sans-serif", ...fontFamily.sans],
       },
       colors: {
         white: "#ffffff",

@@ -13,7 +13,7 @@
 }
 
 .index-ship-faster__heading {
-  @apply text-4xl font-semibold max-w-md mb-5;
+  @apply text-4xl max-w-md mb-5;
 }
 
 .index-ship-faster__grid {
@@ -34,7 +34,7 @@
 
 .index-ship-faster__card-heading {
   @apply text-4xl text-left w-full;
-  @apply text-lg font-semibold;
+  @apply text-lg alternative-headline;
 }
 
 .index-ship-faster__text {
