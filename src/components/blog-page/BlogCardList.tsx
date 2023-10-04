@@ -1,10 +1,12 @@
 import React, { FC } from "react";
+import { Link } from "gatsby";
 
 import "./css/blog-card-list.css";
 
 interface BlogCardListProps {
   articles: {
     id: number;
+    excerpt: string;
     frontmatter?: {
       title: string;
     };
@@ -18,7 +20,12 @@ export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
   const listItems = articles.map((article) => {
     return (
       <li className="blog-card-list__card" key={article.id}>
-        <a href={`/blog${article.fields?.slug}`}>{article.frontmatter?.title}</a>
+        <Link to={`/blog${article.fields?.slug}`}>
+          <h3 className="blog-card-list__heading">
+            {article.frontmatter?.title}
+          </h3>
+          <p className="blog-card-list__excerpt">{article.excerpt}</p>
+        </Link>
       </li>
     );
   });

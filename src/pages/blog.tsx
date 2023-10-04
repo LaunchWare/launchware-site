@@ -24,6 +24,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { frontmatter: { publishedAt: DESC } }, limit: 1000) {
       nodes {
         id
+        excerpt(pruneLength: 160)
         frontmatter {
           title
         }

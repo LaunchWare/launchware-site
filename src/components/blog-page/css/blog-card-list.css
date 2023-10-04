@@ -5,9 +5,17 @@
 
 .blog-card-list__contents {
   @apply contents-container;
-  @apply grid grid-cols-3 items-center gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8;
 }
 
 .blog-card-list__card {
   @apply p-6 rounded-xl bg-launch-neutral-10 shadow-md h-full;
+}
+
+.blog-card-list__heading {
+  @apply text-lg text-launch-black font-semibold pb-4;
+}
+
+.blog-card-list__excerpt {
+  @apply text-base text-launch-black-80;
 }
