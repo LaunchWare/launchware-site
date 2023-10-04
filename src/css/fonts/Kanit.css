@@ -45,6 +45,7 @@
   src: url(/fonts/Kanit/Kanit-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -52,6 +53,7 @@
   src: url(/fonts/Kanit/Kanit-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -59,6 +61,7 @@
   src: url(/fonts/Kanit/Kanit-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -66,6 +69,7 @@
   src: url(/fonts/Kanit/Kanit-SemiBoldItalic.ttf) format("truetype");
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -73,6 +77,7 @@
   src: url(/fonts/Kanit/Kanit-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -80,6 +85,7 @@
   src: url(/fonts/Kanit/Kanit-BoldItalic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -87,6 +93,7 @@
   src: url(/fonts/Kanit/Kanit-ExtraBold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -94,6 +101,7 @@
   src: url(/fonts/Kanit/Kanit-ExtraBoldItalic.ttf) format("truetype");
   font-weight: 800;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -101,6 +109,7 @@
   src: url(/fonts/Kanit/Kanit-Black.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -108,4 +117,5 @@
   src: url(/fonts/Kanit/Kanit-BlackItalic.ttf) format("truetype");
   font-weight: 900;
   font-style: italic;
+  font-display: swap;
 }
