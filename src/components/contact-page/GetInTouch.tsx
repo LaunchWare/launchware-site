@@ -6,6 +6,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { getFieldClassName } from "../general/services/getFieldClassName";
 import alternateCircle from "../../assets/images/alternate_circle.png";
+import { companyContactInformation } from "../../configuration/companyContactInformation";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostGeneralInquiry } from "./hooks/usePostGeneralInquiry";
 import { GetInTouchFormValues } from "./models/GetInTouchFormShapes";
@@ -13,6 +14,14 @@ import "./css/get-in-touch.css";
 
 export const GetInTouch = () => {
   const { addNotification } = useNotifications();
+  const blockClassName = "get-in-touch";
+  const errorClassPrefix = `${blockClassName}__input`;
+  const {
+    email,
+    mailingAddress: { streetAddress, streetAddress2, city, state, zipCode },
+    phone,
+  } = companyContactInformation;
+
   const {
     handleSubmit,
     register,
@@ -42,9 +51,6 @@ export const GetInTouch = () => {
     });
   };
 
-  const blockClassName = "get-in-touch";
-  const errorClassPrefix = `${blockClassName}__input`;
-
   return (
     <section className="get-in-touch">
       <div className="get-in-touch__contents">
@@ -55,7 +61,7 @@ export const GetInTouch = () => {
           src={alternateCircle}
         />
         <h2 className="get-in-touch__section-heading">Get in touch</h2>
-        <p className="get-in-touch__text_center"></p>
+        <p className="get-in-touch__text_center">We'd love to hear from you</p>
         <div className="get-in-touch__card">
           <div className="get-in-touch__text-container">
             <h3 className="get-in-touch__heading">Traditional ways to reach out</h3>
@@ -64,17 +70,21 @@ export const GetInTouch = () => {
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faLocationDot} />
                 <div>
-                  <p>71 Summer Street, 3rd Floor</p>
-                  <p>Boston, MA 02110</p>
+                  <p>
+                    {streetAddress}, {streetAddress2}
+                  </p>
+                  <p>
+                    {city}, {state} {zipCode}
+                  </p>
                 </div>
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faPhone} />
-                <p>800 555 5555</p>
+                <a href={`tel:${phone}`}>{phone}</a>
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faEnvelope} />
-                <p>hello@launchware.com</p>
+                <a href={`mailto:${email}`}>{email}</a>
               </li>
             </ul>
           </div>

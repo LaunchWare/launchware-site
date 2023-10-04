@@ -51,18 +51,17 @@
 }
 
 .get-in-touch__form {
-  @apply flex flex-col w-full space-y-3 pt-2;
+  @apply form;
 }
 
 .get-in-touch__input {
-  @apply w-full py-2 px-3 rounded-md;
-  @apply border border-launch-black-10 shadow-md text-launch-black-40;
+  @apply form__field;
 }
 
 .get-in-touch__input_error {
-  @apply focus:ring-2 focus:ring-launch-orange;
+  @apply form__field_error;
 }
 
 .get-in-touch__error {
-  @apply text-launch-orange px-3;
+  @apply form__error;
 }
