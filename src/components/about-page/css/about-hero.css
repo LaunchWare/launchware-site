@@ -9,7 +9,7 @@
 }
 
 .about-hero__heading {
-  @apply text-5xl font-semibold text-center max-w-xl;
+  @apply text-5xl text-center max-w-xl;
 }
 
 .about-hero__text {

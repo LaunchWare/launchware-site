@@ -16,7 +16,7 @@
 }
 
 .our-beliefs__section-heading {
-  @apply text-4xl text-launch-black text-center font-semibold pt-16 pb-8;
+  @apply text-4xl text-launch-black text-center pt-16 pb-8;
 }
 
 .our-beliefs__text_center {
@@ -28,7 +28,7 @@
 }
 
 .our-beliefs__paragraph-heading {
-  @apply text-lg font-semibold;
+  @apply text-lg alternative-headline;
 }
 
 .our-beliefs__text {

@@ -13,7 +13,7 @@
 }
 
 .leaders__heading {
-  @apply text-4xl font-semibold mb-5;
+  @apply text-4xl mb-5;
 }
 
 .leaders__grid {
@@ -25,11 +25,11 @@
 }
 
 .leaders__card-heading {
-  @apply text-lg font-semibold;
+  @apply text-lg alternative-headline;
 }
 
 .leaders__card-heading__italic {
-  @apply italic;
+  @apply italic alternative-headline;
 }
 
 .leaders__text-container {

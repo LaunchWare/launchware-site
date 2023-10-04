@@ -31,7 +31,7 @@
 }
 
 .footer_headline {
-  @apply font-semibold pb-6;
+  @apply pb-6;
 }
 
 .footer_link-list-item {
