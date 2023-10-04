@@ -14,10 +14,10 @@ const ServicesPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Services">
       <ProductListing />
-      <AreWeAFit />
-      <ServicesStopStressing />
       <EnoughOnYourPlate />
       <TrustedByTheBest />
+      <AreWeAFit />
+      <ServicesStopStressing />
     </Layout>
   );
 };
