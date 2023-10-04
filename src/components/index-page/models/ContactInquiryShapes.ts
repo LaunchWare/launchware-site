@@ -7,7 +7,7 @@ export interface ContactInquiryFormValues {
   projectDescription: string;
   "form-name": string;
   inquiryLeadType:
-  | "How did you hear about us?"
-  | "From a client of LaunchWare"
-  | "From an alum of Launch Academy";
+    | "How did you hear about us?"
+    | "From a client of LaunchWare"
+    | "From an alum of Launch Academy";
 }

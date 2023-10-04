@@ -7,8 +7,8 @@ export const usePostContactInquiry = () => {
     async (data: ContactInquiryFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        }
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
       });
       return resp.data;
     },

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link, graphql, PageProps, HeadFC, HeadProps } from "gatsby";
 
 import { Layout } from "../components/layout/Layout";
+import "./css/blog-post.css";
 // import Seo from "../components/seo";
 
 const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) => {
@@ -12,40 +13,50 @@ const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQu
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article className="blog-post" itemScope itemType="http://schema.org/Article">
-        <header>
-          <h1 itemProp="headline">{post?.frontmatter?.title}</h1>
-          <p>{post?.frontmatter?.date}</p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post?.html || "" }} itemProp="articleBody" />
-        <hr />
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={`/blog${previous?.fields?.slug}` || "/"} rel="prev">
-                ← {previous?.frontmatter?.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/blog${next.fields?.slug}` || "/"} rel="next">
-                {next.frontmatter?.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <div className="blog-post">
+        <div className="blog-post__contents">
+          <article className="blog-post__article" itemScope itemType="http://schema.org/Article">
+            <header>
+              <h1 className="blog-post__heading" itemProp="headline">
+                {post?.frontmatter?.title}
+              </h1>
+              <p className="blog-post__text_center">{post?.frontmatter?.date}</p>
+            </header>
+            <section
+              className="blog-post__text"
+              dangerouslySetInnerHTML={{ __html: post?.html || "" }}
+              itemProp="articleBody"
+            />
+            <hr />
+          </article>
+          <nav className="blog-post-nav">
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li className="blog-post-nav__previous">
+                {previous && (
+                  <Link to={`/blog${previous?.fields?.slug}` || "/"} rel="prev">
+                    ← {previous?.frontmatter?.title}
+                  </Link>
+                )}
+              </li>
+              <li className="blog-post-nav__next">
+                {next && (
+                  <Link to={`/blog${next.fields?.slug}` || "/"} rel="next">
+                    {next.frontmatter?.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </Layout>
   );
 };
