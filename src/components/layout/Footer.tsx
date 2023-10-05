@@ -59,6 +59,7 @@ const Footer = () => {
 
           <div className="footer_group footer_group__connect">
             <h3 className="footer_headline">Connect</h3>
+            <p><Link to="/contact">Contact Us</Link></p>
             <p><a href={`tel:${companyContactInformation.phone}`}> {companyContactInformation.phone}</a></p>
             <p><a href={`mailto:${companyContactInformation.email}`}>{companyContactInformation.email}</a></p>
             <ul className="footer_social-list">

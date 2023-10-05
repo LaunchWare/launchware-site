@@ -1,6 +1,10 @@
 import React from "react";
 
 import { Tagline } from "../general/Tagline";
+import { BinaryIcon } from "../icons/BinaryIcon";
+import { CodingScriptIcon } from "../icons/CodingScriptIcon";
+import { CommunityIcon } from "../icons/CommunityIcon";
+import { DocsSignIcon } from "../icons/DocsSignIcon";
 import "./css/index-ship-faster.css";
 
 export const IndexShipFaster = () => (
@@ -18,7 +22,7 @@ export const IndexShipFaster = () => (
         <div className="index-ship-faster__card">
           <Tagline tagline="For teams with an existing product" />
           <div className="index-ship-faster__image-container">
-            <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
+            <BinaryIcon className="index-ship-faster__image" width="104" />
           </div>
           <h2 className="index-ship-faster__card-heading">Code Audit</h2>
           <p className="index-ship-faster__text">
@@ -41,7 +45,7 @@ export const IndexShipFaster = () => (
         <div className="index-ship-faster__card">
           <Tagline tagline="For teams with an existing product" />
           <div className="index-ship-faster__image-container">
-            <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
+            <CommunityIcon className="index-ship-faster__image" width="104" />
           </div>
           <h2 className="index-ship-faster__card-heading">Staff Augmentation</h2>
           <p className="index-ship-faster__text">
@@ -65,7 +69,7 @@ export const IndexShipFaster = () => (
         <div className="index-ship-faster__card">
           <Tagline tagline="For teams with an idea or concept for a software product" />
           <div className="index-ship-faster__image-container">
-            <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
+            <DocsSignIcon className="index-ship-faster__image" width="104" />
           </div>
           <h2 className="index-ship-faster__card-heading">Flight Plan</h2>
           <p className="index-ship-faster__text">
@@ -99,7 +103,7 @@ export const IndexShipFaster = () => (
         <div className="index-ship-faster__card">
           <Tagline tagline="For teams with an idea or concept for a software product" />
           <div className="index-ship-faster__image-container">
-            <img className="index-ship-faster__image" src="https://placehold.co/104x104" />
+            <CodingScriptIcon className="index-ship-faster__image" width="104" />
           </div>
           <h2 className="index-ship-faster__card-heading">Custom Development</h2>
           <p className="index-ship-faster__text">

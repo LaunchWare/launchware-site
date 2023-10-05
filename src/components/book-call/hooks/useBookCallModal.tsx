@@ -1,8 +1,10 @@
 import React, { MouseEventHandler, useEffect, useRef, useState } from "react";
-import { useModal } from "@launchware/replicator";
-import { companyContactInformation } from "../../../configuration/companyContactInformation";
 
+import { useModal } from "@launchware/replicator";
 import "@launchware/replicator/dist/css/Modal/modal.css";
+
+import { companyContactInformation } from "../../../configuration/companyContactInformation";
+import { BookCallModal } from "../BookCallModal";
 import "../css/book-call-modal.css";
 
 declare global {
@@ -16,21 +18,14 @@ declare global {
 export const useBookCallModal = () => {
   const divRef = useRef<HTMLDivElement>(null);
 
-  const ModalContent = () => {
-    return (
-      <>
-        <h2>Book Your Launch Call</h2>
-        <p>Let's chat about your custom software development project.</p>
-        <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
-      </>
-    );
-  };
-
   const {
     modal,
     isVisible: isModalVisible,
     setVisibility: setModalVisibility,
-  } = useModal(ModalContent);
+  } = useModal(() => <BookCallModal divRef={divRef} />, {
+    scrollToTop: false,
+  });
+
   const [calendlyInitialized, setCalendlyInitialized] = useState(false);
 
   const url = companyContactInformation.launchCallUrl;

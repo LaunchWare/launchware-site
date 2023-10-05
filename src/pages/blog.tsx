@@ -1,20 +1,17 @@
 import * as React from "react";
 import { HeadFC, PageProps, graphql } from "gatsby";
+import { Layout } from "../components/layout/Layout";
+import { BlogHero } from "../components/blog-page/BlogHero";
+import { BlogCardList } from "../components/blog-page/BlogCardList";
 
 const BlogPage = (pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) => {
   const { data } = pageProps;
-  const listItems = data.allMarkdownRemark.nodes.map((article) => {
-    return (
-      <li key={article.id}>
-        <a href={`/blog${article.fields?.slug}`}>{article.frontmatter?.title}</a>
-      </li>
-    );
-  });
+
   return (
-    <main>
-      <h1>LaunchWare</h1>
-      {listItems && <ol>{listItems}</ol>}
-    </main>
+    <Layout location={pageProps.location} title="Blog">
+      <BlogHero />
+      <BlogCardList articles={data.allMarkdownRemark.nodes} />
+    </Layout>
   );
 };
 
@@ -27,6 +24,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { frontmatter: { publishedAt: DESC } }, limit: 1000) {
       nodes {
         id
+        excerpt(pruneLength: 160)
         frontmatter {
           title
         }
