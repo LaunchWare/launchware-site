@@ -11,7 +11,6 @@ export const IndexShipFaster = () => (
   <section className="index-ship-faster">
     <div className="index-ship-faster__contents">
       <div className="index-ship-faster__heading-container">
-        <Tagline tagline="Tagline" />
         <h2 className="index-ship-faster__heading">Ship websites faster</h2>
         <p>
           Sometimes, getting started is the hardest part. That’s why we make it easy for us to begin
@@ -78,25 +77,17 @@ export const IndexShipFaster = () => (
           </p>
           <p className="index-ship-faster__text">
             Enter our Flight Plan engagement—how smart leaders map out their software development
-            journey.
+            journey. We’ll kick things off with our 'Jobs to Be Done Workshop', honing in on your
+            target audience and the unique solutions your product promises them.
           </p>
-          Here’s how it works:
-          <ol className="index-ship-faster__ordered-list">
-            <li>
-              We kick things off with our &lsquo;Jobs to Be Done Workshop&rsquo;, honing in on your
-              target audience and the unique solutions your product promises them.
-            </li>
-            <li>
-              Our seasoned team then crafts intuitive wireframes, creates clear user stories, and
-              lays out a strategic project plan.
-            </li>
-            <li>
-              This blueprint not only illuminates the path for the initial iterations but ensures
-              your software resonates with the audience it’s meant for.
-            </li>
-          </ol>
           <p className="index-ship-faster__text">
-            For organizations wanting to make the vision for their software a reality, the Flight
+            From there, our seasoned team will craft intuitive wireframes, create clear user
+            stories, and lay out a strategic project plan. This blueprint will illuminate the path
+            for the initial iterations and ensure your software resonates with the audience it’s
+            meant for.
+          </p>
+          <p className="index-ship-faster__text">
+            For organizations wanting to make their vision for their software a reality, the Flight
             Plan becomes an indispensable guide, ensuring a confident and impactful software launch.
           </p>
         </div>

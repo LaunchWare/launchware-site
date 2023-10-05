@@ -31,7 +31,7 @@
 }
 
 .footer_headline {
-  @apply pb-6;
+  @apply pb-6 text-lg;
 }
 
 .footer_link-list-item {
