@@ -1,6 +1,7 @@
 import React from "react";
 
 import decorativeSquare from "../../assets/images/decorative_square.png";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
@@ -8,6 +9,8 @@ import { SendMessagesIcon } from "../icons/SendMessagesIcon";
 import "./css/more-momentum.css";
 
 export const MoreMomentum = () => {
+  const { modal, clickHandler } = useBookCallModal();
+
   const sectionContents = {
     sectionHeading: "Build Your Application with More Momentum and Less Stress",
     cards: [
@@ -37,6 +40,7 @@ export const MoreMomentum = () => {
 
   return (
     <section className="more-momentum">
+      {modal}
       <div className="more-momentum__contents">
         <img
           alt=""
@@ -45,6 +49,9 @@ export const MoreMomentum = () => {
           src={decorativeSquare}
         />
         <ThreeCardSection sectionContents={sectionContents} />
+        <button className="more-momentum__button button" type="button" onClick={clickHandler}>
+          Book My Launch Call
+        </button>
       </div>
     </section>
   );

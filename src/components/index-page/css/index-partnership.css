@@ -13,7 +13,7 @@
 }
 
 .index-partnership__image-container {
-  @apply py-8 lg:p-0 w-full lg:w-7/12;
+  @apply py-8 lg:p-0 w-full lg:w-7/12 text-center;
 }
 
 .index-partnership__image {
@@ -34,9 +34,13 @@
 }
 
 .index-partnership__list-item {
-  @apply flex items-center space-x-2 text-launch-black-80 flex space-x-3 pt-3;
+  @apply items-center text-launch-black-80 flex space-x-3 pt-3;
 }
 
 .index-partnership__check {
   @apply text-launch-orange;
+}
+
+.index-partnership__button {
+  @apply w-full lg:w-auto mx-auto mt-8;
 }

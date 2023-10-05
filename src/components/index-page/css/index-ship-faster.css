@@ -17,11 +17,11 @@
 }
 
 .index-ship-faster__grid {
-  @apply grid md:grid-rows-2 md:grid-flow-col items-start gap-6 pt-12;
+  @apply grid md:grid-cols-2 md:grid-flow-row items-start gap-6 pt-12;
 }
 
 .index-ship-faster__card {
-  @apply p-6 bg-launch-neutral-10 rounded-xl h-full;
+  @apply p-6 bg-launch-neutral-10 rounded-xl h-full flex flex-col;
 }
 
 .index-ship-faster__image-container {
@@ -43,4 +43,8 @@
 
 .index-ship-faster__ordered-list {
   @apply list-decimal ml-4;
+}
+
+.index-ship-faster__button {
+  @apply mt-auto mr-auto;
 }

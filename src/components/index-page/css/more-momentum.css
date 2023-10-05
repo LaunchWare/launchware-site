@@ -11,3 +11,7 @@
 .more-momentum__decorative-square {
   @apply absolute -z-10 -right-64 md:-top-80 hidden md:inline;
 }
+
+.more-momentum__button {
+  @apply text-center w-full lg:w-auto mx-auto mt-12;
+}
