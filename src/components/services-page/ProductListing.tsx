@@ -1,6 +1,10 @@
 import React from "react";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+import { BinaryIcon } from "../icons/BinaryIcon";
+import { CodingScriptIcon } from "../icons/CodingScriptIcon";
+import { CommunityIcon } from "../icons/CommunityIcon";
+import { DocsSignIcon } from "../icons/DocsSignIcon";
 import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/product-listing.css";
 
@@ -23,19 +27,19 @@ export const ProductListing = () => {
           </h2>
           <ul className="product-listing__icon-card-container">
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <BinaryIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Code Audit</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <DocsSignIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <CommunityIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
             </li>
             <li className="product-listing__icon-card">
-              <img className="product-listing__icon" src="https://placehold.co/38x27" />
+              <CodingScriptIcon className="product-listing__icon" width="54" />
               <h3 className="product-listing__icon-card-heading">Custom Development</h3>
             </li>
           </ul>
