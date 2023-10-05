@@ -5,7 +5,7 @@ import { ThreeCardSection } from "../general/ThreeCardSection";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { LiftoffIcon } from "../icons/LiftoffIcon";
 import { RiskAssessmentIcon } from "../icons/RiskAssessmentIcon";
-import decorativeSquare from "../../assets/images/decorative_square.png";
+import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "./css/services-stop-stressing.css";
 
 export const ServicesStopStressing = () => {

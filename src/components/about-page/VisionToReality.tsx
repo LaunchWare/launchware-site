@@ -5,7 +5,7 @@ import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import alternateCircle from "../../assets/images/alternate_circle.png";
+import alternateCircle from "../../images/decorations/alternate_circle.png";
 import "./css/vision-to-reality.css";
 
 export const VisionToReality = () => {

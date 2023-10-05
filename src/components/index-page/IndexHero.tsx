@@ -26,7 +26,8 @@ export const IndexHero = () => {
             width={578}
             className="index-hero__image"
             alt="Three Developers Coding"
-            src="../../images/index/three-developers-coding.jpg" />
+            src="../../images/index/three-developers-coding.jpg"
+          />
         </div>
       </div>
       {modal}

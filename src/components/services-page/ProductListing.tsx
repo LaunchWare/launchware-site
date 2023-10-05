@@ -5,7 +5,7 @@ import { BinaryIcon } from "../icons/BinaryIcon";
 import { CodingScriptIcon } from "../icons/CodingScriptIcon";
 import { CommunityIcon } from "../icons/CommunityIcon";
 import { DocsSignIcon } from "../icons/DocsSignIcon";
-import decorativeCircle from "../../assets/images/decorative_circle.png";
+import decorativeCircle from "../../images/decorations/decorative_circle.png";
 import "./css/product-listing.css";
 
 export const ProductListing = () => {

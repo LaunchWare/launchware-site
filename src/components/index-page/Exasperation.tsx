@@ -10,7 +10,7 @@ export const Exasperation = () => (
         alt=""
         className="exasperation__decorative-circle"
         role="presentation"
-        src="../../images/decorative_circle.png"
+        src="../../images/decorations/decorative_circle.png"
       />
       <div className="exasperation__image-container">
         <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />

@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/index-stop-stressing.css";
 
@@ -10,7 +11,13 @@ export const IndexStopStressing = () => (
   <section className="index-stop-stressing">
     <div className="index-stop-stressing__contents">
       <div className="index-stop-stressing__image-container">
-        <img className="index-stop-stressing__image" src="https://placehold.co/672x509" />
+        <StaticImage
+          layout="constrained"
+          width={672}
+          className="index-stop-stressing__image"
+          alt="Smiling woman holding a stylus at a meeting"
+          src="../../images/index/woman-holding-stylus.jpg"
+        />
       </div>
       <div className="index-stop-stressing__text-container">
         <h2 className="index-stop-stressing__heading">Stop Stressing. Start Shipping</h2>
