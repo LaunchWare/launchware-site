@@ -1,19 +1,19 @@
 import React from "react";
 
-import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/exasperation.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const Exasperation = () => (
   <section className="exasperation">
     <div className="exasperation__contents">
-      <img
+      <StaticImage
         alt=""
         className="exasperation__decorative-circle"
         role="presentation"
-        src={decorativeCircle}
+        src="../../images/decorative_circle.png"
       />
       <div className="exasperation__image-container">
-        <img className="exasperation__image" src="https://placehold.co/680x520" />
+        <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />
       </div>
       <div className="exasperation__text-container">
         <h2 className="exasperation__heading">
