@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/index-launched.css";
 
@@ -18,7 +19,13 @@ export const IndexLaunched = () => (
       <div className="index-launched__columns-container">
         <div className="index-launched__column">
           <div className="index-launched__image-container">
-            <img className="index-launched__image" src="https://placehold.co/378x330" />
+            <StaticImage
+              layout="constrained"
+              width={378}
+              className="index-launched__image"
+              alt="Two Laptops"
+              src="../../images/index/two-laptops.jpg"
+            />
           </div>
           <h3 className="index-launched__column-heading">
             Get a proven and transparent plan to take you where you want to go
@@ -40,7 +47,13 @@ export const IndexLaunched = () => (
         </div>
         <div className="index-launched__column">
           <div className="index-launched__image-container">
-            <img className="index-launched__image" src="https://placehold.co/378x330" />
+            <StaticImage
+              layout="constrained"
+              width={378}
+              className="index-launched__image"
+              alt="Sticky note brainstorming group"
+              src="../../images/index/sticky-note-brainstorming.jpg"
+            />
           </div>
           <h3 className="index-launched__column-heading">
             Skip the technical guesswork with an experienced team
@@ -60,7 +73,13 @@ export const IndexLaunched = () => (
         </div>
         <div className="index-launched__column">
           <div className="index-launched__image-container">
-            <img className="index-launched__image" src="https://placehold.co/378x330" />
+            <StaticImage
+              layout="constrained"
+              width={378}
+              className="index-launched__image"
+              alt="Tech office space with workers around table"
+              src="../../images/index/tech-office-space.jpg"
+            />
           </div>
           <h3 className="index-launched__column-heading">
             Scale easily without hiring and managing engineers

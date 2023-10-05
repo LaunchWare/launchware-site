@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import dots from "../../assets/images/dots.png";
+import dots from "../../images/decorations/dots.png";
 import "./css/contact-us-chat.css";
 
 export const ContactUsChat = () => (

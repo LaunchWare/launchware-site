@@ -2,18 +2,18 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { StaticImage } from "gatsby-plugin-image";
 
-import decorativeCircle from "../../assets/images/decorative_circle.png";
 import "./css/index-partnership.css";
 
 export const IndexPartnership = () => (
   <section className="index-partnership">
     <div className="index-partnership__contents">
-      <img
+      <StaticImage
         alt=""
         className="index-partnership__decorative-circle"
         role="presentation"
-        src={decorativeCircle}
+        src="../../images/decorations/decorative_circle.png"
       />
       <div className="index-partnership__text-container">
         <h2 className="index-partnership__heading">
@@ -49,7 +49,13 @@ export const IndexPartnership = () => (
         </ul>
       </div>
       <div className="index-partnership__image-container">
-        <img className="index-partnership__image" src="https://placehold.co/707x510" />
+        <StaticImage
+          layout="constrained"
+          width={707}
+          className="index-partnership__image"
+          alt="Two colleagues talking in an office"
+          src="../../images/index/two-colleagues-talking.jpg"
+        />
       </div>
     </div>
   </section>

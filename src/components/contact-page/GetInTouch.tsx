@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { getFieldClassName } from "../general/services/getFieldClassName";
-import alternateCircle from "../../assets/images/alternate_circle.png";
+import alternateCircle from "../../images/decorations/alternate_circle.png";
 import { companyContactInformation } from "../../configuration/companyContactInformation";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostGeneralInquiry } from "./hooks/usePostGeneralInquiry";
