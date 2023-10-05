@@ -1,11 +1,12 @@
 import React from "react";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+import { StaticImage } from "gatsby-plugin-image";
+
 import "./css/index-hero.css";
 
 export const IndexHero = () => {
   const { modal, clickHandler } = useBookCallModal();
-
   return (
     <section className="index-hero">
       <div className="index-hero__contents">
@@ -19,7 +20,13 @@ export const IndexHero = () => {
           </button>
         </div>
         <div className="index-hero__image-container">
-          <img className="index-hero__image" src="https://placehold.co/585x438" />
+          <StaticImage
+            layout="constrained"
+            quality={90}
+            width={578}
+            className="index-hero__image"
+            alt="Three Developers Coding"
+            src="../../images/index/three-developers-coding.jpg" />
         </div>
       </div>
       {modal}
