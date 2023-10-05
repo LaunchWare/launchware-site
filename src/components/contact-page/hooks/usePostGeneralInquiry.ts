@@ -1,10 +1,11 @@
-import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
-import { ContactInquiryFormValues } from "../models/ContactInquiryShapes";
+import { useMutation } from "@tanstack/react-query";
 
-export const usePostContactInquiry = () => {
+import { GetInTouchFormValues } from "../models/GetInTouchFormShapes";
+
+export const usePostGeneralInquiry = () => {
   return useMutation(
-    async (data: ContactInquiryFormValues) => {
+    async (data: GetInTouchFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
