@@ -1,6 +1,6 @@
 import React, { RefObject } from "react";
 
-import decorativeSquare from "../../assets/images/decorative_square.png";
+import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "@launchware/replicator/dist/css/Modal/modal.css";
 import "./css/book-call-modal.css";
 

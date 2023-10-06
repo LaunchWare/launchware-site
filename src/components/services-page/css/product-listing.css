@@ -12,16 +12,8 @@
   @apply -z-10 absolute -left-32 top-32 hidden md:block;
 }
 
-.product-listing__heading-container {
-  @apply flex flex-col justify-center w-full;
-}
-
-.product-listing__heading {
-  @apply text-3xl text-center max-w-lg mx-auto;
-}
-
 .product-listing__icon-card-container {
-  @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4 pt-8;
+  @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4;
 }
 
 .product-listing__icon-card {

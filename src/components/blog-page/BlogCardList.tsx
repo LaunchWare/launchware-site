@@ -21,9 +21,7 @@ export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
     return (
       <li className="blog-card-list__card" key={article.id}>
         <Link to={`/blog${article.fields?.slug}`}>
-          <h3 className="blog-card-list__heading">
-            {article.frontmatter?.title}
-          </h3>
+          <h3 className="blog-card-list__heading">{article.frontmatter?.title}</h3>
           <p className="blog-card-list__excerpt">{article.excerpt}</p>
         </Link>
       </li>

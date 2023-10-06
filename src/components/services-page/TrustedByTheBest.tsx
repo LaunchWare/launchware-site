@@ -2,7 +2,7 @@ import React from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { Tagline } from "../general/Tagline";
 
-import decorativeSquare from "../../assets/images/decorative_square.png";
+import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "./css/trusted-by-the-best.css";
 
 export const TrustedByTheBest = () => (

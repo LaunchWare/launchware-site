@@ -17,14 +17,6 @@ export const companySocialProfiles = {
     icon: faLinkedin,
     url: "https://www.linkedin.com/company/launchware/",
   },
-  x: {
-    icon: faXTwitter,
-    url: "https://twitter.com/launchware",
-  },
-  facebook: {
-    icon: faFacebook,
-    url: "https://www.facebook.com/LaunchWare/",
-  },
   youtube: {
     icon: faYoutube,
     url: "https://www.youtube.com/@LaunchWareSoftwareDevelopment",

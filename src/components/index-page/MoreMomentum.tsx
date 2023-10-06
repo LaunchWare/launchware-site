@@ -1,11 +1,11 @@
 import React from "react";
 
-import decorativeSquare from "../../assets/images/decorative_square.png";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
+import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "./css/more-momentum.css";
 
 export const MoreMomentum = () => {
