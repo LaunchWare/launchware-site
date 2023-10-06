@@ -2,6 +2,7 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/are-we-a-fit.css";
@@ -101,7 +102,13 @@ export const AreWeAFit = () => {
           />
         </div>
         <div className="are-we-a-fit__image-container">
-          <img className="are-we-a-fit__image" src="https://placehold.co/580x824" />
+          <StaticImage
+            layout="constrained"
+            width={580}
+            className="are-we-a-fit__image"
+            alt="Man looking at blue wall with sticky notes"
+            src="../../images/services/sticky-notes-on-blue.jpg"
+          />
         </div>
       </div>
       {modal}

@@ -1,11 +1,12 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { BinaryIcon } from "../icons/BinaryIcon";
 import { CodingScriptIcon } from "../icons/CodingScriptIcon";
 import { CommunityIcon } from "../icons/CommunityIcon";
 import { DocsSignIcon } from "../icons/DocsSignIcon";
-import decorativeCircle from "../../images/decorations/decorative_circle.png";
 import "./css/product-listing.css";
 
 export const ProductListing = () => {
@@ -15,11 +16,11 @@ export const ProductListing = () => {
     <section className="product-listing">
       {modal}
       <div className="product-listing__contents">
-        <img
+        <StaticImage
           alt=""
           className="product-listing__decorative-circle"
           role="presentation"
-          src={decorativeCircle}
+          src="../../images/decorations/decorative_circle.png"
         />
 
         <ul className="product-listing__icon-card-container">
@@ -43,7 +44,13 @@ export const ProductListing = () => {
 
         <div className="product-listing__grid">
           <div className="product-listing__image-container">
-            <img className="product-listing__image" src="https://placehold.co/585x438" />
+            <StaticImage
+              layout="constrained"
+              width={585}
+              className="product-listing__image"
+              alt="Coders at a hackathon"
+              src="../../images/services/hackathon.jpg"
+            />
           </div>
 
           <div className="product-listing__text-container">
@@ -164,7 +171,13 @@ export const ProductListing = () => {
           </div>
 
           <div className="product-listing__image-container">
-            <img className="product-listing__image" src="https://placehold.co/680x520" />
+            <StaticImage
+              layout="constrained"
+              width={585}
+              className="product-listing__image"
+              alt="Woman coding with dual displays"
+              src="../../images/services/woman-dual-displays.jpg"
+            />
           </div>
         </div>
       </div>

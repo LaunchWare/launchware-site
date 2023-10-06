@@ -1,5 +1,7 @@
 import React from "react";
+
 import { StarIcon } from "@heroicons/react/24/solid";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/enough-on-your-plate.css";
 
@@ -7,7 +9,13 @@ export const EnoughOnYourPlate = () => (
   <section className="enough-on-your-plate">
     <div className="enough-on-your-plate__contents">
       <div className="enough-on-your-plate__image-container">
-        <img className="enough-on-your-plate__image" src="https://placehold.co/672x509" />
+        <StaticImage
+          layout="constrained"
+          width={672}
+          className="enough-on-your-plate__image"
+          alt="Man drinking coffee while on a laptop"
+          src="../../images/services/coffee-drinker.jpg"
+        />
       </div>
       <div className="enough-on-your-plate__text-container">
         <h2 className="enough-on-your-plate__heading">You have enough on your plate.</h2>
