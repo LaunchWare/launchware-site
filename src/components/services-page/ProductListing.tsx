@@ -21,33 +21,85 @@ export const ProductListing = () => {
           src={decorativeCircle}
         />
 
-        <div className="product-listing__heading-container">
-          <h2 className="product-listing__heading">
-            Professional development services to meet your needs
-          </h2>
-          <ul className="product-listing__icon-card-container">
-            <li className="product-listing__icon-card">
-              <BinaryIcon className="product-listing__icon" width="54" />
-              <h3 className="product-listing__icon-card-heading">Code Audit</h3>
-            </li>
-            <li className="product-listing__icon-card">
-              <DocsSignIcon className="product-listing__icon" width="54" />
-              <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
-            </li>
-            <li className="product-listing__icon-card">
-              <CommunityIcon className="product-listing__icon" width="54" />
-              <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
-            </li>
-            <li className="product-listing__icon-card">
-              <CodingScriptIcon className="product-listing__icon" width="54" />
-              <h3 className="product-listing__icon-card-heading">Custom Development</h3>
-            </li>
-          </ul>
-        </div>
+        <ul className="product-listing__icon-card-container">
+          <li className="product-listing__icon-card">
+            <BinaryIcon className="product-listing__icon" width="54" />
+            <h3 className="product-listing__icon-card-heading">Code Audit</h3>
+          </li>
+          <li className="product-listing__icon-card">
+            <DocsSignIcon className="product-listing__icon" width="54" />
+            <h3 className="product-listing__icon-card-heading">Flight Plan</h3>
+          </li>
+          <li className="product-listing__icon-card">
+            <CommunityIcon className="product-listing__icon" width="54" />
+            <h3 className="product-listing__icon-card-heading">Staff Augmentation</h3>
+          </li>
+          <li className="product-listing__icon-card">
+            <CodingScriptIcon className="product-listing__icon" width="54" />
+            <h3 className="product-listing__icon-card-heading">Custom Development</h3>
+          </li>
+        </ul>
 
         <div className="product-listing__grid">
           <div className="product-listing__image-container">
             <img className="product-listing__image" src="https://placehold.co/585x438" />
+          </div>
+
+          <div className="product-listing__text-container">
+            <div className="product-listing__card">
+              <h3 className="product-listing__card-heading">Staff Augmentation</h3>
+              <p className="product-listing__text">
+                Too much work and too little time? No one wins when your engineering teams get
+                stretched thin.
+              </p>
+              <p className="product-listing__text">
+                LaunchWare's Staff Augmentation is not just getting an extra set of hands. It's
+                about enhancing your team's capabilities. By seamlessly integrating our skilled
+                professionals into your environment, we don't just fill the gap – we become an
+                intrinsic part of your team that's busy getting things shipped.
+              </p>
+              <p className="product-listing__text">
+                We'll pull from our team of senior and junior developers to make sure we match you
+                with the right people for your project. Then, we'll immerse ourselves in
+                understanding your codebase, your unique processes, and the milestones you're aiming
+                for. Together, we ensure that your projects not only stay on track but also achieve
+                excellence, every single time.
+              </p>
+              <button
+                type="button"
+                className="product-listing__button button"
+                onClick={clickHandler}
+              >
+                Book my launch call
+              </button>
+            </div>
+            <div className="product-listing__card">
+              <h3 className="product-listing__card-heading">Custom Development </h3>
+              <p className="product-listing__text">
+                Transforming an idea into a tangible software solution requires more than just
+                vision. It demands the expertise, dedication, and finesse of a seasoned development
+                team.
+              </p>
+              <p className="product-listing__text">
+                That's where LaunchWare's Custom Development comes in. Imagine harnessing the
+                collective experience of a team that has successfully launched dozens of software
+                products. With us, every phase of the journey—from nascent design stages, through
+                development, all the way to triumphant deployment—is meticulously catered for.
+              </p>
+              <p className="product-listing__text">
+                The best part? You bypass the hurdles of recruitment, hiring, and team management.
+                No more paying hefty recruiter fees or trying to hire talented developers in a
+                competitive job market. Simply entrust your idea with us, and together, we'll
+                transform your idea into a successful digital reality.
+              </p>
+              <button
+                type="button"
+                className="product-listing__button button"
+                onClick={clickHandler}
+              >
+                Book my launch call
+              </button>
+            </div>
           </div>
 
           <div className="product-listing__text-container">
@@ -99,63 +151,6 @@ export const ProductListing = () => {
                 For organizations wanting to make their vision for their software a reality, the
                 Flight Plan becomes an indispensable guide, ensuring a confident and impactful
                 software launch.
-              </p>
-              <button
-                type="button"
-                className="product-listing__button button"
-                onClick={clickHandler}
-              >
-                Book my launch call
-              </button>
-            </div>
-          </div>
-
-          <div className="product-listing__text-container">
-            <div className="product-listing__card">
-              <h3 className="product-listing__card-heading">Staff Augmentation</h3>
-              <p className="product-listing__text">
-                Too much work and too little time? No one wins when your engineering teams get
-                stretched thin.
-              </p>
-              <p className="product-listing__text">
-                LaunchWare's Staff Augmentation is not just getting an extra set of hands. It's
-                about enhancing your team's capabilities. By seamlessly integrating our skilled
-                professionals into your environment, we don't just fill the gap – we become an
-                intrinsic part of your team that's busy getting things shipped.
-              </p>
-              <p className="product-listing__text">
-                We'll pull from our team of senior and junior developers to make sure we match you
-                with the right people for your project. Then, we'll immerse ourselves in
-                understanding your codebase, your unique processes, and the milestones you're aiming
-                for. Together, we ensure that your projects not only stay on track but also achieve
-                excellence, every single time.
-              </p>
-              <button
-                type="button"
-                className="product-listing__button button"
-                onClick={clickHandler}
-              >
-                Book my launch call
-              </button>
-            </div>
-            <div className="product-listing__card">
-              <h3 className="product-listing__card-heading">Custom Development </h3>
-              <p className="product-listing__text">
-                Transforming an idea into a tangible software solution requires more than just
-                vision. It demands the expertise, dedication, and finesse of a seasoned development
-                team.
-              </p>
-              <p className="product-listing__text">
-                That's where LaunchWare's Custom Development comes in. Imagine harnessing the
-                collective experience of a team that has successfully launched dozens of software
-                products. With us, every phase of the journey—from nascent design stages, through
-                development, all the way to triumphant deployment—is meticulously catered for.
-              </p>
-              <p className="product-listing__text">
-                The best part? You bypass the hurdles of recruitment, hiring, and team management.
-                No more paying hefty recruiter fees or trying to hire talented developers in a
-                competitive job market. Simply entrust your idea with us, and together, we'll
-                transform your idea into a successful digital reality.
               </p>
               <button
                 type="button"

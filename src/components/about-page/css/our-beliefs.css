@@ -24,7 +24,7 @@
 }
 
 .our-beliefs__grid {
-  @apply grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-16 gap-y-4 py-12;
+  @apply grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-16 gap-y-4 pt-12;
 }
 
 .our-beliefs__paragraph-heading {

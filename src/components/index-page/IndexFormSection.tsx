@@ -10,7 +10,7 @@ import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
 import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
 import "./css/index-one-small-step.css";
 
-export const IndexOneSmallStep = () => {
+export const IndexFormSection = () => {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -164,9 +164,9 @@ export const IndexOneSmallStep = () => {
           src="../../images/decorations/alternate_circle.png"
         />
         <div className="index-one-small-step__text-container">
-          <Tagline tagline="Contact us" />
+          <Tagline tagline="Book Your Call" />
           <h2 className="index-one-small-step__heading">
-            One Small Step, One GIANT Leap for Your Project
+            Stop Stressing. Start Shipping.
           </h2>
           <p className="index-one-small-step__text">
             Fill out the form below and tell us more about your project. We’ll get back to you
