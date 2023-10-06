@@ -1,6 +1,6 @@
 .more-momentum {
   @apply parent-section;
-  @apply bg-launch-neutral-10 relative z-30 md:overflow-x-clip;
+  @apply bg-launch-neutral-20 relative z-30 md:overflow-x-clip;
 }
 
 .more-momentum__contents {
@@ -10,4 +10,8 @@
 
 .more-momentum__decorative-square {
   @apply absolute -z-10 -right-64 md:-top-80 hidden md:inline;
+}
+
+.more-momentum__button {
+  @apply text-center w-full lg:w-auto mx-auto mt-12;
 }

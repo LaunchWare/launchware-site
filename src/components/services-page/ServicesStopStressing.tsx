@@ -55,7 +55,7 @@ export const ServicesStopStressing = () => {
           type="button"
           onClick={clickHandler}
         >
-          Book my launch call
+          Book My Launch Call
         </button>
       </div>
       {modal}

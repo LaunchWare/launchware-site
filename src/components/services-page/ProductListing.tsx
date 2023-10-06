@@ -13,6 +13,7 @@ export const ProductListing = () => {
 
   return (
     <section className="product-listing">
+      {modal}
       <div className="product-listing__contents">
         <img
           alt=""
@@ -126,7 +127,7 @@ export const ProductListing = () => {
                 className="product-listing__button button"
                 onClick={clickHandler}
               >
-                Book my launch call
+                Book My Launch Call
               </button>
             </div>
             <div className="product-listing__card">
@@ -157,7 +158,7 @@ export const ProductListing = () => {
                 className="product-listing__button button"
                 onClick={clickHandler}
               >
-                Book my launch call
+                Book My Launch Call
               </button>
             </div>
           </div>
@@ -167,7 +168,6 @@ export const ProductListing = () => {
           </div>
         </div>
       </div>
-      {modal}
     </section>
   );
 };

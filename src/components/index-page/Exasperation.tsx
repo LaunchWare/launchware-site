@@ -19,7 +19,7 @@ export const Exasperation = () => {
           src="../../images/decorations/decorative_circle.png"
         />
         <div className="exasperation__image-container">
-          <img className="exasperation__image" src="https://placehold.co/680x520" />
+          <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />
         </div>
         <div className="exasperation__text-container">
           <h2 className="exasperation__heading">
@@ -40,9 +40,6 @@ export const Exasperation = () => {
           <button className="exasperation__button button" type="button" onClick={clickHandler}>
             Book My Launch Call
           </button>
-        </div>
-        <div className="exasperation__image-container">
-          <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />
         </div>
       </div>
     </section>

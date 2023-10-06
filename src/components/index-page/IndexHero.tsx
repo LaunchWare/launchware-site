@@ -16,7 +16,7 @@ export const IndexHero = () => {
             Software development that helps your organization reach its goals
           </p>
           <button className="index-hero__button button" type="button" onClick={clickHandler}>
-            Book my launch call
+            Book My Launch Call
           </button>
         </div>
         <div className="index-hero__image-container">
