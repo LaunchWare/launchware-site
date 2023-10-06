@@ -10,7 +10,7 @@
 }
 
 .media-inquiries__image {
-  @apply rounded-md md:max-h-12;
+  @apply md:w-12 rounded-none md:rounded-md;
 }
 
 .media-inquiries__text_sm-hidden {
