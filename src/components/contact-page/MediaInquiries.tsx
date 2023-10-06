@@ -1,14 +1,22 @@
 import React from "react";
+
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/media-inquiries.css";
 
 export const MediaInquiries = () => (
   <section className="media-inquiries">
     <div className="media-inquiries__contents">
-      <img className="media-inquiries__image" src="https://placehold.co/680x366" />
+      <StaticImage
+        layout="constrained"
+        className="media-inquiries__image"
+        alt="Boom microphone"
+        width={680}
+        src="../../images/contact/boom-microphone.jpg"
+      />
       <p className="media-inquiries__text_sm-hidden">
         With the media? <span className="media-inquiries__text_orange">Let's connect</span>.
       </p>
