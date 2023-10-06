@@ -5,7 +5,7 @@
 
 .exasperation__contents {
   @apply contents-container;
-  @apply relative z-40 lg:flex-row md:flex-col flex-col-reverse;
+  @apply relative z-40 lg:flex-row flex-col-reverse;
 }
 
 .exasperation__decorative-circle {

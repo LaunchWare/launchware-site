@@ -9,7 +9,7 @@
 }
 
 .product-listing__decorative-circle {
-  @apply -z-10 absolute -left-32 top-32 hidden md:block;
+  @apply -z-10 absolute -left-32 md:top-0 lg:top-32 hidden md:block;
 }
 
 .product-listing__icon-card-container {
@@ -29,7 +29,7 @@
 }
 
 .product-listing__grid {
-  @apply grid lg:grid-rows-2 lg:grid-flow-col items-center gap-6 pt-12;
+  @apply flex flex-col-reverse lg:grid lg:grid-rows-2 lg:grid-flow-col items-center gap-6 pt-12;
 }
 
 .product-listing__text-container {

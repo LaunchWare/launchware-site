@@ -1,6 +1,6 @@
 .more-momentum {
   @apply parent-section;
-  @apply bg-launch-neutral-10 relative z-30 md:overflow-x-clip;
+  @apply bg-launch-neutral-20 relative z-30 md:overflow-x-clip;
 }
 
 .more-momentum__contents {
