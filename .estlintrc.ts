@@ -14,6 +14,11 @@ export default {
       env: {
         es6: true,
       },
+      settings: {
+        react: {
+          version: 'detect'
+        }
+      },
     },
     {
       files: ["*.graphql"],

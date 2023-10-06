@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import decorativeSquareLarge from "../../assets/images/decorative_square_large.png";
+import decorativeSquareLarge from "../../images/decorations/decorative_square_large.png"
 import "./css/better-way.css";
 
 export const BetterWay = () => {

@@ -1,6 +1,7 @@
 import React from "react";
 
-import decorativeCircle from "../../assets/images/decorative_circle.png";
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/exasperation.css";
 
@@ -11,11 +12,11 @@ export const Exasperation = () => {
     <section className="exasperation">
       {modal}
       <div className="exasperation__contents">
-        <img
+        <StaticImage
           alt=""
           className="exasperation__decorative-circle"
           role="presentation"
-          src={decorativeCircle}
+          src="../../images/decorations/decorative_circle.png"
         />
         <div className="exasperation__image-container">
           <img className="exasperation__image" src="https://placehold.co/680x520" />
@@ -39,6 +40,9 @@ export const Exasperation = () => {
           <button className="exasperation__button button" type="button" onClick={clickHandler}>
             Book My Launch Call
           </button>
+        </div>
+        <div className="exasperation__image-container">
+          <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />
         </div>
       </div>
     </section>

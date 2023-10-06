@@ -1,10 +1,10 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { Tagline } from "../general/Tagline";
 import { getFieldClassName } from "../general/services/getFieldClassName";
-import alternateCircle from "../../assets/images/alternate_circle.png";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
 import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
@@ -157,11 +157,11 @@ export const IndexFormSection = () => {
   return (
     <section className="index-one-small-step">
       <div className="index-one-small-step__contents">
-        <img
+        <StaticImage
           alt=""
-          className="index-partnership__alternate-circle"
+          className="index-one-small-step__alternate-circle"
           role="presentation"
-          src={alternateCircle}
+          src="../../images/decorations/alternate_circle.png"
         />
         <div className="index-one-small-step__text-container">
           <Tagline tagline="Book Your Call" />
@@ -181,7 +181,13 @@ export const IndexFormSection = () => {
           )}
         </div>
         <div className="index-one-small-step__image-container">
-          <img className="index-one-small-step__image" src="https://placehold.co/602x794" />
+          <StaticImage
+            layout="constrained"
+            width={660}
+            className="index-one-small-step__image"
+            alt="Two men examining laptop screen"
+            src="../../images/index/pair-examine-laptop.jpg"
+          />
         </div>
       </div>
     </section>

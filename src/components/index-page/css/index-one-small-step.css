@@ -8,7 +8,7 @@
   @apply relative;
 }
 
-.index-partnership__alternate-circle {
+.index-one-small-step__alternate-circle {
   @apply absolute -z-10 -right-72 lg:-top-72 md:top-80 hidden md:inline;
 }
 
