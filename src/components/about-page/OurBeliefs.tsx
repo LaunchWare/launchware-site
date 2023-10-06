@@ -1,12 +1,20 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import "./css/our-beliefs.css";
 
 export const OurBeliefs = () => (
   <section className="our-beliefs">
     <div className="our-beliefs__contents">
       <div className="our-beliefs__image-container">
-        <img className="our-beliefs__image" src="https://placehold.co/1220x360" />
+        <StaticImage
+          layout="constrained"
+          width={1220}
+          className="our-beliefs__image"
+          alt="Four office mates talking while leaning on tables or wall"
+          src="../../images/about/leaning-foursome.jpg"
+        />
       </div>
       <h2 className="our-beliefs__section-heading">What We Believe</h2>
       <p className="our-beliefs__text_center">

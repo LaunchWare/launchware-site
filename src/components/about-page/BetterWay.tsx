@@ -2,9 +2,9 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import decorativeSquareLarge from "../../images/decorations/decorative_square_large.png"
 import "./css/better-way.css";
 
 export const BetterWay = () => {
@@ -13,11 +13,11 @@ export const BetterWay = () => {
   return (
     <section className="better-way">
       <div className="better-way__contents">
-        <img
+        <StaticImage
           alt=""
           className="better-way__decorative-square"
           role="presentation"
-          src={decorativeSquareLarge}
+          src="../../images/decorations/decorative_square_large.png"
         />
         <div className="better-way__text-container">
           <h2 className="better-way__heading">LaunchWare has found a better way.</h2>
@@ -75,7 +75,13 @@ export const BetterWay = () => {
           />
         </div>
         <div className="better-way__image-container">
-          <img className="better-way__image" src="https://placehold.co/707x510" />
+          <StaticImage
+            layout="constrained"
+            width={707}
+            className="better-way__image"
+            alt="Two men fist bumping with thumbs-ups"
+            src="../../images/about/thumbs-up-bump.jpg"
+          />
         </div>
       </div>
       {modal}

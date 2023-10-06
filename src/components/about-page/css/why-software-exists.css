@@ -1,6 +1,6 @@
 .why-software-exists {
   @apply parent-section;
-  @apply lg:py-0 bg-launch-neutral-10;
+  @apply bg-launch-neutral-10;
 }
 
 .why-software-exists__contents {
@@ -13,7 +13,7 @@
 }
 
 .why-software-exists__image {
-  @apply rounded-image lg:rounded-none mx-auto;
+  @apply rounded-image mx-auto;
 }
 
 .why-software-exists__text-container {

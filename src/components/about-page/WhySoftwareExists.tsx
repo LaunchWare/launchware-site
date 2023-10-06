@@ -1,5 +1,7 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/why-software-exists.css";
 
@@ -10,7 +12,13 @@ export const WhySoftwareExists = () => {
     <section className="why-software-exists">
       <div className="why-software-exists__contents">
         <div className="why-software-exists__image-container">
-          <img className="why-software-exists__image" src="https://placehold.co/800x948" />
+          <StaticImage
+            layout="constrained"
+            width={690}
+            className="why-software-exists__image"
+            alt="Woman in striped shirt thinking"
+            src="../../images/about/thinking-woman.jpg"
+          />
         </div>
 
         <div className="why-software-exists__text-container">
