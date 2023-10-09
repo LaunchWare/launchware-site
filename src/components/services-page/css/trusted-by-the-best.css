@@ -26,8 +26,8 @@
 }
 
 .trusted-by-the-best__cards-container {
-  @apply w-full max-w-lg flex flex-col lg:flex-row;
-  @apply lg:space-x-6 space-y-4 lg:space-y-0 items-stretch;
+  @apply w-full max-w-2xl grid grid-cols-1 md:grid-cols-2;
+  @apply lg:space-x-6 space-y-4 lg:space-y-0 items-start;
 }
 
 .trusted-by-the-best__text {

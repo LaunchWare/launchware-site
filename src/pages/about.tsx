@@ -20,7 +20,8 @@ export const Head = () => (
     />
     <meta
       name="keywords"
-      content="about LaunchWare, software consultancy Boston, technical experts, LaunchWare team, software development beliefs, LaunchWare history" />
+      content="about LaunchWare, software consultancy Boston, technical experts, LaunchWare team, software development beliefs, LaunchWare history"
+    />
   </>
 );
 

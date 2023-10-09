@@ -28,9 +28,9 @@ const ServicesPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Services">
       <ServicesHero />
-      <TrustedByTheBest />
-      <EnoughOnYourPlate />
       <ProductListing />
+      <EnoughOnYourPlate />
+      <TrustedByTheBest />
       <AreWeAFit />
       <ServicesStopStressing />
     </Layout>

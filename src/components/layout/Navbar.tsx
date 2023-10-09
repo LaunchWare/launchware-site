@@ -1,16 +1,16 @@
-import React, { MouseEventHandler } from 'react'
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { MouseEventHandler } from "react";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-import "../../css/index.css"
+import "../../css/index.css";
 import "./css/navbar.css";
 
-import { LaunchWareLogo } from './LaunchWareLogo'
-import { Link } from 'gatsby';
-import { useBookCallModal } from '../book-call/hooks/useBookCallModal';
+import { LaunchWareLogo } from "./LaunchWareLogo";
+import { Link } from "gatsby";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 
 export default function Navbar() {
-  const { clickHandler, modal } = useBookCallModal()
+  const { clickHandler, modal } = useBookCallModal();
 
   return (
     <Disclosure as="nav" className="primary-nav">
@@ -22,7 +22,9 @@ export default function Navbar() {
                 {/* Mobile menu button */}
                 <Disclosure.Button className="primary-nav_mobile-button-disclosure">
                   <span className="primary-nav_mobile-button-spacer" />
-                  <span className="primary-nav_mobile-button-accessible-message">Open main menu</span>
+                  <span className="primary-nav_mobile-button-accessible-message">
+                    Open main menu
+                  </span>
                   {open ? (
                     <XMarkIcon className="primary-nav_mobile-button-icon" aria-hidden="true" />
                   ) : (
@@ -37,15 +39,19 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className="menu__desktop">
-                  <Link to="/services" className="menu-item__desktop">Services</Link>
-                  <Link to="/about" className="menu-item__desktop">About</Link>
-                  <a href="#"
+                  <Link to="/about" className="menu-item__desktop">
+                    About
+                  </Link>
+                  <Link to="/services" className="menu-item__desktop">
+                    Services
+                  </Link>
+                  <a
+                    href="#"
                     onClick={clickHandler}
                     className="menu-item__desktop menu-item__desktop-button button"
                   >
                     Book My Launch Call
                   </a>
-
                 </div>
               </div>
             </div>
@@ -61,11 +67,7 @@ export default function Navbar() {
               >
                 Services
               </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="primary-nav_disclosure-panel-item"
-              >
+              <Disclosure.Button as="a" href="#" className="primary-nav_disclosure-panel-item">
                 About
               </Disclosure.Button>
 
@@ -73,15 +75,15 @@ export default function Navbar() {
                 href="#"
                 onClick={clickHandler}
                 as="a"
-                className="primary-nav_disclosure-panel-item menu-item__desktop menu-item__mobile-button button">
+                className="primary-nav_disclosure-panel-item menu-item__desktop menu-item__mobile-button button"
+              >
                 Book My Launch Call
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
           {modal}
         </>
-      )
-      }
-    </Disclosure >
-  )
+      )}
+    </Disclosure>
+  );
 }
