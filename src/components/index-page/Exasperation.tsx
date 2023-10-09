@@ -19,7 +19,12 @@ export const Exasperation = () => {
           src="../../images/decorations/decorative_circle.png"
         />
         <div className="exasperation__image-container">
-          <StaticImage className="exasperation__image" alt="Woman computing" width={684} src="../../images/index/woman-typing.jpg" />
+          <StaticImage
+            className="exasperation__image"
+            alt="Woman computing"
+            width={685}
+            src="../../images/index/woman-typing.jpg"
+          />
         </div>
         <div className="exasperation__text-container">
           <h2 className="exasperation__heading">

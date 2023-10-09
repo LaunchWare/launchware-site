@@ -2,11 +2,14 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-    "./src/templates/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: {
+    relative: true,
+    files: [
+      "./src/pages/**/*.{js,jsx,ts,tsx,css}",
+      "./src/components/**/*.{js,jsx,ts,tsx,css}",
+      "./src/templates/**/*.{js,jsx,ts,tsx,css}",
+    ],
+  },
   theme: {
     extend: {
       fontFamily: {
