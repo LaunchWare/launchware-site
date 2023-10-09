@@ -1,0 +1,54 @@
+.better-way {
+  @apply parent-section;
+  @apply bg-launch-neutral-30 relative z-30 md:overflow-x-clip;
+}
+
+.better-way__contents {
+  @apply contents-container;
+  @apply relative flex-col lg:flex-row md:pt-4;
+}
+
+.better-way__decorative-square {
+  @apply absolute -z-10 lg:-top-32 md:-bottom-20 -right-80 w-3/4 hidden md:block;
+}
+
+.better-way__image-container {
+  @apply py-8 lg:p-0 mx-auto lg:w-7/12;
+}
+
+.better-way__image {
+  @apply rounded-image;
+}
+
+.better-way__text-container {
+  @apply flex flex-col items-stretch lg:pr-12;
+  @apply text-left w-full lg:w-5/12;
+}
+
+.better-way__heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.better-way__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.better-way__list {
+  @apply text-launch-black-80 pb-4;
+}
+
+.better-way__list-item {
+  @apply flex items-start space-x-2 text-launch-black-80 flex space-x-3 pt-3;
+}
+
+.better-way__check {
+  @apply text-launch-orange pt-1;
+}
+
+.better-way__semibold {
+  @apply font-semibold;
+}
+
+.better-way__button {
+  @apply mt-2;
+}

@@ -14,7 +14,7 @@
 }
 
 .index-stop-stressing__heading {
-  @apply text-4xl font-semibold text-left md:w-2/3 w-4/5;
+  @apply text-4xl text-left md:w-2/3 w-4/5;
 }
 
 .index-stop-stressing__text {

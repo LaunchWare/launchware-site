@@ -16,14 +16,9 @@ const config: GatsbyConfig = {
         postCssPlugins: [require("postcss-import"), require("tailwindcss"), require("autoprefixer")],
       }
     },
+    "gatsby-plugin-typescript",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -81,7 +76,7 @@ const config: GatsbyConfig = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/launchware-favicon.png`, // This path is relative to the root of the site.
       },
     },
     // {

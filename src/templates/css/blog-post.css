@@ -1,0 +1,38 @@
+@import "../../css/index.css";
+
+.blog-post {
+  @apply parent-section;
+}
+
+.blog-post__contents {
+  @apply contents-container;
+  @apply flex-col;
+}
+
+.blog-post__article {
+  @apply max-w-4xl;
+}
+
+.blog-post__heading {
+  @apply text-3xl font-semibold max-w-3xl mx-auto text-center;
+}
+
+.blog-post__text_center {
+  @apply text-center;
+}
+
+.blog-post__text {
+  @apply py-8 text-launch-black-80;
+}
+
+.blog-post-nav {
+  @apply flex justify-between pt-8 text-launch-black-70;
+}
+
+.blog-post-nav__previous {
+  @apply pb-6 md:p-0 md:w-5/12 lg:w-1/4;
+}
+
+.blog-post-nav__next {
+  @apply text-end md:w-5/12 lg:w-1/4;
+}

@@ -1,5 +1,5 @@
 export const companyContactInformation = {
-  phone: "CHANGE NUMBER",
+  phone: "+1 (833) 4SOF-DEV",
   email: "hello@launchware.com",
   mailingAddress: {
     streetAddress: "71 Summer Street",
