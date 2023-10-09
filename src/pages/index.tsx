@@ -17,6 +17,19 @@ import { IndexStopStressing } from "../components/index-page/IndexStopStressing"
 import { MoreMomentum } from "../components/index-page/MoreMomentum";
 import { Layout } from "../components/layout/Layout";
 
+export const Head = () => (
+  <>
+    <title>LaunchWare: Custom Software Development in Boston, MA</title>
+    <meta
+      name="description"
+      content="LaunchWare offers unparalleled software solutions tailored to your needs. Our deep technical expertise combined with a partnership approach ensures top-notch results. Discover our difference today."
+    />
+    <meta
+      name="keywords"
+      content="custom software development Boston, software consultancy, LaunchWare, technical experts, software solutions, Boston software development"
+    />
+  </>
+);
 const IndexPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Home">

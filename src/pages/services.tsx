@@ -11,6 +11,19 @@ import { ServicesStopStressing } from "../components/services-page/ServicesStopS
 import { TrustedByTheBest } from "../components/services-page/TrustedByTheBest";
 import { Layout } from "../components/layout/Layout";
 
+export const Head = () => (
+  <>
+    <title>LaunchWare Services: Custom Development & Staff Augmentation</title>
+    <meta
+      name="description"
+      content="From rescuing struggling projects to providing top-tier staff at every level, LaunchWare is your trusted partner in software development and staff augmentation."
+    />
+    <meta
+      name="keywords"
+      content="software staff augmentation, software development services, project rescue, junior developers, mid-level developers, senior developers, LaunchWare services"
+    />
+  </>
+);
 const ServicesPage = (pageProps: PageProps) => {
   return (
     <Layout location={pageProps.location} title="Services">
