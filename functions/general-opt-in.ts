@@ -17,7 +17,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     }
   }
   else {
-    const activeCampaignEvent = new Event({
+    const activeCampaignEvent = new Event<{}>({
       email,
       eventName: "generalOptIn"
     })

@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/index-best-products.css";
 
@@ -30,6 +31,13 @@ export const IndexBestProducts = () => (
       </div>
       <div className="index-best-products__image-container">
         <img className="index-best-products__image" src="https://placehold.co/680x509" />
+        {/* <StaticImage
+          layout="constrained"
+          width={680}
+          className="index-best-products__image"
+          alt=""
+          src="../../images/index/.jpg"
+        /> */}
       </div>
     </div>
   </section>

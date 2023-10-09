@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
         postCssPlugins: [require("postcss-import"), require("tailwindcss"), require("autoprefixer")],
       }
     },
+    "gatsby-plugin-typescript",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {

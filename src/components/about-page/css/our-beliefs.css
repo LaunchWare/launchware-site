@@ -1,0 +1,36 @@
+.our-beliefs {
+  @apply parent-section;
+}
+
+.our-beliefs__contents {
+  @apply contents-container;
+  @apply flex-col;
+}
+
+.our-beliefs__image-container {
+  @apply text-center;
+}
+
+.our-beliefs__image {
+  @apply rounded-image;
+}
+
+.our-beliefs__section-heading {
+  @apply text-4xl text-launch-black text-center pt-16 pb-8;
+}
+
+.our-beliefs__text_center {
+  @apply text-launch-black-80 text-center max-w-lg;
+}
+
+.our-beliefs__grid {
+  @apply grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-16 gap-y-4 pt-12;
+}
+
+.our-beliefs__paragraph-heading {
+  @apply text-lg alternative-headline;
+}
+
+.our-beliefs__text {
+  @apply text-launch-black-80;
+}

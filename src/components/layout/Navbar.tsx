@@ -38,13 +38,13 @@ export default function Navbar() {
                 </div>
                 <div className="menu__desktop">
                   <Link to="/services" className="menu-item__desktop">Services</Link>
-                  <a
-                    href="#"
-                    className="menu-item__desktop"
+                  <Link to="/about" className="menu-item__desktop">About</Link>
+                  <a href="#"
+                    onClick={clickHandler}
+                    className="menu-item__desktop menu-item__desktop-button button"
                   >
-                    About
+                    Book My Launch Call
                   </a>
-                  <a href="#" onClick={clickHandler} className="menu-item__desktop menu-item__desktop-button button">Book Launch Call</a>
 
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                 onClick={clickHandler}
                 as="a"
                 className="primary-nav_disclosure-panel-item menu-item__desktop menu-item__mobile-button button">
-                Book Launch Call
+                Book My Launch Call
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>

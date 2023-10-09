@@ -2,9 +2,12 @@
   "cSpell.words": [
     "actid",
     "codepaths",
+    "eventdata",
     "fortawesome",
     "frontmatter",
     "hookform",
+    "inquries",
+    "kanit",
     "launchware",
     "lpignore",
     "prismjs",
@@ -13,6 +16,7 @@
     "tanstack",
     "tsbuildinfo",
     "Typegen",
+    "Webp",
     "WGNPB"
   ],
   "eslint.options": {

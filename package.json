@@ -12,7 +12,7 @@
     "react native"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "yarn run gatsby build",
     "clean": "gatsby clean",
     "develop": "netlify dev",
     "lint": "yarn run lint:syntax && yarn run lint:style",
@@ -43,6 +43,7 @@
     "gatsby-plugin-mdx": "^5.10.0",
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-plugin-sitemap": "^6.10.0",
+    "gatsby-plugin-typescript": "^5.12.0",
     "gatsby-remark-images": "^7.8.0",
     "gatsby-remark-prismjs": "^7.8.0",
     "gatsby-remark-responsive-iframe": "^6.8.0",
@@ -78,7 +79,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "gatsby-cli": "^5.12.1",
-    "gatsby-plugin-postcss": "^6.8.0",
+    "gatsby-plugin-postcss": "6.12.0",
     "install-peerdeps": "^3.0.3",
     "netlify-cli": "^16.3.3",
     "postcss": "^8.4.21",
@@ -87,6 +88,6 @@
     "prettier": "^3.0.3",
     "prop-types": "^15.8.1",
     "tailwindcss": "^3.3.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.2.2"
   }
 }

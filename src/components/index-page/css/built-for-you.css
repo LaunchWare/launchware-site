@@ -27,7 +27,7 @@
 }
 
 .built-for-you__card-heading {
-  @apply text-4xl text-left w-full;
+  @apply text-4xl text-left w-full alternative-headline;
 }
 
 .built-for-you__card {
@@ -37,7 +37,7 @@
 }
 
 .built-for-you__card-heading {
-  @apply text-lg font-semibold pt-4;
+  @apply text-lg pt-4;
 }
 
 .built-for-you__text {

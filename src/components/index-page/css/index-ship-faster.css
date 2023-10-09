@@ -13,19 +13,19 @@
 }
 
 .index-ship-faster__heading {
-  @apply text-4xl font-semibold max-w-md mb-5;
+  @apply text-4xl max-w-md mb-5;
 }
 
 .index-ship-faster__grid {
-  @apply grid md:grid-rows-2 md:grid-flow-col items-start gap-6 pt-12;
+  @apply grid md:grid-cols-2 md:grid-flow-row items-start gap-6 pt-12;
 }
 
 .index-ship-faster__card {
-  @apply p-6 bg-launch-neutral-10 rounded-xl h-full;
+  @apply p-6 bg-launch-neutral-10 rounded-xl h-full flex flex-col;
 }
 
 .index-ship-faster__image-container {
-  @apply py-6 w-full;
+  @apply py-6;
 }
 
 .index-ship-faster__image {
@@ -34,7 +34,7 @@
 
 .index-ship-faster__card-heading {
   @apply text-4xl text-left w-full;
-  @apply text-lg font-semibold;
+  @apply text-lg alternative-headline;
 }
 
 .index-ship-faster__text {
@@ -43,4 +43,8 @@
 
 .index-ship-faster__ordered-list {
   @apply list-decimal ml-4;
+}
+
+.index-ship-faster__button {
+  @apply mt-4 md:mt-auto md:mr-auto;
 }

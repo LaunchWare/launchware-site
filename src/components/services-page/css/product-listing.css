@@ -9,19 +9,11 @@
 }
 
 .product-listing__decorative-circle {
-  @apply -z-10 absolute -left-32 top-32 hidden md:block;
-}
-
-.product-listing__heading-container {
-  @apply flex flex-col justify-center w-full;
-}
-
-.product-listing__heading {
-  @apply text-3xl font-semibold text-center max-w-lg mx-auto;
+  @apply -z-10 absolute -left-32 md:top-0 lg:top-32 hidden md:block;
 }
 
 .product-listing__icon-card-container {
-  @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4 pt-8;
+  @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4;
 }
 
 .product-listing__icon-card {
@@ -33,11 +25,11 @@
 }
 
 .product-listing__icon-card-heading {
-  @apply text-lg font-semibold pl-3 w-5/6 my-auto;
+  @apply text-lg pl-3 w-5/6 my-auto alternative-headline;
 }
 
 .product-listing__grid {
-  @apply grid lg:grid-rows-2 lg:grid-flow-col items-center gap-6 pt-12;
+  @apply flex flex-col-reverse lg:grid lg:grid-rows-2 lg:grid-flow-col items-center gap-6 pt-12;
 }
 
 .product-listing__text-container {
@@ -49,7 +41,7 @@
 }
 
 .product-listing__card-heading {
-  @apply text-lg font-semibold w-full text-center mx-auto pb-4;
+  @apply text-lg w-full text-center mx-auto pb-4 alternative-headline;
 }
 
 .product-listing__image-container {

@@ -1,0 +1,21 @@
+.services-hero {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.services-hero__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.services-hero__heading {
+  @apply text-5xl text-center max-w-xl lg:max-w-3xl;
+}
+
+.services-hero__uppercase {
+  @apply uppercase;
+}
+
+.services-hero__text {
+  @apply text-center text-launch-black-80;
+}
