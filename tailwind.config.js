@@ -35,6 +35,10 @@ module.exports = {
       },
     },
   },
+  fontDisplay: {
+    inter: "swap",
+    kanit: "swap",
+  },
   variants: {
     extend: {},
   },
