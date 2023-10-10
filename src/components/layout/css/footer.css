@@ -7,7 +7,7 @@
 }
 
 .footer_grid {
-  @apply w-full grid text-center lg:text-left lg:gap-20 lg:grid-cols-5 grid-cols-1;
+  @apply w-full grid text-center lg:text-left lg:gap-14 lg:grid-cols-5 grid-cols-1;
 }
 
 .footer_group {

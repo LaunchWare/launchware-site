@@ -1,6 +1,6 @@
 import React from "react";
 
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationDot, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -18,6 +18,7 @@ export const GetInTouch = () => {
     email,
     mailingAddress: { streetAddress, streetAddress2, city, state, zipCode },
     phone,
+    sms
   } = companyContactInformation;
 
   return (
@@ -50,6 +51,10 @@ export const GetInTouch = () => {
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faPhone} />
                 <a href={`tel:${phone}`}>{phone}</a>
+              </li>
+              <li className="get-in-touch__list-item">
+                <FontAwesomeIcon className="get-in-touch__icon" icon={faSms} />
+                <a href={`tel:${sms}`}>{sms}</a>
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faEnvelope} />

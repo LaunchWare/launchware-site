@@ -9,6 +9,8 @@ import "./css/footer.css"
 import { TrackingCodes } from "./TrackingCodes"
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
 import { OptInForm } from "../opt-in/OptInForm"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   const { modal, clickHandler } = useBookCallModal();
@@ -61,8 +63,18 @@ const Footer = () => {
               <a href="#">Book Your Launch Call</a>
             </p>
             <p><Link to="/contact">Contact Us</Link></p>
-            <p><a href={`tel:${companyContactInformation.phone}`}> {companyContactInformation.phone}</a></p>
-            <p><a href={`mailto:${companyContactInformation.email}`}>{companyContactInformation.email}</a></p>
+            <p>
+              <FontAwesomeIcon icon={faPhone} />&nbsp;
+              <a href={`tel:${companyContactInformation.phone}`}> {companyContactInformation.phone}</a>
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faSms} />&nbsp;
+              <a href={`tel:${companyContactInformation.sms}`}>{companyContactInformation.sms}</a>
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} />&nbsp;
+              <a href={`mailto:${companyContactInformation.email}`}>{companyContactInformation.email}</a>
+            </p>
             <ul className="footer_social-list">
               {socialListItems}
             </ul>
