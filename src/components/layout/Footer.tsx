@@ -1,6 +1,6 @@
 import React from "react"
 import { LaunchWareLogoLight } from "./LaunchWareLogoLight"
-import { Link } from "gatsby"
+import { Link, Script } from "gatsby"
 import { companySocialProfiles } from "../../configuration/getCompanySocialProfile"
 import { CompanySocialIcon } from "../social/CompanySocialIcon"
 import { companyContactInformation } from "../../configuration/companyContactInformation"
@@ -80,6 +80,7 @@ const Footer = () => {
         </div>
       </div>
       <TrackingCodes />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" />
     </footer >
   )
 }

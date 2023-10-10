@@ -25,7 +25,7 @@ const fonts = [
   // "/fonts/Inter/Inter-ExtraBold.ttf",
   // "/fonts/Inter/Inter-ExtraLight.ttf",
   // "/fonts/Inter/Inter-Light.ttf",
-  "/fonts/Inter/Inter-Medium.ttf",
+  // "/fonts/Inter/Inter-Medium.ttf",
   "/fonts/Inter/Inter-Regular.ttf",
   // "/fonts/Inter/Inter-Thin.ttf",
 ]

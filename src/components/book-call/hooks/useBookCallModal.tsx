@@ -31,13 +31,6 @@ export const useBookCallModal = () => {
   const url = companyContactInformation.launchCallUrl;
 
   useEffect(() => {
-    if (document && !window.Calendly && !calendlyInitialized) {
-      const tag = document.createElement("script");
-      tag.async = true;
-      tag.src = "https://assets.calendly.com/assets/external/widget.js";
-      const body = document.getElementsByTagName("body")[0];
-      body.appendChild(tag);
-    }
     window.addEventListener("message", (e) => {
       if (e.data.event && e.data.event.indexOf("calendly")) {
         setModalVisibility(false);
