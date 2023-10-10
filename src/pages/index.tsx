@@ -7,7 +7,6 @@ import "../css/index.css";
 import { Exasperation } from "../components/index-page/Exasperation";
 import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
-import { IndexFormSection } from "../components/index-page/IndexFormSection";
 import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
 import { IndexLogos } from "../components/index-page/IndexLogos";
@@ -43,7 +42,6 @@ const IndexPage = (pageProps: PageProps) => {
       <MoreMomentum />
       {/* <IndexStopStressing /> */}
       <IndexBestProducts />
-      <IndexFormSection />
     </Layout>
   );
 };

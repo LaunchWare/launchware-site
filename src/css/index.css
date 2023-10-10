@@ -29,11 +29,15 @@
 
   .form__field {
     @apply w-full py-2 px-3 rounded-md;
-    @apply border border-launch-black-10 shadow-md text-launch-black-40;
+    @apply border border-launch-black-10 shadow-md placeholder:text-launch-black-40;
   }
 
   .form__dropdown {
-    @apply border-r-[0.75rem] border-launch-neutral-10 text-launch-black-40 pr-6;
+    @apply border-r-[0.75rem] border-launch-neutral-10 placeholder:text-launch-black-40 pr-6;
+
+    & option:first-child {
+      @apply placeholder:text-launch-black-40;
+    }
   }
 
   .form__field_error {

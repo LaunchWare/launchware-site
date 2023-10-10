@@ -26,8 +26,16 @@
 }
 
 .get-in-touch__text-container {
-  @apply flex flex-col md:items-start md:pr-16;
-  @apply text-left w-full lg:w-1/2;
+  @apply flex flex-col md:items-start;
+  @apply text-left w-full;
+}
+
+.get-in-touch__text-container_first {
+  @apply lg:w-5/12;
+}
+
+.get-in-touch__text-container_last {
+  @apply lg:w-7/12;
 }
 
 .get-in-touch__list {
@@ -43,7 +51,7 @@
 }
 
 .get-in-touch__heading {
-  @apply text-lg font-semibold;
+  @apply text-2xl font-semibold alternative-headline;
 }
 
 .get-in-touch__text {
