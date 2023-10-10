@@ -1,0 +1,51 @@
+.one-small-step {
+  @apply lg:py-0 relative z-30 md:overflow-x-clip;
+}
+
+.one-small-step__contents {
+  @apply contents-container;
+  @apply relative;
+}
+
+.one-small-step__alternate-circle {
+  @apply absolute -z-10 -right-72 lg:-top-72 md:top-80 hidden md:inline;
+}
+
+.one-small-step__text-container {
+  @apply flex flex-col md:items-start;
+  @apply text-left w-full;
+}
+
+.one-small-step__heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.one-small-step__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.one-small-step__form {
+  @apply form;
+}
+
+.one-small-step__input,
+.one-small-step__textarea,
+.one-small-step__select {
+  @apply form__field;
+}
+
+.one-small-step__select {
+  @apply form__dropdown;
+}
+
+.one-small-step__input_error {
+  @apply form__field_error;
+}
+
+.one-small-step__error {
+  @apply form__error;
+}
+
+.one-small-step__image-container {
+  @apply pt-8 md:pt-0;
+}
