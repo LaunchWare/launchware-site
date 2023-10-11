@@ -5,8 +5,8 @@ import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import alternateCircle from "../../images/decorations/alternate_circle.png";
 import "./css/vision-to-reality.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const VisionToReality = () => {
   const { modal, clickHandler } = useBookCallModal();
@@ -41,11 +41,11 @@ export const VisionToReality = () => {
   return (
     <section className="vision-to-reality">
       <div className="vision-to-reality__contents">
-        <img
+        <StaticImage
           alt=""
           className="vision-to-reality__decorative-circle"
           role="presentation"
-          src={alternateCircle}
+          src="../../images/decorations/alternate_circle.png"
         />
         <ThreeCardSection sectionContents={sectionContents} />
         <button className="vision-to-reality__button button" type="button" onClick={clickHandler}>

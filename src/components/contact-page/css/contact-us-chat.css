@@ -9,7 +9,7 @@
   @apply bg-launch-neutral-10 md:bg-launch-neutral-30 rounded-xl shadow-md md:shadow-none overflow-hidden md:overflow-visible;
 }
 
-.contact-us-chat__dots {
+div.contact-us-chat__dots {
   @apply absolute z-20 -right-32 md:top-0 hidden md:inline;
 }
 

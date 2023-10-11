@@ -1,16 +1,16 @@
 import React, { RefObject } from "react";
 
-import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "@launchware/replicator/dist/css/Modal/modal.css";
 import "./css/book-call-modal.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const BookCallModal = ({ divRef }: { divRef: RefObject<HTMLDivElement> }) => (
   <div className="book-call">
-    <img
+    <StaticImage
       alt=""
       className="book-call__decorative-square"
       role="presentation"
-      src={decorativeSquare}
+      src="../../images/decorations/decorative_square.png"
     />
     <div className="book-call__text-container">
       <h2 className="book-call__heading">Book Your Launch Call</h2>

@@ -8,7 +8,7 @@
   @apply flex-wrap relative;
 }
 
-.vision-to-reality__decorative-circle {
+div.vision-to-reality__decorative-circle {
   @apply rotate-45 -z-10 absolute hidden md:block;
   @apply -left-48 -bottom-72;
 }
