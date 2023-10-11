@@ -17,9 +17,25 @@ export const RiskAssessmentIcon = ({
     >
       <defs>
         <style>
-          .cls-1{"fill:#fff;"}.cls-2,.cls-3{"fill:none;"}.cls-2,.cls-3,.cls-4
-          {"strokeLinecap:round;strokeLinejoin:round;strokeWidth:2px;"}.cls-2,.cls-4
-          {"stroke:#000;"}.cls-3{"stroke:#fff;"}
+          {`
+            .cls-1 {
+              fill: #fff;
+            }
+            .cls-2, .cls-3 {
+              fill:none;
+            }
+            .cls-2, .cls-3, .cls-4 {
+              strokeLinecap: round;
+              strokeLinejoin: round;
+              strokeWidth: 2px;
+            }
+            .cls-2, .cls-4 {
+              stroke:#000;
+            }
+            .cls-3 {
+              stroke:#fff;
+            }
+          `}
         </style>
       </defs>
       <g>
