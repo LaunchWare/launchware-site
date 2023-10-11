@@ -1,4 +1,4 @@
-import React from "react"
+import React, { MouseEventHandler } from "react"
 import { LaunchWareLogoLight } from "./LaunchWareLogoLight"
 import { Link, Script } from "gatsby"
 import { companySocialProfiles } from "../../configuration/getCompanySocialProfile"
@@ -12,12 +12,26 @@ import { OptInForm } from "../opt-in/OptInForm"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
 
+declare global {
+  interface Window {
+    UC_UI: {
+      showSecondLayer: () => void;
+    };
+  }
+}
 const Footer = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
     return <li key={network}><CompanySocialIcon network={network} /></li>
   })
+
+  const privacySettingsHandler: MouseEventHandler = (event) => {
+    event.preventDefault()
+    if (window.UC_UI) {
+      window.UC_UI.showSecondLayer()
+    }
+  }
 
   return (
     <footer className="footer">
@@ -86,13 +100,16 @@ const Footer = () => {
         <div className="footer_legal">
           <p className="footer_copyright-notice">&copy; {new Date().getFullYear()} LaunchWare. All rights reserved.</p>
           <ul className="footer_legal-links">
-            <li><Link to="/disclaimer">Disclaimer</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             <li><Link to="/cookies">Cookies</Link></li>
+            <li><a href="#" onClick={privacySettingsHandler}>Privacy Settings</a></li>
           </ul>
         </div>
       </div>
+      <Script type="text/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" />
+      <Script type="text/javascript" id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="4Rd5it0XiLQ7g9" async />
       <TrackingCodes />
-      <Script src="https://assets.calendly.com/assets/external/widget.js" />
+      <Script type="text/plain" data-usercentrics="Calendly" src="https://assets.calendly.com/assets/external/widget.js" />
     </footer >
   )
 }

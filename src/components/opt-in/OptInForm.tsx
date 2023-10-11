@@ -7,6 +7,7 @@ import "../../css/forms.css"
 import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema"
 import { useGeneralOptIn } from "./hooks/useGeneralOptIn"
 import { Spinner } from "../spinner/Spinner"
+import { Link } from "gatsby"
 
 
 declare global {
@@ -40,7 +41,7 @@ export const OptInForm = () => {
       <p className="error">{errors.email?.message}</p>
     )}
     <input type="submit" disabled={isLoading} className="button button__full-width footer_button" value="Submit" data-lpignore="true" />
-    <p className="footer_opt-in-terms">By submitting this form, you confirm that you have read and agree to the Terms & Conditions.</p>
+    <p className="footer_opt-in-terms">By submitting this form, you confirm that you have read and agree to the <Link to="/terms-of-service">Terms of Service</Link>.</p>
   </>
 
   const successContent = <p>Thanks! We'll be in touch.</p>

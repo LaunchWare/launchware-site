@@ -39,5 +39,11 @@ export const onRenderBody = ({ setHeadComponents }) => {
       key={font}
     />
   })
-  setHeadComponents(links)
+
+  const userCentricLinks = [
+    <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,
+    <link rel="preconnect" href="//api.usercentrics.eu" key="usercentrics-api" />,
+    <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" key="usercentrics-loader" as="script" />
+  ]
+  setHeadComponents([...links, ...userCentricLinks])
 }
