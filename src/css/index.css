@@ -66,6 +66,26 @@ body {
   }
 }
 
+.policy__container {
+  @apply pad-container my-4;
+
+  & h3 {
+    @apply mt-4;
+  }
+
+  & ol {
+    @apply list-decimal list-inside;
+  }
+
+  & ul {
+    @apply list-disc list-inside;
+  }
+}
+
+.policy__contents {
+  @apply parent-section;
+}
+
 .coming-soon-notice {
   margin-top: 10%;
   text-align: center;
