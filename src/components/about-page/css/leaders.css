@@ -36,6 +36,10 @@
   @apply p-6;
 }
 
+.leaders__image-container {
+  @apply text-center;
+}
+
 .leaders__text {
   @apply text-base text-launch-black-80 pt-4 w-full leading-relaxed;
 }
