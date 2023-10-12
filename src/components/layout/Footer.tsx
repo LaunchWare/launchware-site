@@ -49,12 +49,12 @@ const Footer = () => {
               <li className="footer_link-list-item">
                 <Link to="/services">Services</Link>
               </li>
-              <li className="footer_link-list-item">
+              {/* <li className="footer_link-list-item">
                 <Link to="/capabilities">Capabilities</Link>
               </li>
               <li className="footer_link-list-item">
                 <Link to="/case-studies">Case Studies</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 
@@ -64,9 +64,9 @@ const Footer = () => {
               <li className="footer_link-list-item">
                 <Link to="/about">About</Link>
               </li>
-              <li className="footer_link-list-item">
+              {/* <li className="footer_link-list-item">
                 <Link to="/careers">Careers</Link>
-              </li>
+              </li> */}
               <li className="footer_link-list-item">
                 <Link to="/blog">Insight</Link>
               </li>
