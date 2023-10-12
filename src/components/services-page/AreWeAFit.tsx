@@ -35,55 +35,55 @@ export const AreWeAFit = () => {
           </p>
           <ul className="are-we-a-fit__list">
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You embrace Agile principles, valuing adaptability, early delivery, and ongoing
                 improvement.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You&#8217;re enthusiastic about co-creating a shared vision for your product, rather
                 than handing off a list of requirements.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You understand the value of transparent communication, be it daily stand-ups or
                 sprint reviews.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You&#8217;re willing to be actively involved in the development process, from
                 planning to deployment.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You&#8217;re searching for a long-lasting partnership, not just a one-off gig.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You appreciate the importance of data-driven decision-making in software
                 development.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You understand the importance of risk management; although we can&#8217;t foresee
                 all obstacles, we can certainly prepare and adapt.
               </span>
             </li>
             <li className="are-we-a-fit__list-item">
-              <FontAwesomeIcon className="are-we-a-fit__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="are-we-a-fit__check" icon={faCheck} />
               <span>
                 You recognize that every member of the development team, including stakeholders,
                 brings valuable insights to the table.
