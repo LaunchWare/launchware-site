@@ -38,7 +38,9 @@ const Footer = () => {
       {modal}
       <div className="footer_container">
         <div className="footer_logo-container">
-          <LaunchWareLogoLight className="footer_logo" />
+          <Link to="/">
+            <LaunchWareLogoLight className="footer_logo" />
+          </Link>
         </div>
         <div className="footer_grid">
           <nav className="footer_group footer_group__serve">
