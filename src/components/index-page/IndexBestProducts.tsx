@@ -30,7 +30,7 @@ export const IndexBestProducts = () => (
         </p>
       </div>
       <div className="index-best-products__image-container">
-        <img className="index-best-products__image" src="https://placehold.co/680x509" />
+        <img className="index-best-products__image" src="https://placehold.co/680x509" height="509" width="680" />
         {/* <StaticImage
           layout="constrained"
           width={680}
