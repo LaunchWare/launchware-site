@@ -8,8 +8,8 @@
   @apply flex-wrap relative;
 }
 
-.more-momentum__decorative-square {
-  @apply absolute -z-10 -right-64 md:-top-80 hidden md:inline;
+div.more-momentum__decorative-square {
+  @apply absolute -z-20 -right-64 md:-top-80 hidden md:inline;
 }
 
 .more-momentum__button {

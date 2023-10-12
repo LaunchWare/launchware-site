@@ -8,7 +8,7 @@
   @apply flex-wrap relative z-40;
 }
 
-.product-listing__decorative-circle {
+div.product-listing__decorative-circle {
   @apply -z-10 absolute -left-32 md:top-0 lg:top-32 hidden md:block;
 }
 

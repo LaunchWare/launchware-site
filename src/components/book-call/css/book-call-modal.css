@@ -33,7 +33,7 @@
   @apply p-0 relative overflow-clip flex-col md:flex-row;
 }
 
-.book-call__decorative-square {
+div.book-call__decorative-square {
   @apply absolute hidden md:block;
   @apply -left-40 -bottom-40;
 }

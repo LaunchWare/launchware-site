@@ -8,7 +8,7 @@
   @apply relative;
 }
 
-.trusted-by-the-best__decorative-square {
+div.trusted-by-the-best__decorative-square {
   @apply absolute -z-10 -right-64 md:-top-72 hidden md:inline;
 }
 

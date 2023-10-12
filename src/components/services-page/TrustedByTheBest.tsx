@@ -2,17 +2,17 @@ import React from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { Tagline } from "../general/Tagline";
 
-import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "./css/trusted-by-the-best.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const TrustedByTheBest = () => (
   <section className="trusted-by-the-best">
     <div className="trusted-by-the-best__contents">
-      <img
+      <StaticImage
         alt=""
         className="trusted-by-the-best__decorative-square"
         role="presentation"
-        src={decorativeSquare}
+        src="../../images/decorations/decorative_square.png"
       />
       <div className="trusted-by-the-best__text-container">
         <div className="trusted-by-the-best__heading-container">

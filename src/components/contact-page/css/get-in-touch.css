@@ -8,7 +8,7 @@
   @apply relative flex-col;
 }
 
-.get-in-touch__alternate-circle {
+div.get-in-touch__alternate-circle {
   @apply absolute -z-10 -left-72 md:-top-48 hidden md:inline;
 }
 
