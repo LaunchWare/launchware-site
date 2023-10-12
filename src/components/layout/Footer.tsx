@@ -38,7 +38,7 @@ const Footer = () => {
       {modal}
       <div className="footer_container">
         <div className="footer_logo-container">
-          <Link to="/">
+          <Link to="/" title="LaunchWare">
             <LaunchWareLogoLight className="footer_logo" />
           </Link>
         </div>
