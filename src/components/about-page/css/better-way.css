@@ -8,7 +8,7 @@
   @apply relative flex-col lg:flex-row md:pt-4;
 }
 
-.better-way__decorative-square {
+div.better-way__decorative-square {
   @apply absolute -z-10 lg:-top-32 md:-bottom-20 -right-80 w-3/4 hidden md:block;
 }
 

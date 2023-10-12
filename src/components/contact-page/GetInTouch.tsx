@@ -5,30 +5,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { getFieldClassName } from "../general/services/getFieldClassName";
-import alternateCircle from "../../images/decorations/alternate_circle.png";
 import { companyContactInformation } from "../../configuration/companyContactInformation";
-import { useNotifications } from "../../hooks/useNotifications";
-import { usePostGeneralInquiry } from "./hooks/usePostGeneralInquiry";
-import { GetInTouchFormValues } from "./models/GetInTouchFormShapes";
 import "./css/get-in-touch.css";
 import { ContactForm } from "./ContactForm";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const GetInTouch = () => {
   const {
     email,
     mailingAddress: { streetAddress, streetAddress2, city, state, zipCode },
     phone,
-    sms
+    sms,
   } = companyContactInformation;
 
   return (
     <section className="get-in-touch">
       <div className="get-in-touch__contents">
-        <img
+        <StaticImage
           alt=""
           className="get-in-touch__alternate-circle"
           role="presentation"
-          src={alternateCircle}
+          src="../../images/decorations/alternate_circle.png"
         />
         <h2 className="get-in-touch__section-heading">Get in touch</h2>
         <p className="get-in-touch__text_center">We'd love to hear from you</p>

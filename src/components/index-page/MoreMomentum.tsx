@@ -5,8 +5,9 @@ import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import decorativeSquare from "../../images/decorations/decorative_square.png";
+import decorativeSquare from "";
 import "./css/more-momentum.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const MoreMomentum = () => {
   const { modal, clickHandler } = useBookCallModal();
@@ -42,11 +43,11 @@ export const MoreMomentum = () => {
     <section className="more-momentum">
       {modal}
       <div className="more-momentum__contents">
-        <img
+        <StaticImage
           alt=""
           className="more-momentum__decorative-square"
           role="presentation"
-          src={decorativeSquare}
+          src="../../images/decorations/decorative_square.png"
         />
         <ThreeCardSection sectionContents={sectionContents} />
         <button className="more-momentum__button button" type="button" onClick={clickHandler}>

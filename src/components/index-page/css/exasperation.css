@@ -8,7 +8,7 @@
   @apply relative z-40 lg:flex-row flex-col-reverse;
 }
 
-.exasperation__decorative-circle {
+div.exasperation__decorative-circle {
   @apply -z-10 absolute -left-32 -top-80 hidden md:block;
 }
 

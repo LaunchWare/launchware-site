@@ -1,5 +1,5 @@
 .index-ship-faster {
-  @apply parent-section;
+  @apply parent-section relative z-20;
   @apply bg-launch-black;
 }
 
