@@ -40,15 +40,15 @@ export const IndexPartnership = () => {
           </p>
           <ul>
             <li className="index-partnership__list-item">
-              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} height="1rem" />
               <span>A proven process</span>
             </li>
             <li className="index-partnership__list-item">
-              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} height="1rem" />
               <span>Decades of tech experience</span>
             </li>
             <li className="index-partnership__list-item">
-              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} />
+              <FontAwesomeIcon className="index-partnership__check" icon={faCheck} height="1rem" />
               <span>Regular review and adaptation</span>
             </li>
           </ul>

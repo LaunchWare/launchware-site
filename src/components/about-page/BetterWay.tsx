@@ -30,32 +30,32 @@ export const BetterWay = () => {
           <ul className="better-way__list">
             Imagine what's possible for your software:
             <li className="better-way__list-item">
-              <FontAwesomeIcon className="better-way__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
               <span>
                 Clear, written understanding of product objectives and how it contributes to the
                 company's strategy
               </span>
             </li>
             <li className="better-way__list-item">
-              <FontAwesomeIcon className="better-way__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
               <span>Regular releases every 2 weeks</span>
             </li>
             <li className="better-way__list-item">
-              <FontAwesomeIcon className="better-way__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
               <span>
                 Consistent backlog refinement so that engineers have clarity on what they're
                 building
               </span>
             </li>
             <li className="better-way__list-item">
-              <FontAwesomeIcon className="better-way__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
               <span>
                 Automated testing that ensures every build of your software makes its quality
                 better, not worse
               </span>
             </li>
             <li className="better-way__list-item">
-              <FontAwesomeIcon className="better-way__check" icon={faCheck} />
+              <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
               <span>
                 Well-established development milestones and an understanding of how to allocate the
                 team
