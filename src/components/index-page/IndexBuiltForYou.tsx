@@ -5,12 +5,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/built-for-you.css";
 
 export const IndexBuiltForYou = () => (
-  <section className="built-for-you">
+  <div className="built-for-you">
     <div className="built-for-you__contents">
       <StaticImage
         alt=""
         className="built-for-you__decorative-square"
-        role="presentation"
         src="../../images/decorations/decorative_square.png"
       />
       <div className="built-for-you__heading-container">
@@ -60,5 +59,5 @@ export const IndexBuiltForYou = () => (
         </div>
       </div>
     </div>
-  </section>
+  </div>
 );

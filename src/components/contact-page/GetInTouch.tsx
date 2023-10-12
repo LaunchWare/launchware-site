@@ -14,17 +14,17 @@ export const GetInTouch = () => {
   const {
     email,
     mailingAddress: { streetAddress, streetAddress2, city, state, zipCode },
-    phone,
+    phoneHref,
+    phoneFormatted,
     sms,
   } = companyContactInformation;
 
   return (
-    <section className="get-in-touch">
+    <div className="get-in-touch">
       <div className="get-in-touch__contents">
         <StaticImage
           alt=""
           className="get-in-touch__alternate-circle"
-          role="presentation"
           src="../../images/decorations/alternate_circle.png"
         />
         <h2 className="get-in-touch__section-heading">Get in touch</h2>
@@ -47,11 +47,11 @@ export const GetInTouch = () => {
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faPhone} />
-                <a href={`tel:${phone}`}>{phone}</a>
+                <a href={`tel:${phoneHref}`}>{phoneFormatted}</a>
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faSms} />
-                <a href={`tel:${sms}`}>{sms}</a>
+                <a href={`tel:${phoneHref}`}>{sms}</a>
               </li>
               <li className="get-in-touch__list-item">
                 <FontAwesomeIcon className="get-in-touch__icon" icon={faEnvelope} />
@@ -64,6 +64,6 @@ export const GetInTouch = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

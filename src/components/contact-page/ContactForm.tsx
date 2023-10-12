@@ -155,7 +155,7 @@ export const ContactForm = () => {
   );
 
   return (
-    <section className="one-small-step">
+    <div className="one-small-step">
       <div className="one-small-step__contents">
         <div className="one-small-step__text-container">
           <h2 className="get-in-touch__heading">
@@ -174,6 +174,6 @@ export const ContactForm = () => {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 };

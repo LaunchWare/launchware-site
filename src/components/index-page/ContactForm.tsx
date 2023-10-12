@@ -154,12 +154,11 @@ export const IndexFormSection = () => {
   );
 
   return (
-    <section className="one-small-step">
+    <div className="one-small-step">
       <div className="one-small-step__contents">
         <StaticImage
           alt=""
           className="one-small-step__alternate-circle"
-          role="presentation"
           src="../../images/decorations/alternate_circle.png"
         />
         <div className="one-small-step__text-container">
@@ -189,6 +188,6 @@ export const IndexFormSection = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };

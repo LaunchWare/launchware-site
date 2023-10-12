@@ -11,12 +11,11 @@ export const BetterWay = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="better-way">
+    <div className="better-way">
       <div className="better-way__contents">
         <StaticImage
           alt=""
           className="better-way__decorative-square"
-          role="presentation"
           src="../../images/decorations/decorative_square_large.png"
         />
         <div className="better-way__text-container">
@@ -85,6 +84,6 @@ export const BetterWay = () => {
         </div>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };

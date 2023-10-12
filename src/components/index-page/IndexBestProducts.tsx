@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/index-best-products.css";
 
 export const IndexBestProducts = () => (
-  <section className="index-best-products">
+  <div className="index-best-products">
     <div className="index-best-products__contents">
       <div className="index-best-products__text-container">
         <h2 className="index-best-products__heading">
@@ -40,5 +40,5 @@ export const IndexBestProducts = () => (
         /> */}
       </div>
     </div>
-  </section>
+  </div>
 );

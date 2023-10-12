@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/index-stop-stressing.css";
 
 export const IndexStopStressing = () => (
-  <section className="index-stop-stressing">
+  <div className="index-stop-stressing">
     <div className="index-stop-stressing__contents">
       <div className="index-stop-stressing__image-container">
         <StaticImage
@@ -41,5 +41,5 @@ export const IndexStopStressing = () => (
         </p>
       </div>
     </div>
-  </section>
+  </div>
 );

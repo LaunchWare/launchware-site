@@ -4,7 +4,7 @@ import "./css/blog-hero.css";
 
 export const BlogHero = () => {
   return (
-    <section className="blog-hero">
+    <div className="blog-hero">
       <div className="blog-hero__contents">
         <div className="blog-hero__image-container">
           <img className="blog-hero__image" src="https://placehold.co/600x400" />
@@ -18,6 +18,6 @@ export const BlogHero = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

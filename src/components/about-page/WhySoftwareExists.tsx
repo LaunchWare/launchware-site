@@ -9,7 +9,7 @@ export const WhySoftwareExists = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="why-software-exists">
+    <div className="why-software-exists">
       <div className="why-software-exists__contents">
         <div className="why-software-exists__image-container">
           <StaticImage
@@ -69,6 +69,6 @@ export const WhySoftwareExists = () => {
         </div>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };
