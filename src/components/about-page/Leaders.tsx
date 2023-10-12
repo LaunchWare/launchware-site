@@ -20,7 +20,7 @@ export const Leaders = () => {
         <div className="leaders__grid">
           <div className="leaders__card">
             <div className="leaders__image-container">
-              <StaticImage aspectRatio={2.5} quality={90} transformOptions={{ fit: "outside", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/dan-pickett.jpeg" alt="Dan Pickett Headshot" height={200} />
+              <StaticImage quality={90} transformOptions={{ fit: "cover", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/dan-pickett.jpeg" alt="Dan Pickett Headshot" width={604} height={400} />
             </div>
             <div className="leaders__text-container">
               <h3 className="leaders__card-heading">Dan Pickett</h3>
@@ -68,7 +68,7 @@ export const Leaders = () => {
           </div>
           <div className="leaders__card">
             <div className="leaders__image-container">
-              <StaticImage aspectRatio={2.5} quality={90} transformOptions={{ fit: "outside", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/bill-rowell.jpeg" alt="Dan Pickett Headshot" height={200} />
+              <StaticImage aspectRatio={2.5} quality={90} transformOptions={{ fit: "cover", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/bill-rowell.jpeg" alt="Dan Pickett Headshot" width={604} height={400} />
             </div>
             <div className="leaders__text-container">
               <h3 className="leaders__card-heading">Bill Rowell</h3>
