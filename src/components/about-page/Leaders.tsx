@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/leaders.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const Leaders = () => {
   const { modal, clickHandler } = useBookCallModal();
@@ -19,7 +20,7 @@ export const Leaders = () => {
         <div className="leaders__grid">
           <div className="leaders__card">
             <div className="leaders__image-container">
-              <img className="leaders__image" src="https://placehold.co/610x250" />
+              <StaticImage aspectRatio={2.5} quality={90} transformOptions={{ fit: "outside", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/dan-pickett.jpeg" alt="Dan Pickett Headshot" height={200} />
             </div>
             <div className="leaders__text-container">
               <h3 className="leaders__card-heading">Dan Pickett</h3>
@@ -67,7 +68,7 @@ export const Leaders = () => {
           </div>
           <div className="leaders__card">
             <div className="leaders__image-container">
-              <img className="leaders__image" src="https://placehold.co/610x250" />
+              <StaticImage aspectRatio={2.5} quality={90} transformOptions={{ fit: "outside", cropFocus: "north" }} className="leaders__image" src="../../images/leader-headshots/bill-rowell.jpeg" alt="Dan Pickett Headshot" height={200} />
             </div>
             <div className="leaders__text-container">
               <h3 className="leaders__card-heading">Bill Rowell</h3>
