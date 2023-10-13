@@ -9,7 +9,9 @@ export default {
         "@launchware/eslint-config-react",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "@tanstack/query"
+        "@tanstack/query",
+        "airbnb",
+        "airbnb/hooks"
       ],
       env: {
         es6: true,
@@ -23,7 +25,7 @@ export default {
     {
       files: ["*.graphql"],
       parser: "@graphql-eslint/eslint-plugin",
-      plugins: ["@graphql-eslint"],
+      plugins: ["@graphql-eslint", "jsx-a11y"],
       rules: {
         "@graphql-eslint/no-anonymous-operations": "error",
         "@graphql-eslint/naming-convention": [
