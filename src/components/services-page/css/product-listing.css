@@ -12,6 +12,10 @@ div.product-listing__decorative-circle {
   @apply -z-10 absolute -left-32 md:top-0 lg:top-32 hidden md:block;
 }
 
+.product-listing__section-heading__hidden {
+  @apply hidden;
+}
+
 .product-listing__icon-card-container {
   @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4;
 }
