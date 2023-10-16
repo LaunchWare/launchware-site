@@ -10,8 +10,6 @@ export default {
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "@tanstack/query",
-        "airbnb",
-        "airbnb/hooks"
       ],
       env: {
         es6: true,
