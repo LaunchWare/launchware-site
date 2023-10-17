@@ -49,7 +49,7 @@ export const VisionToReality = () => {
         />
         <ThreeCardSection sectionContents={sectionContents} />
         <button className="vision-to-reality__button button" type="button" onClick={clickHandler}>
-          Get my quick process review
+          Book my launch call
         </button>
       </div>
       {modal}
