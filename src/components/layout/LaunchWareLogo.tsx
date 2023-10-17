@@ -10,6 +10,7 @@ export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
       className={`logo ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>LaunchWare</title>
       <g clipPath="url(#clip0_249_454)">
         <g clipPath="url(#clip1_249_454)">
           <path

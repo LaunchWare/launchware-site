@@ -34,7 +34,7 @@ export default function Navbar() {
               </div>
               <div className="primary-nav-container__desktop">
                 <div className="primary-nav_logo">
-                  <Link to="/">
+                  <Link to="/" title="LaunchWare">
                     <LaunchWareLogo />
                   </Link>
                 </div>
