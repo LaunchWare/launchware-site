@@ -39,11 +39,15 @@ div.get-in-touch__alternate-circle {
 }
 
 .get-in-touch__list {
-  @apply text-launch-black-80 pb-4;
+  @apply text-launch-black-80 py-4;
 }
 
 .get-in-touch__list-item {
   @apply flex items-start text-launch-black-80 space-x-3 pt-3;
+}
+
+.get-in-touch__list-caption {
+  @apply font-semibold;
 }
 
 .get-in-touch__icon {

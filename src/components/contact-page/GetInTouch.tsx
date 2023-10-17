@@ -32,32 +32,34 @@ export const GetInTouch = () => {
         <div className="get-in-touch__card">
           <div className="get-in-touch__text-container get-in-touch__text-container_first">
             <h3 className="get-in-touch__heading">Traditional ways to reach out</h3>
-            <ul className="get-in-touch__list">
-              Boston
-              <li className="get-in-touch__list-item">
-                <FontAwesomeIcon className="get-in-touch__icon" icon={faLocationDot} />
-                <div>
-                  <p>
-                    {streetAddress}, {streetAddress2}
-                  </p>
-                  <p>
-                    {city}, {state} {zipCode}
-                  </p>
-                </div>
-              </li>
-              <li className="get-in-touch__list-item">
-                <FontAwesomeIcon className="get-in-touch__icon" icon={faPhone} />
-                <a href={`tel:${phone}`}>{phone}</a>
-              </li>
-              <li className="get-in-touch__list-item">
-                <FontAwesomeIcon className="get-in-touch__icon" icon={faSms} />
-                <a href={`tel:${sms}`}>{sms}</a>
-              </li>
-              <li className="get-in-touch__list-item">
-                <FontAwesomeIcon className="get-in-touch__icon" icon={faEnvelope} />
-                <a href={`mailto:${email}`}>{email}</a>
-              </li>
-            </ul>
+            <figure className="get-in-touch__list">
+              <figcaption className="get-in-touch__list-caption">Boston</figcaption>
+              <ul>
+                <li className="get-in-touch__list-item">
+                  <FontAwesomeIcon className="get-in-touch__icon" icon={faLocationDot} />
+                  <div>
+                    <p>
+                      {streetAddress}, {streetAddress2}
+                    </p>
+                    <p>
+                      {city}, {state} {zipCode}
+                    </p>
+                  </div>
+                </li>
+                <li className="get-in-touch__list-item">
+                  <FontAwesomeIcon className="get-in-touch__icon" icon={faPhone} />
+                  <a href={`tel:${phone}`}>{phone}</a>
+                </li>
+                <li className="get-in-touch__list-item">
+                  <FontAwesomeIcon className="get-in-touch__icon" icon={faSms} />
+                  <a href={`tel:${sms}`}>{sms}</a>
+                </li>
+                <li className="get-in-touch__list-item">
+                  <FontAwesomeIcon className="get-in-touch__icon" icon={faEnvelope} />
+                  <a href={`mailto:${email}`}>{email}</a>
+                </li>
+              </ul>
+            </figure>
           </div>
           <div className="get-in-touch__text-container get-in-touch__text-container_last">
             <ContactForm />
