@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const scorecardOptInSchema = z.object({
-  firstName: z.string().nonempty(),
+  firstName: z.string().trim().nonempty(),
   email: z.string().email(),
   "form-name": z.string().default("scorecardOptIn"),
 });
