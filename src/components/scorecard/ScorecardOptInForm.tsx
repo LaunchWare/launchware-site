@@ -54,6 +54,7 @@ export const ScorecardOptInForm = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
+        autoFocus
         className={getFieldClassName({
           errorClassPrefix,
           errors,
@@ -63,7 +64,7 @@ export const ScorecardOptInForm = () => {
         placeholder="Your first name"
         type="text"
         id="firstName"
-        {...register("firstName", { required: true })}
+        {...register("firstName")}
       />
       {errors.firstName && <p className="scorecard-form__error">First name required</p>}
       <input
@@ -76,7 +77,7 @@ export const ScorecardOptInForm = () => {
         placeholder="Your email"
         type="text"
         id="email"
-        {...register("email", { required: true })}
+        {...register("email")}
       />
       {errors.email && <p className="scorecard-form__error">Email required</p>}
       <input type="hidden" value="scorecardOptIn" {...register("form-name")} />
