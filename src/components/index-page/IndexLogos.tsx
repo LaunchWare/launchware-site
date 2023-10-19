@@ -4,7 +4,7 @@ import "./css/index-logos.css";
 import { StaticImage } from "gatsby-plugin-image";
 
 export const IndexLogos = () => (
-  <section className="index-logos">
+  <div className="index-logos">
     <ul className="index-logos__contents">
       <li>
         <StaticImage height={124} src="../../images/portfolio-logos/ezCater_Logo.jpg" alt="ezCater Logo" />
@@ -25,5 +25,5 @@ export const IndexLogos = () => (
         <StaticImage height={124} src="../../images/portfolio-logos/we-are-rosie-logo.jpg" alt="We Are Rosie Logo" />
       </li>
     </ul>
-  </section>
+  </div>
 );

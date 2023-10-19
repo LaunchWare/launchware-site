@@ -13,13 +13,12 @@ export const ProductListing = () => {
   const { clickHandler, modal } = useBookCallModal();
 
   return (
-    <section className="product-listing">
+    <div className="product-listing">
       {modal}
       <div className="product-listing__contents">
         <StaticImage
           alt=""
           className="product-listing__decorative-circle"
-          role="presentation"
           src="../../images/decorations/decorative_circle.png"
         />
         <h2 className="product-listing__section-heading__hidden">Product Listing</h2>
@@ -181,6 +180,6 @@ export const ProductListing = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -29,8 +29,8 @@ export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
   });
 
   return (
-    <section className="blog-card-list">
+    <div className="blog-card-list">
       <ul className="blog-card-list__contents">{listItems}</ul>
-    </section>
+    </div>
   );
 };

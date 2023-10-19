@@ -29,7 +29,7 @@ const fonts = [
   "/fonts/Inter/Inter-Regular.ttf",
   // "/fonts/Inter/Inter-Thin.ttf",
 ]
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
   const links = fonts.map((font) => {
     return <link
       rel="preload"
@@ -46,4 +46,5 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" key="usercentrics-loader" as="script" />
   ]
   setHeadComponents([...links, ...userCentricLinks])
+  setHtmlAttributes({ lang: "en" })
 }

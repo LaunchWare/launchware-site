@@ -8,12 +8,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/contact-us-chat.css";
 
 export const ContactUsChat = () => (
-  <section className="contact-us-chat">
+  <div className="contact-us-chat">
     <div className="contact-us-chat__contents">
       <StaticImage
         alt=""
         className="contact-us-chat__dots"
-        role="presentation"
         src="../../images/decorations/dots.png"
       />
       <div className="contact-us-chat__text-container">
@@ -37,5 +36,5 @@ export const ContactUsChat = () => (
         />
       </div>
     </div>
-  </section>
+  </div>
 );

@@ -1,5 +1,6 @@
 export const companyContactInformation = {
-  phone: "+1 (833) 4SOF-DEV",
+  phoneFormatted: "+1 (833) 4SOF-DEV",
+  phoneHref: "+18334763338",
   sms: "+1 (833) 476-3338",
   email: "hello@launchware.com",
   mailingAddress: {
