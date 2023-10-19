@@ -81,11 +81,11 @@ const Footer = () => {
             <p><Link to="/contact">Contact Us</Link></p>
             <p>
               <FontAwesomeIcon icon={faPhone} />&nbsp;
-              <a href={`tel:${companyContactInformation.phone}`}> {companyContactInformation.phone}</a>
+              <a href={`tel:${companyContactInformation.phoneHref}`}> {companyContactInformation.phoneFormatted}</a>
             </p>
             <p>
               <FontAwesomeIcon icon={faSms} />&nbsp;
-              <a href={`tel:${companyContactInformation.sms}`}>{companyContactInformation.sms}</a>
+              <a href={`tel:${companyContactInformation.phoneHref}`}>{companyContactInformation.sms}</a>
             </p>
             <p>
               <FontAwesomeIcon icon={faEnvelope} />&nbsp;

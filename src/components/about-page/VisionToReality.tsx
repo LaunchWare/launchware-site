@@ -39,12 +39,11 @@ export const VisionToReality = () => {
   };
 
   return (
-    <section className="vision-to-reality">
+    <div className="vision-to-reality">
       <div className="vision-to-reality__contents">
         <StaticImage
           alt=""
           className="vision-to-reality__decorative-circle"
-          role="presentation"
           src="../../images/decorations/alternate_circle.png"
         />
         <ThreeCardSection sectionContents={sectionContents} />
@@ -53,6 +52,6 @@ export const VisionToReality = () => {
         </button>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };

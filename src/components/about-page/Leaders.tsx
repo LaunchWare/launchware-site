@@ -10,7 +10,7 @@ export const Leaders = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="leaders">
+    <div className="leaders">
       {modal}
       <div className="leaders__contents">
         <div className="leaders__heading-container">
@@ -137,6 +137,6 @@ export const Leaders = () => {
           Book my launch call
         </button>
       </div>
-    </section>
+    </div>
   );
 };

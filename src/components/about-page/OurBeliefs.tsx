@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/our-beliefs.css";
 
 export const OurBeliefs = () => (
-  <section className="our-beliefs">
+  <div className="our-beliefs">
     <div className="our-beliefs__contents">
       <div className="our-beliefs__image-container">
         <StaticImage
@@ -75,5 +75,5 @@ export const OurBeliefs = () => (
         </li>
       </ul>
     </div>
-  </section>
+  </div>
 );

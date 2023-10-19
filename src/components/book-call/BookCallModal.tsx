@@ -9,7 +9,6 @@ export const BookCallModal = ({ divRef }: { divRef: RefObject<HTMLDivElement> })
     <StaticImage
       alt=""
       className="book-call__decorative-square"
-      role="presentation"
       src="../../images/decorations/decorative_square.png"
     />
     <div className="book-call__text-container">

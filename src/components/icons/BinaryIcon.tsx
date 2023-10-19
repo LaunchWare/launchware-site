@@ -3,7 +3,7 @@ import React from "react";
 export const BinaryIcon = ({ className = "", width }: { className?: string; width?: string }) => {
   return (
     <svg
-      id="Layer_1"
+      id="binary-icon"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 92 52"

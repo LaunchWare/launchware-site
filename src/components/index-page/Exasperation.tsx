@@ -9,13 +9,12 @@ export const Exasperation = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="exasperation">
+    <div className="exasperation">
       {modal}
       <div className="exasperation__contents">
         <StaticImage
           alt=""
           className="exasperation__decorative-circle"
-          role="presentation"
           src="../../images/decorations/decorative_circle.png"
         />
         <div className="exasperation__image-container">
@@ -47,6 +46,6 @@ export const Exasperation = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

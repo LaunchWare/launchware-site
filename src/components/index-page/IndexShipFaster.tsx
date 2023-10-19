@@ -12,7 +12,7 @@ export const IndexShipFaster = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="index-ship-faster">
+    <div className="index-ship-faster">
       {modal}
       <div className="index-ship-faster__contents">
         <div className="index-ship-faster__heading-container">
@@ -158,6 +158,6 @@ export const IndexShipFaster = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
