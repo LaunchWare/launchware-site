@@ -16,7 +16,6 @@ export const IndexShipFaster = () => {
       {modal}
       <div className="index-ship-faster__contents">
         <div className="index-ship-faster__heading-container">
-          <Tagline tagline="Tagline" />
           <h2 className="index-ship-faster__heading">Ship websites faster</h2>
           <p>
             Sometimes, getting started is the hardest part. That’s why we make it easy for us to
@@ -25,7 +24,7 @@ export const IndexShipFaster = () => {
         </div>
         <div className="index-ship-faster__grid">
           <div className="index-ship-faster__card">
-            <Tagline tagline="For teams with an existing product" />
+            <Tagline tagline="Understand the technical strength of your product" />
             <div className="index-ship-faster__image-container">
               <BinaryIcon className="index-ship-faster__image" width="104" />
             </div>
@@ -55,7 +54,7 @@ export const IndexShipFaster = () => {
             </button>
           </div>
           <div className="index-ship-faster__card">
-            <Tagline tagline="For teams with an idea or concept for a software product" />
+            <Tagline tagline="Define what your product needs to do" />
             <div className="index-ship-faster__image-container">
               <DocsSignIcon className="index-ship-faster__image" width="104" />
             </div>
@@ -97,7 +96,7 @@ export const IndexShipFaster = () => {
             </button>
           </div>
           <div className="index-ship-faster__card">
-            <Tagline tagline="For teams with an existing product" />
+            <Tagline tagline="Additional velocity for your existing development team" />
             <div className="index-ship-faster__image-container">
               <CommunityIcon className="index-ship-faster__image" width="104" />
             </div>
@@ -128,7 +127,7 @@ export const IndexShipFaster = () => {
             </button>
           </div>
           <div className="index-ship-faster__card">
-            <Tagline tagline="For teams with an idea or concept for a software product" />
+            <Tagline tagline="Done for you software development" />
             <div className="index-ship-faster__image-container">
               <CodingScriptIcon className="index-ship-faster__image" width="104" />
             </div>

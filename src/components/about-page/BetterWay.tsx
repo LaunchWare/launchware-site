@@ -57,8 +57,8 @@ export const BetterWay = () => {
               <li className="better-way__list-item">
                 <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
                 <span>
-                  Well-established development milestones and an understanding of how to allocate the
-                  team
+                  Well-established development milestones and an understanding of how to allocate
+                  the team
                 </span>
               </li>
             </ul>
@@ -69,12 +69,9 @@ export const BetterWay = () => {
             to doing the same for you, so that you can{" "}
             <span className="better-way__semibold">stop stressing and start shipping.</span>
           </p>
-          <input
-            className="better-way__button button"
-            onClick={clickHandler}
-            type="button"
-            value="Get my quick process review"
-          />
+          <button className="better-way__button button" type="button" onClick={clickHandler}>
+            Book my launch call
+          </button>
         </div>
         <div className="better-way__image-container">
           <StaticImage
