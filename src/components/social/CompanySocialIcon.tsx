@@ -4,6 +4,6 @@ import { getCompanySocialProfile } from "../../configuration/getCompanySocialPro
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const CompanySocialIcon = ({ network }: { network: string }) => {
-  const { icon, url } = getCompanySocialProfile(network);
-  return <a href={url}><FontAwesomeIcon icon={icon} /></a>
+  const { icon, title, url } = getCompanySocialProfile(network);
+  return <a href={url} title={title}><FontAwesomeIcon icon={icon} /></a>
 }

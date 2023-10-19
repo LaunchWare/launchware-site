@@ -60,12 +60,13 @@ export const WhySoftwareExists = () => {
               an ineffective software development process.
             </span>
           </p>
-          <input
+          <button
             className="why-software-exists__button button"
-            onClick={clickHandler}
             type="button"
-            value="Get my quick process review"
-          />
+            onClick={clickHandler}
+          >
+            Book my launch call
+          </button>
         </div>
       </div>
       {modal}

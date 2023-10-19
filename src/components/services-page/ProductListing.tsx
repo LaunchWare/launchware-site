@@ -22,7 +22,7 @@ export const ProductListing = () => {
           role="presentation"
           src="../../images/decorations/decorative_circle.png"
         />
-
+        <h2 className="product-listing__section-heading__hidden">Product Listing</h2>
         <ul className="product-listing__icon-card-container">
           <li className="product-listing__icon-card">
             <BinaryIcon className="product-listing__icon" width="54" />

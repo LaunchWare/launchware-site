@@ -1,9 +1,7 @@
 import React from "react";
 
-import { StaticImage } from "gatsby-plugin-image";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { Tagline } from "../general/Tagline";
 import { getFieldClassName } from "../general/services/getFieldClassName";
 import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
@@ -144,6 +142,7 @@ export const ContactForm = () => {
         })}
         id="inquiryLeadType"
         {...register("inquiryLeadType")}
+        aria-label="How did you hear about us?"
       >
         <option>How did you hear about us?</option>
         <option>From a client of LaunchWare</option>
