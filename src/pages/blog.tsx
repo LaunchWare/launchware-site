@@ -3,6 +3,7 @@ import { HeadFC, PageProps, graphql } from "gatsby";
 import { Layout } from "../components/layout/Layout";
 import { BlogHero } from "../components/blog-page/BlogHero";
 import { BlogCardList } from "../components/blog-page/BlogCardList";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -15,6 +16,7 @@ export const Head = () => (
       name="description"
       content="Dive deep into the world of custom software development, staff augmentation, and best practices with insights and articles from LaunchWare's technical experts."
     />
+    <HeadDefaults />
   </>
 );
 const BlogPage = (pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) => {

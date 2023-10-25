@@ -24,6 +24,7 @@ export const useBookCallModal = () => {
     setVisibility: setModalVisibility,
   } = useModal(() => <BookCallModal divRef={divRef} />, {
     scrollToTop: false,
+    size: "large"
   });
 
   const [calendlyInitialized, setCalendlyInitialized] = useState(false);

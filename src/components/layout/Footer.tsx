@@ -108,10 +108,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <Script type="text/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" async />
-      <Script type="text/javascript" id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="4Rd5it0XiLQ7g9" async />
       <TrackingCodes />
-      <Script type="text/plain" data-usercentrics="Calendly" src="https://assets.calendly.com/assets/external/widget.js" defer />
     </footer >
   )
 }
