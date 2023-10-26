@@ -7,6 +7,7 @@ import { GetInTouch } from "../components/contact-page/GetInTouch";
 import { MediaInquiries } from "../components/contact-page/MediaInquiries";
 import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -19,6 +20,7 @@ export const Head = () => (
       name="keywords"
       content="contact LaunchWare, Boston software consultants, software development inquiry, LaunchWare contact"
     />
+    <HeadDefaults />
   </>
 );
 

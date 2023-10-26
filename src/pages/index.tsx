@@ -15,6 +15,7 @@ import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
 import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
 import { MoreMomentum } from "../components/index-page/MoreMomentum";
 import { Layout } from "../components/layout/Layout";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -27,6 +28,7 @@ export const Head = () => (
       name="keywords"
       content="custom software development Boston, software consultancy, LaunchWare, technical experts, software solutions, Boston software development"
     />
+    <HeadDefaults />
   </>
 );
 const IndexPage = (pageProps: PageProps) => {
