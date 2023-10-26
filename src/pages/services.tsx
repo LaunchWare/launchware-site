@@ -10,6 +10,7 @@ import { ServicesHero } from "../components/services-page/ServicesHero";
 import { ServicesStopStressing } from "../components/services-page/ServicesStopStressing";
 import { TrustedByTheBest } from "../components/services-page/TrustedByTheBest";
 import { Layout } from "../components/layout/Layout";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -22,6 +23,7 @@ export const Head = () => (
       name="keywords"
       content="software staff augmentation, software development services, project rescue, junior developers, mid-level developers, senior developers, LaunchWare services"
     />
+    <HeadDefaults />
   </>
 );
 const ServicesPage = (pageProps: PageProps) => {

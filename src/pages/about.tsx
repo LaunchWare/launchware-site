@@ -10,6 +10,7 @@ import { OurBeliefs } from "../components/about-page/OurBeliefs";
 import { VisionToReality } from "../components/about-page/VisionToReality";
 import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists";
 import { Layout } from "../components/layout/Layout";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -22,6 +23,7 @@ export const Head = () => (
       name="keywords"
       content="about LaunchWare, software consultancy Boston, technical experts, LaunchWare team, software development beliefs, LaunchWare history"
     />
+    <HeadDefaults />
   </>
 );
 
