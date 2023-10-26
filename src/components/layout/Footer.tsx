@@ -11,12 +11,11 @@ import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
 import { OptInForm } from "../opt-in/OptInForm"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
+import { UC_UI } from "../usercentrics/UsercentricsProvider"
 
 declare global {
   interface Window {
-    UC_UI: {
-      showSecondLayer: () => void;
-    };
+    UC_UI: UC_UI
   }
 }
 const Footer = () => {

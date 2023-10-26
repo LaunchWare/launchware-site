@@ -3,8 +3,10 @@ import React, { RefObject } from "react";
 import "@launchware/replicator/dist/css/Modal/modal.css";
 import "./css/book-call-modal.css";
 import { StaticImage } from "gatsby-plugin-image";
+import { BookCallEmbed } from "./BookCallEmbed";
+import { UsercentricsProvider } from "../usercentrics/UsercentricsProvider";
 
-export const BookCallModal = ({ divRef }: { divRef: RefObject<HTMLDivElement> }) => (
+export const BookCallModal = () => (
   <div className="book-call">
     <StaticImage
       alt=""
@@ -16,7 +18,9 @@ export const BookCallModal = ({ divRef }: { divRef: RefObject<HTMLDivElement> })
       <p className="book-call__text">Let's chat about your custom software development project.</p>
     </div>
     <div className="book-call__widget-container">
-      <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
+      <UsercentricsProvider>
+        <BookCallEmbed />
+      </UsercentricsProvider>
     </div>
   </div>
 );

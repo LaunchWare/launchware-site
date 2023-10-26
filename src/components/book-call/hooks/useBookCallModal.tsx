@@ -16,20 +16,15 @@ declare global {
 }
 
 export const useBookCallModal = () => {
-  const divRef = useRef<HTMLDivElement>(null);
-
   const {
     modal,
     isVisible: isModalVisible,
     setVisibility: setModalVisibility,
-  } = useModal(() => <BookCallModal divRef={divRef} />, {
+  } = useModal(() => <BookCallModal />, {
     scrollToTop: false,
     size: "large"
   });
 
-  const [calendlyInitialized, setCalendlyInitialized] = useState(false);
-
-  const url = companyContactInformation.launchCallUrl;
 
   useEffect(() => {
     window.addEventListener("message", (e) => {
@@ -37,15 +32,7 @@ export const useBookCallModal = () => {
         setModalVisibility(false);
       }
     });
-
-    if (isModalVisible && !!divRef?.current) {
-      window.Calendly.initInlineWidget({
-        url: `${url}&hide_event_type_details=1`,
-        parentElement: divRef.current,
-      });
-      setCalendlyInitialized(true);
-    }
-  }, [calendlyInitialized, isModalVisible, setModalVisibility, url]);
+  }, []);
 
   const clickHandler: MouseEventHandler = (event) => {
     event.preventDefault();
