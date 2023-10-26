@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { BookCallEmbed } from "./BookCallEmbed";
 import { UsercentricsProvider } from "../usercentrics/UsercentricsProvider";
 
-export const BookCallModal = () => (
+export const BookCallModal = ({ enabled = true }: { enabled?: boolean }) => (
   <div className="book-call">
     <StaticImage
       alt=""
@@ -19,7 +19,7 @@ export const BookCallModal = () => (
     </div>
     <div className="book-call__widget-container">
       <UsercentricsProvider>
-        <BookCallEmbed />
+        <BookCallEmbed enabled={enabled} />
       </UsercentricsProvider>
     </div>
   </div>

@@ -10,6 +10,7 @@ export type UC_UI = {
   getServicesBaseInfo: () => ServiceInfo[];
   showSecondLayer: () => void;
   acceptService: (serviceId: string, consentType: "explicit" | "implicit") => void;
+  isInitialized: () => boolean;
 };
 
 declare global {
@@ -33,6 +34,10 @@ export class UsercentricsService {
     }
 
     return window.UC_UI?.getServicesBaseInfo() || [];
+  }
+
+  static isInitialized() {
+    return this.isBrowser && window.UC_UI?.isInitialized();
   }
 
   private static get isBrowser() {

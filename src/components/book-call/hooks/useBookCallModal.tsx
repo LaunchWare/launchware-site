@@ -7,20 +7,12 @@ import { companyContactInformation } from "../../../configuration/companyContact
 import { BookCallModal } from "../BookCallModal";
 import "../css/book-call-modal.css";
 
-declare global {
-  interface Window {
-    Calendly: {
-      initInlineWidget: (options: { url: string; parentElement: HTMLElement }) => void;
-    };
-  }
-}
-
 export const useBookCallModal = () => {
   const {
     modal,
     isVisible: isModalVisible,
     setVisibility: setModalVisibility,
-  } = useModal(() => <BookCallModal />, {
+  } = useModal(() => <BookCallModal enabled={isModalVisible} />, {
     scrollToTop: false,
     size: "large"
   });

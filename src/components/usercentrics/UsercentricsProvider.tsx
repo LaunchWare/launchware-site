@@ -21,8 +21,18 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
   const [isClientSide] = useState(typeof window !== "undefined")
 
   useEffect(() => {
-    if (isClientSide && !isInitialized) {
-      window.addEventListener('UC_UI_INITIALIZED', () => setIsInitialized(true), { once: true })
+    if (isClientSide) {
+      // check to see if usercentrics is already initialized
+      if (window.UC_UI && window.UC_UI.isInitialized()) {
+        setIsInitialized(true)
+      }
+      // listen for initialization if not
+      else {
+        window.addEventListener('UC_UI_INITIALIZED', () => {
+          setIsInitialized(true)
+        }, { once: true })
+      }
+
     }
   }, [isClientSide, isInitialized])
 
@@ -38,7 +48,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [isInitialized, isClientSide])
 
-  const hasServiceConsent = useCallback((name: string) => {
+  const hasServiceConsent = (name: string) => {
     if (!isInitialized || !isClientSide) {
       return false
     }
@@ -49,7 +59,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
       }
       return false
     }
-  }, [isInitialized, isClientSide])
+  }
 
   return <UsercentricsContext.Provider value={{
     isInitialized,
