@@ -11,13 +11,12 @@ export const IndexPartnership = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="index-partnership">
+    <div className="index-partnership">
       {modal}
       <div className="index-partnership__contents">
         <StaticImage
           alt=""
           className="index-partnership__decorative-circle"
-          role="presentation"
           src="../../images/decorations/decorative_circle.png"
         />
         <div className="index-partnership__text-container">
@@ -66,6 +65,6 @@ export const IndexPartnership = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

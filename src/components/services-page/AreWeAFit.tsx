@@ -11,7 +11,7 @@ export const AreWeAFit = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="are-we-a-fit">
+    <div className="are-we-a-fit">
       <div className="are-we-a-fit__contents">
         <div className="are-we-a-fit__text-container">
           <h2 className="are-we-a-fit__heading">Are we a fit?</h2>
@@ -112,6 +112,6 @@ export const AreWeAFit = () => {
         </div>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };

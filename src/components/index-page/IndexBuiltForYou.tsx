@@ -5,12 +5,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./css/built-for-you.css";
 
 export const IndexBuiltForYou = () => (
-  <section className="built-for-you">
+  <div className="built-for-you">
     <div className="built-for-you__contents">
       <StaticImage
         alt=""
         className="built-for-you__decorative-square"
-        role="presentation"
         src="../../images/decorations/decorative_square.png"
       />
       <div className="built-for-you__heading-container">
@@ -27,7 +26,7 @@ export const IndexBuiltForYou = () => (
               src="../../images/index/cleaning-eyeglasses.jpg"
             />
           </div>
-          <h4 className="built-for-you__card-heading">Engineering Leaders</h4>
+          <h3 className="built-for-you__card-heading">Engineering Leaders</h3>
           <p className="built-for-you__text">Seeking business-minded product development teams</p>
         </div>
         <div className="built-for-you__card">
@@ -40,7 +39,7 @@ export const IndexBuiltForYou = () => (
               src="../../images/index/pointing-at-whiteboard.jpg"
             />
           </div>
-          <h4 className="built-for-you__card-heading">Product Managers</h4>
+          <h3 className="built-for-you__card-heading">Product Managers</h3>
           <p className="built-for-you__text">Looking for additional development expertise </p>
         </div>
         <div className="built-for-you__card">
@@ -53,12 +52,12 @@ export const IndexBuiltForYou = () => (
               src="../../images/index/foursome-around-table.jpg"
             />
           </div>
-          <h4 className="built-for-you__card-heading">Technology Executives</h4>
+          <h3 className="built-for-you__card-heading">Technology Executives</h3>
           <p className="built-for-you__text">
             Seeking a proven process and team with a track record of launching remarkable software{" "}
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 );

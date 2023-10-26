@@ -11,12 +11,11 @@ import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
 import { OptInForm } from "../opt-in/OptInForm"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
+import { UC_UI } from "../usercentrics/UsercentricsProvider"
 
 declare global {
   interface Window {
-    UC_UI: {
-      showSecondLayer: () => void;
-    };
+    UC_UI: UC_UI
   }
 }
 const Footer = () => {
@@ -38,7 +37,7 @@ const Footer = () => {
       {modal}
       <div className="footer_container">
         <div className="footer_logo-container">
-          <Link to="/">
+          <Link to="/" title="LaunchWare">
             <LaunchWareLogoLight className="footer_logo" />
           </Link>
         </div>
@@ -81,11 +80,11 @@ const Footer = () => {
             <p><Link to="/contact">Contact Us</Link></p>
             <p>
               <FontAwesomeIcon icon={faPhone} />&nbsp;
-              <a href={`tel:${companyContactInformation.phone}`}> {companyContactInformation.phone}</a>
+              <a href={`tel:${companyContactInformation.phoneHref}`}> {companyContactInformation.phoneFormatted}</a>
             </p>
             <p>
               <FontAwesomeIcon icon={faSms} />&nbsp;
-              <a href={`tel:${companyContactInformation.sms}`}>{companyContactInformation.sms}</a>
+              <a href={`tel:${companyContactInformation.phoneHref}`}>{companyContactInformation.sms}</a>
             </p>
             <p>
               <FontAwesomeIcon icon={faEnvelope} />&nbsp;
@@ -108,10 +107,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <Script type="text/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" />
-      <Script type="text/javascript" id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="4Rd5it0XiLQ7g9" async />
       <TrackingCodes />
-      <Script type="text/plain" data-usercentrics="Calendly" src="https://assets.calendly.com/assets/external/widget.js" />
     </footer >
   )
 }

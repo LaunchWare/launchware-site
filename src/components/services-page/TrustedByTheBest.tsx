@@ -6,12 +6,11 @@ import "./css/trusted-by-the-best.css";
 import { StaticImage } from "gatsby-plugin-image";
 
 export const TrustedByTheBest = () => (
-  <section className="trusted-by-the-best">
+  <div className="trusted-by-the-best">
     <div className="trusted-by-the-best__contents">
       <StaticImage
         alt=""
         className="trusted-by-the-best__decorative-square"
-        role="presentation"
         src="../../images/decorations/decorative_square.png"
       />
       <div className="trusted-by-the-best__text-container">
@@ -67,5 +66,5 @@ export const TrustedByTheBest = () => (
         </ul>
       </div>
     </div>
-  </section>
+  </div>
 );

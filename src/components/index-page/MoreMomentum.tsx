@@ -40,13 +40,12 @@ export const MoreMomentum = () => {
   };
 
   return (
-    <section className="more-momentum">
+    <div className="more-momentum">
       {modal}
       <div className="more-momentum__contents">
         <StaticImage
           alt=""
           className="more-momentum__decorative-square"
-          role="presentation"
           src="../../images/decorations/decorative_square.png"
         />
         <ThreeCardSection sectionContents={sectionContents} />
@@ -54,6 +53,6 @@ export const MoreMomentum = () => {
           Book My Launch Call
         </button>
       </div>
-    </section>
+    </div>
   );
 };

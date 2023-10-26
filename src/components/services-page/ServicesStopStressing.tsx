@@ -41,12 +41,11 @@ export const ServicesStopStressing = () => {
   };
 
   return (
-    <section className="services-stop-stressing">
+    <div className="services-stop-stressing">
       <div className="services-stop-stressing__contents">
         <img
           alt=""
           className="services-stop-stressing__decorative-square"
-          role="presentation"
           src={decorativeSquare}
         />
         <ThreeCardSection sectionContents={sectionContents} />
@@ -59,6 +58,6 @@ export const ServicesStopStressing = () => {
         </button>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };

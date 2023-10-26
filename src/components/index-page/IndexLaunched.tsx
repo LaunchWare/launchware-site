@@ -12,7 +12,7 @@ export const IndexLaunched = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="index-launched">
+    <div className="index-launched">
       {modal}
       <div className="index-launched__contents">
         <div className="index-launched__heading-container">
@@ -89,6 +89,6 @@ export const IndexLaunched = () => {
           Book My Launch Call
         </button>
       </div>
-    </section >
+    </div >
   )
 }

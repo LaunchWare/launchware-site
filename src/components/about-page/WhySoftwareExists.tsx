@@ -9,7 +9,7 @@ export const WhySoftwareExists = () => {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
-    <section className="why-software-exists">
+    <div className="why-software-exists">
       <div className="why-software-exists__contents">
         <div className="why-software-exists__image-container">
           <StaticImage
@@ -60,15 +60,16 @@ export const WhySoftwareExists = () => {
               an ineffective software development process.
             </span>
           </p>
-          <input
+          <button
             className="why-software-exists__button button"
-            onClick={clickHandler}
             type="button"
-            value="Get my quick process review"
-          />
+            onClick={clickHandler}
+          >
+            Book my launch call
+          </button>
         </div>
       </div>
       {modal}
-    </section>
+    </div>
   );
 };

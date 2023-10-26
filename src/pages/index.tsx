@@ -5,7 +5,7 @@ import { PageProps } from "gatsby";
 import "../css/index.css";
 
 import { Exasperation } from "../components/index-page/Exasperation";
-import { IndexBestProducts } from "../components/index-page/IndexBestProducts";
+import { IndexScorecard } from "../components/index-page/IndexScorecard";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
 import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
@@ -15,6 +15,7 @@ import { IndexShipFaster } from "../components/index-page/IndexShipFaster";
 import { IndexStopStressing } from "../components/index-page/IndexStopStressing";
 import { MoreMomentum } from "../components/index-page/MoreMomentum";
 import { Layout } from "../components/layout/Layout";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (
   <>
@@ -27,6 +28,7 @@ export const Head = () => (
       name="keywords"
       content="custom software development Boston, software consultancy, LaunchWare, technical experts, software solutions, Boston software development"
     />
+    <HeadDefaults />
   </>
 );
 const IndexPage = (pageProps: PageProps) => {
@@ -41,7 +43,7 @@ const IndexPage = (pageProps: PageProps) => {
       <IndexShipFaster />
       <MoreMomentum />
       {/* <IndexStopStressing /> */}
-      <IndexBestProducts />
+      <IndexScorecard />
     </Layout>
   );
 };
