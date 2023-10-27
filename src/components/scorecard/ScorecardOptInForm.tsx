@@ -9,7 +9,7 @@ import { getFieldClassName } from "../general/services/getFieldClassName";
 import { useNotifications } from "../../hooks/useNotifications";
 import "./css/scorecard-form.css";
 
-export const ScorecardOptInForm = () => {
+export const ScorecardOptInForm = ({ className = "" }: { className?: string }) => {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -48,7 +48,7 @@ export const ScorecardOptInForm = () => {
 
   const formContent = (
     <form
-      className="scorecard-form__form"
+      className={`scorecard-form__form ${className}`}
       data-netlify="true"
       name="scorecardOptIn"
       onSubmit={handleSubmit(onSubmit)}
