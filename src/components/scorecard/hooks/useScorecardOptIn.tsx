@@ -8,7 +8,8 @@ export const useScorecardOptIn = () => {
 
   return useMutation(
     async (data: ScorecardOptInSchema) => {
-      const resp = await client.post(`/general-opt-in`, data, {
+      const resp = await client.post(`/`, data, {
+        baseURL: "/",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
