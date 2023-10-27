@@ -6,10 +6,6 @@ export const BlogHero = () => {
   return (
     <div className="blog-hero">
       <div className="blog-hero__contents">
-        <div className="blog-hero__image-container">
-          <img className="blog-hero__image" src="https://placehold.co/600x400" />
-        </div>
-
         <div className="blog-hero__text-container">
           <h2 className="blog-hero__heading">Blog</h2>
           <p className="blog-hero__text">
