@@ -1,14 +1,11 @@
 import { useMutation } from "@tanstack/react-query";
-import { AxiosError } from "axios";
-import { useApiClient } from "../../../api-client/hooks/useApiClient";
+import axios, { AxiosError } from "axios";
 import { ScorecardOptInSchema } from "../models/ScorecardOptInSchema";
 
 export const useScorecardOptIn = () => {
-  const client = useApiClient();
-
   return useMutation(
     async (data: ScorecardOptInSchema) => {
-      const resp = await client.post(`/`, data, {
+      const resp = await axios.post(`/`, data, {
         baseURL: "/",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
