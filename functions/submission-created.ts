@@ -7,7 +7,7 @@ export const handler: Handler = async function (event, context) {
   await configure();
   const body = JSON.parse(event.body || "")
   const result = body.payload.data
-  if (result["form-name"] === "scorecardOptIn") {
+  if (body?.payload["form_name"] === "scorecardOptIn") {
     const event = new Event<ScorecardOptInSchema>({
       email: result.email,
       firstName: result.firstName,
