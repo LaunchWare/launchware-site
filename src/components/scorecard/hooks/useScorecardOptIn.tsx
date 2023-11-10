@@ -6,7 +6,6 @@ export const useScorecardOptIn = () => {
   return useMutation(
     async (data: ScorecardOptInSchema) => {
       const resp = await axios.post(`/`, data, {
-        baseURL: "/",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
