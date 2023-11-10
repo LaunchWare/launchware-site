@@ -5,3 +5,4 @@ src/gatsby-types.d.ts
 yarn-error.log
 .DS_Store
 .netlify
+functions/.env
