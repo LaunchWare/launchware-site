@@ -21,7 +21,7 @@
 }
 
 .leaders__card {
-  @apply bg-launch-neutral-10 rounded-xl md:w-1/2 overflow-clip;
+  @apply bg-launch-neutral-10 rounded-xl md:w-1/2 mx-auto overflow-clip;
 }
 
 .leaders__card-heading {
