@@ -5,6 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import "../../css/index.css";
 import "./css/index-stop-stressing.css";
 
 export const IndexStopStressing = () => (

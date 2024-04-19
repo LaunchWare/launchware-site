@@ -1,3 +1,5 @@
+@import "../../../css/index.css";
+
 .enough-on-your-plate {
   @apply parent-section;
   @apply bg-launch-black text-launch-neutral-10;

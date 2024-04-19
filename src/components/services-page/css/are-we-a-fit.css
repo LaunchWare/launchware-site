@@ -1,3 +1,5 @@
+@import "../../../css/index.css";
+
 .are-we-a-fit {
   @apply parent-section;
   @apply bg-launch-neutral-30;

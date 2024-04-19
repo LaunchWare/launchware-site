@@ -1,6 +1,10 @@
 [functions]
   directory = "functions"
   included_files = ["functions/.env"]
+[build]
+  base = "./"
+  command = "pnpm build"
 [dev]
   framework = "gatsby"
   functionsPort = 7000
+  command = "./node_modules/.bin/gatsby develop"

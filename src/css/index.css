@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+@layer components {
   .pad-container {
     @apply px-4 sm:px-10 max-w-7xl mx-auto;
   }
