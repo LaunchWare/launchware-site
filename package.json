@@ -12,14 +12,14 @@
     "react native"
   ],
   "scripts": {
-    "build": "yarn run gatsby build",
-    "clean": "gatsby clean",
+    "build": "pnpx gatsby build",
+    "clean": "gpnpx run gatsby clean",
     "develop": "netlify dev",
-    "lint": "yarn run lint:syntax && yarn run lint:style",
+    "lint": "pnpm run lint:syntax && pnpm run lint:style",
     "lint:syntax": "eslint",
     "lint:style": "prettier -u -c ./src/**/*.**",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
+    "start": "pnpx gatsby develop",
+    "serve": "pnpx gatsby serve",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
