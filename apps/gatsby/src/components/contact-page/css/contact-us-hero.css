@@ -1,0 +1,19 @@
+@import "../../../css/index.css";
+
+.contact-us-hero {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.contact-us-hero__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.contact-us-hero__heading {
+  @apply text-5xl font-semibold text-center max-w-xl;
+}
+
+.contact-us-hero__text {
+  @apply text-center text-launch-black-80;
+}

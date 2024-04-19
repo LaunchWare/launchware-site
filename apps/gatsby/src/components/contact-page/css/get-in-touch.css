@@ -1,0 +1,81 @@
+@import "../../../css/index.css";
+
+.get-in-touch {
+  @apply parent-section;
+  @apply bg-launch-neutral-10 relative z-30 overflow-clip;
+}
+
+.get-in-touch__contents {
+  @apply contents-container;
+  @apply relative flex-col;
+}
+
+div.get-in-touch__alternate-circle {
+  @apply absolute -z-10 -left-72 md:-top-48 hidden md:inline;
+}
+
+.get-in-touch__section-heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.get-in-touch__text_center {
+  @apply text-launch-black-80 text-center max-w-lg;
+}
+
+.get-in-touch__card {
+  @apply flex flex-col lg:flex-row w-full p-6 lg:p-16 bg-launch-neutral-10 rounded-xl mt-8;
+  @apply bg-launch-neutral-30 md:bg-launch-neutral-10 space-y-4 lg:space-y-0;
+}
+
+.get-in-touch__text-container {
+  @apply flex flex-col md:items-start;
+  @apply text-left w-full;
+}
+
+.get-in-touch__text-container_first {
+  @apply lg:w-5/12;
+}
+
+.get-in-touch__text-container_last {
+  @apply lg:w-7/12;
+}
+
+.get-in-touch__list {
+  @apply text-launch-black-80 py-4;
+}
+
+.get-in-touch__list-item {
+  @apply flex items-start text-launch-black-80 space-x-3 pt-3;
+}
+
+.get-in-touch__list-caption {
+  @apply font-semibold;
+}
+
+.get-in-touch__icon {
+  @apply text-launch-orange pt-1;
+}
+
+.get-in-touch__heading {
+  @apply text-2xl font-semibold alternative-headline;
+}
+
+.get-in-touch__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.get-in-touch__form {
+  @apply form;
+}
+
+.get-in-touch__input {
+  @apply form__field;
+}
+
+.get-in-touch__input_error {
+  @apply form__field_error;
+}
+
+.get-in-touch__error {
+  @apply form__error;
+}

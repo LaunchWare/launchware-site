@@ -1,0 +1,48 @@
+@import "../../../css/index.css";
+
+.why-software-exists {
+  @apply parent-section;
+  @apply bg-launch-neutral-10;
+}
+
+.why-software-exists__contents {
+  @apply contents-container;
+  @apply flex-col-reverse lg:flex-row lg:space-x-6;
+}
+
+.why-software-exists__image-container {
+  @apply pt-8 lg:p-0 w-full md:w-3/4 lg:w-7/12;
+}
+
+.why-software-exists__image {
+  @apply rounded-image mx-auto;
+}
+
+.why-software-exists__text-container {
+  @apply flex flex-col items-stretch lg:pl-1;
+  @apply text-left w-full lg:w-5/12;
+}
+
+.why-software-exists__heading {
+  @apply text-4xl mb-6 font-semibold;
+}
+
+.why-software-exists__text {
+  @apply text-base text-launch-black-80 mb-4 leading-relaxed;
+}
+
+.why-software-exists__list {
+  @apply pb-2 pl-8;
+}
+
+.why-software-exists__list-item {
+  @apply text-launch-black-80 list-disc pb-2;
+}
+
+.why-software-exists__semibold {
+  @apply font-semibold;
+}
+
+.why-software-exists__button {
+  @apply mt-2;
+}

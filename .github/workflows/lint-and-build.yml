@@ -39,6 +39,6 @@ jobs:
         run: pnpm install --frozen-lockfile
         if: steps.npm_cache.outputs.cache-hit != 'true'
       - name: lint
-        run: pnpm run lint
+        run: pnpm --dir apps/gatsby lint
       - name: build
-        run: pnpm run build
+        run: pnpm gatsby:build

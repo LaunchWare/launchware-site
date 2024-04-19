@@ -1,0 +1,63 @@
+@import "../../../css/index.css";
+
+.product-listing {
+  @apply parent-section;
+  @apply relative z-20;
+}
+
+.product-listing__contents {
+  @apply contents-container;
+  @apply flex-wrap relative z-40;
+}
+
+div.product-listing__decorative-circle {
+  @apply -z-10 absolute -left-32 md:top-0 lg:top-32 hidden md:block;
+}
+
+.product-listing__section-heading__hidden {
+  @apply hidden;
+}
+
+.product-listing__icon-card-container {
+  @apply flex flex-col md:flex-row w-full justify-between md:space-x-2 lg:space-x-4;
+}
+
+.product-listing__icon-card {
+  @apply flex flex-row p-4 rounded-xl shadow-lg w-full;
+}
+
+.product-listing__icon {
+  @apply w-1/6;
+}
+
+.product-listing__icon-card-heading {
+  @apply text-lg pl-3 w-5/6 my-auto alternative-headline;
+}
+
+.product-listing__grid {
+  @apply flex flex-col-reverse lg:grid lg:grid-rows-2 lg:grid-flow-col items-center gap-6 pt-12;
+}
+
+.product-listing__text-container {
+  @apply flex flex-col md:items-start space-y-8;
+}
+
+.product-listing__card {
+  @apply p-6 bg-launch-neutral-20 rounded-xl;
+}
+
+.product-listing__card-heading {
+  @apply text-lg w-full text-center mx-auto pb-4 alternative-headline;
+}
+
+.product-listing__image-container {
+  @apply py-6 w-full;
+}
+
+.product-listing__image {
+  @apply rounded-image md:mx-auto;
+}
+
+.product-listing__text {
+  @apply text-base text-launch-black-80 pb-4 w-full leading-relaxed;
+}

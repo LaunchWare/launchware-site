@@ -1,10 +1,11 @@
 [functions]
-  directory = "functions"
-  included_files = ["functions/.env"]
+  directory = "apps/functions"
+  included_files = ["apps/functions/.env"]
 [build]
-  base = "./"
-  command = "pnpm build"
+  base = "apps/gatsby"
+  command = "pnpm run build"
 [dev]
-  framework = "gatsby"
+  #framework = "gatsby"
+  base = "apps/gatsby"
+  command = "pnpm run develop:gatsby"
   functionsPort = 7000
-  command = "./node_modules/.bin/gatsby develop"

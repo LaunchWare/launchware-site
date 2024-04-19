@@ -1,0 +1,38 @@
+@import "../../../css/index.css";
+
+div.modal__contents,
+div.modal__contents_large {
+  @apply p-0 border-none max-w-6xl mx-2 md:mx-4 lg:mx-auto;
+}
+
+.modal__header {
+  @apply -mb-10 pr-4 pt-3 relative z-10;
+}
+
+.book-call {
+  @apply parent-section;
+  @apply p-0 relative overflow-clip flex-col md:flex-row;
+  min-height: 500px;
+}
+
+div.book-call__decorative-square {
+  @apply absolute hidden md:block;
+  @apply -left-40 -bottom-40;
+}
+
+.book-call__text-container {
+  @apply md:w-1/2 p-8 md:p-16;
+  @apply bg-launch-neutral-20;
+}
+
+.book-call__heading {
+  @apply text-4xl pb-4;
+}
+
+.book-call__text {
+  @apply text-base text-launch-black-80;
+}
+
+.book-call__widget-container {
+  @apply md:w-1/2 p-8 md:p-16;
+}
