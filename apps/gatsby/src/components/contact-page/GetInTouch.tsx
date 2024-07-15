@@ -4,11 +4,11 @@ import { faEnvelope, faLocationDot, faPhone, faSms } from "@fortawesome/free-sol
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StaticImage } from "gatsby-plugin-image";
 
-import { companyContactInformation } from "../../configuration/companyContactInformation";
 import { ContactForm } from "./ContactForm";
+import { companyContactInformation } from "../../configuration/companyContactInformation";
 import "./css/get-in-touch.css";
 
-export const GetInTouch = () => {
+export function GetInTouch() {
   const {
     email,
     mailingAddress: { streetAddress, streetAddress2, city, state, zipCode },
@@ -66,4 +66,4 @@ export const GetInTouch = () => {
       </div>
     </div>
   );
-};
+}

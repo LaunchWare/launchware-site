@@ -1,13 +1,13 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/index-partnership.css";
 
-export const IndexPartnership = () => {
+export function IndexPartnership() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -67,4 +67,4 @@ export const IndexPartnership = () => {
       </div>
     </div>
   );
-};
+}

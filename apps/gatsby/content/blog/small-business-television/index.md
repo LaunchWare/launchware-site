@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Small Business Television
 tags:
-- Resources
+  - Resources
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2007-04-15'
+publishedAt: "2007-04-15"
 ---
 
 While doing some research on PEO's, I came across <a href="https://www.enlightsolutions.com/www.sbtv.com">SBTV</a> (Small Business TV). There seems to be lots of relevant content for small business owners. I'll definitely be checking it out weekly.

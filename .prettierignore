@@ -1,8 +1,8 @@
-.vscode/*
-apps/gatsby/public/*
+.vscode
+apps/gatsby/public
 
-node_modules/*
-.cache/*
+node_modules
+.cache
 public/*
 src/gatsby-types.d.ts
 yarn-error.log

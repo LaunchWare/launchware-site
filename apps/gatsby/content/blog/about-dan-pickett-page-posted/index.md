@@ -8,8 +8,8 @@ type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9572158'
-publishedAt: '2006-12-05'
+  dsq_thread_id: "9572158"
+publishedAt: "2006-12-05"
 ---
 
 I just posted a quick page <a title="About Dan Pickett" href="https://blog.enlightsolutions.com/about-dan-pickett/">about me</a>. Thanks to <a title="Simon Clay Michael" href="https://isabont.wordpress.com/">Simon Clay Michael</a> for suggesting it. I realized it was quite silly to have a blog without any contact information on it.

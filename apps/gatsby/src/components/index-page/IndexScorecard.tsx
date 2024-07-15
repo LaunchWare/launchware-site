@@ -1,14 +1,14 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useModal } from "@launchware/replicator";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { ScorecardModal } from "../scorecard/ScorecardModal";
 import "./css/index-scorecard.css";
 
-export const IndexScorecard = () => {
+export function IndexScorecard() {
   const { modal, setVisibility } = useModal(() => <ScorecardModal />, { scrollToTop: false });
 
   return (
@@ -25,7 +25,11 @@ export const IndexScorecard = () => {
             Success Scorecard. By answering just 21 quick questions, you’ll see if you’re set up for
             success – or what you need to change for you to reach your goals.
           </p>
-          <button className="index-scorecard__button button" type="button" onClick={() => setVisibility(true)}>
+          <button
+            className="index-scorecard__button button"
+            type="button"
+            onClick={() => setVisibility(true)}
+          >
             <span>Download the Scorecard </span>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
@@ -42,4 +46,4 @@ export const IndexScorecard = () => {
       </div>
     </section>
   );
-};
+}

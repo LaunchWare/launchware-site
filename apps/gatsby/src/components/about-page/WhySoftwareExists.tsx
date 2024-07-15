@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/why-software-exists.css";
 
-export const WhySoftwareExists = () => {
+export function WhySoftwareExists() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -72,4 +72,4 @@ export const WhySoftwareExists = () => {
       {modal}
     </div>
   );
-};
+}

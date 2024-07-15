@@ -1,12 +1,12 @@
 import React from "react";
 
-export const SendMessagesIcon = ({
+export function SendMessagesIcon({
   className = "",
   width,
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       className={className}
@@ -100,4 +100,4 @@ export const SendMessagesIcon = ({
       />
     </svg>
   );
-};
+}

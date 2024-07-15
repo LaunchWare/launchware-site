@@ -4,14 +4,14 @@ title: Five Favorite Ruby Gems Presented to Boston Ruby Group
 date: 2013-02-08 12:13
 comments: true
 categories:
-- ruby
-- presentations
+  - ruby
+  - presentations
 tags:
-- ruby
-- rails
-- rubygems
-- Boston Ruby Group
-publishedAt: '2013-02-08'
+  - ruby
+  - rails
+  - rubygems
+  - Boston Ruby Group
+publishedAt: "2013-02-08"
 ---
 
 [Mike Denomy](https://twitter.com/mdenomy) and [Johnny Boursiquot](https://twitter.com/jboursiquot) have been doing a great job organizing workshops and small talks as we continue to improve [Boston Ruby Group](https://bostonrb.org) project nights.

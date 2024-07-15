@@ -1,20 +1,20 @@
 ---
 layout: post
 comments: true
-title: 'What''s New in Edge: Scoped Mass Assignment in Rails 3.1'
+title: "What's New in Edge: Scoped Mass Assignment in Rails 3.1"
 tags:
-- mass_assignment
-- Rails
-- ruby
-- rubyonrails
-- security
-- Software
+  - mass_assignment
+  - Rails
+  - ruby
+  - rubyonrails
+  - security
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '305145487'
-publishedAt: '2011-05-16'
+  dsq_thread_id: "305145487"
+publishedAt: "2011-05-16"
 ---
 
 Security is important. You don't want malicious users chatting on IRC about how they Pwnd your web application.
@@ -29,7 +29,7 @@ Here's a brief introduction to how mass assignment protection works. Let's say y
 
 When I set group_id to be protected, I'm disallowing it to be set by mass assignment.
 
-My recommended approach, however, is to always set a whitelist of mass assignable attributes with attr\_accessible instead of a blacklist with attr\_protected. That way, you don't unintentionally leave a secure attribute unprotected.
+My recommended approach, however, is to always set a whitelist of mass assignable attributes with attr_accessible instead of a blacklist with attr_protected. That way, you don't unintentionally leave a secure attribute unprotected.
 
 <script src="https://gist.github.com/974447.js?file=user_attr_accessible.rb"></script>
 
@@ -41,6 +41,6 @@ Along with this helpful change, you can also circumvent mass assignment protecti
 
 <script src="https://gist.github.com/974447.js?file=user_without_protection.rb"></script>
 
-You should really only use without_protection if *you* control the inputted attributes. It isn't something you'd want to have in a controller action, generally speaking.
+You should really only use without*protection if \_you* control the inputted attributes. It isn't something you'd want to have in a controller action, generally speaking.
 
 For more information on scoped mass assignment and additional attack vectors you should be securing against, [check out the edge Rails guide on security](https://edgeguides.rubyonrails.org/security.html)

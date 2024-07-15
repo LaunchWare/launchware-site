@@ -3,15 +3,15 @@ layout: post
 comments: true
 title: Calculate your Base Hourly Rate and Make the Switch to Freelance With Confidence
 tags:
-- Planning
-- Sales
+  - Planning
+  - Sales
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: a:6:{i:0;O:8:"stdClass":1:{s:3:"tag";s:16:"entrepreneurship";}i:1;O:8:"stdClass":1:{s:3:"tag";s:7:"finance";}i:2;O:8:"stdClass":1:{s:3:"tag";s:9:"freelance";}i:3;O:8:"stdClass":1:{s:3:"tag";s:8:"planning";}i:4;O:8:"stdClass":1:{s:3:"tag";s:5:"Sales";}i:5;O:8:"stdClass":1:{s:3:"tag";s:5:"value";}}
-  dsq_thread_id: '9403020'
-publishedAt: '2007-05-25'
+  dsq_thread_id: "9403020"
+publishedAt: "2007-05-25"
 ---
 
 Too cool! The team over at <a href="https://www.freelanceswitch.com">FreelanceSwitch.com</a> built a <a href="https://freelanceswitch.com/rates/">calculator</a> for you to determine your hourly rate. It asks you questions about your budget for office and personal expenses and even asks you how much profit you want to make. What a great application - I'm suprised I haven't seen someone come up with something similar sooner. I'm really impressed with their site overall (very Web 2.0) and they've definitely made a subscriber out of me.

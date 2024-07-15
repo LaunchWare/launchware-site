@@ -4,15 +4,15 @@ title: An Introduction to Ruby On Rails Presented At a Boston Ruby Group Project
 date: 2012-09-10 20:14
 comments: true
 categories:
-- training
-- ruby
-- community
+  - training
+  - ruby
+  - community
 tags:
-- rails tutorial
-- rails training
-- rails introduction
-- ruby on rails tutorial
-publishedAt: '2012-09-10'
+  - rails tutorial
+  - rails training
+  - rails introduction
+  - ruby on rails tutorial
+publishedAt: "2012-09-10"
 ---
 
 I've recently begun presenting an Introduction to Rails Workshop at [BostonRB](https://bostonrb.org) Project Nights. They've been a lot of fun and I plan to continue facilitating workshops at future project nights. We recorded the video from our last, remote session, and made it available on YouTube.

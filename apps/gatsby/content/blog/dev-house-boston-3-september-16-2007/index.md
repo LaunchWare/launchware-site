@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Dev House Boston 3 - September 16, 2007
 tags:
-- Events
+  - Events
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9370736'
-publishedAt: '2007-08-19'
+  dsq_thread_id: "9370736"
+publishedAt: "2007-08-19"
 ---
 
 <a href="https://devboston.pbwiki.com/">Dev House Boston 3</a> is now open for registration. Last <a href="https://www.enlightsolutions.com/articles/devhouse-boston/">year</a>, I helped a team build a component that searches Amazon for album information via web services. Of course, we built it with Ruby on Rails.

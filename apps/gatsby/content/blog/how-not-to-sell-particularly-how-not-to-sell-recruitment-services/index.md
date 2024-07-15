@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: How Not to Sell - Particularly, How Not to Sell Recruitment Services
 tags:
-- Resources
+  - Resources
 status: publish
 type: post
 published: true
 meta:
-  _edit_last: '1'
-  dsq_thread_id: '9381455'
-publishedAt: '2008-03-13'
+  _edit_last: "1"
+  dsq_thread_id: "9381455"
+publishedAt: "2008-03-13"
 ---
 
 <p>We've considered utilizing staffing firms in our constant search for talented additions to our team. Staffing Firms call on occasion and we're always inclined to be cordial and leave the door open. Unfortunately, some firms just go beyond aggressive sales tactics. Here are some things <strong>not</strong> to do from a client's perspective.</p>
@@ -23,4 +23,3 @@ publishedAt: '2008-03-13'
 
 <p><strong>Have Clear Fee Structures</strong></p>
 <p>This is pretty self explanatory, but if a client has to ask about your fee structure, then your proposal is unclear. Keep it simple, and keep the client in mind.</p>
-

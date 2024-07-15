@@ -3,16 +3,16 @@ layout: post
 comments: true
 title: Gazelle.com Launches! Sell Cell Phones and Laptops to us!
 tags:
-- Events
-- gadgets
-- gazelle
-- technology
+  - Events
+  - gadgets
+  - gazelle
+  - technology
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9373375'
-publishedAt: '2008-07-29'
+  dsq_thread_id: "9373375"
+publishedAt: "2008-07-29"
 ---
 
 Fast and Easy Selling. That's what we set out to make happen last quarter. Well I've been very busy over the last few months. I'm very proud to present [Gazelle.com](https://www.gazelle.com/?ref=dpickett-e3871). The team has been working incredibly hard, and the development effort shows in the quality of the release. We've relaunched the service under a new brand (we were formerly under the guise of Second Rotation), and I can't describe how pleased I am with the results.

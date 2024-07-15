@@ -1,20 +1,20 @@
 ---
 layout: post
 comments: true
-title: 'Bad Design: Catch All Exceptions'
+title: "Bad Design: Catch All Exceptions"
 tags:
-- architecture
-- design
-- Development
-- exceptions
-- programming
-- Software
+  - architecture
+  - design
+  - Development
+  - exceptions
+  - programming
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9381444'
-publishedAt: '2008-04-19'
+  dsq_thread_id: "9381444"
+publishedAt: "2008-04-19"
 ---
 
 I might be getting a little geeky on everyone here, but I have to share something very important to programmers. I recently noticed this in a recent Rails project I was working on (method names changed to protect the guilty)

@@ -1,36 +1,40 @@
-import React, { MouseEventHandler } from "react"
-import { LaunchWareLogoLight } from "./LaunchWareLogoLight"
-import { Link, Script } from "gatsby"
-import { companySocialProfiles } from "../../configuration/getCompanySocialProfile"
-import { CompanySocialIcon } from "../social/CompanySocialIcon"
-import { companyContactInformation } from "../../configuration/companyContactInformation"
+import React, { MouseEventHandler } from "react";
 
-import "./css/footer.css"
-import { TrackingCodes } from "./TrackingCodes"
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
-import { OptInForm } from "../opt-in/OptInForm"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
-import { UC_UI } from "../usercentrics/UsercentricsProvider"
+import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
+
+import { LaunchWareLogoLight } from "./LaunchWareLogoLight";
+import { TrackingCodes } from "./TrackingCodes";
+import { companyContactInformation } from "../../configuration/companyContactInformation";
+import { companySocialProfiles } from "../../configuration/getCompanySocialProfile";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+import { OptInForm } from "../opt-in/OptInForm";
+import { CompanySocialIcon } from "../social/CompanySocialIcon";
+import { UC_UI } from "../usercentrics/UsercentricsProvider";
+
+import "./css/footer.css";
 
 declare global {
   interface Window {
-    UC_UI: UC_UI
+    UC_UI: UC_UI;
   }
 }
-const Footer = () => {
+function Footer() {
   const { modal, clickHandler } = useBookCallModal();
 
-  const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
-    return <li key={network}><CompanySocialIcon network={network} /></li>
-  })
+  const socialListItems = Object.keys(companySocialProfiles).map((network: string) => (
+    <li key={network}>
+      <CompanySocialIcon network={network} />
+    </li>
+  ));
 
   const privacySettingsHandler: MouseEventHandler = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     if (window.UC_UI) {
-      window.UC_UI.showSecondLayer()
+      window.UC_UI.showSecondLayer();
     }
-  }
+  };
 
   return (
     <footer className="footer">
@@ -77,39 +81,59 @@ const Footer = () => {
             <p onClick={clickHandler}>
               <a href="#">Book Your Launch Call</a>
             </p>
-            <p><Link to="/contact">Contact Us</Link></p>
             <p>
-              <FontAwesomeIcon icon={faPhone} />&nbsp;
-              <a href={`tel:${companyContactInformation.phoneHref}`}> {companyContactInformation.phoneFormatted}</a>
+              <Link to="/contact">Contact Us</Link>
             </p>
             <p>
-              <FontAwesomeIcon icon={faSms} />&nbsp;
-              <a href={`tel:${companyContactInformation.phoneHref}`}>{companyContactInformation.sms}</a>
+              <FontAwesomeIcon icon={faPhone} />
+              &nbsp;
+              <a href={`tel:${companyContactInformation.phoneHref}`}>
+                {" "}
+                {companyContactInformation.phoneFormatted}
+              </a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faEnvelope} />&nbsp;
-              <a href={`mailto:${companyContactInformation.email}`}>{companyContactInformation.email}</a>
+              <FontAwesomeIcon icon={faSms} />
+              &nbsp;
+              <a href={`tel:${companyContactInformation.phoneHref}`}>
+                {companyContactInformation.sms}
+              </a>
             </p>
-            <ul className="footer_social-list">
-              {socialListItems}
-            </ul>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} />
+              &nbsp;
+              <a href={`mailto:${companyContactInformation.email}`}>
+                {companyContactInformation.email}
+              </a>
+            </p>
+            <ul className="footer_social-list">{socialListItems}</ul>
           </div>
 
           <OptInForm />
         </div>
 
         <div className="footer_legal">
-          <p className="footer_copyright-notice">&copy; {new Date().getFullYear()} LaunchWare. All rights reserved.</p>
+          <p className="footer_copyright-notice">
+            &copy; {new Date().getFullYear()} LaunchWare. All rights reserved.
+          </p>
           <ul className="footer_legal-links">
-            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link to="/cookies">Cookies</Link></li>
-            <li><a href="#" onClick={privacySettingsHandler}>Privacy Settings</a></li>
+            <li>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/cookies">Cookies</Link>
+            </li>
+            <li>
+              <a href="#" onClick={privacySettingsHandler}>
+                Privacy Settings
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <TrackingCodes />
-    </footer >
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

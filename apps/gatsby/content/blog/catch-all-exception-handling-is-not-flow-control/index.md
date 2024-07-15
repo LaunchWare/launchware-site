@@ -3,21 +3,21 @@ layout: post
 comments: true
 title: Catch All Exception Handling Is Not Flow Control
 tags:
-- Development
-- object oriented programming
-- Rails
-- ruby
+  - Development
+  - object oriented programming
+  - Rails
+  - ruby
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '427410132'
-publishedAt: '2011-09-27'
+  dsq_thread_id: "427410132"
+publishedAt: "2011-09-27"
 ---
 
 There has been a lot of [recent](https://www.ngauthier.com/2011/09/using-exceptions-to-manage-control-flow.html) [discussion](https://avdi.org/devblog/exceptional-ruby/) about utilizing exception handling as flow control. It is my opinion that this is a bad practice, and results in code that is difficult to read and maintain.
 
-Exceptions can be perceived as non-local GOTO statements. This can adversely affect the readability of your code and mislead team members as to the actual *intent* of your method. Let's take an oft-used controller action for example.
+Exceptions can be perceived as non-local GOTO statements. This can adversely affect the readability of your code and mislead team members as to the actual _intent_ of your method. Let's take an oft-used controller action for example.
 
 <script src="https://gist.github.com/1245348.js?file=bad_controller.rb"></script>
 

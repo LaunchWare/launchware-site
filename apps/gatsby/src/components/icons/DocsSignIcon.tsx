@@ -1,12 +1,12 @@
 import React from "react";
 
-export const DocsSignIcon = ({
+export function DocsSignIcon({
   className = "",
   width = "",
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       className={className}
@@ -78,4 +78,4 @@ export const DocsSignIcon = ({
       />
     </svg>
   );
-};
+}

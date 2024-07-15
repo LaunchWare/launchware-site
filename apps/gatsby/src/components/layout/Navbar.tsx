@@ -1,9 +1,10 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
+
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "gatsby";
 
 import { LaunchWareLogo } from "./LaunchWareLogo";
-import { Link } from "gatsby";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 
 import "./css/navbar.css";

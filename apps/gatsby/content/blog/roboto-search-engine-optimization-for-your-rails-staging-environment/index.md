@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'Roboto: Search Engine Optimization for Your Rails Environment'
+title: "Roboto: Search Engine Optimization for Your Rails Environment"
 date: 2012-04-23 15:43
 comments: true
 author: Dan Pickett
 categories:
-- rails
-- search engine optimization
-- open source
-publishedAt: '2012-04-23'
+  - rails
+  - search engine optimization
+  - open source
+publishedAt: "2012-04-23"
 ---
 
 The Google bots will thank you for not [duplicating content on the InterWeb](https://www.seomoz.org/learn-seo/duplicate-content).

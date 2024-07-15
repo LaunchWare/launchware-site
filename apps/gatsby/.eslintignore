@@ -1,6 +1,5 @@
 .vscode/*
-apps/gatsby/public/*
-
+tailwind.config.js
 node_modules/*
 .cache/*
 public/*
@@ -8,4 +7,3 @@ src/gatsby-types.d.ts
 yarn-error.log
 .DS_Store
 .netlify
-functions/.env

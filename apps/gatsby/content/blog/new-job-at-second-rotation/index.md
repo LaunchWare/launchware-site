@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: New Job at Second Rotation
 tags:
-- Education
+  - Education
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2007-05-24'
+publishedAt: "2007-05-24"
 ---
 
 So I haven't had an opportunity to write in a while because I've taken a new full time position with a startup in Waltham, MA. The job entails architecting and developing a series of applications that are very exciting.

@@ -3,17 +3,18 @@ layout: post
 comments: true
 title: Relating to Kawasaki's question of Fear
 tags:
-- Planning
+  - Planning
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9532307'
-publishedAt: '2006-11-24'
+  dsq_thread_id: "9532307"
+publishedAt: "2006-11-24"
 ---
 
 In Guy Kawasaki's first chapter of "The Art of the Start" there was a question that I've really been asking myself the last few days.
+
 <blockquote>"I admit it: I'm scared. I can't afford to quit my current job. Is that a sign that I don't have what it takes to succeed?"</blockquote>
 I love Guy's response to this. He states:
 <blockquote>"You should be scared. If you aren't scared something is wrong with you...You can reduce these fears by diving into the business and making a little progress each day"</blockquote>

@@ -3,15 +3,15 @@ layout: post
 comments: true
 title: Overwhelmed with HR Operations? Outsource with a PEO
 tags:
-- Organization
-- Planning
+  - Organization
+  - Planning
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9372990'
-publishedAt: '2007-04-15'
+  dsq_thread_id: "9372990"
+publishedAt: "2007-04-15"
 ---
 
 I stumbled upon <a href="https://www.administaff.com/">Administaff</a> while talking with a small business client on Friday. It really turned me on to the whole idea of a PEO (<a href="https://en.wikipedia.org/wiki/Professional_employer_organization">Wikipedia Article</a>). Essentially, as a small business owner you can contract a third party to be the employer of record for your employees. They manage your payroll, benefit packages, and other HR related functions you don't want to deal with.

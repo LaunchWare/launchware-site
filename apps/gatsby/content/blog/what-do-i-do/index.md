@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: What do I do?
 tags:
-- Marketing
+  - Marketing
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9467352'
-publishedAt: '2006-11-28'
+  dsq_thread_id: "9467352"
+publishedAt: "2006-11-28"
 ---
 
 I've been developing some content and marketing material for my site. I found myself thinking long and hard about what exactly I offer to my customers. It occurred to me that I've never really clarified what it is that I do.

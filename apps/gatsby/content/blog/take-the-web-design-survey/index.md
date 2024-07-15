@@ -8,7 +8,7 @@ type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2007-04-25'
+publishedAt: "2007-04-25"
 ---
 
 I just took the web design survey over at A List Apart. You should too.

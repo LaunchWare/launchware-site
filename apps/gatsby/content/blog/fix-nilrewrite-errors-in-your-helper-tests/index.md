@@ -3,22 +3,22 @@ layout: post
 comments: true
 title: Fix nil.rewrite errors in your Helper Tests
 tags:
-- helpers
-- Rails
-- TATFT
-- testing
+  - helpers
+  - Rails
+  - TATFT
+  - testing
 status: publish
 type: post
 published: true
 meta:
-  _edit_last: '1'
-  dsq_thread_id: '9358258'
-publishedAt: '2008-12-14'
+  _edit_last: "1"
+  dsq_thread_id: "9358258"
+publishedAt: "2008-12-14"
 ---
 
 In testing my helpers, I discovered a nil.rewrite exception due to ActionController::Base.initialize_current_url not being called. This occurs when using url_for with a hash as arguments.
 
-ActionView::TestCase does not initialize current url so you won't be able to use *_url and *_path helpers generated from your routes. Put the following lines at the end of your test_helper.rb file to resolve the issue.
+ActionView::TestCase does not initialize current url so you won't be able to use _\_url and _\_path helpers generated from your routes. Put the following lines at the end of your test_helper.rb file to resolve the issue.
 
 <pre class="textmate-source">
 class ActionView::TestCase < ActiveSupport::TestCase

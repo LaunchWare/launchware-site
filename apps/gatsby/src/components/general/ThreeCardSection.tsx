@@ -20,8 +20,8 @@ export const ThreeCardSection: FC<ThreeCardProps> = ({
     <div className="three-card-section__card" key={index}>
       <div className="three-card-section__image-container">{card.icon}</div>
       <h2 className="three-card-section__card-heading">{card.heading}</h2>
-      {card.paragraphs.map((paragraph) => (
-        <p className="three-card-section__text" key={card.heading}>
+      {card.paragraphs.map((paragraph, paragraphIndex) => (
+        <p className="three-card-section__text" key={paragraphIndex}>
           {paragraph}
         </p>
       ))}

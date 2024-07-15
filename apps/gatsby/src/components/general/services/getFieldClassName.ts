@@ -13,7 +13,6 @@ export const getFieldClassName = ({
 }) => {
   if (errors[fieldName]) {
     return `${className} ${errorClassPrefix}_error`;
-  } else {
-    return className;
   }
+  return className;
 };

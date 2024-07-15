@@ -3,21 +3,21 @@ layout: post
 comments: true
 title: The Rules of Founder Dating
 tags:
-- entrepreneurship
-- Events
-- founder dating
-- founders
-- recruitting
+  - entrepreneurship
+  - Events
+  - founder dating
+  - founders
+  - recruitting
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '53577799'
-publishedAt: '2009-12-23'
+  sociableoff: "false"
+  dsq_thread_id: "53577799"
+publishedAt: "2009-12-23"
 ---
 
-I recently attended an excellent event put on by a few people from [BetaHouse](https://www.betahouse.org) and [TechStars](https://www.techstars.com). The premise was to meet and network with other entrepreneurs in the Boston area to potentially find cofounders for your next venture. I'm primarily a technical guy, and I'm not married to any particular idea. Finding and enticing great technical talent to join your startup is __hard__, which is a big reason why I started the consultancy. We help startups get the technology they need, but sometimes founders desire a technical partner in crime. So, if you're looking to attract solid developers or designers in your venture, here's some perspective from a technical person who's on the venture "dating" scene.
+I recently attended an excellent event put on by a few people from [BetaHouse](https://www.betahouse.org) and [TechStars](https://www.techstars.com). The premise was to meet and network with other entrepreneurs in the Boston area to potentially find cofounders for your next venture. I'm primarily a technical guy, and I'm not married to any particular idea. Finding and enticing great technical talent to join your startup is **hard**, which is a big reason why I started the consultancy. We help startups get the technology they need, but sometimes founders desire a technical partner in crime. So, if you're looking to attract solid developers or designers in your venture, here's some perspective from a technical person who's on the venture "dating" scene.
 
 ### What's your name?
 
@@ -41,4 +41,4 @@ Technical people like substance, and some like hard numbers. Throwing around han
 
 Perhaps it was because the TechStars application deadline is fast approaching, but founders were a bit eager to get your commitment. So let me get this straight, I just met you and learned about your idea, but you want me to come on board next week?
 
-Joining a startup is not something I want to decide on overnight. Finding team members that you jive well with is a time intensive process, and it shouldn't be rushed for either party. Have coffee regularly, jump on a few calls, then maybe pursue a short or part-time contractual relationship before everyone commits. You're going to be spending __a lot__ of time together, so chemistry is vital. Enjoy the courting phase, and pop the question when you know it's the real thing.
+Joining a startup is not something I want to decide on overnight. Finding team members that you jive well with is a time intensive process, and it shouldn't be rushed for either party. Have coffee regularly, jump on a few calls, then maybe pursue a short or part-time contractual relationship before everyone commits. You're going to be spending **a lot** of time together, so chemistry is vital. Enjoy the courting phase, and pop the question when you know it's the real thing.

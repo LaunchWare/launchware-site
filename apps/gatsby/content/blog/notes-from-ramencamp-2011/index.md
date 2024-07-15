@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: Notes from RamenCamp 2011
 tags:
-- bootstrapping
-- boston
-- Events
-- ramencamp
-- Resources
-- startups
+  - bootstrapping
+  - boston
+  - Events
+  - ramencamp
+  - Resources
+  - startups
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '310723474'
-publishedAt: '2011-05-22'
+  dsq_thread_id: "310723474"
+publishedAt: "2011-05-22"
 ---
 
 Congratulations to the organizers of [Ramencamp](https://ramencamp.com/), a new Boston conference for bootstrapping your startup. The content was amazing and it was a great crowd of Boston professionals.

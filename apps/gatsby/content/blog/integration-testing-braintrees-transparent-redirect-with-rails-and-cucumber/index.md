@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: Integration Testing Braintree's Transparent Redirect with Rails and Cucumber
 tags:
-- braintree
-- cucumber
-- Development
-- Rails
-- ruby
-- vcr
+  - braintree
+  - cucumber
+  - Development
+  - Rails
+  - ruby
+  - vcr
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: ''
-publishedAt: '2011-04-03'
+  dsq_thread_id: ""
+publishedAt: "2011-04-03"
 ---
 
 So you've got a solid idea, a nice niche, and a great web application that meets your customers' needs. Now it's time to get PAID. It is all about the proverbial Benjamins after all.
@@ -61,7 +61,7 @@ I'm doing some quick handwaving here - I had to create an activemodel compliant 
 
 ## Integration Test
 
-This is *the* most important part of your app. You want to get paid and your customers don't want to think twice about giving you their money. Let's keep these transactions running smooth. Don't leave a gaping hole in your test suite! I use [cucumber](https://cukes.info/) for acceptance and integration testing.
+This is _the_ most important part of your app. You want to get paid and your customers don't want to think twice about giving you their money. Let's keep these transactions running smooth. Don't leave a gaping hole in your test suite! I use [cucumber](https://cukes.info/) for acceptance and integration testing.
 
 ### Remote Action Problems
 

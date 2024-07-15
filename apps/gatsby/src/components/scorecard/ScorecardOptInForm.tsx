@@ -5,11 +5,11 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { useScorecardOptIn } from "./hooks/useScorecardOptIn";
 import { scorecardOptInSchema, ScorecardOptInSchema } from "./models/ScorecardOptInSchema";
-import { getFieldClassName } from "../general/services/getFieldClassName";
 import { useNotifications } from "../../hooks/useNotifications";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import "./css/scorecard-form.css";
 
-export const ScorecardOptInForm = ({ className = "" }: { className?: string }) => {
+export function ScorecardOptInForm({ className = "" }: { className?: string }) {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -44,7 +44,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
   const blockClassName = "scorecard-form";
   const errorClassPrefix = `${blockClassName}__input`;
 
-  const successContent = "Thank you! Check your inbox for the scorecard."
+  const successContent = "Thank you! Check your inbox for the scorecard.";
 
   const formContent = (
     <form
@@ -85,5 +85,5 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
     </form>
   );
 
-  return (isSuccess ? successContent : formContent)
-};
+  return isSuccess ? successContent : formContent;
+}

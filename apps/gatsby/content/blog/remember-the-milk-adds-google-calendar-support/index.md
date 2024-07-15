@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Remember the Milk Adds Google Calendar Support
 tags:
-- Lifehack
+  - Lifehack
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2006-11-27'
+publishedAt: "2006-11-27"
 ---
 
 I use <a title="RTM" href="https://blog.enlightsolutions.com/www.rememberthemilk.com">Remember the Milk</a> for all of my task management activities. It's a great help to anyone that is looking to implement <a title="David Allen" href="https://davidco.com/">David Allen</a>'s GTD System. The application is extremely useful. Once you get a handle on all the accesskeys (shortcut keys), you can manage the system very efficiently.

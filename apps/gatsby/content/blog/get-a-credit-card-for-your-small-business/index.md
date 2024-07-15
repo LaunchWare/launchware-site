@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Get a Credit Card for your small business
 tags:
-- Finance
+  - Finance
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2007-02-16'
+publishedAt: "2007-02-16"
 ---
 
 I found a great <a href="https://www.smartmoney.com/consumer/index.cfm?story=smallbizcards">article</a> on obtaining a small business credit card. I was always been concerned that credit cards that I've held in previous companies affected my personal credit. This article explains how the whole process works.

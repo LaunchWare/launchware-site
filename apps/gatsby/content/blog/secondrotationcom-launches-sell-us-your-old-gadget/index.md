@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: SecondRotation.com launches! Sell us your old gadget!
 tags:
-- Events
+  - Events
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9393206'
-publishedAt: '2007-07-30'
+  dsq_thread_id: "9393206"
+publishedAt: "2007-07-30"
 ---
 
 I've been away for a while but it's been with good reason. We've been working hard on launching <a href="https://www.secondrotation.com">www.secondrotation.com</a>, and the company is really excited about starting it up.
@@ -20,6 +20,6 @@ Of course, we built the site out using the <a href="https://www.rubyonrails.com"
 
 Launching SR.com has been a really fun project for me. It has been a great opportunity to refine not only my programming skillset and architectural ability, but also my XHTML and CSS skills. I think we've done a really good job of maximizing our capabilities with the Rails framework, and there's a lot more in store architecturally.
 
-The office has been buzzing with activity, we've picked up a lot of great press (<a href="https://gizmodo.com/gadgets/swap-meet/second-rotation-buys-your-old-gadgets-282471.php">Gizmodo</a>, <a href="https://biz.yahoo.com/bw/070723/20070723005138.html?.v=1">Yahoo</a>, and  <a href="https://news.com.com/8301-10784_3-9748508-7.html?part=rss">CNet's News.com</a>). Perhaps the most most exciting exposure was Kevin Rose and Alex Albrecht (<a href="https://revision3.com/">Revision3</a>) digging our site on <a href="https://www.cnettv.com/9710-1_53-28761.html">CNET's "Best of the Web Feature"</a> (It's about 34 minutes in)
+The office has been buzzing with activity, we've picked up a lot of great press (<a href="https://gizmodo.com/gadgets/swap-meet/second-rotation-buys-your-old-gadgets-282471.php">Gizmodo</a>, <a href="https://biz.yahoo.com/bw/070723/20070723005138.html?.v=1">Yahoo</a>, and <a href="https://news.com.com/8301-10784_3-9748508-7.html?part=rss">CNet's News.com</a>). Perhaps the most most exciting exposure was Kevin Rose and Alex Albrecht (<a href="https://revision3.com/">Revision3</a>) digging our site on <a href="https://www.cnettv.com/9710-1_53-28761.html">CNET's "Best of the Web Feature"</a> (It's about 34 minutes in)
 
 What do you think of the site? I'd love to hear your feedback and the business would be all the better for it. Would you sell us your old electronics?

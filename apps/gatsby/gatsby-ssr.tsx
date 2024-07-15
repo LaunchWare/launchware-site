@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const fonts = [
   // "/fonts/Kanit/Kanit-Regular.ttf",
@@ -28,23 +28,22 @@ const fonts = [
   // "/fonts/Inter/Inter-Medium.ttf",
   "/fonts/Inter/Inter-Regular.ttf",
   // "/fonts/Inter/Inter-Thin.ttf",
-]
+];
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
-  const links = fonts.map((font) => {
-    return <link
-      rel="preload"
-      href={font}
-      as="font"
-      crossOrigin="anonymous"
-      key={font}
-    />
-  })
+  const links = fonts.map((font) => (
+    <link rel="preload" href={font} as="font" crossOrigin="anonymous" key={font} />
+  ));
 
   const userCentricLinks = [
     <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,
     <link rel="preconnect" href="//api.usercentrics.eu" key="usercentrics-api" />,
-    <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" key="usercentrics-loader" as="script" />
-  ]
-  setHeadComponents([...links, ...userCentricLinks])
-  setHtmlAttributes({ lang: "en" })
-}
+    <link
+      rel="preload"
+      href="//app.usercentrics.eu/browser-ui/latest/loader.js"
+      key="usercentrics-loader"
+      as="script"
+    />,
+  ];
+  setHeadComponents([...links, ...userCentricLinks]);
+  setHtmlAttributes({ lang: "en" });
+};

@@ -3,15 +3,15 @@ layout: post
 comments: true
 title: Pledge 3 Percent for Rails 3
 tags:
-- open source
-- Rails
-- rubyonrails
+  - open source
+  - Rails
+  - rubyonrails
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: ''
-publishedAt: '2010-04-10'
+  dsq_thread_id: ""
+publishedAt: "2010-04-10"
 ---
 
 Has Ruby on Rails been good to you? Has the framework helped you get a job or start your consulting career? If so, I challenge you to give 3 percent of your time for Rails 3 over the next few months. If you work 40 hours a week, 3 percent amounts to less than 5 hours a month! Could you donate half a Saturday a month to the framework that figuratively puts money in your bank account? I can, and that's why I'm pledging three percent for Rails 3 over the next few months.

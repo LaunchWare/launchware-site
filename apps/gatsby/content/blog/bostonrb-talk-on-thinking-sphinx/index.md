@@ -3,21 +3,21 @@ layout: post
 comments: true
 title: Boston.rb talk on Thinking Sphinx
 tags:
-- bostonrb
-- Development
-- presentation
-- Rails
-- Software
-- sphinx
-- thinking_sphinx
+  - bostonrb
+  - Development
+  - presentation
+  - Rails
+  - Software
+  - sphinx
+  - thinking_sphinx
 status: publish
 type: post
 published: true
 meta:
-  _edit_last: '1'
-  sociableoff: 'false'
-  dsq_thread_id: '13485899'
-publishedAt: '2009-03-11'
+  _edit_last: "1"
+  sociableoff: "false"
+  dsq_thread_id: "13485899"
+publishedAt: "2009-03-11"
 ---
 
 Last night I did a talk on Thinking Sphinx at Boston.rb.
@@ -32,12 +32,12 @@ The process library I alluded to is called [God](https://god.rubyforge.org/).
 
 Other links
 
-* [Thinking Sphinx](https://ts.freelancing-gods.com/)
-* [Sphinx](https://www.sphinxsearch.com/)
-* [Delayed Job (for delta indexing)](https://github.com/tobi/delayed_job/tree/master)
-* [Workling Delta Indexer](https://github.com/dpickett/workling_delta_indexer/tree/master)
-* [Workling](https://github.com/purzelrakete/workling/tree/master)
-* [Starling](https://github.com/starling/starling/tree/master)
-* [Pat Allen](https://freelancing-gods.com/)
+- [Thinking Sphinx](https://ts.freelancing-gods.com/)
+- [Sphinx](https://www.sphinxsearch.com/)
+- [Delayed Job (for delta indexing)](https://github.com/tobi/delayed_job/tree/master)
+- [Workling Delta Indexer](https://github.com/dpickett/workling_delta_indexer/tree/master)
+- [Workling](https://github.com/purzelrakete/workling/tree/master)
+- [Starling](https://github.com/starling/starling/tree/master)
+- [Pat Allen](https://freelancing-gods.com/)
 
 Let me know what you thought of the talk and the slides. I hope you found it helpful!

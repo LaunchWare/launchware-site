@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: DevHouse Boston
 tags:
-- Events
+  - Events
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9381462'
-publishedAt: '2006-12-14'
+  dsq_thread_id: "9381462"
+publishedAt: "2006-12-14"
 ---
 
 I spent last Saturday coding in Cambridge at the first <a href="https://devboston.pbwiki.com/">DevHouse Boston</a> event. Thanks to <a href="https://rura.org/blog/">Shimon Rura</a> for organizing and <a href="https://www.permabit.com/">Permabit</a> for hosting. It's where a bunch of developers in the Boston area get together and try to hack together applications in 10 hours. The event was a lot of fun. It's always great to work with my friend, <a title="Kyle Bradshaw" href="https://www.somedirection.com">Kyle Bradshaw</a>.

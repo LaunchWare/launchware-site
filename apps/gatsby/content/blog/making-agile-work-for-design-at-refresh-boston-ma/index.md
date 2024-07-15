@@ -3,21 +3,21 @@ layout: post
 comments: true
 title: Making Agile Work For Design at Refresh Boston, MA
 tags:
-- agie
-- boston
-- design
-- Development
-- Events
-- Project Management
-- refresh
-- Software
+  - agie
+  - boston
+  - design
+  - Development
+  - Events
+  - Project Management
+  - refresh
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '17090574'
-publishedAt: '2009-05-01'
+  sociableoff: "false"
+  dsq_thread_id: "17090574"
+publishedAt: "2009-05-01"
 ---
 
 [Jon Follett](https://www.hotknifedesign.com) and I led a discussion on how designers can integrate with Agile development teams at a recent [Refresh Boston](https://www.refreshboston.org) event.

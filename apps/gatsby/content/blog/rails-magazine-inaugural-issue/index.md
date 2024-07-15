@@ -3,16 +3,16 @@ layout: post
 comments: true
 title: Rails Magazine Inaugural Issue
 tags:
-- Development
-- magazine
-- publication
-- Rails
+  - Development
+  - magazine
+  - publication
+  - Rails
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '12835616'
-publishedAt: '2009-03-01'
+  dsq_thread_id: "12835616"
+publishedAt: "2009-03-01"
 ---
 
 The first issue of [Rails Magazine](https://railsmagazine.com/) has been published. It looks like there is a lot of great content from some great authors.<a href="https://www.railsmagazine.com"><img src="https://www.enlightsolutions.com/wp-content/uploads/2009/03/0991c5b2-d79e-4187-9adf-c099aa015d4e.jpg" alt="Rails Magazine" border="0" width="128" height="128" align="right" style="padding-left: 10px" /></a>

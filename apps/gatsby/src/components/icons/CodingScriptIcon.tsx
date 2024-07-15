@@ -1,12 +1,12 @@
 import React from "react";
 
-export const CodingScriptIcon = ({
+export function CodingScriptIcon({
   className = "",
   width,
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       width={width}
@@ -127,4 +127,4 @@ export const CodingScriptIcon = ({
       />
     </svg>
   );
-};
+}

@@ -3,16 +3,16 @@ layout: post
 comments: true
 title: Jonathan Follett speaks at NEWDA in Hudson, MA
 tags:
-- event
-- presentation
-- speaking
+  - event
+  - presentation
+  - speaking
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '14184924'
-publishedAt: '2009-03-22'
+  sociableoff: "false"
+  dsq_thread_id: "14184924"
+publishedAt: "2009-03-22"
 ---
 
 Enlight's own development partner, [Jonathan Follett](https://www.hotknifedesign.com), will be presenting his thoughts at an upcoming [New England Web Developers' Association Meeting in Hudson, MA](https://www.newda.org/?page_id=20). He'll be speaking about how we utilize web tools to build virtual teams on Wednesday, March 25th @ 7pm in Hudson, MA.

@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 // Use a ternary operator to make sure that the document object is defined
 // const portalRoot = typeof document !== `undefined` ? document.getElementById('portal') : null
 
-const Portal = ({ children }) => {
+function Portal({ children }) {
   const el = useMemo(() => {
     if (document) {
       return document.createElement("div");
@@ -28,6 +28,6 @@ const Portal = ({ children }) => {
     return ReactDOM.createPortal(children, el);
   }
   return null;
-};
+}
 
 export default Portal;

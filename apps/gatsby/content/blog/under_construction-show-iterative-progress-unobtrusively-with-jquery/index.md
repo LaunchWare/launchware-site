@@ -1,18 +1,18 @@
 ---
 layout: post
 comments: true
-title: 'Under_Construction: Show Iterative Progress Unobtrusively with JQuery'
+title: "Under_Construction: Show Iterative Progress Unobtrusively with JQuery"
 tags:
-- agile
-- iterative_development
-- jquery
-- project_management
+  - agile
+  - iterative_development
+  - jquery
+  - project_management
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '10446324'
-publishedAt: '2009-01-24'
+  dsq_thread_id: "10446324"
+publishedAt: "2009-01-24"
 ---
 
 A few weeks ago, I open sourced a tool I often use when developing new products. Meet [under_construction](https://dpickett.github.com/under_construction/) - a JQuery utility for hiding/overlaying elements of a design that haven't been developed yet.

@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: Take the Survey for People Who Make Websites
 tags:
-- alistapart
-- Development
-- survey
+  - alistapart
+  - Development
+  - survey
 status: publish
 type: post
 published: true
 meta: {}
-publishedAt: '2008-07-29'
+publishedAt: "2008-07-29"
 ---
 
 Take A List Apart's annual survey. I'm a huge fan, and the results are usually compelling!

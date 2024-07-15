@@ -1,14 +1,11 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/index-launched.css";
 
-export const IndexLaunched = () => {
+export function IndexLaunched() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -89,6 +86,6 @@ export const IndexLaunched = () => {
           Book My Launch Call
         </button>
       </div>
-    </div >
-  )
+    </div>
+  );
 }
