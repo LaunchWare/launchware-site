@@ -1,8 +1,6 @@
 import React from "react";
 import { PageProps } from "gatsby";
 
-import "../css/index.css";
-
 import { AboutHero } from "../components/about-page/AboutHero";
 import { BetterWay } from "../components/about-page/BetterWay";
 import { Leaders } from "../components/about-page/Leaders";

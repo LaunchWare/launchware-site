@@ -2,8 +2,6 @@ import React from "react";
 
 import { PageProps } from "gatsby";
 
-import "../css/index.css";
-
 import { Exasperation } from "../components/index-page/Exasperation";
 import { IndexScorecard } from "../components/index-page/IndexScorecard";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";

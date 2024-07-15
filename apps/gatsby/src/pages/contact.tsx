@@ -6,7 +6,6 @@ import { ContactUsHero } from "../components/contact-page/ContactUsHero";
 import { GetInTouch } from "../components/contact-page/GetInTouch";
 import { MediaInquiries } from "../components/contact-page/MediaInquiries";
 import { Layout } from "../components/layout/Layout";
-import "../css/index.css";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
 
 export const Head = () => (

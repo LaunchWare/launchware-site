@@ -1,8 +1,6 @@
 import React from "react";
 import { PageProps } from "gatsby";
 
-import "../css/index.css";
-
 import { AreWeAFit } from "../components/services-page/AreWeAFit";
 import { EnoughOnYourPlate } from "../components/services-page/EnoughOnYourPlate";
 import { ProductListing } from "../components/services-page/ProductListing";

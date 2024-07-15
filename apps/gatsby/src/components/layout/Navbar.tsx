@@ -2,12 +2,11 @@ import React, { MouseEventHandler } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-import "../../css/index.css";
-import "./css/navbar.css";
-
 import { LaunchWareLogo } from "./LaunchWareLogo";
 import { Link } from "gatsby";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+
+import "./css/navbar.css";
 
 export default function Navbar() {
   const { clickHandler, modal } = useBookCallModal();
@@ -16,24 +15,24 @@ export default function Navbar() {
     <Disclosure as="nav" className="primary-nav">
       {({ open }) => (
         <>
-          <div className="primary-nav_container">
-            <div className="primary-nav_mobile-button-container">
-              <div className="primary-nav_mobile-button">
+          <div className="primary-nav__container">
+            <div className="primary-nav__mobile-button-container">
+              <div className="primary-nav__mobile-button">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="primary-nav_mobile-button-disclosure">
-                  <span className="primary-nav_mobile-button-spacer" />
-                  <span className="primary-nav_mobile-button-accessible-message">
+                <Disclosure.Button className="primary-nav__mobile-button-disclosure">
+                  <span className="primary-nav__mobile-button-spacer" />
+                  <span className="primary-nav__mobile-button-accessible-message">
                     Open main menu
                   </span>
                   {open ? (
-                    <XMarkIcon className="primary-nav_mobile-button-icon" aria-hidden="true" />
+                    <XMarkIcon className="primary-nav__mobile-button-icon" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="primary-nav_mobile-button-icon" aria-hidden="true" />
+                    <Bars3Icon className="primary-nav__mobile-button-icon" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
               <div className="primary-nav-container__desktop">
-                <div className="primary-nav_logo">
+                <div className="primary-nav__logo">
                   <Link to="/" title="LaunchWare">
                     <LaunchWareLogo />
                   </Link>
@@ -58,16 +57,16 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="primary-nav_disclosure-panel">
+            <div className="primary-nav__disclosure-panel">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as={Link}
                 to="/services"
-                className="primary-nav_disclosure-panel-item"
+                className="primary-nav__disclosure-panel-item"
               >
                 Services
               </Disclosure.Button>
-              <Disclosure.Button as="a" href="#" className="primary-nav_disclosure-panel-item">
+              <Disclosure.Button as="a" href="#" className="primary-nav__disclosure-panel-item">
                 About
               </Disclosure.Button>
 
@@ -75,7 +74,7 @@ export default function Navbar() {
                 href="#"
                 onClick={clickHandler}
                 as="a"
-                className="primary-nav_disclosure-panel-item menu-item__desktop menu-item__mobile-button button"
+                className="primary-nav__disclosure-panel-item menu-item__desktop menu-item__mobile-button button"
               >
                 Book My Launch Call
               </Disclosure.Button>

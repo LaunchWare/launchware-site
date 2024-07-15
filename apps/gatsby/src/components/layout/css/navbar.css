@@ -2,27 +2,27 @@
   @apply bg-white text-launch-black-90;
 }
 
-.primary-nav_mobile-button {
+.primary-nav__mobile-button {
   @apply absolute inset-y-0 right-0 flex items-center sm:hidden;
 }
 
-.primary-nav_mobile-button-container {
-  @apply relative flex h-16 justify-between
+.primary-nav__mobile-button-container {
+  @apply relative flex h-16 justify-between;
 }
 
-.primary-nav_mobile-button-disclosure {
+.primary-nav__mobile-button-disclosure {
   @apply relative inline-flex items-center justify-center px-2;
 }
 
-.primary-nav_mobile-button-icon {
+.primary-nav__mobile-button-icon {
   @apply block h-6 w-6;
 }
 
-.primary-nav_mobile-button-spacer {
+.primary-nav__mobile-button-spacer {
   @apply absolute -inset-0.5;
 }
 
-.primary-nav_mobile-button-accessible-message {
+.primary-nav__mobile-button-accessible-message {
   @apply sr-only;
 }
 
@@ -34,11 +34,11 @@
   @apply hover:text-launch-orange;
 }
 
-.primary-nav_logo {
+.primary-nav__logo {
   @apply flex flex-shrink-0 items-center;
 }
 
-.primary-nav_container {
+.primary-nav__container {
   @apply mx-auto max-w-7xl pad-container;
 }
 
@@ -46,11 +46,11 @@
   @apply flex flex-1 items-center justify-start sm:items-stretch sm:justify-between;
 }
 
-.primary-nav_disclosure-panel {
+.primary-nav__disclosure-panel {
   @apply space-y-1 pb-4 shadow-md;
 }
 
-.primary-nav_disclosure-panel-item {
+.primary-nav__disclosure-panel-item {
   @apply block border-l-4 border-transparent py-2 pl-3 pr-4 text-base;
 }
 
