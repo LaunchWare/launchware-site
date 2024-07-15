@@ -4,15 +4,17 @@
   "author": "Dan Pickett",
   "license": "NONE",
   "private": true,
-  "workspaces" : [
+  "workspaces": [
     "apps/gatsby",
     "apps/functions"
   ],
   "scripts": {
     "gatsby:build": "pnpm --dir apps/gatsby build",
+    "gatsby:lint": "pnpm --dir apps/gatsby lint",
     "develop:gatsby": "pnpm --dir apps/gatsby develop:gatsby"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.34.1",
     "netlify-cli": "^17.22.1",
     "pnpm": "^9.0.4"
   }

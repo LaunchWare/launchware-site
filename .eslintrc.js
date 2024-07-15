@@ -1,5 +1,9 @@
-export default {
+module.exports = {
   root: true,
+  globals: {
+    __PATH_PREFIX__: true,
+  },
+  extends: `react-app`,
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
@@ -9,15 +13,15 @@ export default {
         "@launchware/eslint-config-react",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "@tanstack/query",
+        "plugin:@tanstack/eslint-plugin-query/recommended",
       ],
       env: {
         es6: true,
       },
       settings: {
         react: {
-          version: 'detect'
-        }
+          version: "detect",
+        },
       },
     },
     {
