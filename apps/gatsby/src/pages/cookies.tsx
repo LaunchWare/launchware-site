@@ -1,22 +1,22 @@
 import React from "react";
-import { Policy } from "../components/general/Policy";
-import { PageProps } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
 
-export const Head = () => {
+import { PageProps } from "gatsby";
+
+import { Policy } from "../components/general/Policy";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
+
+export function Head() {
   return (
-    <>
-      <HeadDefaults />
-    </>
+    <HeadDefaults />
   );
-};
-const PrivacyPolicy = (pageProps: PageProps) => {
+}
+function PrivacyPolicy(pageProps: PageProps) {
   return (
     <Layout location={pageProps.location} title="Privacy Policy">
       <Policy policyKey="VTJWVGJXWlNkbkpIT1VoemQxRTlQUT09" />
     </Layout>
   );
-};
+}
 
 export default PrivacyPolicy;

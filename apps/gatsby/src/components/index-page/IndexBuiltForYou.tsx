@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/built-for-you.css";
 
-export const IndexBuiltForYou = () => (
-  <div className="built-for-you">
+export function IndexBuiltForYou() {
+  return <div className="built-for-you">
     <div className="built-for-you__contents">
       <StaticImage
         alt=""
@@ -60,4 +60,4 @@ export const IndexBuiltForYou = () => (
       </div>
     </div>
   </div>
-);
+}

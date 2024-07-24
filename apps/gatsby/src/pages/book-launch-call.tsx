@@ -1,20 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+
 import { PageProps } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { companyContactInformation } from "../configuration/companyContactInformation";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
+
 import { BookCallEmbed } from "../components/book-call/BookCallEmbed";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
 import { UsercentricsProvider } from "../components/usercentrics/UsercentricsProvider";
 
-export const Head = () => {
+export function Head() {
   return (
-    <>
-      <HeadDefaults />
-    </>
+    <HeadDefaults />
   );
-};
+}
 
-const BookLaunchCall = (pageProps: PageProps) => {
+function BookLaunchCall(pageProps: PageProps) {
   return (
     <Layout location={pageProps.location} title="Book My Launch Call">
       <div className="parent-section">
@@ -30,6 +29,6 @@ const BookLaunchCall = (pageProps: PageProps) => {
       </div>
     </Layout>
   );
-};
+}
 
 export default BookLaunchCall;

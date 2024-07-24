@@ -1,12 +1,12 @@
 import React from "react";
 
-export const RiskAssessmentIcon = ({
+export function RiskAssessmentIcon({
   className = "",
   width = "",
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       id="risk-assessment-icon"
@@ -79,4 +79,4 @@ export const RiskAssessmentIcon = ({
       </g>
     </svg>
   );
-};
+}

@@ -1,12 +1,12 @@
 import React from "react";
 
-export const CommunityIcon = ({
+export function CommunityIcon({
   className = "",
   width = "",
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       id="community-icon"
@@ -90,4 +90,4 @@ export const CommunityIcon = ({
       </g>
     </svg>
   );
-};
+}

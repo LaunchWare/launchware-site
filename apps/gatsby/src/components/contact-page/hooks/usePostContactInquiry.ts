@@ -1,9 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
+
 import { ContactInquiryFormValues } from "../models/ContactInquiryShapes";
 
-export const usePostContactInquiry = () => {
-  return useMutation(
+export const usePostContactInquiry = () =>
+  useMutation(
     async (data: ContactInquiryFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
@@ -14,8 +15,8 @@ export const usePostContactInquiry = () => {
     },
     {
       onError: (err: Error | AxiosError) => {
+        // eslint-disable-next-line no-console
         console.error(err);
       },
     },
   );
-};

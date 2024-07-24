@@ -6,14 +6,14 @@ type PolicyProps = {
 
 const termageddonAPIPath = "https://app.termageddon.com/api/policy/";
 
-export const Policy = ({ policyKey }: PolicyProps) => {
+export function Policy({ policyKey }: PolicyProps) {
   useEffect(() => {
     const policy = document.getElementById("policy");
     if (policy === null || policyKey === undefined) {
       console.log("Error! Could not find policy element or policy key.");
     } else {
       const pol_key = policyKey;
-      const pol_extra = policy.dataset.extra ? "?" + policy.dataset.extra : "";
+      const pol_extra = policy.dataset.extra ? `?${  policy.dataset.extra}` : "";
       const xhr = new XMLHttpRequest();
       xhr.onload = () => {
         policy.innerHTML = xhr.responseText;
@@ -37,4 +37,4 @@ export const Policy = ({ policyKey }: PolicyProps) => {
       />
     </div>
   );
-};
+}

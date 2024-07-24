@@ -7,8 +7,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/media-inquiries.css";
 
-export const MediaInquiries = () => (
-  <div className="media-inquiries">
+export function MediaInquiries() {
+  return <div className="media-inquiries">
     <div className="media-inquiries__contents">
       <StaticImage
         layout="constrained"
@@ -35,4 +35,4 @@ export const MediaInquiries = () => (
       </div>
     </div>
   </div>
-);
+}

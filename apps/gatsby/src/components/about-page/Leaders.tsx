@@ -1,12 +1,14 @@
 import React from "react";
+
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/leaders.css";
 import { StaticImage } from "gatsby-plugin-image";
 
-export const Leaders = () => {
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+
+import "./css/leaders.css";
+
+export function Leaders() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -15,7 +17,7 @@ export const Leaders = () => {
       <div className="leaders__contents">
         <div className="leaders__heading-container">
           <h2 className="leaders__heading">Meet LaunchWare's Founder</h2>
-          <p></p>
+          <p />
         </div>
         <div className="leaders__grid">
           <div className="leaders__card">
@@ -81,4 +83,4 @@ export const Leaders = () => {
       </div>
     </div>
   );
-};
+}

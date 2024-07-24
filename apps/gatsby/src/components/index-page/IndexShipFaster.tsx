@@ -8,7 +8,7 @@ import { CommunityIcon } from "../icons/CommunityIcon";
 import { DocsSignIcon } from "../icons/DocsSignIcon";
 import "./css/index-ship-faster.css";
 
-export const IndexShipFaster = () => {
+export function IndexShipFaster() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -160,4 +160,4 @@ export const IndexShipFaster = () => {
       </div>
     </div>
   );
-};
+}

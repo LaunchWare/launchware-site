@@ -1,33 +1,33 @@
 import React, { MouseEventHandler } from "react";
-import { LaunchWareLogoLight } from "./LaunchWareLogoLight";
-import { Link, Script } from "gatsby";
-import { companySocialProfiles } from "../../configuration/getCompanySocialProfile";
-import { CompanySocialIcon } from "../social/CompanySocialIcon";
-import { companyContactInformation } from "../../configuration/companyContactInformation";
 
-import "./css/footer.css";
+import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
+
+import { LaunchWareLogoLight } from "./LaunchWareLogoLight";
 import { TrackingCodes } from "./TrackingCodes";
+import { companyContactInformation } from "../../configuration/companyContactInformation";
+import { companySocialProfiles } from "../../configuration/getCompanySocialProfile";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { OptInForm } from "../opt-in/OptInForm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
+import { CompanySocialIcon } from "../social/CompanySocialIcon";
 import { UC_UI } from "../usercentrics/UsercentricsProvider";
+
+import "./css/footer.css";
 
 declare global {
   interface Window {
     UC_UI: UC_UI;
   }
 }
-const Footer = () => {
+function Footer() {
   const { modal, clickHandler } = useBookCallModal();
 
-  const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
-    return (
+  const socialListItems = Object.keys(companySocialProfiles).map((network: string) => (
       <li key={network}>
         <CompanySocialIcon network={network} />
       </li>
-    );
-  });
+    ));
 
   const privacySettingsHandler: MouseEventHandler = (event) => {
     event.preventDefault();
@@ -134,6 +134,6 @@ const Footer = () => {
       <TrackingCodes />
     </footer>
   );
-};
+}
 
 export default Footer;

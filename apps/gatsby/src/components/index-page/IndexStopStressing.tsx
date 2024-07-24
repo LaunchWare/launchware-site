@@ -1,15 +1,16 @@
+// TODO: This file is an orphan; delete it or resurrect it
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import "../../css/index.css";
 import "./css/index-stop-stressing.css";
 
-export const IndexStopStressing = () => (
-  <div className="index-stop-stressing">
+export function IndexStopStressing() {
+  return <div className="index-stop-stressing">
     <div className="index-stop-stressing__contents">
       <div className="index-stop-stressing__image-container">
         <StaticImage
@@ -43,4 +44,4 @@ export const IndexStopStressing = () => (
       </div>
     </div>
   </div>
-);
+}

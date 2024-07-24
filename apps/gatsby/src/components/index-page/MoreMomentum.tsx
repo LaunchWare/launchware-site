@@ -1,15 +1,16 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import decorativeSquare from "";
-import "./css/more-momentum.css";
-import { StaticImage } from "gatsby-plugin-image";
 
-export const MoreMomentum = () => {
+import "./css/more-momentum.css";
+
+export function MoreMomentum() {
   const { modal, clickHandler } = useBookCallModal();
 
   const sectionContents = {
@@ -55,4 +56,4 @@ export const MoreMomentum = () => {
       </div>
     </div>
   );
-};
+}

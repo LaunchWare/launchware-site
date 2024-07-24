@@ -1,4 +1,5 @@
 import React from "react";
+
 import { PageProps } from "gatsby";
 
 import { ContactUsChat } from "../components/contact-page/ContactUsChat";
@@ -9,8 +10,8 @@ import { Layout } from "../components/layout/Layout";
 import "../css/index.css";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
 
-export const Head = () => (
-  <>
+export function Head() {
+  return <>
     <title>Contact LaunchWare: Your Software Development Partner in Boston</title>
     <meta
       name="description"
@@ -22,9 +23,9 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+}
 
-const AboutPage = (pageProps: PageProps) => {
+function AboutPage(pageProps: PageProps) {
   return (
     <Layout location={pageProps.location} title="Contact Us">
       <ContactUsHero />
@@ -33,6 +34,6 @@ const AboutPage = (pageProps: PageProps) => {
       <GetInTouch />
     </Layout>
   );
-};
+}
 
 export default AboutPage;

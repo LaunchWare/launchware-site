@@ -1,12 +1,12 @@
 import React from "react";
 
-export const LaptopStackIcon = ({
+export function LaptopStackIcon({
   className = "",
   width = "",
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       className={className}
@@ -134,4 +134,4 @@ export const LaptopStackIcon = ({
       />
     </svg>
   );
-};
+}

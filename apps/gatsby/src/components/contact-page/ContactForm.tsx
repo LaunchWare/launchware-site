@@ -2,13 +2,13 @@ import React from "react";
 
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { getFieldClassName } from "../general/services/getFieldClassName";
-import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
 import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
+import { useNotifications } from "../../hooks/useNotifications";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import "./css/contact-form.css";
 
-export const ContactForm = () => {
+export function ContactForm() {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -26,7 +26,6 @@ export const ContactForm = () => {
 
   const {
     mutate: postContactInquiry,
-    error: backendErrors,
     isSuccess,
     isLoading,
   } = usePostContactInquiry();
@@ -38,7 +37,7 @@ export const ContactForm = () => {
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -171,4 +170,4 @@ export const ContactForm = () => {
       </div>
     </div>
   );
-};
+}

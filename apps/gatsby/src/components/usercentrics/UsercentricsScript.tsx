@@ -1,7 +1,8 @@
-import { Script } from "gatsby";
 import React from "react";
 
-export const UsercentricsScript = ({ settingsId }: { settingsId: string }) => {
+import { Script } from "gatsby";
+
+export function UsercentricsScript({ settingsId }: { settingsId: string }) {
   return (
     <Script
       type="text/javascript"
@@ -12,4 +13,4 @@ export const UsercentricsScript = ({ settingsId }: { settingsId: string }) => {
       async
     />
   );
-};
+}

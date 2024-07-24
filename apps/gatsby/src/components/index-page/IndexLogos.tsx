@@ -3,8 +3,8 @@ import React from "react";
 import "./css/index-logos.css";
 import { StaticImage } from "gatsby-plugin-image";
 
-export const IndexLogos = () => (
-  <div className="index-logos">
+export function IndexLogos() {
+  return <div className="index-logos">
     <ul className="index-logos__contents">
       <li>
         <StaticImage
@@ -46,4 +46,4 @@ export const IndexLogos = () => (
       </li>
     </ul>
   </div>
-);
+}

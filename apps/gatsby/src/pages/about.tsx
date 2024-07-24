@@ -1,4 +1,5 @@
 import React from "react";
+
 import { PageProps } from "gatsby";
 
 import "../css/index.css";
@@ -9,12 +10,12 @@ import { Leaders } from "../components/about-page/Leaders";
 import { OurBeliefs } from "../components/about-page/OurBeliefs";
 import { VisionToReality } from "../components/about-page/VisionToReality";
 import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists";
-import { Layout } from "../components/layout/Layout";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
 import { ScorecardOptInForm } from "../components/scorecard/ScorecardOptInForm";
 
-export const Head = () => (
-  <>
+export function Head() {
+  return <>
     <title>About LaunchWare: Boston’s Premier Software Consultants</title>
     <meta
       name="description"
@@ -26,9 +27,9 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+}
 
-const AboutPage = (pageProps: PageProps) => {
+function AboutPage(pageProps: PageProps) {
   return (
     <Layout location={pageProps.location} title="About">
       <AboutHero />
@@ -40,6 +41,6 @@ const AboutPage = (pageProps: PageProps) => {
       <ScorecardOptInForm className="hidden" />
     </Layout>
   );
-};
+}
 
 export default AboutPage;

@@ -1,10 +1,10 @@
-import React, { MouseEventHandler, useEffect, useRef, useState } from "react";
+import React, { MouseEventHandler, useEffect } from "react";
 
 import { useModal } from "@launchware/replicator";
-import "@launchware/replicator/dist/css/Modal/modal.css";
 
-import { companyContactInformation } from "../../../configuration/companyContactInformation";
 import { BookCallModal } from "../BookCallModal";
+
+import "@launchware/replicator/dist/css/Modal/modal.css";
 import "../css/book-call-modal.css";
 
 export const useBookCallModal = () => {

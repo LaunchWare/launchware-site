@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link } from "gatsby";
 import { useForm } from "react-hook-form";
 
-import "../../css/forms.css";
-import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema";
 import { useGeneralOptIn } from "./hooks/useGeneralOptIn";
+import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema";
 import { Spinner } from "../spinner/Spinner";
-import { Link } from "gatsby";
+
+import "../../css/forms.css";
 
 declare global {
   interface Window {
@@ -15,7 +16,7 @@ declare global {
   }
 }
 
-export const OptInForm = () => {
+export function OptInForm() {
   const {
     handleSubmit,
     register,
@@ -68,11 +69,11 @@ export const OptInForm = () => {
   return (
     <form
       className="footer_group footer_group__last"
-      noValidate={true}
+      noValidate
       onSubmit={handleSubmit(onSubmit)}
     >
       <h3 className="footer_headline">Stay in our orbit</h3>
       {isSuccess ? successContent : formContent}
     </form>
   );
-};
+}

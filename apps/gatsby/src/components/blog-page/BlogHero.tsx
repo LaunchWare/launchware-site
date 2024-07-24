@@ -2,7 +2,7 @@ import React from "react";
 
 import "./css/blog-hero.css";
 
-export const BlogHero = () => {
+export function BlogHero() {
   return (
     <div className="blog-hero">
       <div className="blog-hero__contents">
@@ -16,4 +16,4 @@ export const BlogHero = () => {
       </div>
     </div>
   );
-};
+}

@@ -2,8 +2,8 @@ import React from "react";
 
 import "./css/services-hero.css";
 
-export const ServicesHero = () => (
-  <div className="services-hero">
+export function ServicesHero() {
+  return <div className="services-hero">
     <div className="services-hero__contents">
       <h1 className="services-hero__heading">
         Software development services designed to get your product{" "}
@@ -11,4 +11,4 @@ export const ServicesHero = () => (
       </h1>
     </div>
   </div>
-);
+}

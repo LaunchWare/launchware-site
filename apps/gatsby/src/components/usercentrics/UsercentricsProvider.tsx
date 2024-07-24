@@ -1,5 +1,5 @@
-import React, { ReactNode, useCallback } from "react";
-import { useEffect, useState } from "react";
+import React, { ReactNode, useCallback , useEffect, useState } from "react";
+
 import { UsercentricsService } from "../../services/UsercentricsService";
 
 export type UCContext = {
@@ -16,7 +16,7 @@ export const UsercentricsContext = React.createContext<UCContext>({
   acceptService: null,
 });
 
-export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
+export function UsercentricsProvider({ children }: { children: ReactNode }) {
   const [isInitialized, setIsInitialized] = useState(false);
   const [isClientSide] = useState(typeof window !== "undefined");
 
@@ -42,7 +42,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
   const acceptService = useCallback(
     async (name: string) => {
       if (!isInitialized || !isClientSide) {
-        return;
+        
       } else {
         const service = UsercentricsService.getServicesBaseInfo().find(
           (service) => service.name === name,
@@ -58,7 +58,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
   const hasServiceConsent = (name: string) => {
     if (!isInitialized || !isClientSide) {
       return false;
-    } else {
+    } 
       const service = UsercentricsService.getServicesBaseInfo().find(
         (service) => service.name === name,
       );
@@ -66,7 +66,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
         return service.consent.status;
       }
       return false;
-    }
+    
   };
 
   return (
@@ -82,4 +82,4 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </UsercentricsContext.Provider>
   );
-};
+}

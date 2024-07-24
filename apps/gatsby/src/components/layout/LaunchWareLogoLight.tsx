@@ -1,6 +1,7 @@
 import React from "react";
-export const LaunchWareLogoLight = ({ className = "" }: { className?: string }) => (
-  <svg
+
+export function LaunchWareLogoLight({ className = "" }: { className?: string }) {
+  return <svg
     className={`${className}`}
     width="161"
     height="14"
@@ -62,4 +63,4 @@ export const LaunchWareLogoLight = ({ className = "" }: { className?: string }) 
       </clipPath>
     </defs>
   </svg>
-);
+}

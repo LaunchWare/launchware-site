@@ -1,13 +1,12 @@
 import React from "react";
 
 import "@launchware/replicator/dist/css/Modal/modal.css";
-import { StaticImage } from "gatsby-plugin-image";
 
 import { ScorecardOptInForm } from "./ScorecardOptInForm";
 import "./css/scorecard-modal.css";
 
-export const ScorecardModal = () => (
-  <div className="scorecard-modal">
+export function ScorecardModal() {
+  return <div className="scorecard-modal">
     {/* <StaticImage
       alt=""
       className="scorecard-modal__decorative-square"
@@ -23,4 +22,4 @@ export const ScorecardModal = () => (
       <ScorecardOptInForm />
     </div>
   </div>
-);
+}

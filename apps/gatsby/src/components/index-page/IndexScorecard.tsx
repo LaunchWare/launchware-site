@@ -1,14 +1,14 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useModal } from "@launchware/replicator";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { ScorecardModal } from "../scorecard/ScorecardModal";
 import "./css/index-scorecard.css";
 
-export const IndexScorecard = () => {
+export function IndexScorecard() {
   const { modal, setVisibility } = useModal(() => <ScorecardModal />, { scrollToTop: false });
 
   return (
@@ -46,4 +46,4 @@ export const IndexScorecard = () => {
       </div>
     </section>
   );
-};
+}

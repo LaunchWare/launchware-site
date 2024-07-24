@@ -5,11 +5,11 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { useScorecardOptIn } from "./hooks/useScorecardOptIn";
 import { scorecardOptInSchema, ScorecardOptInSchema } from "./models/ScorecardOptInSchema";
-import { getFieldClassName } from "../general/services/getFieldClassName";
 import { useNotifications } from "../../hooks/useNotifications";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import "./css/scorecard-form.css";
 
-export const ScorecardOptInForm = ({ className = "" }: { className?: string }) => {
+export function ScorecardOptInForm({ className = "" }: { className?: string }) {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -21,7 +21,6 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
 
   const {
     mutate: postScorecardOptIn,
-    error: backendErrors,
     isSuccess,
     isLoading,
   } = useScorecardOptIn();
@@ -33,7 +32,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -86,4 +85,4 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
   );
 
   return isSuccess ? successContent : formContent;
-};
+}

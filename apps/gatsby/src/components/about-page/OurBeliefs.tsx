@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/our-beliefs.css";
 
-export const OurBeliefs = () => (
-  <div className="our-beliefs">
+export function OurBeliefs() {
+  return <div className="our-beliefs">
     <div className="our-beliefs__contents">
       <div className="our-beliefs__image-container">
         <StaticImage
@@ -76,4 +76,4 @@ export const OurBeliefs = () => (
       </ul>
     </div>
   </div>
-);
+}

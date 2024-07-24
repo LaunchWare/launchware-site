@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/exasperation.css";
 
-export const Exasperation = () => {
+export function Exasperation() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -48,4 +48,4 @@ export const Exasperation = () => {
       </div>
     </div>
   );
-};
+}

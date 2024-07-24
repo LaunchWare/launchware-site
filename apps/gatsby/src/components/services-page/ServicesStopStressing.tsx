@@ -1,14 +1,14 @@
 import React from "react";
 
+import decorativeSquare from "../../images/decorations/decorative_square.png";
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { LiftoffIcon } from "../icons/LiftoffIcon";
 import { RiskAssessmentIcon } from "../icons/RiskAssessmentIcon";
-import decorativeSquare from "../../images/decorations/decorative_square.png";
 import "./css/services-stop-stressing.css";
 
-export const ServicesStopStressing = () => {
+export function ServicesStopStressing() {
   const { modal, clickHandler } = useBookCallModal();
 
   const sectionContents = {
@@ -56,4 +56,4 @@ export const ServicesStopStressing = () => {
       {modal}
     </div>
   );
-};
+}

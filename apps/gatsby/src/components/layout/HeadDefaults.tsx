@@ -1,8 +1,10 @@
+import React from "react";
+
 import { Script } from "gatsby";
-import React, { useEffect } from "react";
+
 import { UsercentricsScript } from "../usercentrics/UsercentricsScript";
 
-export const HeadDefaults = () => {
+export function HeadDefaults() {
   return (
     <>
       <meta charSet="utf-8" />
@@ -15,4 +17,4 @@ export const HeadDefaults = () => {
       />
     </>
   );
-};
+}

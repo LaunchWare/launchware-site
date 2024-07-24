@@ -6,6 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
+
 import { companyContactInformation } from "../../configuration/companyContactInformation";
 import { UsercentricsContext } from "../usercentrics/UsercentricsProvider";
 
@@ -18,7 +19,7 @@ declare global {
   }
 }
 
-export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
+export function BookCallEmbed({ enabled = true }: { enabled?: boolean }) {
   const divRef = useRef<HTMLDivElement>(null);
   const [calendlyInitialized, setCalendlyInitialized] = useState(false);
   const url = companyContactInformation.launchCallUrl;
@@ -88,4 +89,4 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
       {div}
     </>
   );
-};
+}

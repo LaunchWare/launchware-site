@@ -1,9 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
+
 import { ScorecardOptInSchema } from "../models/ScorecardOptInSchema";
 
-export const useScorecardOptIn = () => {
-  return useMutation(
+export const useScorecardOptIn = () =>
+  useMutation(
     async (data: ScorecardOptInSchema) => {
       const resp = await axios.post(`/`, data, {
         headers: {
@@ -14,8 +15,8 @@ export const useScorecardOptIn = () => {
     },
     {
       onError: (err: Error | AxiosError) => {
+        // eslint-disable-next-line no-console
         console.error(err);
       },
     },
   );
-};

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
+export function LaunchWareLogo({ className = "" }: { className?: string }) {
   return (
     <svg
       width="161"
@@ -65,4 +65,4 @@ export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
       </defs>
     </svg>
   );
-};
+}

@@ -1,10 +1,9 @@
-import axios, { AxiosError } from "axios";
 import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError } from "axios";
 
 import { GetInTouchFormValues } from "../models/GetInTouchFormShapes";
 
-export const usePostGeneralInquiry = () => {
-  return useMutation(
+export const usePostGeneralInquiry = () => useMutation(
     async (data: GetInTouchFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
@@ -19,4 +18,3 @@ export const usePostGeneralInquiry = () => {
       },
     },
   );
-};

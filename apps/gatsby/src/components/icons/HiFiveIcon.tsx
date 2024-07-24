@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HiFiveIcon = ({ className = "", width }: { className?: string; width?: string }) => {
+export function HiFiveIcon({ className = "", width }: { className?: string; width?: string }) {
   return (
     <svg
       className={className}
@@ -149,4 +149,4 @@ export const HiFiveIcon = ({ className = "", width }: { className?: string; widt
       />
     </svg>
   );
-};
+}

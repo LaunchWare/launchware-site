@@ -9,7 +9,7 @@ import { CommunityIcon } from "../icons/CommunityIcon";
 import { DocsSignIcon } from "../icons/DocsSignIcon";
 import "./css/product-listing.css";
 
-export const ProductListing = () => {
+export function ProductListing() {
   const { clickHandler, modal } = useBookCallModal();
 
   return (
@@ -182,4 +182,4 @@ export const ProductListing = () => {
       </div>
     </div>
   );
-};
+}

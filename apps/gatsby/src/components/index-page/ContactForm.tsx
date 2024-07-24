@@ -3,13 +3,13 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { Tagline } from "../general/Tagline";
-import { getFieldClassName } from "../general/services/getFieldClassName";
-import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
 import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
+import { useNotifications } from "../../hooks/useNotifications";
+import { getFieldClassName } from "../general/services/getFieldClassName";
+import { Tagline } from "../general/Tagline";
 
-export const IndexFormSection = () => {
+export function IndexFormSection() {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -27,7 +27,6 @@ export const IndexFormSection = () => {
 
   const {
     mutate: postContactInquiry,
-    error: backendErrors,
     isSuccess,
     isLoading,
   } = usePostContactInquiry();
@@ -39,7 +38,7 @@ export const IndexFormSection = () => {
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -186,4 +185,4 @@ export const IndexFormSection = () => {
       </div>
     </div>
   );
-};
+}
