@@ -56,7 +56,10 @@ export const RiskAssessmentIcon = ({
         </g>
         <polyline className="risk-assessment-2" points="26.945 42.638 29.348 45.041 35.049 39.34" />
         <line className="risk-assessment-2" x1="40.871" y1="42.459" x2="61.288" y2="42.459" />
-        <polyline className="risk-assessment-2" points="26.945 53.829 29.348 56.232 35.049 50.531" />
+        <polyline
+          className="risk-assessment-2"
+          points="26.945 53.829 29.348 56.232 35.049 50.531"
+        />
         <line className="risk-assessment-2" x1="40.871" y1="54.704" x2="61.288" y2="54.704" />
         <line className="risk-assessment-2" x1="40.871" y1="66.95" x2="55.888" y2="66.95" />
         <g>

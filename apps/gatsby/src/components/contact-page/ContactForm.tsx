@@ -157,17 +157,13 @@ export const ContactForm = () => {
     <div className="one-small-step">
       <div className="one-small-step__contents">
         <div className="one-small-step__text-container">
-          <h2 className="get-in-touch__heading">
-            Stop Stressing. Start Shipping.
-          </h2>
+          <h2 className="get-in-touch__heading">Stop Stressing. Start Shipping.</h2>
           <p className="one-small-step__text">
             Fill out the form below and tell us more about your project. We’ll get back to you
             within a business day to start making your vision a reality.
           </p>
           {isSuccess ? (
-            <p className="one-small-step__text">
-              Thanks for your inquiry. We'll be in touch!
-            </p>
+            <p className="one-small-step__text">Thanks for your inquiry. We'll be in touch!</p>
           ) : (
             formContent
           )}

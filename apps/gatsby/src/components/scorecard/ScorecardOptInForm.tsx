@@ -44,7 +44,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
   const blockClassName = "scorecard-form";
   const errorClassPrefix = `${blockClassName}__input`;
 
-  const successContent = "Thank you! Check your inbox for the scorecard."
+  const successContent = "Thank you! Check your inbox for the scorecard.";
 
   const formContent = (
     <form
@@ -85,5 +85,5 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
     </form>
   );
 
-  return (isSuccess ? successContent : formContent)
+  return isSuccess ? successContent : formContent;
 };

@@ -14,9 +14,8 @@ export const useBookCallModal = () => {
     setVisibility: setModalVisibility,
   } = useModal(() => <BookCallModal enabled={isModalVisible} />, {
     scrollToTop: false,
-    size: "large"
+    size: "large",
   });
-
 
   useEffect(() => {
     window.addEventListener("message", (e) => {

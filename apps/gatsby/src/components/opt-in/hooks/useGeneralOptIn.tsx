@@ -3,8 +3,10 @@ import { OptInFormSchema } from "../OptInFormSchema";
 import { useApiClient } from "../../../api-client/hooks/useApiClient";
 
 export const useGeneralOptIn = () => {
-  const client = useApiClient()
+  const client = useApiClient();
   return useMutation({
-    mutationFn: (optInData: OptInFormSchema) => { return client.post("/general-opt-in", optInData) }
-  })
-}
+    mutationFn: (optInData: OptInFormSchema) => {
+      return client.post("/general-opt-in", optInData);
+    },
+  });
+};

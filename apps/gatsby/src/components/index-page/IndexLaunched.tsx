@@ -89,6 +89,6 @@ export const IndexLaunched = () => {
           Book My Launch Call
         </button>
       </div>
-    </div >
-  )
-}
+    </div>
+  );
+};
