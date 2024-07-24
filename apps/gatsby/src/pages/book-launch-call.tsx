@@ -13,9 +13,9 @@ export function Head() {
   );
 }
 
-function BookLaunchCall(pageProps: PageProps) {
+function BookLaunchCall({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Book My Launch Call">
+    <Layout location={location} title="Book My Launch Call">
       <div className="parent-section">
         <div>
           <h2 className="book-call__heading">Book Your Launch Call</h2>

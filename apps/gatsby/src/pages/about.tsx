@@ -29,9 +29,9 @@ export function Head() {
   </>
 }
 
-function AboutPage(pageProps: PageProps) {
+function AboutPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="About">
+    <Layout location={location} title="About">
       <AboutHero />
       <WhySoftwareExists />
       <BetterWay />

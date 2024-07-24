@@ -11,9 +11,9 @@ export function Head() {
     <HeadDefaults />
   );
 }
-function PrivacyPolicy(pageProps: PageProps) {
+function PrivacyPolicy({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Privacy Policy">
+    <Layout location={location} title="Privacy Policy">
       <Policy policyKey="UTB0MFNFcGFka2t3TjNneVJuYzlQUT09" />
     </Layout>
   );

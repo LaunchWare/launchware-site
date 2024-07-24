@@ -21,11 +21,9 @@ export function Head() {
     <HeadDefaults />
   </>
 }
-function BlogPage(pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) {
-  const { data } = pageProps;
-
+function BlogPage({location, data}: PageProps<Queries.MarkdownArticlesForIndexQuery>) {
   return (
-    <Layout location={pageProps.location} title="Blog">
+    <Layout location={location} title="Blog">
       <BlogHero />
       <BlogCardList articles={data.allMarkdownRemark.nodes} />
     </Layout>

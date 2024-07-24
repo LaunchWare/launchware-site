@@ -6,9 +6,10 @@ import { ContactUsChat } from "../components/contact-page/ContactUsChat";
 import { ContactUsHero } from "../components/contact-page/ContactUsHero";
 import { GetInTouch } from "../components/contact-page/GetInTouch";
 import { MediaInquiries } from "../components/contact-page/MediaInquiries";
-import { Layout } from "../components/layout/Layout";
-import "../css/index.css";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
+
+import "../css/index.css";
 
 export function Head() {
   return <>
@@ -25,9 +26,9 @@ export function Head() {
   </>
 }
 
-function AboutPage(pageProps: PageProps) {
+function AboutPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Contact Us">
+    <Layout location={location} title="Contact Us">
       <ContactUsHero />
       <ContactUsChat />
       <MediaInquiries />

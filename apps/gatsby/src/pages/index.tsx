@@ -30,9 +30,9 @@ export function Head() {
     <HeadDefaults />
   </>
 }
-function IndexPage(pageProps: PageProps) {
+function IndexPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Home">
+    <Layout location={location} title="Home">
       <IndexHero />
       <Exasperation />
       <IndexLaunched />

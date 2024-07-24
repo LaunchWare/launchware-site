@@ -2,8 +2,6 @@ import React from "react";
 
 import { PageProps } from "gatsby";
 
-import "../css/index.css";
-
 import { HeadDefaults } from "../components/layout/HeadDefaults";
 import { Layout } from "../components/layout/Layout";
 import { AreWeAFit } from "../components/services-page/AreWeAFit";
@@ -12,6 +10,8 @@ import { ProductListing } from "../components/services-page/ProductListing";
 import { ServicesHero } from "../components/services-page/ServicesHero";
 import { ServicesStopStressing } from "../components/services-page/ServicesStopStressing";
 import { TrustedByTheBest } from "../components/services-page/TrustedByTheBest";
+
+import "../css/index.css";
 
 export function Head() {
   return <>
@@ -27,9 +27,9 @@ export function Head() {
     <HeadDefaults />
   </>
 }
-function ServicesPage(pageProps: PageProps) {
+function ServicesPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Services">
+    <Layout location={location} title="Services">
       <ServicesHero />
       <ProductListing />
       <EnoughOnYourPlate />
