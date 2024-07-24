@@ -1,19 +1,20 @@
 import React from "react";
+
 import { PageProps } from "gatsby";
 
-import "../css/index.css";
-
+import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
 import { AreWeAFit } from "../components/services-page/AreWeAFit";
 import { EnoughOnYourPlate } from "../components/services-page/EnoughOnYourPlate";
 import { ProductListing } from "../components/services-page/ProductListing";
 import { ServicesHero } from "../components/services-page/ServicesHero";
 import { ServicesStopStressing } from "../components/services-page/ServicesStopStressing";
 import { TrustedByTheBest } from "../components/services-page/TrustedByTheBest";
-import { Layout } from "../components/layout/Layout";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
 
-export const Head = () => (
-  <>
+import "../css/index.css";
+
+export function Head() {
+  return <>
     <title>LaunchWare Services: Custom Development & Staff Augmentation</title>
     <meta
       name="description"
@@ -25,10 +26,10 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
-const ServicesPage = (pageProps: PageProps) => {
+}
+function ServicesPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Services">
+    <Layout location={location} title="Services">
       <ServicesHero />
       <ProductListing />
       <EnoughOnYourPlate />
@@ -37,6 +38,6 @@ const ServicesPage = (pageProps: PageProps) => {
       <ServicesStopStressing />
     </Layout>
   );
-};
+}
 
 export default ServicesPage;

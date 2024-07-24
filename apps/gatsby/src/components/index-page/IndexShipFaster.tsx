@@ -8,7 +8,7 @@ import { CommunityIcon } from "../icons/CommunityIcon";
 import { DocsSignIcon } from "../icons/DocsSignIcon";
 import "./css/index-ship-faster.css";
 
-export const IndexShipFaster = () => {
+export function IndexShipFaster() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -40,7 +40,7 @@ export const IndexShipFaster = () => {
               understanding what you have and creating a strategy for where you want to go.
             </p>
             <p className="index-ship-faster__text">
-              Following our in-depth assessment, you're presented with a comprehensive
+              Following our in-depth assessment, you&rsquo;re presented with a comprehensive
               report—highlighting the bottlenecks and also offering solutions, starting with the
               most critical areas first. With these insights, you’ll gain clarity, recapture missed
               opportunities, and set a definitive course for success.
@@ -114,7 +114,7 @@ export const IndexShipFaster = () => {
             <p className="index-ship-faster__text">
               We’ll pull from our team of senior and junior developers to make sure we match you
               with the right people for your project. Then, we’ll immerse ourselves in understanding
-              your codebase, your unique processes, and the milestones you're aiming for. Together,
+              your codebase, your unique processes, and the milestones you&rsquo;re aiming for. Together,
               we ensure that your projects not only stay on track but also achieve excellence, every
               single time.
             </p>
@@ -160,4 +160,4 @@ export const IndexShipFaster = () => {
       </div>
     </div>
   );
-};
+}

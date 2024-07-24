@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import React from "react";
+
 import { Link } from "gatsby";
 
 import "./css/blog-card-list.css";
@@ -16,21 +17,19 @@ interface BlogCardListProps {
   }[];
 }
 
-export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
-  const listItems = articles.map((article) => {
-    return (
+export function BlogCardList({ articles }: BlogCardListProps) {
+  const listItems = articles.map((article) => (
       <li className="blog-card-list__card" key={article.id}>
         <Link to={`/blog${article.fields?.slug}`}>
           <h3 className="blog-card-list__heading">{article.frontmatter?.title}</h3>
           <p className="blog-card-list__excerpt">{article.excerpt}</p>
         </Link>
       </li>
-    );
-  });
+    ));
 
   return (
     <div className="blog-card-list">
       <ul className="blog-card-list__contents">{listItems}</ul>
     </div>
   );
-};
+}

@@ -1,27 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+
 import { PageProps } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { companyContactInformation } from "../configuration/companyContactInformation";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
+
 import { BookCallEmbed } from "../components/book-call/BookCallEmbed";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
 import { UsercentricsProvider } from "../components/usercentrics/UsercentricsProvider";
 
-export const Head = () => {
+export function Head() {
   return (
-    <>
-      <HeadDefaults />
-    </>
+    <HeadDefaults />
   );
-};
+}
 
-const BookLaunchCall = (pageProps: PageProps) => {
+function BookLaunchCall({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Book My Launch Call">
+    <Layout location={location} title="Book My Launch Call">
       <div className="parent-section">
         <div>
           <h2 className="book-call__heading">Book Your Launch Call</h2>
           <p className="book-call__text">
-            Let's chat about your custom software development project.
+            Let&rsquo;s chat about your custom software development project.
           </p>
           <UsercentricsProvider>
             <BookCallEmbed />
@@ -30,6 +29,6 @@ const BookLaunchCall = (pageProps: PageProps) => {
       </div>
     </Layout>
   );
-};
+}
 
 export default BookLaunchCall;

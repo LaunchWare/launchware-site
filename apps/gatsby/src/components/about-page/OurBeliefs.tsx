@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/our-beliefs.css";
 
-export const OurBeliefs = () => (
-  <div className="our-beliefs">
+export function OurBeliefs() {
+  return <div className="our-beliefs">
     <div className="our-beliefs__contents">
       <div className="our-beliefs__image-container">
         <StaticImage
@@ -18,32 +18,32 @@ export const OurBeliefs = () => (
       </div>
       <h2 className="our-beliefs__section-heading">What We Believe</h2>
       <p className="our-beliefs__text_center">
-        At LaunchWare, we're driven by a set of foundational beliefs that guide every project we
-        undertake. These are more than just talking points. They're the principles that shape our
+        At LaunchWare, we&rsquo;re driven by a set of foundational beliefs that guide every project we
+        undertake. These are more than just talking points. They&rsquo;re the principles that shape our
         approach, influence our decisions, and define who we are as a team.
       </p>
       <ul className="our-beliefs__grid">
         <li>
           <h3 className="our-beliefs__paragraph-heading">Technology is a Force for Good</h3>
           <p className="our-beliefs__text">
-            We're adamant that technology should enhance the well-being of its users. If a project's
-            intent is deceptive or ethically questionable, it doesn't just merit reconsideration—it
-            simply won't be built by us.
+            We&rsquo;re adamant that technology should enhance the well-being of its users. If a project&rsquo;s
+            intent is deceptive or ethically questionable, it doesn&rsquo;t just merit reconsideration—it
+            simply won&rsquo;t be built by us.
           </p>
         </li>
         <li>
           <h3 className="our-beliefs__paragraph-heading">Every Project is Unique</h3>
           <p className="our-beliefs__text">
             We understand that each client and each technological hurdle is singular in its
-            complexities and opportunities. There's no one-size-fits-all solution, which is why we
-            value custom approaches tailored to each project's unique demands.
+            complexities and opportunities. There&rsquo;s no one-size-fits-all solution, which is why we
+            value custom approaches tailored to each project&rsquo;s unique demands.
           </p>
         </li>
         <li>
           <h3 className="our-beliefs__paragraph-heading">Evolution Over Stagnation</h3>
           <p className="our-beliefs__text">
             In our eyes, software development is not a linear process but an evolutionary journey.
-            Adaptability and flexibility aren't mere 'nice-to-haves'. They're essential traits for
+            Adaptability and flexibility aren&rsquo;t mere &apos;nice-to-haves&apos;. They&rsquo;re essential traits for
             navigating the unpredictable landscape of software innovation.
           </p>
         </li>
@@ -69,11 +69,11 @@ export const OurBeliefs = () => (
         <li>
           <p className="our-beliefs__text">
             By staying true to these core beliefs, we aim to foster partnerships that are not just
-            profitable, but also meaningful and enduring. If these beliefs resonate with you, you're
-            likely the kind of partner we're looking to collaborate with.
+            profitable, but also meaningful and enduring. If these beliefs resonate with you, you&rsquo;re
+            likely the kind of partner we&rsquo;re looking to collaborate with.
           </p>
         </li>
       </ul>
     </div>
   </div>
-);
+}

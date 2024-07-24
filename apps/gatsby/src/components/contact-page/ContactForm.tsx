@@ -2,13 +2,13 @@ import React from "react";
 
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { getFieldClassName } from "../general/services/getFieldClassName";
-import { useNotifications } from "../../hooks/useNotifications";
 import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
 import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
+import { useNotifications } from "../../hooks/useNotifications";
+import { getFieldClassName } from "../general/services/getFieldClassName";
 import "./css/contact-form.css";
 
-export const ContactForm = () => {
+export function ContactForm() {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -26,7 +26,6 @@ export const ContactForm = () => {
 
   const {
     mutate: postContactInquiry,
-    error: backendErrors,
     isSuccess,
     isLoading,
   } = usePostContactInquiry();
@@ -38,7 +37,7 @@ export const ContactForm = () => {
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -54,6 +53,7 @@ export const ContactForm = () => {
       data-netlify="true"
       name="giantLeapInquiry"
       onSubmit={handleSubmit(onSubmit)}
+      // eslint-disable-next-line react/no-unknown-property
       netlify-honeypot="emailAddress"
     >
       <input
@@ -157,17 +157,13 @@ export const ContactForm = () => {
     <div className="one-small-step">
       <div className="one-small-step__contents">
         <div className="one-small-step__text-container">
-          <h2 className="get-in-touch__heading">
-            Stop Stressing. Start Shipping.
-          </h2>
+          <h2 className="get-in-touch__heading">Stop Stressing. Start Shipping.</h2>
           <p className="one-small-step__text">
             Fill out the form below and tell us more about your project. We’ll get back to you
             within a business day to start making your vision a reality.
           </p>
           {isSuccess ? (
-            <p className="one-small-step__text">
-              Thanks for your inquiry. We'll be in touch!
-            </p>
+            <p className="one-small-step__text">Thanks for your inquiry. We&rsquo;ll be in touch!</p>
           ) : (
             formContent
           )}
@@ -175,4 +171,4 @@ export const ContactForm = () => {
       </div>
     </div>
   );
-};
+}

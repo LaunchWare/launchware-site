@@ -1,20 +1,22 @@
 import React from "react";
+
 import { PageProps } from "gatsby";
 
 import { ContactUsChat } from "../components/contact-page/ContactUsChat";
 import { ContactUsHero } from "../components/contact-page/ContactUsHero";
 import { GetInTouch } from "../components/contact-page/GetInTouch";
 import { MediaInquiries } from "../components/contact-page/MediaInquiries";
-import { Layout } from "../components/layout/Layout";
-import "../css/index.css";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
 
-export const Head = () => (
-  <>
+import "../css/index.css";
+
+export function Head() {
+  return <>
     <title>Contact LaunchWare: Your Software Development Partner in Boston</title>
     <meta
       name="description"
-      content="Ready to elevate your software? Reach out to LaunchWare, Boston’s trusted software consultants. We're here to assist and guide you every step of the way."
+      content="Ready to elevate your software? Reach out to LaunchWare, Boston’s trusted software consultants. We&rsquo;re here to assist and guide you every step of the way."
     />
     <meta
       name="keywords"
@@ -22,17 +24,17 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+}
 
-const AboutPage = (pageProps: PageProps) => {
+function AboutPage({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Contact Us">
+    <Layout location={location} title="Contact Us">
       <ContactUsHero />
       <ContactUsChat />
       <MediaInquiries />
       <GetInTouch />
     </Layout>
   );
-};
+}
 
 export default AboutPage;

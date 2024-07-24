@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Link, graphql, PageProps, HeadFC, HeadProps } from "gatsby";
+
+import { Link, graphql, PageProps, HeadProps } from "gatsby";
 
 import { Layout } from "../components/layout/Layout";
 import "./css/blog-post.css";
-// import Seo from "../components/seo";
 
-const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) => {
+function BlogPostTemplate({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) {
   const queryData = data;
   const siteTitle = queryData?.site?.siteMetadata?.title || `Title`;
   const post = queryData.markdownRemark;
@@ -24,6 +24,7 @@ const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQu
             </header>
             <section
               className="blog-post__text"
+              // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: post?.html || "" }}
               itemProp="articleBody"
             />
@@ -59,16 +60,16 @@ const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQu
       </div>
     </Layout>
   );
-};
+}
 
-export const Head = (props: HeadProps<Queries.BlogPostBySlugQuery>) => {
+export function Head({data}: HeadProps<Queries.BlogPostBySlugQuery>) {
   return (
     <>
-      <title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
-      <meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
+      <title>{data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
+      <meta name="description" content={data.markdownRemark?.excerpt || undefined} />
     </>
   );
-};
+}
 
 export default BlogPostTemplate;
 

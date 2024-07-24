@@ -1,0 +1,5 @@
+node_modules
+public
+.cache
+static/fonts
+tailwind.config.js

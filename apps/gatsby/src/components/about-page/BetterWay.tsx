@@ -1,13 +1,13 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import "./css/better-way.css";
 
-export const BetterWay = () => {
+export function BetterWay() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -22,18 +22,18 @@ export const BetterWay = () => {
           <h2 className="better-way__heading">LaunchWare has found a better way.</h2>
           <p className="better-way__text">
             Years ago, we had enough with seeing audacious visions unrealized. For the past 22
-            years, we've helped dozens of people just like you cure what's ailing their software
+            years, we&rsquo;ve helped dozens of people just like you cure what&rsquo;s ailing their software
             development process and get their software shipped.
           </p>
 
           <figure className="better-way__list">
-            <figcaption>Imagine what's possible for your software:</figcaption>
+            <figcaption>Imagine what&rsquo;s possible for your software:</figcaption>
             <ul>
               <li className="better-way__list-item">
                 <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
                 <span>
                   Clear, written understanding of product objectives and how it contributes to the
-                  company's strategy
+                  company&rsquo;s strategy
                 </span>
               </li>
               <li className="better-way__list-item">
@@ -43,7 +43,7 @@ export const BetterWay = () => {
               <li className="better-way__list-item">
                 <FontAwesomeIcon height="1rem" className="better-way__check" icon={faCheck} />
                 <span>
-                  Consistent backlog refinement so that engineers have clarity on what they're
+                  Consistent backlog refinement so that engineers have clarity on what they&rsquo;re
                   building
                 </span>
               </li>
@@ -65,7 +65,7 @@ export const BetterWay = () => {
           </figure>
 
           <p className="better-way__text">
-            At LaunchWare, that's the reality we're creating for all of our clients. We're committed
+            At LaunchWare, that&rsquo;s the reality we&rsquo;re creating for all of our clients. We&rsquo;re committed
             to doing the same for you, so that you can{" "}
             <span className="better-way__semibold">stop stressing and start shipping.</span>
           </p>
@@ -86,4 +86,4 @@ export const BetterWay = () => {
       {modal}
     </div>
   );
-};
+}

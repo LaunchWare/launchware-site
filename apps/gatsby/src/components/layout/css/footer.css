@@ -46,7 +46,8 @@
   @apply text-center lg:text-left;
 }
 
-.footer_group__connect li, .footer_group__connect p {
+.footer_group__connect li,
+.footer_group__connect p {
   @apply mb-3;
 }
 
@@ -66,7 +67,8 @@
   @apply flex-grow lg:w-1/2 lg:text-right;
 }
 
-.footer_legal-links li, .footer_copyright-notice {
+.footer_legal-links li,
+.footer_copyright-notice {
   @apply mb-4 lg:mb-0;
 }
 
@@ -83,7 +85,7 @@
 }
 
 .footer_opt-in-email {
-  @apply bg-launch-black w-full rounded-md border-white py-1 pl-2 border focus:ring-white focus:outline-none focus:ring-2 ;
+  @apply bg-launch-black w-full rounded-md border-white py-1 pl-2 border focus:ring-white focus:outline-none focus:ring-2;
 }
 
 .footer_spinner {

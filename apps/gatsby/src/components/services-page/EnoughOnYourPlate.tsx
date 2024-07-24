@@ -5,8 +5,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/enough-on-your-plate.css";
 
-export const EnoughOnYourPlate = () => (
-  <div className="enough-on-your-plate">
+export function EnoughOnYourPlate() {
+  return <div className="enough-on-your-plate">
     <div className="enough-on-your-plate__contents">
       <div className="enough-on-your-plate__image-container">
         <StaticImage
@@ -46,4 +46,4 @@ export const EnoughOnYourPlate = () => (
       </div>
     </div>
   </div>
-);
+}

@@ -1,12 +1,14 @@
 import React from "react";
+
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/leaders.css";
 import { StaticImage } from "gatsby-plugin-image";
 
-export const Leaders = () => {
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
+
+import "./css/leaders.css";
+
+export function Leaders() {
   const { modal, clickHandler } = useBookCallModal();
 
   return (
@@ -14,8 +16,8 @@ export const Leaders = () => {
       {modal}
       <div className="leaders__contents">
         <div className="leaders__heading-container">
-          <h2 className="leaders__heading">Meet LaunchWare's Founder</h2>
-          <p></p>
+          <h2 className="leaders__heading">Meet LaunchWare&rsquo;s Founder</h2>
+          <p />
         </div>
         <div className="leaders__grid">
           <div className="leaders__card">
@@ -50,11 +52,11 @@ export const Leaders = () => {
                 non-technical individuals face when navigating these challenges.
               </p>
               <p className="leaders__text">
-                However, Dan isn’t just an empathetic ear. He's a solutions architect. Equipped with
+                However, Dan isn’t just an empathetic ear. He&rsquo;s a solutions architect. Equipped with
                 a Computer Science degree from Worcester Polytechnic Institute, his resume includes
                 a role as a Director of Engineering and 15 rich years of consulting. He’s also a
                 teacher at heart, having helped train over 1000 Software Engineers via Launch
-                Academy. Partnering with Dan means you aren't merely crafting software; you're
+                Academy. Partnering with Dan means you aren&rsquo;t merely crafting software; you&rsquo;re
                 making dreams become tangible realities.
               </p>
               <p className="leaders__text">
@@ -81,4 +83,4 @@ export const Leaders = () => {
       </div>
     </div>
   );
-};
+}

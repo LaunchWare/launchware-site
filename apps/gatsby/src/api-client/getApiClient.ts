@@ -2,6 +2,7 @@ import axios, { AxiosInstance } from "axios";
 
 export class ApiClient {
   private _client: AxiosInstance;
+
   static instance: ApiClient;
 
   private constructor() {

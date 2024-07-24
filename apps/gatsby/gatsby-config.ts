@@ -79,6 +79,14 @@ const config: GatsbyConfig = {
         icon: `src/images/launchware-favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        extensions: ["js", "jsx", "ts", "tsx"],
+        exclude: ["node_modules", ".cache", "public"],
+        stages: ["develop"],
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {

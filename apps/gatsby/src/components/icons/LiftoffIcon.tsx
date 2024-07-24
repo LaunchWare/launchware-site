@@ -1,12 +1,12 @@
 import React from "react";
 
-export const LiftoffIcon = ({
+export function LiftoffIcon({
   className = "",
   width = "",
 }: {
   className?: string;
   width?: string;
-}) => {
+}) {
   return (
     <svg
       className={className}
@@ -128,4 +128,4 @@ export const LiftoffIcon = ({
       />
     </svg>
   );
-};
+}

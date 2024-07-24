@@ -4,7 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require(`path`);
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // Define the template for blog post

@@ -3,13 +3,13 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { Tagline } from "../general/Tagline";
-import { getFieldClassName } from "../general/services/getFieldClassName";
 import { useNotifications } from "../../hooks/useNotifications";
-import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
-import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
+import { usePostContactInquiry } from "../contact-page/hooks/usePostContactInquiry";
+import { ContactInquiryFormValues } from "../contact-page/models/ContactInquiryShapes";
+import { getFieldClassName } from "../general/services/getFieldClassName";
+import { Tagline } from "../general/Tagline";
 
-export const IndexFormSection = () => {
+export function IndexFormSection() {
   const { addNotification } = useNotifications();
   const {
     handleSubmit,
@@ -27,7 +27,6 @@ export const IndexFormSection = () => {
 
   const {
     mutate: postContactInquiry,
-    error: backendErrors,
     isSuccess,
     isLoading,
   } = usePostContactInquiry();
@@ -39,7 +38,7 @@ export const IndexFormSection = () => {
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -55,6 +54,7 @@ export const IndexFormSection = () => {
       data-netlify="true"
       name="giantLeapInquiry"
       onSubmit={handleSubmit(onSubmit)}
+      // eslint-disable-next-line react/no-unknown-property
       netlify-honeypot="emailAddress"
     >
       <input
@@ -163,17 +163,13 @@ export const IndexFormSection = () => {
         />
         <div className="one-small-step__text-container">
           <Tagline tagline="Book Your Call" />
-          <h2 className="one-small-step__heading">
-            Stop Stressing. Start Shipping.
-          </h2>
+          <h2 className="one-small-step__heading">Stop Stressing. Start Shipping.</h2>
           <p className="one-small-step__text">
             Fill out the form below and tell us more about your project. We’ll get back to you
             within a business day to start making your vision a reality.
           </p>
           {isSuccess ? (
-            <p className="one-small-step__text">
-              Thanks for your inquiry. We'll be in touch!
-            </p>
+            <p className="one-small-step__text">Thanks for your inquiry. We&rsquo;ll be in touch!</p>
           ) : (
             formContent
           )}
@@ -190,4 +186,4 @@ export const IndexFormSection = () => {
       </div>
     </div>
   );
-};
+}

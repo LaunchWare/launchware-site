@@ -30,15 +30,13 @@ const fonts = [
   // "/fonts/Inter/Inter-Thin.ttf",
 ]
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
-  const links = fonts.map((font) => {
-    return <link
+  const links = fonts.map((font) => <link
       rel="preload"
       href={font}
       as="font"
       crossOrigin="anonymous"
       key={font}
-    />
-  })
+    />)
 
   const userCentricLinks = [
     <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,

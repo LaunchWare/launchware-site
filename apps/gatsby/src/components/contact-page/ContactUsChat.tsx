@@ -1,14 +1,14 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import "./css/contact-us-chat.css";
 
-export const ContactUsChat = () => (
-  <div className="contact-us-chat">
+export function ContactUsChat() {
+  return <div className="contact-us-chat">
     <div className="contact-us-chat__contents">
       <StaticImage
         alt=""
@@ -22,7 +22,7 @@ export const ContactUsChat = () => (
           connect you directly with a principal engineer.
         </p>
         <Link className="contact-us-chat__link" to="#">
-          <span>Let's chat</span>
+          <span>Let&rsquo;s chat</span>
           <FontAwesomeIcon icon={faArrowRight} />
         </Link>
       </div>
@@ -37,4 +37,4 @@ export const ContactUsChat = () => (
       </div>
     </div>
   </div>
-);
+}

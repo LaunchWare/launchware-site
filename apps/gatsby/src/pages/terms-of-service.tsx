@@ -1,14 +1,16 @@
 import React from "react";
-import { Policy } from "../components/general/Policy";
+
 import { PageProps } from "gatsby";
+
+import { Policy } from "../components/general/Policy";
 import { Layout } from "../components/layout/Layout";
 
-const PrivacyPolicy = (pageProps: PageProps) => {
+function PrivacyPolicy({location}: PageProps) {
   return (
-    <Layout location={pageProps.location} title="Privacy Policy">
+    <Layout location={location} title="Privacy Policy">
       <Policy policyKey="VWpOVmNYcFVkbE5GVWpaVVEyYzlQUT09" />
     </Layout>
   );
-};
+}
 
 export default PrivacyPolicy;

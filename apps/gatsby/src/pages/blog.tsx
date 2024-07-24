@@ -1,12 +1,14 @@
 import * as React from "react";
-import { HeadFC, PageProps, graphql } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { BlogHero } from "../components/blog-page/BlogHero";
-import { BlogCardList } from "../components/blog-page/BlogCardList";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
 
-export const Head = () => (
-  <>
+import { PageProps, graphql } from "gatsby";
+
+import { BlogCardList } from "../components/blog-page/BlogCardList";
+import { BlogHero } from "../components/blog-page/BlogHero";
+import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { Layout } from "../components/layout/Layout";
+
+export function Head() {
+  return <>
     <title>LaunchWare Insights: Leading Thoughts in Software Development</title>
     <meta
       name="keywords"
@@ -14,21 +16,19 @@ export const Head = () => (
     />
     <meta
       name="description"
-      content="Dive deep into the world of custom software development, staff augmentation, and best practices with insights and articles from LaunchWare's technical experts."
+      content="Dive deep into the world of custom software development, staff augmentation, and best practices with insights and articles from LaunchWare&rsquo;s technical experts."
     />
     <HeadDefaults />
   </>
-);
-const BlogPage = (pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) => {
-  const { data } = pageProps;
-
+}
+function BlogPage({location, data}: PageProps<Queries.MarkdownArticlesForIndexQuery>) {
   return (
-    <Layout location={pageProps.location} title="Blog">
+    <Layout location={location} title="Blog">
       <BlogHero />
       <BlogCardList articles={data.allMarkdownRemark.nodes} />
     </Layout>
   );
-};
+}
 
 export default BlogPage;
 

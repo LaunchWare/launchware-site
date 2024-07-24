@@ -1,6 +1,6 @@
 import React from "react";
 
-export const BinaryIcon = ({ className = "", width }: { className?: string; width?: string }) => {
+export function BinaryIcon({ className = "", width }: { className?: string; width?: string }) {
   return (
     <svg
       id="binary-icon"
@@ -61,4 +61,4 @@ export const BinaryIcon = ({ className = "", width }: { className?: string; widt
       </g>
     </svg>
   );
-};
+}
