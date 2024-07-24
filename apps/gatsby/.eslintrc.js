@@ -40,6 +40,9 @@ module.exports = {
       rules: {
         // Disable prop-types as we use TypeScript for type checking
         "react/prop-types": "off",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-uses-react": "error",
+        "react/require-default-props": "off",
       },
     },
     {
