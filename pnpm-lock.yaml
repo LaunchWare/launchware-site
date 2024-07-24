@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      gatsby-plugin-eslint:
+        specifier: ^4.0.4
+        version: 4.0.4(eslint-webpack-plugin@2.7.0(eslint@8.57.0)(webpack@5.91.0))(eslint@8.57.0)(gatsby@5.13.4(babel-eslint@10.1.0(eslint@8.57.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@4.15.0)(typescript@5.4.5))
       netlify-cli:
         specifier: ^17.22.1
         version: 17.22.1(@types/node@18.19.31)
@@ -5172,6 +5175,13 @@ packages:
     engines: {parcel: 2.x}
     peerDependencies:
       '@parcel/core': ^2.0.0
+
+  gatsby-plugin-eslint@4.0.4:
+    resolution: {integrity: sha512-o3WKrW+ssF6XJmmTAfy7XeLsbTzdTwibBDnM6/Ub2cSDNXd1YjshtidJu4BXOLvtWW/LoqpMfWi0OPbVsb/ZLA==}
+    peerDependencies:
+      eslint: ^7.18.0 || ^8
+      eslint-webpack-plugin: ^2.4.3 || ^3 || ^4
+      gatsby: ^2 || ^3 || ^4 || ^5
 
   gatsby-plugin-feed@5.13.1:
     resolution: {integrity: sha512-Vg6oTqwxqA8suOnGF8wAeFMv1oFlEp1EXemd46hMTR8ubzOTYMKRjR1rv3WTYZPbVSsjLxliNykDUXokWoH/0A==}
@@ -15535,6 +15545,17 @@ snapshots:
       schema-utils: 3.3.0
       webpack: 5.91.0
 
+  eslint-webpack-plugin@2.7.0(eslint@8.57.0)(webpack@5.91.0):
+    dependencies:
+      '@types/eslint': 7.29.0
+      arrify: 2.0.1
+      eslint: 8.57.0
+      jest-worker: 27.5.1
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      schema-utils: 3.3.0
+      webpack: 5.91.0
+
   eslint@7.32.0:
     dependencies:
       '@babel/code-frame': 7.12.11
@@ -16333,6 +16354,13 @@ snapshots:
       '@parcel/runtime-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-json': 2.8.3(@parcel/core@2.8.3)
+
+  gatsby-plugin-eslint@4.0.4(eslint-webpack-plugin@2.7.0(eslint@8.57.0)(webpack@5.91.0))(eslint@8.57.0)(gatsby@5.13.4(babel-eslint@10.1.0(eslint@8.57.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@4.15.0)(typescript@5.4.5)):
+    dependencies:
+      eslint: 8.57.0
+      eslint-webpack-plugin: 2.7.0(eslint@8.57.0)(webpack@5.91.0)
+      gatsby: 5.13.4(babel-eslint@10.1.0(eslint@8.57.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@4.15.0)(typescript@5.4.5)
+      webpack-merge: 5.10.0
 
   gatsby-plugin-feed@5.13.1(gatsby@5.13.4(babel-eslint@10.1.0(eslint@8.57.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(type-fest@4.15.0)(typescript@5.4.5))(graphql@16.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
