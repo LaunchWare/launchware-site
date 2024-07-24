@@ -16,7 +16,7 @@ export function Head() {
     />
     <meta
       name="description"
-      content="Dive deep into the world of custom software development, staff augmentation, and best practices with insights and articles from LaunchWare's technical experts."
+      content="Dive deep into the world of custom software development, staff augmentation, and best practices with insights and articles from LaunchWare&rsquo;s technical experts."
     />
     <HeadDefaults />
   </>

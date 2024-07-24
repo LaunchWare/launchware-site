@@ -20,7 +20,7 @@ function BookLaunchCall({location}: PageProps) {
         <div>
           <h2 className="book-call__heading">Book Your Launch Call</h2>
           <p className="book-call__text">
-            Let's chat about your custom software development project.
+            Let&rsquo;s chat about your custom software development project.
           </p>
           <UsercentricsProvider>
             <BookCallEmbed />

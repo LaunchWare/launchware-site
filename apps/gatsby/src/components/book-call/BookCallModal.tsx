@@ -19,7 +19,7 @@ export function BookCallModal({ enabled = true }: { enabled?: boolean }) {
       <div className="book-call__text-container">
         <h2 className="book-call__heading">Book Your Launch Call</h2>
         <p className="book-call__text">
-          Let's chat about your custom software development project.
+          Let&rsquo;s chat about your custom software development project.
         </p>
       </div>
       <div className="book-call__widget-container">

@@ -26,7 +26,7 @@ export function GetInTouch() {
           src="../../images/decorations/alternate_circle.png"
         />
         <h2 className="get-in-touch__section-heading">Get in touch</h2>
-        <p className="get-in-touch__text_center">We'd love to hear from you</p>
+        <p className="get-in-touch__text_center">We&rsquo;d love to hear from you</p>
         <div className="get-in-touch__card">
           <div className="get-in-touch__text-container get-in-touch__text-container_first">
             <h3 className="get-in-touch__heading">Traditional ways to reach out</h3>

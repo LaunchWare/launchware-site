@@ -64,7 +64,7 @@ export function OptInForm() {
     </>
   );
 
-  const successContent = <p>Thanks! We'll be in touch.</p>;
+  const successContent = <p>Thanks! We&rsquo;ll be in touch.</p>;
 
   return (
     <form

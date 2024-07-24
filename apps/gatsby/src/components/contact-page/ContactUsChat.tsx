@@ -22,7 +22,7 @@ export function ContactUsChat() {
           connect you directly with a principal engineer.
         </p>
         <Link className="contact-us-chat__link" to="#">
-          <span>Let's chat</span>
+          <span>Let&rsquo;s chat</span>
           <FontAwesomeIcon icon={faArrowRight} />
         </Link>
       </div>

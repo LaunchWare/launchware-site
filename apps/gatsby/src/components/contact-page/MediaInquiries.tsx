@@ -18,7 +18,7 @@ export function MediaInquiries() {
         src="../../images/contact/boom-microphone.jpg"
       />
       <p className="media-inquiries__text_sm-hidden">
-        With the media? <span className="media-inquiries__text_orange">Let's connect</span>.
+        With the media? <span className="media-inquiries__text_orange">Let&rsquo;s connect</span>.
       </p>
       <div className="media-inquiries__text-container">
         <h3 className="media-inquiries__heading">Media and Podcast Inquiries</h3>

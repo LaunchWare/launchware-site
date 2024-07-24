@@ -9,8 +9,8 @@ export function BlogHero() {
         <div className="blog-hero__text-container">
           <h2 className="blog-hero__heading">Blog</h2>
           <p className="blog-hero__text">
-            Read the latest from the team at LaunchWare. We'll discuss software development, what
-            we've learned, and launching your next project.
+            Read the latest from the team at LaunchWare. We&rsquo;ll discuss software development, what
+            we&rsquo;ve learned, and launching your next project.
           </p>
         </div>
       </div>

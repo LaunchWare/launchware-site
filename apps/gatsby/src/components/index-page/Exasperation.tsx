@@ -37,7 +37,7 @@ export function Exasperation() {
           </p>
           <p className="exasperation__text">
             When it comes to your software, the stakes are high. Your project should have its chance
-            to make lives better. That's why our custom development team collaborates with our
+            to make lives better. That&rsquo;s why our custom development team collaborates with our
             clients to make sure their software solves the right problems and that they build the
             right products.
           </p>

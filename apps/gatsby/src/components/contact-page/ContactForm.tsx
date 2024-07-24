@@ -162,7 +162,7 @@ export function ContactForm() {
             within a business day to start making your vision a reality.
           </p>
           {isSuccess ? (
-            <p className="one-small-step__text">Thanks for your inquiry. We'll be in touch!</p>
+            <p className="one-small-step__text">Thanks for your inquiry. We&rsquo;ll be in touch!</p>
           ) : (
             formContent
           )}

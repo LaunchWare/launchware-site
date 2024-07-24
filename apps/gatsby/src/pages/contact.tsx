@@ -16,7 +16,7 @@ export function Head() {
     <title>Contact LaunchWare: Your Software Development Partner in Boston</title>
     <meta
       name="description"
-      content="Ready to elevate your software? Reach out to LaunchWare, Boston’s trusted software consultants. We're here to assist and guide you every step of the way."
+      content="Ready to elevate your software? Reach out to LaunchWare, Boston’s trusted software consultants. We&rsquo;re here to assist and guide you every step of the way."
     />
     <meta
       name="keywords"
