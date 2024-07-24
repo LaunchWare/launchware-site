@@ -25,7 +25,7 @@ export function BookCallEmbed({ enabled = true }: { enabled?: boolean }) {
   const url = companyContactInformation.launchCallUrl;
   const { isClientSide, isInitialized, hasServiceConsent, acceptService } =
     useContext(UsercentricsContext);
-  const [isAccepted, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"));
+  const [, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"));
 
   const shouldInitCalendly = () =>
     enabled &&

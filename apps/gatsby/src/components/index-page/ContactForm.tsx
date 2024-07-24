@@ -3,9 +3,9 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
-import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
 import { useNotifications } from "../../hooks/useNotifications";
+import { usePostContactInquiry } from "../contact-page/hooks/usePostContactInquiry";
+import { ContactInquiryFormValues } from "../contact-page/models/ContactInquiryShapes";
 import { getFieldClassName } from "../general/services/getFieldClassName";
 import { Tagline } from "../general/Tagline";
 
@@ -54,6 +54,7 @@ export function IndexFormSection() {
       data-netlify="true"
       name="giantLeapInquiry"
       onSubmit={handleSubmit(onSubmit)}
+      // eslint-disable-next-line react/no-unknown-property
       netlify-honeypot="emailAddress"
     >
       <input

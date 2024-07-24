@@ -4,7 +4,6 @@ import { Link, graphql, PageProps, HeadProps } from "gatsby";
 
 import { Layout } from "../components/layout/Layout";
 import "./css/blog-post.css";
-// import Seo from "../components/seo";
 
 function BlogPostTemplate({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) {
   const queryData = data;
@@ -25,6 +24,7 @@ function BlogPostTemplate({ data, location }: PageProps<Queries.BlogPostBySlugQu
             </header>
             <section
               className="blog-post__text"
+              // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: post?.html || "" }}
               itemProp="articleBody"
             />
@@ -62,11 +62,11 @@ function BlogPostTemplate({ data, location }: PageProps<Queries.BlogPostBySlugQu
   );
 }
 
-export function Head(props: HeadProps<Queries.BlogPostBySlugQuery>) {
+export function Head({data}: HeadProps<Queries.BlogPostBySlugQuery>) {
   return (
     <>
-      <title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
-      <meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
+      <title>{data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
+      <meta name="description" content={data.markdownRemark?.excerpt || undefined} />
     </>
   );
 }

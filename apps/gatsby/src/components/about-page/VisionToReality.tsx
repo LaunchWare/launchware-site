@@ -1,5 +1,7 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
@@ -7,7 +9,6 @@ import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
 
 import "./css/vision-to-reality.css";
-import { StaticImage } from "gatsby-plugin-image";
 
 export function VisionToReality() {
   const { modal, clickHandler } = useBookCallModal();

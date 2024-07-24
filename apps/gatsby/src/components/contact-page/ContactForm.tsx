@@ -53,6 +53,7 @@ export function ContactForm() {
       data-netlify="true"
       name="giantLeapInquiry"
       onSubmit={handleSubmit(onSubmit)}
+      // eslint-disable-next-line react/no-unknown-property
       netlify-honeypot="emailAddress"
     >
       <input

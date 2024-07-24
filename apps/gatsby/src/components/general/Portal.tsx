@@ -22,6 +22,7 @@ function Portal({ children }) {
         portalRoot?.removeChild(el);
       };
     }
+      return () => {};
   }, [el]);
 
   if (el) {

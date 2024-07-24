@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import TagManager from "react-gtm-module";
 
+// TODO: Investigate why this isn't a hook
 export function TrackingCodes() {
-  const tagManagerArgs = {
-    gtmId: "GTM-WGNPB4RJ",
-  };
-
   useEffect(() => {
-    TagManager.initialize(tagManagerArgs);
+    TagManager.initialize({
+      gtmId: "GTM-WGNPB4RJ",
+    });
   }, []);
 
-  return <></>;
+  return null;
 }

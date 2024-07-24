@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 
 import { Link } from "gatsby";
 
@@ -17,7 +17,7 @@ interface BlogCardListProps {
   }[];
 }
 
-export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
+export function BlogCardList({ articles }: BlogCardListProps) {
   const listItems = articles.map((article) => (
       <li className="blog-card-list__card" key={article.id}>
         <Link to={`/blog${article.fields?.slug}`}>
@@ -32,4 +32,4 @@ export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
       <ul className="blog-card-list__contents">{listItems}</ul>
     </div>
   );
-};
+}

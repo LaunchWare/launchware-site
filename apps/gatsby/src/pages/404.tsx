@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Link, HeadFC, PageProps } from "gatsby";
+import { Link} from "gatsby";
 
 const pageStyles = {
   color: "#232129",
@@ -24,7 +24,8 @@ const codeStyles = {
   borderRadius: 4,
 };
 
-const NotFoundPage: React.FC<PageProps> = () => (
+function NotFoundPage() {
+  return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
@@ -41,8 +42,10 @@ const NotFoundPage: React.FC<PageProps> = () => (
         <Link to="/">Go home</Link>.
       </p>
     </main>
-  );
+  )}
 
 export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>;
+export function Head() {
+return <title>Not found</title>
+}

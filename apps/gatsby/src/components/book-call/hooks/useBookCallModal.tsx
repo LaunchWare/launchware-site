@@ -23,7 +23,7 @@ export const useBookCallModal = () => {
         setModalVisibility(false);
       }
     });
-  }, []);
+  }, [setModalVisibility]);
 
   const clickHandler: MouseEventHandler = (event) => {
     event.preventDefault();

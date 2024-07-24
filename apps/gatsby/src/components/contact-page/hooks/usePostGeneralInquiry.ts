@@ -14,6 +14,7 @@ export const usePostGeneralInquiry = () => useMutation(
     },
     {
       onError: (err: Error | AxiosError) => {
+        // eslint-disable-next-line no-console
         console.error(err);
       },
     },
