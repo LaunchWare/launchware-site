@@ -3,11 +3,11 @@
 ## Installation
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Running
 
 ```bash
-yarn run develop
+pnpm develop:gatsby
 ```
