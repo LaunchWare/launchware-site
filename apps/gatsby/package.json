@@ -17,7 +17,7 @@
     "develop": "netlify dev",
     "develop:gatsby": "gatsby develop",
     "lint": "pnpm run lint:syntax && pnpm run lint:style",
-    "lint:syntax": "eslint",
+    "lint:syntax": "eslint .",
     "lint:style": "prettier -u -c ./src",
     "start": "gatsby develop",
     "serve": "gatsby serve",
@@ -70,7 +70,7 @@
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.18.0",
     "@launchware/eslint-config-react": "0.0.3",
-    "@tanstack/eslint-plugin-query": "^4.34.1",
+    "@tanstack/eslint-plugin-query": "^4.38.0",
     "@types/node": "^18.15.8",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
