@@ -1,0 +1,20 @@
+@import "../../../css/index.css";
+
+.partner-with-experts {
+  @apply parent-section;
+  @apply bg-launch-neutral-30;
+}
+
+.partner-with-experts__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.partner-with-experts__icon {
+  @apply inline;
+  @apply float-left;
+}
+
+.partner-with-experts__list {
+  /* @apply red-checkmark */
+}
