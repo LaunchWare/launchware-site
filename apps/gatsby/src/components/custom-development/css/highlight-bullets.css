@@ -1,0 +1,23 @@
+@import "../../../css/index.css";
+
+.highlight-bullets {
+  @apply parent-section;
+  @apply bg-launch-neutral-30;
+}
+
+.highlight-bullets__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+
+  > .three-card-section__cards-container {
+    @apply pt-0 pb-0;
+  }
+
+  & .three-card-section__card-heading {
+    @apply pt-0;
+  }
+}
+
+.highlight-bullets__icon {
+  @apply inline w-12 align-middle justify-center;
+}

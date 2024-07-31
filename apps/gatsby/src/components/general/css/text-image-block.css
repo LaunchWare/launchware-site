@@ -1,0 +1,20 @@
+@import "../../../css/index.css";
+
+.text-image-block {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.text-image-block__image-container {
+  @apply contents-container;
+  @apply w-full lg:w-7/12;
+}
+
+.text-image-block__text-contents {
+  @apply flex-col space-y-6;
+  @apply justify-start;
+}
+
+.text-image-block__heading {
+  @apply text-4xl max-w-xl lg:max-w-3xl;
+}

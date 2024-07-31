@@ -1,0 +1,23 @@
+@import "../../../css/index.css";
+
+.we-are-with-you {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.we-are-with-you__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.we-are-with-you__heading {
+  @apply text-5xl text-center max-w-xl lg:max-w-3xl;
+}
+
+.we-are-with-you__uppercase {
+  @apply uppercase;
+}
+
+.we-are-with-you__text {
+  @apply text-center text-launch-black-80;
+}
