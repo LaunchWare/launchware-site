@@ -1,0 +1,23 @@
+@import "../../../css/index.css";
+
+.custom-development-call-to-action {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.custom-development-call-to-action__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.custom-development-call-to-action__heading {
+  @apply text-5xl text-center max-w-xl lg:max-w-3xl;
+}
+
+.custom-development-call-to-action__uppercase {
+  @apply uppercase;
+}
+
+.custom-development-call-to-action__text {
+  @apply text-center text-launch-black-80;
+}

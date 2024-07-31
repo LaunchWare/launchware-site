@@ -33,6 +33,10 @@ module.exports = {
         "launch-neutral-30": "#F5F5F5",
         "launch-primary-10": "#FFF7F6",
       },
+      // I've tried pointing at the pre- and post-compilation paths, but it doesn't work
+      // listStyleImage: {
+      //   "red-checkmark": 'url("/apps/gatsby/src/images/red-check.png")',
+      // },
     },
   },
   fontDisplay: {

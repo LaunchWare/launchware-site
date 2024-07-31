@@ -1,0 +1,20 @@
+@import "../../../css/index.css";
+
+.hassle-free-solutions {
+  @apply parent-section;
+  @apply bg-launch-neutral-30;
+}
+
+.hassle-free-solutions__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.hassle-free-solutions__icon {
+  @apply inline;
+  @apply float-left;
+}
+
+.hassle-free-solutions__list {
+  /* @apply red-checkmark */
+}

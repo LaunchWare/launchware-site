@@ -1,0 +1,21 @@
+.application-steps {
+  @apply parent-section;
+  @apply bg-launch-black;
+
+  & .three-card-section__heading-container {
+    @apply max-w-none flex-grow;
+  }
+
+  & .three-card-section__heading {
+    @apply text-white text-left w-full;
+  }
+}
+
+.application-steps__contents {
+  @apply contents-container;
+  @apply flex-col space-y-6;
+}
+
+.application-steps__image {
+  @apply h-16 w-14 items-center;
+}
