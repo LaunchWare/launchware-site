@@ -32,3 +32,11 @@
 .three-card-section__image-container {
   @apply w-full;
 }
+
+.three-card-section__inline-icon-heading {
+  @apply flex;
+
+  & .three-card-section__image-container {
+    @apply max-w-12 align-middle justify-center;
+  }
+}
