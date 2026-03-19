@@ -7,7 +7,7 @@
 }
 
 .primary-nav_mobile-button-container {
-  @apply relative flex h-16 justify-between
+  @apply relative flex h-16 justify-between;
 }
 
 .primary-nav_mobile-button-disclosure {

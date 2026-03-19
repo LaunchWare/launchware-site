@@ -25,7 +25,11 @@ export const IndexScorecard = () => {
             Success Scorecard. By answering just 21 quick questions, you’ll see if you’re set up for
             success – or what you need to change for you to reach your goals.
           </p>
-          <button className="index-scorecard__button button" type="button" onClick={() => setVisibility(true)}>
+          <button
+            className="index-scorecard__button button"
+            type="button"
+            onClick={() => setVisibility(true)}
+          >
             <span>Download the Scorecard </span>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>

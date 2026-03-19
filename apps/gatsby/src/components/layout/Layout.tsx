@@ -8,11 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WindowLocation } from "@reach/router";
 import { Script } from "gatsby";
 
-export const Head = () => (
-  <>
-
-  </>
-);
+export const Head = () => <></>;
 
 export const Layout = ({
   location,

@@ -43,11 +43,7 @@ export const ServicesStopStressing = () => {
   return (
     <div className="services-stop-stressing">
       <div className="services-stop-stressing__contents">
-        <img
-          alt=""
-          className="services-stop-stressing__decorative-square"
-          src={decorativeSquare}
-        />
+        <img alt="" className="services-stop-stressing__decorative-square" src={decorativeSquare} />
         <ThreeCardSection sectionContents={sectionContents} />
         <button
           className="services-stop-stressing__button button"

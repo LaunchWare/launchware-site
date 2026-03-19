@@ -1,5 +1,5 @@
-import { ApiClient } from "../getApiClient"
+import { ApiClient } from "../getApiClient";
 
 export const useApiClient = () => {
-  return ApiClient.getInstance().client
-}
+  return ApiClient.getInstance().client;
+};
