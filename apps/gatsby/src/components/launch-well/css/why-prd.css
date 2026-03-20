@@ -1,0 +1,27 @@
+@reference "../../../css/index.css";
+
+.why-prd {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.why-prd__contents {
+  @apply contents-container;
+  @apply flex-col max-w-3xl;
+}
+
+.why-prd__heading {
+  @apply text-4xl mb-6 text-center;
+}
+
+.why-prd__text {
+  @apply text-launch-black-80 text-lg leading-relaxed mb-4;
+}
+
+.why-prd__list {
+  @apply list-disc list-inside text-launch-black-80 text-lg leading-relaxed space-y-2 mt-2;
+}
+
+.why-prd__list-label {
+  @apply font-bold text-launch-black;
+}

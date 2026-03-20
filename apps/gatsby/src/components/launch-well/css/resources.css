@@ -1,0 +1,53 @@
+@reference "../../../css/index.css";
+
+.resources {
+  @apply parent-section;
+  @apply bg-white;
+}
+
+.resources__contents {
+  @apply contents-container;
+  @apply flex-col max-w-4xl;
+}
+
+.resources__heading {
+  @apply text-4xl mb-10 text-center w-full;
+}
+
+.resources__video-container {
+  @apply w-full mb-12;
+}
+
+.resources__video-wrapper {
+  @apply relative w-full overflow-hidden rounded-xl shadow-lg;
+  padding-bottom: 56.25%;
+}
+
+.resources__video-wrapper iframe {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.resources__links {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 w-full;
+}
+
+.resources__link-card {
+  @apply flex items-start gap-4 p-6 rounded-xl border border-launch-black-10 shadow-sm;
+  @apply hover:shadow-md hover:border-launch-orange transition-all duration-200;
+}
+
+.resources__link-icon {
+  @apply text-launch-orange text-2xl flex-shrink-0 mt-1;
+}
+
+.resources__link-text {
+  @apply flex flex-col;
+}
+
+.resources__link-title {
+  @apply font-bold text-lg text-launch-black;
+}
+
+.resources__link-description {
+  @apply text-launch-black-70 text-sm mt-1;
+}
