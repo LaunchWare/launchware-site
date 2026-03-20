@@ -30,13 +30,19 @@ const handler: Handler = async (event: HandlerEvent) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({
+        email,
+        reactivate_existing: true,
+        send_welcome_email: true,
+        utm_source: "website",
+      }),
     },
   )
 
+  const responseBody = await response.text()
+  console.log(`BeeHiiv response: ${response.status} ${responseBody}`)
+
   if (!response.ok) {
-    const errorBody = await response.text()
-    console.error(`BeeHiiv API error: ${response.status} ${errorBody}`)
     return {
       statusCode: response.status,
       body: JSON.stringify({ error: "Failed to subscribe" }),
