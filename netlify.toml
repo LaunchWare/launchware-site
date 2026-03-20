@@ -1,6 +1,6 @@
 [functions]
-  directory = "apps/functions"
-  included_files = ["apps/functions/.env"]
+  directory = "../../apps/functions"
+  included_files = ["../../apps/functions/.env"]
 [build]
   base = "apps/gatsby"
   command = "pnpm run build"
