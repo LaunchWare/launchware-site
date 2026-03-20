@@ -22,7 +22,7 @@ export const IndexHero = () => {
         <div className="index-hero__image-container">
           <StaticImage
             layout="constrained"
-            quality={90}
+            quality={80}
             width={578}
             className="index-hero__image"
             alt="Three Developers Coding"

@@ -14,11 +14,6 @@ const fonts = [
   // "/fonts/Kanit/Kanit-Light.ttf",
   // "/fonts/Kanit/Kanit-LightItalic.ttf",
   "/fonts/Kanit/Kanit-Medium.ttf",
-  // "/fonts/Kanit/Kanit-MediumItalic.ttf",
-  "/fonts/Kanit/Kanit-SemiBold.ttf",
-  // "/fonts/Kanit/Kanit-SemiBoldItalic.ttf",
-  // "/fonts/Kanit/Kanit-Thin.ttf",
-  // "/fonts/Kanit/Kanit-ThinItalic.ttf",
   "/fonts/Inter/Inter-SemiBold.ttf",
   // "/fonts/Inter/Inter-Black.ttf",
   // "/fonts/Inter/Inter-Bold.ttf",
@@ -37,6 +32,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
   const userCentricLinks = [
     <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,
     <link rel="preconnect" href="//api.usercentrics.eu" key="usercentrics-api" />,
+    <link rel="preconnect" href="//assets.calendly.com" key="calendly" />,
     <link
       rel="preload"
       href="//app.usercentrics.eu/browser-ui/latest/loader.js"
