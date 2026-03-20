@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: Incorporate Part IV - Articles of Incorporation
 tags:
-- Organization
+  - Organization
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9536303'
-publishedAt: '2006-10-29'
+  dsq_thread_id: "9536303"
+publishedAt: "2006-10-29"
 ---
 
 <p>Now that you have your FID, you can proceed onward to what makes your business an official corporation. File articles of incorporation with your state's secretary of state. Massachusetts entrepreneurs can file online <a title="MA SOC" href="https://www.sec.state.ma.us/cor/coridx.htm">here</a>. Note, too that you do not necessarily have to reside in the state you incorporate in. Many people incorporate in Delaware due to low initial cost and other benefits. A quick google on the subject led me to a few helpful <a href="https://www.delawareintercorp.com/why.htm">bullet points</a>. I opted to incorporate in MA for convenience and to support my local economy.</p>

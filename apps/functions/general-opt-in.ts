@@ -1,6 +1,6 @@
-import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
-import { Event } from "../function-src/activeCampaign/Event";
-import { configure } from "../function-src/configure";
+import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions"
+import { Event } from "../function-src/activeCampaign/Event"
+import { configure } from "../function-src/configure"
 import { AxiosError } from "axios"
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
@@ -12,14 +12,13 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     return {
       statusCode: 422,
       body: JSON.stringify({
-        error: "Required properties not specified: email"
-      })
+        error: "Required properties not specified: email",
+      }),
     }
-  }
-  else {
+  } else {
     const activeCampaignEvent = new Event<{}>({
       email,
-      eventName: "generalOptIn"
+      eventName: "generalOptIn",
     })
 
     await activeCampaignEvent.save()
@@ -27,10 +26,10 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     return {
       statusCode: 201,
       body: JSON.stringify({
-        success: true
-      })
+        success: true,
+      }),
     }
   }
-};
+}
 
-export { handler };
+export { handler }

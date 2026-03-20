@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 export const CodingScriptIcon = ({
   className = "",
   width,
 }: {
-  className?: string;
-  width?: string;
+  className?: string
+  width?: string
 }) => {
   return (
     <svg
@@ -126,5 +126,5 @@ export const CodingScriptIcon = ({
         fill="black"
       />
     </svg>
-  );
-};
+  )
+}

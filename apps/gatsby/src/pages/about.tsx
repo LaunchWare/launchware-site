@@ -1,16 +1,16 @@
-import React from "react";
-import { PageProps } from "gatsby";
+import React from "react"
+import { PageProps } from "gatsby"
 
-import "../css/index.css";
+import "../css/index.css"
 
-import { AboutHero } from "../components/about-page/AboutHero";
-import { BetterWay } from "../components/about-page/BetterWay";
-import { Leaders } from "../components/about-page/Leaders";
-import { OurBeliefs } from "../components/about-page/OurBeliefs";
-import { VisionToReality } from "../components/about-page/VisionToReality";
-import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists";
-import { Layout } from "../components/layout/Layout";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { AboutHero } from "../components/about-page/AboutHero"
+import { BetterWay } from "../components/about-page/BetterWay"
+import { Leaders } from "../components/about-page/Leaders"
+import { OurBeliefs } from "../components/about-page/OurBeliefs"
+import { VisionToReality } from "../components/about-page/VisionToReality"
+import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists"
+import { Layout } from "../components/layout/Layout"
+import { HeadDefaults } from "../components/layout/HeadDefaults"
 
 export const Head = () => (
   <>
@@ -25,7 +25,7 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+)
 
 const AboutPage = (pageProps: PageProps) => {
   return (
@@ -37,7 +37,7 @@ const AboutPage = (pageProps: PageProps) => {
       <OurBeliefs />
       <VisionToReality />
     </Layout>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage

@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 export const LaptopStackIcon = ({
   className = "",
   width = "",
 }: {
-  className?: string;
-  width?: string;
+  className?: string
+  width?: string
 }) => {
   return (
     <svg
@@ -133,5 +133,5 @@ export const LaptopStackIcon = ({
         strokeLinejoin="round"
       />
     </svg>
-  );
-};
+  )
+}

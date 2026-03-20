@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import "./css/media-inquiries.css";
+import "./css/media-inquiries.css"
 
 export const MediaInquiries = () => (
   <div className="media-inquiries">
@@ -35,4 +35,4 @@ export const MediaInquiries = () => (
       </div>
     </div>
   </div>
-);
+)

@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: Jonathan Follett to conduct UPA Workshop
 tags:
-- design
-- event
-- Events
-- jonfollett
-- workshop
+  - design
+  - event
+  - Events
+  - jonfollett
+  - workshop
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '26409879'
-publishedAt: '2009-07-21'
+  sociableoff: "false"
+  dsq_thread_id: "26409879"
+publishedAt: "2009-07-21"
 ---
 
 Our design partner, [Jon Follett](https://www.hotknifedesign.com) will be conducting the workshop "Visual Design for Web Sites and Web Apps" for UPA Boston on

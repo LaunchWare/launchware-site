@@ -1,21 +1,22 @@
 ---
 layout: post
 comments: true
-title: 'Business Retreat: Five days to get on track'
+title: "Business Retreat: Five days to get on track"
 tags:
-- Planning
+  - Planning
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9391843'
-publishedAt: '2007-01-29'
+  dsq_thread_id: "9391843"
+publishedAt: "2007-01-29"
 ---
 
 So I haven't posted in a while. I've been very absorbed in my daytime job and at home. That's not to say the business has suffered - I've picked up a few important contracts and Enlight Solutions is beginning to gain some traction. <a href="https://www.ejaedesign.com">Jae</a> is helping me out with a new site design as well!
 
 What's really fallen by the wayside is the planning and goal setting. I really need to start deciding what problems Enlight Solutions needs to attack. In responding to this issue, I've taken five days off from work to do some soul searching and start narrowing things down. Before I start anything like this, I try to set some objectives and plans for what's ahead.
+
 <ul>
 	<li><strong>Objective 1: </strong>Determine what type of business I want to build - what are its ideals, its mission, and product?</li>
 	<li><strong>Objective 2: </strong>Determine action steps - what will it take for me to get there? Who will I have to meet? How will I meet them?</li>

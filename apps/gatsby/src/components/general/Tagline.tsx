@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from "react"
 
-import "./css/tagline.css";
+import "./css/tagline.css"
 
 interface PropTypes {
-  tagline: string;
+  tagline: string
 }
 
-export const Tagline: FC<PropTypes> = ({ tagline }) => <div className="tagline">{tagline}</div>;
+export const Tagline: FC<PropTypes> = ({ tagline }) => <div className="tagline">{tagline}</div>

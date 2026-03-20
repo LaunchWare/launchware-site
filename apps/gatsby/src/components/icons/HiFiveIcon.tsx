@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const HiFiveIcon = ({ className = "", width }: { className?: string; width?: string }) => {
   return (
@@ -148,5 +148,5 @@ export const HiFiveIcon = ({ className = "", width }: { className?: string; widt
         fill="black"
       />
     </svg>
-  );
-};
+  )
+}

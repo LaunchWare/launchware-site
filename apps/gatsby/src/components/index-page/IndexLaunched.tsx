@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/index-launched.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/index-launched.css"
 
 export const IndexLaunched = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="index-launched">
@@ -87,5 +87,5 @@ export const IndexLaunched = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

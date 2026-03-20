@@ -3,17 +3,18 @@ layout: post
 comments: true
 title: Retreat Reflection
 tags:
-- Planning
+  - Planning
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9371721'
-publishedAt: '2007-02-12'
+  dsq_thread_id: "9371721"
+publishedAt: "2007-02-12"
 ---
 
 So I've been so busy I haven't been able to post about how my retreat went 2 weeks ago. It went really well, but I did fall short on my objectives. Here's a brief overview of what panned out.
+
 <ul>
 	<li><strong>Objective 1: </strong>Determine what type of business I want to build - what are its ideals, its mission, and product?</li>
 <ul>

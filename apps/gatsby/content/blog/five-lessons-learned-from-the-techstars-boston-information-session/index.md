@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: Five Lessons Learned from the TechStars Boston Information Session
 tags:
-- angel funding
-- entrepreneurship
-- techstars
-- vc
-- venture capital
+  - angel funding
+  - entrepreneurship
+  - techstars
+  - vc
+  - venture capital
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '49322592'
-publishedAt: '2009-12-02'
+  sociableoff: "false"
+  dsq_thread_id: "49322592"
+publishedAt: "2009-12-02"
 ---
 
 TechStars held a very enlightening information session at [Andala Cafe](https://www.andalacafe.com/) this morning. [Shawn Broderick](https://broderick.wordpress.com/) did an excellent job conveying what TechStars is all about and what a TechStars startup looks like. Some other people involved with TechStars provided insight as well.

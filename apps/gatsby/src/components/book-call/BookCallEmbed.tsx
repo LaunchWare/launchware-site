@@ -5,26 +5,26 @@ import React, {
   useEffect,
   useRef,
   useState,
-} from "react";
-import { companyContactInformation } from "../../configuration/companyContactInformation";
-import { UsercentricsContext } from "../usercentrics/UsercentricsProvider";
+} from "react"
+import { companyContactInformation } from "../../configuration/companyContactInformation"
+import { UsercentricsContext } from "../usercentrics/UsercentricsProvider"
 
 declare global {
   interface Window {
     Calendly: {
-      initInlineWidget: (options: { url: string; parentElement: HTMLElement }) => void;
-    };
-    calendlyLoaded: boolean;
+      initInlineWidget: (options: { url: string; parentElement: HTMLElement }) => void
+    }
+    calendlyLoaded: boolean
   }
 }
 
 export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
-  const divRef = useRef<HTMLDivElement>(null);
-  const [calendlyInitialized, setCalendlyInitialized] = useState(false);
-  const url = companyContactInformation.launchCallUrl;
+  const divRef = useRef<HTMLDivElement>(null)
+  const [calendlyInitialized, setCalendlyInitialized] = useState(false)
+  const url = companyContactInformation.launchCallUrl
   const { isClientSide, isInitialized, hasServiceConsent, acceptService } =
-    useContext(UsercentricsContext);
-  const [, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"));
+    useContext(UsercentricsContext)
+  const [, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"))
 
   const shouldInitCalendly = () =>
     enabled &&
@@ -33,23 +33,23 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
     hasServiceConsent &&
     hasServiceConsent("Calendly") &&
     isClientSide &&
-    divRef.current;
+    divRef.current
 
-  const canInitCalendly = shouldInitCalendly();
+  const canInitCalendly = shouldInitCalendly()
 
   const provideConsent: MouseEventHandler<HTMLAnchorElement> = useCallback(
     (e) => {
-      e.preventDefault();
+      e.preventDefault()
       if (acceptService) {
         acceptService("Calendly").then(() => {
-          setIsAccepted(true);
-          initCalendly();
-        });
+          setIsAccepted(true)
+          initCalendly()
+        })
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [acceptService, canInitCalendly],
-  );
+  )
 
   const initCalendly = useCallback(() => {
     if (shouldInitCalendly()) {
@@ -58,21 +58,21 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
           window.Calendly.initInlineWidget({
             url: `${url}&hide_event_type_details=1`,
             parentElement: divRef.current,
-          });
-          setCalendlyInitialized(true);
-          window.clearInterval(interval);
+          })
+          setCalendlyInitialized(true)
+          window.clearInterval(interval)
         }
-      }, 500);
+      }, 500)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [canInitCalendly]);
+  }, [canInitCalendly])
 
   useEffect(() => {
-    initCalendly();
+    initCalendly()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [canInitCalendly]);
+  }, [canInitCalendly])
 
-  const div = <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />;
+  const div = <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />
 
   const consentNotice = !calendlyInitialized &&
     (!hasServiceConsent || !hasServiceConsent("Calendly")) && (
@@ -86,11 +86,11 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
           to connect to our partner, Calendly
         </p>
       </>
-    );
+    )
   return (
     <>
       {consentNotice}
       {div}
     </>
-  );
-};
+  )
+}

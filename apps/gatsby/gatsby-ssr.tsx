@@ -31,19 +31,18 @@ const fonts = [
 ]
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
   const links = fonts.map((font) => {
-    return <link
-      rel="preload"
-      href={font}
-      as="font"
-      crossOrigin="anonymous"
-      key={font}
-    />
+    return <link rel="preload" href={font} as="font" crossOrigin="anonymous" key={font} />
   })
 
   const userCentricLinks = [
     <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,
     <link rel="preconnect" href="//api.usercentrics.eu" key="usercentrics-api" />,
-    <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" key="usercentrics-loader" as="script" />
+    <link
+      rel="preload"
+      href="//app.usercentrics.eu/browser-ui/latest/loader.js"
+      key="usercentrics-loader"
+      as="script"
+    />,
   ]
   setHeadComponents([...links, ...userCentricLinks])
   setHtmlAttributes({ lang: "en" })

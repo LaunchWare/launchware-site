@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./css/services-hero.css";
+import "./css/services-hero.css"
 
 export const ServicesHero = () => (
   <div className="services-hero">
@@ -11,4 +11,4 @@ export const ServicesHero = () => (
       </h1>
     </div>
   </div>
-);
+)

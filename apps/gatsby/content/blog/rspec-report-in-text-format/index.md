@@ -3,19 +3,19 @@ layout: post
 comments: true
 title: RSpec Report in Text Format
 tags:
-- bdd
-- Development
-- documentation
-- Rails
-- rspec
-- rubyonrails
-- Software
+  - bdd
+  - Development
+  - documentation
+  - Rails
+  - rspec
+  - rubyonrails
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9372250'
-publishedAt: '2008-08-02'
+  dsq_thread_id: "9372250"
+publishedAt: "2008-08-02"
 ---
 
 I recently wanted to share RSpec examples with a business user. For some reason, it was kind of hard to find information on how to get a nice listing of all the examples present in your system. I believe Text and HTML formats are available, but I was unsure about how to pass spec command line options to the rake task.

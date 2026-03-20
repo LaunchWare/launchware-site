@@ -1,7 +1,7 @@
-import axios, { AxiosError } from "axios";
-import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError } from "axios"
+import { useMutation } from "@tanstack/react-query"
 
-import { GetInTouchFormValues } from "../models/GetInTouchFormShapes";
+import { GetInTouchFormValues } from "../models/GetInTouchFormShapes"
 
 export const usePostGeneralInquiry = () => {
   return useMutation({
@@ -10,11 +10,11 @@ export const usePostGeneralInquiry = () => {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-      });
-      return resp.data;
+      })
+      return resp.data
     },
     onError: (err: Error | AxiosError) => {
-      console.error(err);
+      console.error(err)
     },
-  });
-};
+  })
+}

@@ -1,21 +1,21 @@
 ---
 layout: post
 comments: true
-title: 'Getting Back On Track: Saving Derailed Projects'
+title: "Getting Back On Track: Saving Derailed Projects"
 tags:
-- agie
-- Development
-- Events
-- presentation
-- Project Management
-- project_management
-- Software
+  - agie
+  - Development
+  - Events
+  - presentation
+  - Project Management
+  - project_management
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '12335667'
-publishedAt: '2009-02-22'
+  dsq_thread_id: "12335667"
+publishedAt: "2009-02-22"
 ---
 
 [Jon Follett](https://www.hotknifedesign.com) and I did a lightning talk on swooping in to save projects from epic failure at [Ignite Boston 5](https://ignite.oreilly.com/2009/01/ignite-boston-5.html). It seems to be a topic that the audience had an interest in. We looked at our experiences and set out to provide some useful tips.

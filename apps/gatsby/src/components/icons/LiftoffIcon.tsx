@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 export const LiftoffIcon = ({
   className = "",
   width = "",
 }: {
-  className?: string;
-  width?: string;
+  className?: string
+  width?: string
 }) => {
   return (
     <svg
@@ -127,5 +127,5 @@ export const LiftoffIcon = ({
         strokeLinejoin="round"
       />
     </svg>
-  );
-};
+  )
+}

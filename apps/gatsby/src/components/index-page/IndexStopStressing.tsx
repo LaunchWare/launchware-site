@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import "../../css/index.css";
-import "./css/index-stop-stressing.css";
+import "../../css/index.css"
+import "./css/index-stop-stressing.css"
 
 export const IndexStopStressing = () => (
   <div className="index-stop-stressing">
@@ -43,4 +43,4 @@ export const IndexStopStressing = () => (
       </div>
     </div>
   </div>
-);
+)

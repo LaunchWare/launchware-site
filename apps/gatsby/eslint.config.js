@@ -1,10 +1,10 @@
-const tsParser = require("@typescript-eslint/parser");
-const tsPlugin = require("@typescript-eslint/eslint-plugin");
-const reactPlugin = require("eslint-plugin-react");
-const reactHooksPlugin = require("eslint-plugin-react-hooks");
-const tanstackQueryPlugin = require("@tanstack/eslint-plugin-query");
-const prettierConfig = require("eslint-config-prettier");
-const globals = require("globals");
+const tsParser = require("@typescript-eslint/parser")
+const tsPlugin = require("@typescript-eslint/eslint-plugin")
+const reactPlugin = require("eslint-plugin-react")
+const reactHooksPlugin = require("eslint-plugin-react-hooks")
+const tanstackQueryPlugin = require("@tanstack/eslint-plugin-query")
+const prettierConfig = require("eslint-config-prettier")
+const globals = require("globals")
 
 module.exports = [
   {
@@ -45,4 +45,4 @@ module.exports = [
     },
   },
   prettierConfig,
-];
+]

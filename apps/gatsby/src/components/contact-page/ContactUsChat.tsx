@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import "./css/contact-us-chat.css";
+import "./css/contact-us-chat.css"
 
 export const ContactUsChat = () => (
   <div className="contact-us-chat">
@@ -37,4 +37,4 @@ export const ContactUsChat = () => (
       </div>
     </div>
   </div>
-);
+)

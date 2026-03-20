@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./css/blog-hero.css";
+import "./css/blog-hero.css"
 
 export const BlogHero = () => {
   return (
@@ -15,5 +15,5 @@ export const BlogHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

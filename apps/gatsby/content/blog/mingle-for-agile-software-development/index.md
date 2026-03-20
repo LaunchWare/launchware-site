@@ -3,16 +3,16 @@ layout: post
 comments: true
 title: Mingle For Agile Software Development
 tags:
-- agile
-- mingle
-- Project Management
-- software development
+  - agile
+  - mingle
+  - Project Management
+  - software development
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: '9362001'
-publishedAt: '2008-03-02'
+  dsq_thread_id: "9362001"
+publishedAt: "2008-03-02"
 ---
 
 <p>For a long time, I've been looking for a decent system to manage <a href="https://www.secondrotation.com">Second Rotation's</a> user stories. I have to say, I've been very impressed with <a href="https://studios.thoughtworks.com/mingle-project-intelligence">Mingle</a>. Last week, I worked on refining the story statuses for the life cycle of a user story once it is slated for an iteration. Here's what we came up with:</p>

@@ -1,10 +1,10 @@
-import React, { MouseEventHandler, useEffect } from "react";
+import React, { MouseEventHandler, useEffect } from "react"
 
-import { useModal } from "@launchware/replicator";
-import "@launchware/replicator/dist/css/Modal/modal.css";
+import { useModal } from "@launchware/replicator"
+import "@launchware/replicator/dist/css/Modal/modal.css"
 
-import { BookCallModal } from "../BookCallModal";
-import "../css/book-call-modal.css";
+import { BookCallModal } from "../BookCallModal"
+import "../css/book-call-modal.css"
 
 export const useBookCallModal = () => {
   const {
@@ -14,22 +14,22 @@ export const useBookCallModal = () => {
   } = useModal(() => <BookCallModal enabled={isModalVisible} />, {
     scrollToTop: false,
     size: "large",
-  });
+  })
 
   useEffect(() => {
     window.addEventListener("message", (e) => {
       if (e.data.event && e.data.event.indexOf("calendly")) {
-        setModalVisibility(false);
+        setModalVisibility(false)
       }
-    });
-  }, []);
+    })
+  }, [])
 
   const clickHandler: MouseEventHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     if (setModalVisibility) {
-      setModalVisibility(true);
+      setModalVisibility(true)
     }
-  };
+  }
 
-  return { clickHandler, isModalVisible, modal };
-};
+  return { clickHandler, isModalVisible, modal }
+}

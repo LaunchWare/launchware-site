@@ -1,9 +1,9 @@
-import * as React from "react";
-import { PageProps, graphql } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { BlogHero } from "../components/blog-page/BlogHero";
-import { BlogCardList } from "../components/blog-page/BlogCardList";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
+import * as React from "react"
+import { PageProps, graphql } from "gatsby"
+import { Layout } from "../components/layout/Layout"
+import { BlogHero } from "../components/blog-page/BlogHero"
+import { BlogCardList } from "../components/blog-page/BlogCardList"
+import { HeadDefaults } from "../components/layout/HeadDefaults"
 
 export const Head = () => (
   <>
@@ -18,19 +18,19 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+)
 const BlogPage = (pageProps: PageProps<Queries.MarkdownArticlesForIndexQuery>) => {
-  const { data } = pageProps;
+  const { data } = pageProps
 
   return (
     <Layout location={pageProps.location} title="Blog">
       <BlogHero />
       <BlogCardList articles={data.allMarkdownRemark.nodes} />
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogPage;
+export default BlogPage
 
 export const pageQuery = graphql`
   query MarkdownArticlesForIndex {
@@ -47,4 +47,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

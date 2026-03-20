@@ -4,16 +4,16 @@ title: Accessible Facebook Dialogs And Feed Posting With Rails
 date: 2011-12-16 11:19
 comments: true
 categories:
-- Rails
-- Facebook
-- Accessibility
+  - Rails
+  - Facebook
+  - Accessibility
 author: Dan Pickett
 keywords:
-- Rails
-- Facebook
-- Accessibility
+  - Rails
+  - Facebook
+  - Accessibility
 description: Integrate Facebook Dialogs with your Ruby on Rails Application
-publishedAt: '2011-12-16'
+publishedAt: "2011-12-16"
 ---
 
 Don't be jealous that we've been integrating facebook and chatting with babes all day.
@@ -38,19 +38,19 @@ For more detail on getting omniauth set up, [the tutorial over at NetTuts](https
 
 Add our little [facebook_dialog](https://github.com/enlightsolutions/facebook_dialog) gem to your Gemfile.
 
-``` ruby
+```ruby
     gem 'facebook_dialog'
 ```
 
 Add your api key to an initializer like config/initializers/facebook_dialog.rb
 
-``` ruby
+```ruby
     FacebookDialog.api_key = "<your appid/api key>"
 ```
 
 In your view, do something like this:
 
-``` ruby
+```ruby
     <%- feed_dialog = FacebookDialog::Feed.new({
       redirect_uri: "https://www.example.com",
 	  link: "https://www.example.com",
@@ -60,9 +60,10 @@ In your view, do something like this:
     })-%>
     <%= link_to "Share on Facebook", feed_dialog.url, id: "share_on_facebook" %>
 ```
+
 You can then add the JavaScript pieces at the tail end of the body to optimize page loading. Check out our simple jQuery example below:
 
-``` ruby
+```ruby
 	<%= facebook_js %>
     <%= javascript_tag do %>
       <%= fb_init_js %>

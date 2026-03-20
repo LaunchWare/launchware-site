@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/better-way.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/better-way.css"
 
 export const BetterWay = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="better-way">
@@ -85,5 +85,5 @@ export const BetterWay = () => {
       </div>
       {modal}
     </div>
-  );
-};
+  )
+}

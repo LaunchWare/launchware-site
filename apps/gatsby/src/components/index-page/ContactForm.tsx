@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { StaticImage } from "gatsby-plugin-image"
+import { SubmitHandler, useForm } from "react-hook-form"
 
-import { Tagline } from "../general/Tagline";
-import { getFieldClassName } from "../general/services/getFieldClassName";
-import { useNotifications } from "../../hooks/useNotifications";
-import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
-import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
+import { Tagline } from "../general/Tagline"
+import { getFieldClassName } from "../general/services/getFieldClassName"
+import { useNotifications } from "../../hooks/useNotifications"
+import { usePostContactInquiry } from "./hooks/usePostContactInquiry"
+import { ContactInquiryFormValues } from "./models/ContactInquiryShapes"
 
 export const IndexFormSection = () => {
-  const { addNotification } = useNotifications();
+  const { addNotification } = useNotifications()
   const {
     handleSubmit,
     register,
@@ -23,27 +23,27 @@ export const IndexFormSection = () => {
       projectDescription: "",
       inquiryLeadType: "How did you hear about us?",
     },
-  });
+  })
 
-  const { mutate: postContactInquiry, isSuccess, isPending } = usePostContactInquiry();
+  const { mutate: postContactInquiry, isSuccess, isPending } = usePostContactInquiry()
 
   const onSubmit: SubmitHandler<ContactInquiryFormValues> = (formValues) => {
     postContactInquiry(formValues, {
       onSuccess: () => {
         addNotification("Thanks for contacting us!", {
           appearance: "success",
-        });
+        })
       },
       onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
-        });
+        })
       },
-    });
-  };
+    })
+  }
 
-  const blockClassName = "one-small-step";
-  const errorClassPrefix = `${blockClassName}__input`;
+  const blockClassName = "one-small-step"
+  const errorClassPrefix = `${blockClassName}__input`
   const formContent = (
     <form
       className="one-small-step__form"
@@ -146,7 +146,7 @@ export const IndexFormSection = () => {
       <input type="hidden" value="giantLeapInquiry" {...register("form-name")} />
       <input className="button" type="submit" disabled={isPending} value="Send message" />
     </form>
-  );
+  )
 
   return (
     <div className="one-small-step">
@@ -180,5 +180,5 @@ export const IndexFormSection = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

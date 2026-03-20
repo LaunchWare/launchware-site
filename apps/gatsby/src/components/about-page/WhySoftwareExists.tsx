@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/why-software-exists.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/why-software-exists.css"
 
 export const WhySoftwareExists = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="why-software-exists">
@@ -71,5 +71,5 @@ export const WhySoftwareExists = () => {
       </div>
       {modal}
     </div>
-  );
-};
+  )
+}

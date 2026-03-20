@@ -1,15 +1,15 @@
 ---
 layout: post
 comments: true
-title: 'BarCamp Boston 2: What Should I Talk About?'
+title: "BarCamp Boston 2: What Should I Talk About?"
 tags:
-- Events
+  - Events
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2007-02-19'
+publishedAt: "2007-02-19"
 ---
 
 So BarCamp Boston 2 is set for March 17th in Cambridge. I presented a Ruby on Rails talk at BarCamp Manchester a few month back, but <a href="https://www.rajivmanglani.com/">Rajiv</a> is already doing a talk on that next month.

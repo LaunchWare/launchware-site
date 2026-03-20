@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Podcasts and Efficiency on the Road
 tags:
-- Lifehack
+  - Lifehack
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2006-11-05'
+publishedAt: "2006-11-05"
 ---
 
 I've absolutely fallen in love with Podcasts. Here's why: I spend a lot of time on the road and I feel like driving is an absolute waste of valuable time. My good friend and I were planning a road trip for the weekend so I scoured the net for some decent podcasts. I've posted my favorites <a title="Podcasts" href="/links#podcasts">here</a>. The six hour round trip was spent learning about project management and entrepreneurial subject matter. I came home from the trip extremely excited to put some of that knowledge to work.

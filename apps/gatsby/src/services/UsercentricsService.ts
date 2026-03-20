@@ -1,46 +1,46 @@
 type ServiceInfo = {
-  id: string;
-  name: string;
+  id: string
+  name: string
   consent: {
-    status: boolean;
-  };
-};
+    status: boolean
+  }
+}
 
 export type UC_UI = {
-  getServicesBaseInfo: () => ServiceInfo[];
-  showSecondLayer: () => void;
-  acceptService: (serviceId: string, consentType: "explicit" | "implicit") => void;
-  isInitialized: () => boolean;
-};
+  getServicesBaseInfo: () => ServiceInfo[]
+  showSecondLayer: () => void
+  acceptService: (serviceId: string, consentType: "explicit" | "implicit") => void
+  isInitialized: () => boolean
+}
 
 declare global {
   interface Window {
-    UC_UI: UC_UI;
+    UC_UI: UC_UI
   }
 }
 
 export class UsercentricsService {
   static acceptService(serviceId: string, consentType: "explicit" | "implicit") {
     if (!this.isBrowser) {
-      return;
+      return
     }
 
-    window.UC_UI?.acceptService(serviceId, consentType);
+    window.UC_UI?.acceptService(serviceId, consentType)
   }
 
   static getServicesBaseInfo() {
     if (!this.isBrowser) {
-      return [];
+      return []
     }
 
-    return window.UC_UI?.getServicesBaseInfo() || [];
+    return window.UC_UI?.getServicesBaseInfo() || []
   }
 
   static isInitialized() {
-    return this.isBrowser && window.UC_UI?.isInitialized();
+    return this.isBrowser && window.UC_UI?.isInitialized()
   }
 
   private static get isBrowser() {
-    return typeof window !== "undefined";
+    return typeof window !== "undefined"
   }
 }

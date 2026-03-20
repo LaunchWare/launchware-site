@@ -3,17 +3,17 @@ layout: post
 comments: true
 title: Logging Email Messages with Ruby, Rails and postmaster_general
 tags:
-- gem
-- mail
-- Rails
-- ruby
-- rubyonrails
+  - gem
+  - mail
+  - Rails
+  - ruby
+  - rubyonrails
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: ''
-publishedAt: '2011-01-25'
+  dsq_thread_id: ""
+publishedAt: "2011-01-25"
 ---
 
 Rendering emails locally is a pain. Rendering all the emails in your Rails app is even more of a headache.

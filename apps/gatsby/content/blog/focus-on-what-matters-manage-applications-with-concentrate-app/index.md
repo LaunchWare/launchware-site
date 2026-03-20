@@ -3,19 +3,19 @@ layout: post
 comments: true
 title: Focus on What Matters - Manage applications with Concentrate.app
 tags:
-- application
-- concentration
-- Lifehack
-- mac
-- productivity
-- Software
+  - application
+  - concentration
+  - Lifehack
+  - mac
+  - productivity
+  - Software
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '29495289'
-publishedAt: '2009-08-13'
+  sociableoff: "false"
+  dsq_thread_id: "29495289"
+publishedAt: "2009-08-13"
 ---
 
 <img src="https://www.enlightsolutions.com/wp-content/uploads/2009/08/concentrateapp.png" alt="concentrateapp.png" border="0" height="500" align="right" />
@@ -26,8 +26,8 @@ You can set up profiles based on the context of your action. My contexts are set
 
 <h3>Away</h3>
 
-* Sets [Skype](https://skype.com/) status to "Away"
-* Sets [Adium](https://adium.im/) status to "Away"
+- Sets [Skype](https://skype.com/) status to "Away"
+- Sets [Adium](https://adium.im/) status to "Away"
 
 <h3>Blogging</h3>
 * Opens up [MarsEdit](https://www.red-sweater.com/marsedit/)
@@ -63,11 +63,11 @@ You can set up profiles based on the context of your action. My contexts are set
 
 Getting Things Done is a methodology for organizing tasks and projects. I practice it using the following workflow:
 
-* Opens Firefox
-* Opens Things.app
-* Opens [VoodooPad](https://flyingmeat.com/voodoopad/) - my personal wiki
-* Opens [Jott](https://jott.com/) in Firefox - when I'm on the road, I will call in actions as they pop into my head. Jott isn't great at transcribing my messages but I can re-listen to them when I'm doing my weekly review, etc.
-* Opens my [RescueTime](https://www.rescuetime.com) Dashboard - I use this to analyze productivity and see what apps I'm using heavily
+- Opens Firefox
+- Opens Things.app
+- Opens [VoodooPad](https://flyingmeat.com/voodoopad/) - my personal wiki
+- Opens [Jott](https://jott.com/) in Firefox - when I'm on the road, I will call in actions as they pop into my head. Jott isn't great at transcribing my messages but I can re-listen to them when I'm doing my weekly review, etc.
+- Opens my [RescueTime](https://www.rescuetime.com) Dashboard - I use this to analyze productivity and see what apps I'm using heavily
 
 <h3>Marketing</h3>
 * Opens Firefox

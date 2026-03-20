@@ -1,40 +1,40 @@
-import React, { MouseEventHandler } from "react";
-import { LaunchWareLogoLight } from "./LaunchWareLogoLight";
-import { Link } from "gatsby";
-import { companySocialProfiles } from "../../configuration/getCompanySocialProfile";
-import { CompanySocialIcon } from "../social/CompanySocialIcon";
-import { companyContactInformation } from "../../configuration/companyContactInformation";
+import React, { MouseEventHandler } from "react"
+import { LaunchWareLogoLight } from "./LaunchWareLogoLight"
+import { Link } from "gatsby"
+import { companySocialProfiles } from "../../configuration/getCompanySocialProfile"
+import { CompanySocialIcon } from "../social/CompanySocialIcon"
+import { companyContactInformation } from "../../configuration/companyContactInformation"
 
-import "./css/footer.css";
-import { TrackingCodes } from "./TrackingCodes";
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { OptInForm } from "../opt-in/OptInForm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
-import { UC_UI } from "../../services/UsercentricsService";
+import "./css/footer.css"
+import { TrackingCodes } from "./TrackingCodes"
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { OptInForm } from "../opt-in/OptInForm"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
+import { UC_UI } from "../../services/UsercentricsService"
 
 declare global {
   interface Window {
-    UC_UI: UC_UI;
+    UC_UI: UC_UI
   }
 }
 const Footer = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   const socialListItems = Object.keys(companySocialProfiles).map((network: string) => {
     return (
       <li key={network}>
         <CompanySocialIcon network={network} />
       </li>
-    );
-  });
+    )
+  })
 
   const privacySettingsHandler: MouseEventHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     if (window.UC_UI) {
-      window.UC_UI.showSecondLayer();
+      window.UC_UI.showSecondLayer()
     }
-  };
+  }
 
   return (
     <footer className="footer">
@@ -133,7 +133,7 @@ const Footer = () => {
       </div>
       <TrackingCodes />
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

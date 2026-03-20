@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/are-we-a-fit.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/are-we-a-fit.css"
 
 export const AreWeAFit = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="are-we-a-fit">
@@ -113,5 +113,5 @@ export const AreWeAFit = () => {
       </div>
       {modal}
     </div>
-  );
-};
+  )
+}

@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import "./css/index-logos.css";
-import { StaticImage } from "gatsby-plugin-image";
+import "./css/index-logos.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const IndexLogos = () => (
   <div className="index-logos">
@@ -46,4 +46,4 @@ export const IndexLogos = () => (
       </li>
     </ul>
   </div>
-);
+)

@@ -1,6 +1,6 @@
-import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
-import { ContactInquiryFormValues } from "../models/ContactInquiryShapes";
+import { useMutation } from "@tanstack/react-query"
+import axios, { AxiosError } from "axios"
+import { ContactInquiryFormValues } from "../models/ContactInquiryShapes"
 
 export const usePostContactInquiry = () => {
   return useMutation({
@@ -9,11 +9,11 @@ export const usePostContactInquiry = () => {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-      });
-      return resp.data;
+      })
+      return resp.data
     },
     onError: (err: Error | AxiosError) => {
-      console.error(err);
+      console.error(err)
     },
-  });
-};
+  })
+}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'Boston Ruby Group Lightning Talk: The Rails Engine That Could?'
+title: "Boston Ruby Group Lightning Talk: The Rails Engine That Could?"
 date: 2012-04-30 11:16
 comments: true
 author: Dan Pickett
 categories:
-- ruby
-- talks
-- rails engines
-- rails
-publishedAt: '2012-04-30'
+  - ruby
+  - talks
+  - rails engines
+  - rails
+publishedAt: "2012-04-30"
 ---
 
 On Tuesday, April 23rd, I gave a brief lightning talk about our most recent experiences with Rails Engines.

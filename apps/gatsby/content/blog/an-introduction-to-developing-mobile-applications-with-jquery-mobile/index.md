@@ -3,19 +3,19 @@ layout: post
 comments: true
 title: An Introduction to Developing Mobile Applications with JQuery Mobile
 tags:
-- Development
-- jquery
-- jquery-mobile
-- mobile
-- Mobile Development
-- mobile-fu
-- Rails
+  - Development
+  - jquery
+  - jquery-mobile
+  - mobile
+  - Mobile Development
+  - mobile-fu
+  - Rails
 status: publish
 type: post
 published: true
 meta:
-  dsq_thread_id: ''
-publishedAt: '2011-02-11'
+  dsq_thread_id: ""
+publishedAt: "2011-02-11"
 ---
 
 Last Tuesday I gave a very quick talk at the [BostonRB](https://www.bostonrb.org) Meetup introducing mobile application development. There were some great questions at the end. You can catch the video and the slides below:

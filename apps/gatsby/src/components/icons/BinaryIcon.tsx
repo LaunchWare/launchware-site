@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const BinaryIcon = ({ className = "", width }: { className?: string; width?: string }) => {
   return (
@@ -60,5 +60,5 @@ export const BinaryIcon = ({ className = "", width }: { className?: string; widt
         />
       </g>
     </svg>
-  );
-};
+  )
+}

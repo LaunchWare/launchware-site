@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import { StarIcon } from "@heroicons/react/24/solid";
-import { StaticImage } from "gatsby-plugin-image";
+import { StarIcon } from "@heroicons/react/24/solid"
+import { StaticImage } from "gatsby-plugin-image"
 
-import "./css/enough-on-your-plate.css";
+import "./css/enough-on-your-plate.css"
 
 export const EnoughOnYourPlate = () => (
   <div className="enough-on-your-plate">
@@ -46,4 +46,4 @@ export const EnoughOnYourPlate = () => (
       </div>
     </div>
   </div>
-);
+)

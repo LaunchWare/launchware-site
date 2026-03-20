@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form"
 
-import { getFieldClassName } from "../general/services/getFieldClassName";
-import { useNotifications } from "../../hooks/useNotifications";
-import { usePostContactInquiry } from "./hooks/usePostContactInquiry";
-import { ContactInquiryFormValues } from "./models/ContactInquiryShapes";
-import "./css/contact-form.css";
+import { getFieldClassName } from "../general/services/getFieldClassName"
+import { useNotifications } from "../../hooks/useNotifications"
+import { usePostContactInquiry } from "./hooks/usePostContactInquiry"
+import { ContactInquiryFormValues } from "./models/ContactInquiryShapes"
+import "./css/contact-form.css"
 
 export const ContactForm = () => {
-  const { addNotification } = useNotifications();
+  const { addNotification } = useNotifications()
   const {
     handleSubmit,
     register,
@@ -22,27 +22,27 @@ export const ContactForm = () => {
       projectDescription: "",
       inquiryLeadType: "How did you hear about us?",
     },
-  });
+  })
 
-  const { mutate: postContactInquiry, isSuccess, isPending } = usePostContactInquiry();
+  const { mutate: postContactInquiry, isSuccess, isPending } = usePostContactInquiry()
 
   const onSubmit: SubmitHandler<ContactInquiryFormValues> = (formValues) => {
     postContactInquiry(formValues, {
       onSuccess: () => {
         addNotification("Thanks for contacting us!", {
           appearance: "success",
-        });
+        })
       },
       onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
-        });
+        })
       },
-    });
-  };
+    })
+  }
 
-  const blockClassName = "one-small-step";
-  const errorClassPrefix = `${blockClassName}__input`;
+  const blockClassName = "one-small-step"
+  const errorClassPrefix = `${blockClassName}__input`
   const formContent = (
     <form
       className="one-small-step__form"
@@ -146,7 +146,7 @@ export const ContactForm = () => {
       <input type="hidden" value="giantLeapInquiry" {...register("form-name")} />
       <input className="button" type="submit" disabled={isPending} value="Send message" />
     </form>
-  );
+  )
 
   return (
     <div className="one-small-step">
@@ -165,5 +165,5 @@ export const ContactForm = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

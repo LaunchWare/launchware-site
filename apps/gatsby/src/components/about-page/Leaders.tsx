@@ -1,13 +1,13 @@
-import React from "react";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/leaders.css";
-import { StaticImage } from "gatsby-plugin-image";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/leaders.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const Leaders = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="leaders">
@@ -80,5 +80,5 @@ export const Leaders = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

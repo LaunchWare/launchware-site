@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import "@launchware/replicator/dist/css/Modal/modal.css";
+import "@launchware/replicator/dist/css/Modal/modal.css"
 
-import { ScorecardOptInForm } from "./ScorecardOptInForm";
-import "./css/scorecard-modal.css";
+import { ScorecardOptInForm } from "./ScorecardOptInForm"
+import "./css/scorecard-modal.css"
 
 export const ScorecardModal = () => (
   <div className="scorecard-modal">
@@ -22,4 +22,4 @@ export const ScorecardModal = () => (
       <ScorecardOptInForm />
     </div>
   </div>
-);
+)

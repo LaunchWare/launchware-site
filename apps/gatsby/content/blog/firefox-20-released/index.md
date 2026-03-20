@@ -3,14 +3,14 @@ layout: post
 comments: true
 title: Firefox 2.0 Released!
 tags:
-- Software
+  - Software
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9534923'
-publishedAt: '2006-10-24'
+  dsq_thread_id: "9534923"
+publishedAt: "2006-10-24"
 ---
 
 <a title="Firefox" href="https://blog.enlightsolutions.com/www.getfirefox.com">Get it now!</a>

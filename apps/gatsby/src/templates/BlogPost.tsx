@@ -1,15 +1,15 @@
-import * as React from "react";
-import { Link, graphql, PageProps, HeadProps } from "gatsby";
+import * as React from "react"
+import { Link, graphql, PageProps, HeadProps } from "gatsby"
 
-import { Layout } from "../components/layout/Layout";
-import "./css/blog-post.css";
+import { Layout } from "../components/layout/Layout"
+import "./css/blog-post.css"
 // import Seo from "../components/seo";
 
 const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQuery>) => {
-  const queryData = data;
-  const siteTitle = queryData?.site?.siteMetadata?.title || `Title`;
-  const post = queryData.markdownRemark;
-  const { previous, next } = queryData;
+  const queryData = data
+  const siteTitle = queryData?.site?.siteMetadata?.title || `Title`
+  const post = queryData.markdownRemark
+  const { previous, next } = queryData
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -58,8 +58,8 @@ const BlogPostTemplate = ({ data, location }: PageProps<Queries.BlogPostBySlugQu
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const Head = (props: HeadProps<Queries.BlogPostBySlugQuery>) => {
   return (
@@ -67,10 +67,10 @@ export const Head = (props: HeadProps<Queries.BlogPostBySlugQuery>) => {
       <title>{props.data.markdownRemark?.frontmatter?.title} - LaunchWare</title>
       <meta name="description" content={props.data.markdownRemark?.excerpt || undefined} />
     </>
-  );
-};
+  )
+}
 
-export default BlogPostTemplate;
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
@@ -106,4 +106,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

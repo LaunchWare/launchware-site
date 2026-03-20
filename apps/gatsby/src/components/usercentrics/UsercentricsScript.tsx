@@ -1,5 +1,5 @@
-import { Script } from "gatsby";
-import React from "react";
+import { Script } from "gatsby"
+import React from "react"
 
 export const UsercentricsScript = ({ settingsId }: { settingsId: string }) => {
   return (
@@ -11,5 +11,5 @@ export const UsercentricsScript = ({ settingsId }: { settingsId: string }) => {
       data-version="latest"
       async
     />
-  );
-};
+  )
+}

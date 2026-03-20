@@ -1,19 +1,19 @@
-import React, { FC } from "react";
-import { Link } from "gatsby";
+import React, { FC } from "react"
+import { Link } from "gatsby"
 
-import "./css/blog-card-list.css";
+import "./css/blog-card-list.css"
 
 interface BlogCardListProps {
   articles: {
-    id: number;
-    excerpt: string;
+    id: number
+    excerpt: string
     frontmatter?: {
-      title: string;
-    };
+      title: string
+    }
     fields?: {
-      slug: string;
-    };
-  }[];
+      slug: string
+    }
+  }[]
 }
 
 export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
@@ -25,12 +25,12 @@ export const BlogCardList: FC<BlogCardListProps> = ({ articles }) => {
           <p className="blog-card-list__excerpt">{article.excerpt}</p>
         </Link>
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <div className="blog-card-list">
       <ul className="blog-card-list__contents">{listItems}</ul>
     </div>
-  );
-};
+  )
+}

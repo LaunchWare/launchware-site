@@ -1,13 +1,13 @@
-import React from "react";
-import { PageProps } from "gatsby";
+import React from "react"
+import { PageProps } from "gatsby"
 
-import { ContactUsChat } from "../components/contact-page/ContactUsChat";
-import { ContactUsHero } from "../components/contact-page/ContactUsHero";
-import { GetInTouch } from "../components/contact-page/GetInTouch";
-import { MediaInquiries } from "../components/contact-page/MediaInquiries";
-import { Layout } from "../components/layout/Layout";
-import "../css/index.css";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
+import { ContactUsChat } from "../components/contact-page/ContactUsChat"
+import { ContactUsHero } from "../components/contact-page/ContactUsHero"
+import { GetInTouch } from "../components/contact-page/GetInTouch"
+import { MediaInquiries } from "../components/contact-page/MediaInquiries"
+import { Layout } from "../components/layout/Layout"
+import "../css/index.css"
+import { HeadDefaults } from "../components/layout/HeadDefaults"
 
 export const Head = () => (
   <>
@@ -22,7 +22,7 @@ export const Head = () => (
     />
     <HeadDefaults />
   </>
-);
+)
 
 const AboutPage = (pageProps: PageProps) => {
   return (
@@ -32,7 +32,7 @@ const AboutPage = (pageProps: PageProps) => {
       <MediaInquiries />
       <GetInTouch />
     </Layout>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage

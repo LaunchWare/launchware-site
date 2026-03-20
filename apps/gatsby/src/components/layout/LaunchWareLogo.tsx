@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
   return (
@@ -64,5 +64,5 @@ export const LaunchWareLogo = ({ className = "" }: { className?: string }) => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

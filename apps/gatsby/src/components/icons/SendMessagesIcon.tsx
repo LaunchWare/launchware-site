@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 export const SendMessagesIcon = ({
   className = "",
   width,
 }: {
-  className?: string;
-  width?: string;
+  className?: string
+  width?: string
 }) => {
   return (
     <svg
@@ -99,5 +99,5 @@ export const SendMessagesIcon = ({
         strokeLinejoin="round"
       />
     </svg>
-  );
-};
+  )
+}

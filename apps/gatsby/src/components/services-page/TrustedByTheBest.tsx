@@ -1,9 +1,9 @@
-import React from "react";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
-import { Tagline } from "../general/Tagline";
+import React from "react"
+import { UserCircleIcon } from "@heroicons/react/24/solid"
+import { Tagline } from "../general/Tagline"
 
-import "./css/trusted-by-the-best.css";
-import { StaticImage } from "gatsby-plugin-image";
+import "./css/trusted-by-the-best.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const TrustedByTheBest = () => (
   <div className="trusted-by-the-best">
@@ -67,4 +67,4 @@ export const TrustedByTheBest = () => (
       </div>
     </div>
   </div>
-);
+)

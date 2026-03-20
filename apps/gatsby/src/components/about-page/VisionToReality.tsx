@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { ThreeCardSection } from "../general/ThreeCardSection";
-import { HiFiveIcon } from "../icons/HiFiveIcon";
-import { LaptopStackIcon } from "../icons/LaptopStackIcon";
-import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import "./css/vision-to-reality.css";
-import { StaticImage } from "gatsby-plugin-image";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { ThreeCardSection } from "../general/ThreeCardSection"
+import { HiFiveIcon } from "../icons/HiFiveIcon"
+import { LaptopStackIcon } from "../icons/LaptopStackIcon"
+import { SendMessagesIcon } from "../icons/SendMessagesIcon"
+import "./css/vision-to-reality.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const VisionToReality = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   const sectionContents = {
     sectionHeading: "Make your vision a reality.",
@@ -36,7 +36,7 @@ export const VisionToReality = () => {
         ],
       },
     ],
-  };
+  }
 
   return (
     <div className="vision-to-reality">
@@ -53,5 +53,5 @@ export const VisionToReality = () => {
       </div>
       {modal}
     </div>
-  );
-};
+  )
+}

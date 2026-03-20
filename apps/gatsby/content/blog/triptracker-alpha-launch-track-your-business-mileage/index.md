@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: TripTracker Alpha Launch - Track Your Business Mileage
 tags:
-- business
-- Finance
-- savings
-- taxes
-- travel
+  - business
+  - Finance
+  - savings
+  - taxes
+  - travel
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '31232558'
-publishedAt: '2009-08-25'
+  sociableoff: "false"
+  dsq_thread_id: "31232558"
+publishedAt: "2009-08-25"
 ---
 
 The [2009 Rails Rumble](https://www.railsrumble.com) was a huge event! I submitted a solo project this year for the 48 hour contest.

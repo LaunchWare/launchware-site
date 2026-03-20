@@ -1,17 +1,17 @@
-import React from "react";
+import React from "react"
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
 
-import "../../css/forms.css";
-import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema";
-import { useGeneralOptIn } from "./hooks/useGeneralOptIn";
-import { Spinner } from "../spinner/Spinner";
-import { Link } from "gatsby";
+import "../../css/forms.css"
+import { OptInFormSchema, optInFormSchema } from "./OptInFormSchema"
+import { useGeneralOptIn } from "./hooks/useGeneralOptIn"
+import { Spinner } from "../spinner/Spinner"
+import { Link } from "gatsby"
 
 declare global {
   interface Window {
-    vgo: (command: string, ...args: unknown[]) => void;
+    vgo: (command: string, ...args: unknown[]) => void
   }
 }
 
@@ -23,17 +23,17 @@ export const OptInForm = () => {
   } = useForm<OptInFormSchema>({
     mode: "onBlur",
     resolver: zodResolver(optInFormSchema),
-  });
+  })
 
-  const { mutate, isSuccess, isPending } = useGeneralOptIn();
+  const { mutate, isSuccess, isPending } = useGeneralOptIn()
 
   const onSubmit = (data: OptInFormSchema) => {
-    mutate(data);
+    mutate(data)
     if (window.vgo) {
-      window.vgo("setEmail", data.email);
-      window.vgo("process");
+      window.vgo("setEmail", data.email)
+      window.vgo("process")
     }
-  };
+  }
 
   const formContent = (
     <>
@@ -61,9 +61,9 @@ export const OptInForm = () => {
         <Link to="/terms-of-service">Terms of Service</Link>.
       </p>
     </>
-  );
+  )
 
-  const successContent = <p>Thanks! We'll be in touch.</p>;
+  const successContent = <p>Thanks! We'll be in touch.</p>
 
   return (
     <form
@@ -74,5 +74,5 @@ export const OptInForm = () => {
       <h3 className="footer_headline">Stay in our orbit</h3>
       {isSuccess ? successContent : formContent}
     </form>
-  );
-};
+  )
+}

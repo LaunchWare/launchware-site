@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { Tagline } from "../general/Tagline";
-import { BinaryIcon } from "../icons/BinaryIcon";
-import { CodingScriptIcon } from "../icons/CodingScriptIcon";
-import { CommunityIcon } from "../icons/CommunityIcon";
-import { DocsSignIcon } from "../icons/DocsSignIcon";
-import "./css/index-ship-faster.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { Tagline } from "../general/Tagline"
+import { BinaryIcon } from "../icons/BinaryIcon"
+import { CodingScriptIcon } from "../icons/CodingScriptIcon"
+import { CommunityIcon } from "../icons/CommunityIcon"
+import { DocsSignIcon } from "../icons/DocsSignIcon"
+import "./css/index-ship-faster.css"
 
 export const IndexShipFaster = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="index-ship-faster">
@@ -159,5 +159,5 @@ export const IndexShipFaster = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

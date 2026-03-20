@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { ThreeCardSection } from "../general/ThreeCardSection";
-import { HiFiveIcon } from "../icons/HiFiveIcon";
-import { LaptopStackIcon } from "../icons/LaptopStackIcon";
-import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import "./css/more-momentum.css";
-import { StaticImage } from "gatsby-plugin-image";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { ThreeCardSection } from "../general/ThreeCardSection"
+import { HiFiveIcon } from "../icons/HiFiveIcon"
+import { LaptopStackIcon } from "../icons/LaptopStackIcon"
+import { SendMessagesIcon } from "../icons/SendMessagesIcon"
+import "./css/more-momentum.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const MoreMomentum = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   const sectionContents = {
     sectionHeading: "Build Your Application with More Momentum and Less Stress",
@@ -36,7 +36,7 @@ export const MoreMomentum = () => {
         ],
       },
     ],
-  };
+  }
 
   return (
     <div className="more-momentum">
@@ -53,5 +53,5 @@ export const MoreMomentum = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

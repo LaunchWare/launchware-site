@@ -1,6 +1,8 @@
 export class RequiredConfigurationNotDefinedError extends Error {
   constructor(missingValues: string[]) {
-    super(`ActiveCampaign is missing the following configuration variables: ${missingValues.join(",")}`)
+    super(
+      `ActiveCampaign is missing the following configuration variables: ${missingValues.join(",")}`,
+    )
   }
 }
 export class Configuration {
@@ -10,15 +12,12 @@ export class Configuration {
       actId: this.actId,
       eventKey: this.eventKey,
       apiKey: this.apiKey,
-      subdomain: this.subdomain
+      subdomain: this.subdomain,
     }
 
     Object.keys(requiredConfigs).forEach((key) => {
       if (!requiredConfigs[key] || requiredConfigs[key] === "") {
-        missingValues = [
-          ...missingValues,
-          key
-        ]
+        missingValues = [...missingValues, key]
       }
     })
 
@@ -43,7 +42,6 @@ export class Configuration {
   }
 
   get baseUri() {
-
     return `https://${this.subdomain}.api-us1.com/api/3/`
   }
 }

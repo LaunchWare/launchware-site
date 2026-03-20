@@ -1,16 +1,16 @@
-import React, { FC } from "react";
+import React, { FC } from "react"
 
-import "./css/three-card-section.css";
+import "./css/three-card-section.css"
 
 interface ThreeCardProps {
   sectionContents: {
-    sectionHeading: string;
+    sectionHeading: string
     cards: {
-      heading: string;
-      icon: JSX.Element;
-      paragraphs: string[];
-    }[];
-  };
+      heading: string
+      icon: JSX.Element
+      paragraphs: string[]
+    }[]
+  }
 }
 
 export const ThreeCardSection: FC<ThreeCardProps> = ({
@@ -26,7 +26,7 @@ export const ThreeCardSection: FC<ThreeCardProps> = ({
         </p>
       ))}
     </div>
-  ));
+  ))
 
   return (
     <>
@@ -35,5 +35,5 @@ export const ThreeCardSection: FC<ThreeCardProps> = ({
       </div>
       <div className="three-card-section__cards-container">{cardList}</div>
     </>
-  );
-};
+  )
+}

@@ -3,16 +3,16 @@ layout: post
 comments: true
 title: What can Entrepreneurs learn from Gapminder?
 tags:
-- Organization
-- Sales
-- Software
+  - Organization
+  - Sales
+  - Software
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9486702'
-publishedAt: '2007-04-30'
+  dsq_thread_id: "9486702"
+publishedAt: "2007-04-30"
 ---
 
 Congrats to the people over at <a href="https://www.gapminder.org/">Gapminder</a> for getting nominated for a webby. Check their site out because not only is their message so important, but their presentation is really impressive. I was particularly attracted to the interactive graphs in <a href="https://www.gapminder.org/downloads/applications/">tools</a> - it's a great way of getting their message across.

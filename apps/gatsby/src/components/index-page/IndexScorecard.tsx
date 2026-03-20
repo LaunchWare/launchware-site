@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useModal } from "@launchware/replicator";
-import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { useModal } from "@launchware/replicator"
+import { StaticImage } from "gatsby-plugin-image"
 
-import { ScorecardModal } from "../scorecard/ScorecardModal";
-import "./css/index-scorecard.css";
+import { ScorecardModal } from "../scorecard/ScorecardModal"
+import "./css/index-scorecard.css"
 
 export const IndexScorecard = () => {
-  const { modal, setVisibility } = useModal(() => <ScorecardModal />, { scrollToTop: false });
+  const { modal, setVisibility } = useModal(() => <ScorecardModal />, { scrollToTop: false })
 
   return (
     <section className="index-scorecard">
@@ -45,5 +45,5 @@ export const IndexScorecard = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

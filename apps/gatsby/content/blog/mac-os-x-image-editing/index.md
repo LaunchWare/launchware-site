@@ -3,13 +3,13 @@ layout: post
 comments: true
 title: Mac OS X Image Editing
 tags:
-- Software
+  - Software
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-publishedAt: '2006-11-05'
+publishedAt: "2006-11-05"
 ---
 
 I was looking for a quick, free photo editor for Mac OS X. IPhoto is just horrible.

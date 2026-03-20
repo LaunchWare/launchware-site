@@ -3,15 +3,15 @@ layout: post
 comments: true
 title: Getting Started on my Business Plan
 tags:
-- Organization
-- Planning
+  - Organization
+  - Planning
 status: publish
 type: post
 published: true
 meta:
   _utw_tags_0: no tags
-  dsq_thread_id: '9372103'
-publishedAt: '2006-11-05'
+  dsq_thread_id: "9372103"
+publishedAt: "2006-11-05"
 ---
 
 I did a bit of brainstorming today on my business plan. From my previous exploits, I've found that a company without a business plan lacks direction and guidance.
@@ -31,9 +31,9 @@ How can this be accomplished? If I invest money made off of consulting revenues 
 <img src="https://blog.enlightsolutions.com/wp-content/uploads/2006/11/chtrevenuedistribution.jpg" />
 There are numerous issues with this model, however.
 
-* How can I keep my consulting customers satisfied while making this transition?
-* How do I manage this transition relative to my active contracts?
-* Will the products I develop be profitable enough to subsidize the loss in consulting revenues?
-* Will I miss consulting?
+- How can I keep my consulting customers satisfied while making this transition?
+- How do I manage this transition relative to my active contracts?
+- Will the products I develop be profitable enough to subsidize the loss in consulting revenues?
+- Will I miss consulting?
 
 Future brainstorming sessions will have to address these issues.

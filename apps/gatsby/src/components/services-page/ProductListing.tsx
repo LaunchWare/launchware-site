@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { BinaryIcon } from "../icons/BinaryIcon";
-import { CodingScriptIcon } from "../icons/CodingScriptIcon";
-import { CommunityIcon } from "../icons/CommunityIcon";
-import { DocsSignIcon } from "../icons/DocsSignIcon";
-import "./css/product-listing.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { BinaryIcon } from "../icons/BinaryIcon"
+import { CodingScriptIcon } from "../icons/CodingScriptIcon"
+import { CommunityIcon } from "../icons/CommunityIcon"
+import { DocsSignIcon } from "../icons/DocsSignIcon"
+import "./css/product-listing.css"
 
 export const ProductListing = () => {
-  const { clickHandler, modal } = useBookCallModal();
+  const { clickHandler, modal } = useBookCallModal()
 
   return (
     <div className="product-listing">
@@ -181,5 +181,5 @@ export const ProductListing = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

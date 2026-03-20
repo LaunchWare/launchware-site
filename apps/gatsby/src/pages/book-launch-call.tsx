@@ -1,17 +1,17 @@
-import React from "react";
-import { PageProps } from "gatsby";
-import { Layout } from "../components/layout/Layout";
-import { HeadDefaults } from "../components/layout/HeadDefaults";
-import { BookCallEmbed } from "../components/book-call/BookCallEmbed";
-import { UsercentricsProvider } from "../components/usercentrics/UsercentricsProvider";
+import React from "react"
+import { PageProps } from "gatsby"
+import { Layout } from "../components/layout/Layout"
+import { HeadDefaults } from "../components/layout/HeadDefaults"
+import { BookCallEmbed } from "../components/book-call/BookCallEmbed"
+import { UsercentricsProvider } from "../components/usercentrics/UsercentricsProvider"
 
 export const Head = () => {
   return (
     <>
       <HeadDefaults />
     </>
-  );
-};
+  )
+}
 
 const BookLaunchCall = (pageProps: PageProps) => {
   return (
@@ -28,7 +28,7 @@ const BookLaunchCall = (pageProps: PageProps) => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default BookLaunchCall;
+export default BookLaunchCall

@@ -3,18 +3,18 @@ layout: post
 comments: true
 title: GTD with Things
 tags:
-- gtd
-- mac
-- Organization
-- osx
-- productivity
-- Software
-- things
+  - gtd
+  - mac
+  - Organization
+  - osx
+  - productivity
+  - Software
+  - things
 status: publish
 type: post
 published: true
 meta: {}
-publishedAt: '2008-04-26'
+publishedAt: "2008-04-26"
 ---
 
 So I'm a big fan of [David Allen's GTD System](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1209237249&sr=8-1&tag=enlsolinc-20). For a long time, I've been looking for a personal information system that could help me get the job done.

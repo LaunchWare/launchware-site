@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./css/contact-us-hero.css";
+import "./css/contact-us-hero.css"
 
 export const ContactUsHero = () => (
   <div className="contact-us-hero">
@@ -9,4 +9,4 @@ export const ContactUsHero = () => (
       <p className="contact-us-hero__text">Let’s get started in making your vision a reality</p>
     </div>
   </div>
-);
+)

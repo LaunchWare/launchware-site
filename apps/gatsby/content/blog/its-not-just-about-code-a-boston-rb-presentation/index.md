@@ -3,20 +3,20 @@ layout: post
 comments: true
 title: It's Not Just About Code - A Boston.rb Presentation
 tags:
-- bostonrb
-- brainstorming
-- grid
-- Rails
-- SCRUM
-- Software
-- xp
+  - bostonrb
+  - brainstorming
+  - grid
+  - Rails
+  - SCRUM
+  - Software
+  - xp
 status: publish
 type: post
 published: true
 meta:
-  sociableoff: 'false'
-  dsq_thread_id: '44939072'
-publishedAt: '2009-11-11'
+  sociableoff: "false"
+  dsq_thread_id: "44939072"
+publishedAt: "2009-11-11"
 ---
 
 Last night I spoke @ [Boston.rb](https://bostonrb.org) about everything that happens around code.

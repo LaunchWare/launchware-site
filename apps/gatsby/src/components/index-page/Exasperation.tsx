@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import "./css/exasperation.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import "./css/exasperation.css"
 
 export const Exasperation = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   return (
     <div className="exasperation">
@@ -47,5 +47,5 @@ export const Exasperation = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

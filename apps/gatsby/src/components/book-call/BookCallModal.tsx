@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 
-import "@launchware/replicator/dist/css/Modal/modal.css";
-import "./css/book-call-modal.css";
-import { StaticImage } from "gatsby-plugin-image";
-import { BookCallEmbed } from "./BookCallEmbed";
-import { UsercentricsProvider } from "../usercentrics/UsercentricsProvider";
+import "@launchware/replicator/dist/css/Modal/modal.css"
+import "./css/book-call-modal.css"
+import { StaticImage } from "gatsby-plugin-image"
+import { BookCallEmbed } from "./BookCallEmbed"
+import { UsercentricsProvider } from "../usercentrics/UsercentricsProvider"
 
 export const BookCallModal = ({ enabled = true }: { enabled?: boolean }) => (
   <div className="book-call">
@@ -23,4 +23,4 @@ export const BookCallModal = ({ enabled = true }: { enabled?: boolean }) => (
       </UsercentricsProvider>
     </div>
   </div>
-);
+)

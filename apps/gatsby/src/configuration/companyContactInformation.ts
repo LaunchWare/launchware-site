@@ -12,4 +12,4 @@ export const companyContactInformation = {
   },
   launchCallUrl:
     "https://calendly.com/dan-pickett-launchware/launch-call?month=2026-03?primary_color=F06449",
-};
+}

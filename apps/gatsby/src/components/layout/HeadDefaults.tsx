@@ -1,6 +1,6 @@
-import { Script } from "gatsby";
-import React from "react";
-import { UsercentricsScript } from "../usercentrics/UsercentricsScript";
+import { Script } from "gatsby"
+import React from "react"
+import { UsercentricsScript } from "../usercentrics/UsercentricsScript"
 
 export const HeadDefaults = () => {
   return (
@@ -14,5 +14,5 @@ export const HeadDefaults = () => {
         defer
       />
     </>
-  );
-};
+  )
+}

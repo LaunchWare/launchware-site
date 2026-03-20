@@ -1,10 +1,10 @@
 import got, { Got } from "got"
-import { Configuration } from "./Configuration";
-import { Contact } from "./Contact";
+import { Configuration } from "./Configuration"
+import { Contact } from "./Contact"
 
 export class Event<EventData> {
-  email: string;
-  eventName: string;
+  email: string
+  eventName: string
   private gotClient?: Got
   private configuration: Configuration
   private eventData: EventData | {}
@@ -12,13 +12,19 @@ export class Event<EventData> {
   private lastName?: string
   private phone?: string
 
-
-  constructor({ email, eventName, eventData, firstName, lastName, phone }: {
-    email: string,
-    eventName: string,
-    eventData?: EventData,
-    firstName?: string,
-    lastName?: string,
+  constructor({
+    email,
+    eventName,
+    eventData,
+    firstName,
+    lastName,
+    phone,
+  }: {
+    email: string
+    eventName: string
+    eventData?: EventData
+    firstName?: string
+    lastName?: string
     phone?: string
   }) {
     this.email = email
@@ -39,13 +45,18 @@ export class Event<EventData> {
         actid: this.configuration.actId || "",
         event: this.eventName,
         eventdata: JSON.stringify(this.eventData),
-        visit: JSON.stringify({ email: this.email })
-      }
+        visit: JSON.stringify({ email: this.email }),
+      },
     })
   }
 
   private syncContact() {
-    const contact = new Contact({ email: this.email, firstName: this.firstName, lastName: this.lastName, phone: this.phone })
+    const contact = new Contact({
+      email: this.email,
+      firstName: this.firstName,
+      lastName: this.lastName,
+      phone: this.phone,
+    })
     return contact.create()
   }
 
@@ -55,10 +66,10 @@ export class Event<EventData> {
         prefixUrl: "https://trackcmp.net/",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "accept": "application/json",
-          "Api-Token": this.configuration.apiKey || ""
+          accept: "application/json",
+          "Api-Token": this.configuration.apiKey || "",
         },
-        responseType: "json"
+        responseType: "json",
       })
     }
     return this.gotClient

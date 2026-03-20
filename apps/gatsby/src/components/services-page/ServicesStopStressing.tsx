@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
-import { ThreeCardSection } from "../general/ThreeCardSection";
-import { LaptopStackIcon } from "../icons/LaptopStackIcon";
-import { LiftoffIcon } from "../icons/LiftoffIcon";
-import { RiskAssessmentIcon } from "../icons/RiskAssessmentIcon";
-import decorativeSquare from "../../images/decorations/decorative_square.png";
-import "./css/services-stop-stressing.css";
+import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
+import { ThreeCardSection } from "../general/ThreeCardSection"
+import { LaptopStackIcon } from "../icons/LaptopStackIcon"
+import { LiftoffIcon } from "../icons/LiftoffIcon"
+import { RiskAssessmentIcon } from "../icons/RiskAssessmentIcon"
+import decorativeSquare from "../../images/decorations/decorative_square.png"
+import "./css/services-stop-stressing.css"
 
 export const ServicesStopStressing = () => {
-  const { modal, clickHandler } = useBookCallModal();
+  const { modal, clickHandler } = useBookCallModal()
 
   const sectionContents = {
     sectionHeading: "Stop Stressing. Start Shipping.",
@@ -38,7 +38,7 @@ export const ServicesStopStressing = () => {
         ],
       },
     ],
-  };
+  }
 
   return (
     <div className="services-stop-stressing">
@@ -55,5 +55,5 @@ export const ServicesStopStressing = () => {
       </div>
       {modal}
     </div>
-  );
-};
+  )
+}

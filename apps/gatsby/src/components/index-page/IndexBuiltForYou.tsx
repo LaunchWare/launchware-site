@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import "./css/built-for-you.css";
+import "./css/built-for-you.css"
 
 export const IndexBuiltForYou = () => (
   <div className="built-for-you">
@@ -54,10 +54,11 @@ export const IndexBuiltForYou = () => (
           </div>
           <h3 className="built-for-you__card-heading">Technology Executives</h3>
           <p className="built-for-you__text">
-            Seeking a proven process and team with a track record of launching remarkable software{" "}
+            Seeking a proven process and team with a track record of launching remarkable
+            software{" "}
           </p>
         </div>
       </div>
     </div>
   </div>
-);
+)

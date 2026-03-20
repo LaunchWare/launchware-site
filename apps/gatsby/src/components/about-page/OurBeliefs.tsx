@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-import "./css/our-beliefs.css";
+import "./css/our-beliefs.css"
 
 export const OurBeliefs = () => (
   <div className="our-beliefs">
@@ -76,4 +76,4 @@ export const OurBeliefs = () => (
       </ul>
     </div>
   </div>
-);
+)

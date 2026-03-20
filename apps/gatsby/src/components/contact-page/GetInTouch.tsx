@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
-import { faEnvelope, faLocationDot, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { StaticImage } from "gatsby-plugin-image";
+import { faEnvelope, faLocationDot, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { StaticImage } from "gatsby-plugin-image"
 
-import { companyContactInformation } from "../../configuration/companyContactInformation";
-import { ContactForm } from "./ContactForm";
-import "./css/get-in-touch.css";
+import { companyContactInformation } from "../../configuration/companyContactInformation"
+import { ContactForm } from "./ContactForm"
+import "./css/get-in-touch.css"
 
 export const GetInTouch = () => {
   const {
@@ -15,7 +15,7 @@ export const GetInTouch = () => {
     phoneHref,
     phoneFormatted,
     sms,
-  } = companyContactInformation;
+  } = companyContactInformation
 
   return (
     <div className="get-in-touch">
@@ -65,5 +65,5 @@ export const GetInTouch = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
