@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React, { ReactNode, useState } from "react"
 
 import Navbar from "./Navbar"
 import Footer from "./Footer"
@@ -18,7 +18,7 @@ export const Layout = ({
   title: string
   children: ReactNode
 }) => {
-  const queryClient = new QueryClient()
+  const [queryClient] = useState(() => new QueryClient())
 
   return (
     <>

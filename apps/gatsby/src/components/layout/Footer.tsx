@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from "react"
+import React, { lazy, MouseEventHandler, Suspense } from "react"
 import { LaunchWareLogoLight } from "./LaunchWareLogoLight"
 import { Link } from "gatsby"
 import { companySocialProfiles } from "../../configuration/getCompanySocialProfile"
@@ -8,7 +8,9 @@ import { companyContactInformation } from "../../configuration/companyContactInf
 import "./css/footer.css"
 import { TrackingCodes } from "./TrackingCodes"
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
-import { OptInForm } from "../opt-in/OptInForm"
+const OptInForm = lazy(() =>
+  import("../opt-in/OptInForm").then((m) => ({ default: m.OptInForm }))
+)
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
 import { UC_UI } from "../../services/UsercentricsService"
@@ -109,7 +111,9 @@ const Footer = () => {
             <ul className="footer_social-list">{socialListItems}</ul>
           </div>
 
-          <OptInForm />
+          <Suspense fallback={null}>
+            <OptInForm />
+          </Suspense>
         </div>
 
         <div className="footer_legal">

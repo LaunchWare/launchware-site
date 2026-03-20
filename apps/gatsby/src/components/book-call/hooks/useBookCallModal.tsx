@@ -1,10 +1,22 @@
-import React, { MouseEventHandler, useEffect } from "react"
+import React, { MouseEventHandler, useEffect, useCallback } from "react"
 
 import { useModal } from "@launchware/replicator"
 import "@launchware/replicator/dist/css/Modal/modal.css"
 
 import { BookCallModal } from "../BookCallModal"
 import "../css/book-call-modal.css"
+
+let calendlyScriptLoaded = false
+
+const loadCalendlyScript = () => {
+  if (calendlyScriptLoaded || typeof document === "undefined") return
+  calendlyScriptLoaded = true
+  const script = document.createElement("script")
+  script.src = "https://assets.calendly.com/assets/external/widget.js"
+  script.async = true
+  script.setAttribute("data-usercentrics", "Calendly")
+  document.head.appendChild(script)
+}
 
 export const useBookCallModal = () => {
   const {
@@ -24,12 +36,16 @@ export const useBookCallModal = () => {
     })
   }, [])
 
-  const clickHandler: MouseEventHandler = (event) => {
-    event.preventDefault()
-    if (setModalVisibility) {
-      setModalVisibility(true)
-    }
-  }
+  const clickHandler: MouseEventHandler = useCallback(
+    (event) => {
+      event.preventDefault()
+      loadCalendlyScript()
+      if (setModalVisibility) {
+        setModalVisibility(true)
+      }
+    },
+    [setModalVisibility],
+  )
 
   return { clickHandler, isModalVisible, modal }
 }

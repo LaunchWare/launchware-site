@@ -9,6 +9,7 @@ export const UsercentricsScript = ({ settingsId }: { settingsId: string }) => {
       src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
       data-settings-id={settingsId}
       data-version="latest"
+      strategy="idle"
       async
     />
   )

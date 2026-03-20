@@ -27,6 +27,7 @@ export const IndexHero = () => {
             className="index-hero__image"
             alt="Three Developers Coding"
             src="../../images/index/three-developers-coding.jpg"
+            loading="eager"
           />
         </div>
       </div>

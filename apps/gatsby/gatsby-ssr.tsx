@@ -33,12 +33,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
     <link rel="preconnect" href="//app.usercentrics.eu" key="usercentrics-app" />,
     <link rel="preconnect" href="//api.usercentrics.eu" key="usercentrics-api" />,
     <link rel="preconnect" href="//assets.calendly.com" key="calendly" />,
-    <link
-      rel="preload"
-      href="//app.usercentrics.eu/browser-ui/latest/loader.js"
-      key="usercentrics-loader"
-      as="script"
-    />,
   ]
   setHeadComponents([...links, ...userCentricLinks])
   setHtmlAttributes({ lang: "en" })

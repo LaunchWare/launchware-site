@@ -1,14 +1,7 @@
-import axios, { AxiosInstance } from "axios"
+const BASE_URL = "/.netlify/functions"
 
 export class ApiClient {
-  private _client: AxiosInstance
   static instance: ApiClient
-
-  private constructor() {
-    this._client = axios.create({
-      baseURL: "/.netlify/functions",
-    })
-  }
 
   static getInstance() {
     if (!ApiClient.instance) {
@@ -18,6 +11,18 @@ export class ApiClient {
   }
 
   get client() {
-    return this._client
+    return {
+      post: async (url: string, data: unknown) => {
+        const response = await fetch(`${BASE_URL}${url}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        })
+        if (!response.ok) {
+          throw new Error(`Request failed: ${response.status}`)
+        }
+        return response.json()
+      },
+    }
   }
 }
