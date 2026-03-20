@@ -8,9 +8,7 @@ import { companyContactInformation } from "../../configuration/companyContactInf
 import "./css/footer.css"
 import { TrackingCodes } from "./TrackingCodes"
 import { useBookCallModal } from "../book-call/hooks/useBookCallModal"
-const OptInForm = lazy(() =>
-  import("../opt-in/OptInForm").then((m) => ({ default: m.OptInForm }))
-)
+const OptInForm = lazy(() => import("../opt-in/OptInForm").then((m) => ({ default: m.OptInForm })))
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons"
 import { UC_UI } from "../../services/UsercentricsService"
