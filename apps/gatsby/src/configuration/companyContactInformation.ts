@@ -4,11 +4,12 @@ export const companyContactInformation = {
   sms: "+1 (833) 476-3338",
   email: "hello@launchware.com",
   mailingAddress: {
-    streetAddress: "71 Summer Street",
-    streetAddress2: "3rd Floor",
-    city: "Boston",
+    streetAddress: "105 Stonybrook Drive",
+    streetAddress2: "",
+    city: "Bridgewater",
     state: "MA",
-    zipCode: "02021",
+    zipCode: "02324",
   },
-  launchCallUrl: "https://calendly.com/dan-at-launch-academy/your-launch-call?primary_color=F06449",
+  launchCallUrl:
+    "https://calendly.com/dan-pickett-launchware/launch-call?month=2026-03?primary_color=F06449",
 };

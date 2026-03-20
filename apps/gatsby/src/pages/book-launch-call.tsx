@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { PageProps } from "gatsby";
 import { Layout } from "../components/layout/Layout";
-import { companyContactInformation } from "../configuration/companyContactInformation";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
 import { BookCallEmbed } from "../components/book-call/BookCallEmbed";
 import { UsercentricsProvider } from "../components/usercentrics/UsercentricsProvider";

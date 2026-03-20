@@ -24,7 +24,7 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
   const url = companyContactInformation.launchCallUrl;
   const { isClientSide, isInitialized, hasServiceConsent, acceptService } =
     useContext(UsercentricsContext);
-  const [isAccepted, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"));
+  const [, setIsAccepted] = useState(hasServiceConsent && hasServiceConsent("Calendly"));
 
   const shouldInitCalendly = () =>
     enabled &&
@@ -34,6 +34,8 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
     hasServiceConsent("Calendly") &&
     isClientSide &&
     divRef.current;
+
+  const canInitCalendly = shouldInitCalendly();
 
   const provideConsent: MouseEventHandler<HTMLAnchorElement> = useCallback(
     (e) => {
@@ -45,7 +47,8 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
         });
       }
     },
-    [acceptService, shouldInitCalendly()],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [acceptService, canInitCalendly],
   );
 
   const initCalendly = useCallback(() => {
@@ -61,11 +64,13 @@ export const BookCallEmbed = ({ enabled = true }: { enabled?: boolean }) => {
         }
       }, 500);
     }
-  }, [shouldInitCalendly()]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [canInitCalendly]);
 
   useEffect(() => {
     initCalendly();
-  }, [shouldInitCalendly()]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [canInitCalendly]);
 
   const div = <div ref={divRef} className="calendly-inline-widget" data-auto-load="false" />;
 

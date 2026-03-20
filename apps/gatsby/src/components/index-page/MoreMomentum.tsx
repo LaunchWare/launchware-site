@@ -5,7 +5,6 @@ import { ThreeCardSection } from "../general/ThreeCardSection";
 import { HiFiveIcon } from "../icons/HiFiveIcon";
 import { LaptopStackIcon } from "../icons/LaptopStackIcon";
 import { SendMessagesIcon } from "../icons/SendMessagesIcon";
-import decorativeSquare from "";
 import "./css/more-momentum.css";
 import { StaticImage } from "gatsby-plugin-image";
 

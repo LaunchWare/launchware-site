@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -25,7 +25,7 @@ export const OptInForm = () => {
     resolver: zodResolver(optInFormSchema),
   });
 
-  const { mutate, isSuccess, isLoading } = useGeneralOptIn();
+  const { mutate, isSuccess, isPending } = useGeneralOptIn();
 
   const onSubmit = (data: OptInFormSchema) => {
     mutate(data);
@@ -40,18 +40,18 @@ export const OptInForm = () => {
       <div className="footer_opt-in-email-container">
         <input
           type="email"
-          disabled={isLoading}
+          disabled={isPending}
           autoComplete="off"
           placeholder="Email"
           className="footer_opt-in-email"
           {...register("email")}
         />
-        {isLoading && <Spinner className="footer_spinner" />}
+        {isPending && <Spinner className="footer_spinner" />}
       </div>
       {errors.email && <p className="error">{errors.email?.message}</p>}
       <input
         type="submit"
-        disabled={isLoading}
+        disabled={isPending}
         className="button button__full-width footer_button"
         value="Submit"
         data-lpignore="true"

@@ -25,12 +25,7 @@ export const IndexFormSection = () => {
     },
   });
 
-  const {
-    mutate: postContactInquiry,
-    error: backendErrors,
-    isSuccess,
-    isLoading,
-  } = usePostContactInquiry();
+  const { mutate: postContactInquiry, isSuccess, isPending } = usePostContactInquiry();
 
   const onSubmit: SubmitHandler<ContactInquiryFormValues> = (formValues) => {
     postContactInquiry(formValues, {
@@ -39,7 +34,7 @@ export const IndexFormSection = () => {
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -149,7 +144,7 @@ export const IndexFormSection = () => {
         <option>From an alum of Launch Academy</option>
       </select>
       <input type="hidden" value="giantLeapInquiry" {...register("form-name")} />
-      <input className="button" type="submit" disabled={isLoading} value="Send message" />
+      <input className="button" type="submit" disabled={isPending} value="Send message" />
     </form>
   );
 

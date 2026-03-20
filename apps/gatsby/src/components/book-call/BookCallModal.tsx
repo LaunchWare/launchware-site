@@ -1,4 +1,4 @@
-import React, { RefObject } from "react";
+import React from "react";
 
 import "@launchware/replicator/dist/css/Modal/modal.css";
 import "./css/book-call-modal.css";

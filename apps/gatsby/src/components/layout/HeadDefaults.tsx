@@ -1,5 +1,5 @@
 import { Script } from "gatsby";
-import React, { useEffect } from "react";
+import React from "react";
 import { UsercentricsScript } from "../usercentrics/UsercentricsScript";
 
 export const HeadDefaults = () => {

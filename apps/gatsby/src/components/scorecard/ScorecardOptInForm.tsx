@@ -19,12 +19,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
     resolver: zodResolver(scorecardOptInSchema),
   });
 
-  const {
-    mutate: postScorecardOptIn,
-    error: backendErrors,
-    isSuccess,
-    isLoading,
-  } = useScorecardOptIn();
+  const { mutate: postScorecardOptIn, isSuccess, isPending } = useScorecardOptIn();
 
   const onSubmit: SubmitHandler<ScorecardOptInSchema> = (formValues) => {
     postScorecardOptIn(formValues, {
@@ -33,7 +28,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
           appearance: "success",
         });
       },
-      onError: (err: Error) => {
+      onError: () => {
         addNotification("There was a problem, please try again later.", {
           appearance: "error",
         });
@@ -81,7 +76,7 @@ export const ScorecardOptInForm = ({ className = "" }: { className?: string }) =
       />
       {errors.email && <p className="scorecard-form__error">Email required</p>}
       <input type="hidden" value="scorecardOptIn" {...register("form-name")} />
-      <input className="button" type="submit" disabled={isLoading} value="Download the Scorecard" />
+      <input className="button" type="submit" disabled={isPending} value="Download the Scorecard" />
     </form>
   );
 
