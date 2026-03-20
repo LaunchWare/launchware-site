@@ -1,0 +1,19 @@
+@reference "../../../css/index.css";
+
+.welcome-hero {
+  @apply parent-section;
+  @apply bg-white relative z-30;
+}
+
+.welcome-hero__contents {
+  @apply contents-container;
+  @apply flex-col text-center items-center;
+}
+
+.welcome-hero__heading {
+  @apply text-5xl mb-4;
+}
+
+.welcome-hero__subheading {
+  @apply text-lg text-launch-black-70 max-w-2xl;
+}

@@ -1,0 +1,23 @@
+@reference "../../../css/index.css";
+
+.welcome-cta {
+  @apply parent-section;
+  @apply bg-launch-neutral-20;
+}
+
+.welcome-cta__contents {
+  @apply contents-container;
+  @apply flex-col items-center text-center max-w-2xl;
+}
+
+.welcome-cta__heading {
+  @apply text-4xl mb-4;
+}
+
+.welcome-cta__text {
+  @apply text-launch-black-70 text-lg mb-8;
+}
+
+.welcome-cta__button[type="button"] {
+  @apply text-lg px-8 py-3;
+}
