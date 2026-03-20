@@ -4,6 +4,8 @@
 [build]
   base = "apps/gatsby"
   command = "pnpm run build"
+[build.environment]
+  NODE_VERSION = "24"
 [dev]
   #framework = "gatsby"
   base = "apps/gatsby"
