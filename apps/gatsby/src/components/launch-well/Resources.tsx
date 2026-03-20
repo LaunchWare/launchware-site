@@ -14,7 +14,7 @@ export const Resources = () => {
         <div className="resources__video-container">
           <div className="resources__video-wrapper">
             <iframe
-              src="https://www.youtube-nocookie.com/embed/5aX6VcNmlqE"
+              src="https://www.youtube.com/embed/5aX6VcNmlqE"
               title="PRD Template Walkthrough"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
