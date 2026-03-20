@@ -41,6 +41,6 @@ Along with this helpful change, you can also circumvent mass assignment protecti
 
 <script src="https://gist.github.com/974447.js?file=user_without_protection.rb"></script>
 
-You should really only use without_protection if _you_ control the inputted attributes. It isn't something you'd want to have in a controller action, generally speaking.
+You should really only use without*protection if \_you* control the inputted attributes. It isn't something you'd want to have in a controller action, generally speaking.
 
 For more information on scoped mass assignment and additional attack vectors you should be securing against, [check out the edge Rails guide on security](https://edgeguides.rubyonrails.org/security.html)
