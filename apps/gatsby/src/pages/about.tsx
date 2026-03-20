@@ -11,7 +11,6 @@ import { VisionToReality } from "../components/about-page/VisionToReality";
 import { WhySoftwareExists } from "../components/about-page/WhySoftwareExists";
 import { Layout } from "../components/layout/Layout";
 import { HeadDefaults } from "../components/layout/HeadDefaults";
-import { ScorecardOptInForm } from "../components/scorecard/ScorecardOptInForm";
 
 export const Head = () => (
   <>
@@ -37,7 +36,6 @@ const AboutPage = (pageProps: PageProps) => {
       <Leaders />
       <OurBeliefs />
       <VisionToReality />
-      <ScorecardOptInForm className="hidden" />
     </Layout>
   );
 };

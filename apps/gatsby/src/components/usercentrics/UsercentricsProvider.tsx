@@ -24,6 +24,7 @@ export const UsercentricsProvider = ({ children }: { children: ReactNode }) => {
     if (isClientSide) {
       // check to see if usercentrics is already initialized
       if (window.UC_UI && window.UC_UI.isInitialized()) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsInitialized(true);
       }
       // listen for initialization if not

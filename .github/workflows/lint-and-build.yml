@@ -10,22 +10,18 @@ jobs:
   lint_and_test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install asdf & tools
-        uses: asdf-vm/actions/install@v2
-      - name: asdf cache
-        id: asdf-cache
-        uses: actions/cache@v2
+      - uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          path: ~/.asdf/
-          key: ${{ runner.os }}-${{ hashFiles('**/.tool-versions') }}
+          node-version-file: .tool-versions
+      - name: Enable corepack & install pnpm
+        run: corepack enable && corepack install
       - name: Get pnpm store directory
-        id: npm_cache
+        id: pnpm_cache
         shell: bash
-        run: |
-
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - uses: actions/cache@v5
         name: Setup pnpm cache
         with:
           path: ${{ env.STORE_PATH }}
@@ -34,10 +30,6 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        if: steps.npm_cache.outputs.cache-hit != 'true'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-        if: steps.npm_cache.outputs.cache-hit != 'true'
       - name: lint
         run: pnpm --dir apps/gatsby lint
       - name: build

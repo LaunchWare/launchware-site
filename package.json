@@ -4,7 +4,7 @@
   "author": "Dan Pickett",
   "license": "NONE",
   "private": true,
-  "workspaces" : [
+  "workspaces": [
     "apps/gatsby",
     "apps/functions"
   ],
@@ -13,7 +13,15 @@
     "develop:gatsby": "pnpm --dir apps/gatsby develop:gatsby"
   },
   "devDependencies": {
-    "netlify-cli": "^17.22.1",
-    "pnpm": "^9.0.4"
+    "netlify-cli": "^24.0.0",
+    "pnpm": "^10.0.0"
+  },
+  "packageManager": "pnpm@11.0.0-dev.1005+sha512.91f84a392eea348ea4852a182912d2520273a4336f933b78cc44bc931eb999923c097e9433a9b355adc1f725725ea99082fc9f032a559df832632e764c92c798",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "gatsby", "gatsby-cli", "netlify-cli", "sharp"],
+    "overrides": {
+      "msgpackr": "^1.11.9",
+      "ordered-binary": "^1.6.1"
+    }
   }
 }

@@ -3,8 +3,8 @@ import axios, { AxiosError } from "axios";
 import { ScorecardOptInSchema } from "../models/ScorecardOptInSchema";
 
 export const useScorecardOptIn = () => {
-  return useMutation(
-    async (data: ScorecardOptInSchema) => {
+  return useMutation({
+    mutationFn: async (data: ScorecardOptInSchema) => {
       const resp = await axios.post(`/`, data, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -12,10 +12,8 @@ export const useScorecardOptIn = () => {
       });
       return resp.data;
     },
-    {
-      onError: (err: Error | AxiosError) => {
-        console.error(err);
-      },
+    onError: (err: Error | AxiosError) => {
+      console.error(err);
     },
-  );
+  });
 };

@@ -83,6 +83,14 @@ export const onCreateNode = ({ node, actions, getNode }) => {
 /**
  * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
  */
+export const onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig();
+  config.plugins = config.plugins.filter(
+    (plugin) => plugin.constructor.name !== "ESLintWebpackPlugin",
+  );
+  actions.replaceWebpackConfig(config);
+};
+
 export const createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 

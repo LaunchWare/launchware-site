@@ -4,8 +4,8 @@ import { useMutation } from "@tanstack/react-query";
 import { GetInTouchFormValues } from "../models/GetInTouchFormShapes";
 
 export const usePostGeneralInquiry = () => {
-  return useMutation(
-    async (data: GetInTouchFormValues) => {
+  return useMutation({
+    mutationFn: async (data: GetInTouchFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -13,10 +13,8 @@ export const usePostGeneralInquiry = () => {
       });
       return resp.data;
     },
-    {
-      onError: (err: Error | AxiosError) => {
-        console.error(err);
-      },
+    onError: (err: Error | AxiosError) => {
+      console.error(err);
     },
-  );
+  });
 };

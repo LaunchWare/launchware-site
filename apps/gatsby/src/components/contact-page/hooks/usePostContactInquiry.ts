@@ -3,8 +3,8 @@ import axios, { AxiosError } from "axios";
 import { ContactInquiryFormValues } from "../models/ContactInquiryShapes";
 
 export const usePostContactInquiry = () => {
-  return useMutation(
-    async (data: ContactInquiryFormValues) => {
+  return useMutation({
+    mutationFn: async (data: ContactInquiryFormValues) => {
       const resp = await axios.post(`/`, data, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -12,10 +12,8 @@ export const usePostContactInquiry = () => {
       });
       return resp.data;
     },
-    {
-      onError: (err: Error | AxiosError) => {
-        console.error(err);
-      },
+    onError: (err: Error | AxiosError) => {
+      console.error(err);
     },
-  );
+  });
 };

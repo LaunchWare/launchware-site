@@ -1,56 +1,91 @@
-@import "./buttons.css";
-@import "./fonts.css";
+@import "./buttons.css" layer(base);
+@import "./fonts.css" layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer components {
-  .pad-container {
-    @apply px-4 sm:px-10 max-w-7xl mx-auto;
+@theme {
+  --font-inter: "Inter", "Roboto", "sans-serif", ui-sans-serif, system-ui, sans-serif;
+  --font-kanit: "Kanit", "Roboto", "Arial", "sans-serif", ui-sans-serif, system-ui, sans-serif;
+
+  --color-white: #ffffff;
+  --color-launch-orange: #f06449;
+  --color-launch-black: #2d2327;
+  --color-launch-black-90: #41393c;
+  --color-launch-black-80: #554d50;
+  --color-launch-black-70: #696164;
+  --color-launch-black-60: #7d7779;
+  --color-launch-black-50: #918b8e;
+  --color-launch-black-40: #a5a0a3;
+  --color-launch-black-30: #b9b5b7;
+  --color-launch-black-10: #e2e0e1;
+  --color-launch-neutral-10: #ffffff;
+  --color-launch-neutral-20: #f9fafb;
+  --color-launch-neutral-30: #f5f5f5;
+  --color-launch-primary-10: #fff7f6;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
+}
 
-  .parent-section {
-    @apply flex justify-center w-full py-16 px-4;
+@utility pad-container {
+  @apply px-4 sm:px-10 max-w-7xl mx-auto;
+}
+
+@utility parent-section {
+  @apply flex justify-center w-full py-16 px-4;
+}
+
+@utility contents-container {
+  @apply flex flex-col justify-between items-center;
+  @apply w-full max-w-7xl md:flex-row md:px-6;
+}
+
+@utility rounded-image {
+  @apply rounded-3xl;
+}
+
+@utility form {
+  @apply flex flex-col w-full space-y-3 pt-2;
+}
+
+@utility form__field {
+  @apply w-full py-2 px-3 rounded-md;
+  @apply border border-launch-black-10 shadow-md placeholder:text-launch-black-40;
+}
+
+@utility form__dropdown {
+  @apply border-r-[0.75rem] border-launch-neutral-10 placeholder:text-launch-black-40 pr-6;
+
+  & option:first-child {
+    @apply placeholder:text-launch-black-40;
   }
+}
 
-  .contents-container {
-    @apply flex flex-col justify-between items-center;
-    @apply w-full max-w-7xl md:flex-row md:px-6;
-  }
+@utility form__field_error {
+  @apply focus:ring-2 focus:ring-launch-orange;
+}
 
-  .rounded-image {
-    @apply rounded-3xl;
-  }
+@utility form__error {
+  @apply text-launch-orange px-3;
+}
 
-  .form {
-    @apply flex flex-col w-full space-y-3 pt-2;
-  }
-
-  .form__field {
-    @apply w-full py-2 px-3 rounded-md;
-    @apply border border-launch-black-10 shadow-md placeholder:text-launch-black-40;
-  }
-
-  .form__dropdown {
-    @apply border-r-[0.75rem] border-launch-neutral-10 placeholder:text-launch-black-40 pr-6;
-
-    & option:first-child {
-      @apply placeholder:text-launch-black-40;
-    }
-  }
-
-  .form__field_error {
-    @apply focus:ring-2 focus:ring-launch-orange;
-  }
-
-  .form__error {
-    @apply text-launch-orange px-3;
-  }
-
-  .alternative-headline {
-    @apply font-inter font-semibold;
-  }
+@utility alternative-headline {
+  @apply font-inter font-semibold;
 }
 
 body {
@@ -122,7 +157,7 @@ body {
   }
 }
 
-@media screen(lg) {
+@media (width >= theme(--breakpoint-lg)) {
   .calendly-inline-widget {
     min-width: 300px;
   }

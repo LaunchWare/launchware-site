@@ -1,3 +1,4 @@
+@reference "../../../css/index.css";
 .our-beliefs {
   @apply parent-section;
 }

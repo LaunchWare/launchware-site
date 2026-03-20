@@ -1,9 +1,8 @@
-import React, { MouseEventHandler, useEffect, useRef, useState } from "react";
+import React, { MouseEventHandler, useEffect } from "react";
 
 import { useModal } from "@launchware/replicator";
 import "@launchware/replicator/dist/css/Modal/modal.css";
 
-import { companyContactInformation } from "../../../configuration/companyContactInformation";
 import { BookCallModal } from "../BookCallModal";
 import "../css/book-call-modal.css";
 

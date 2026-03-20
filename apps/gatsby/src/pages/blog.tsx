@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HeadFC, PageProps, graphql } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 import { Layout } from "../components/layout/Layout";
 import { BlogHero } from "../components/blog-page/BlogHero";
 import { BlogCardList } from "../components/blog-page/BlogCardList";

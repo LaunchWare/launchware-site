@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from "react";
 import { LaunchWareLogoLight } from "./LaunchWareLogoLight";
-import { Link, Script } from "gatsby";
+import { Link } from "gatsby";
 import { companySocialProfiles } from "../../configuration/getCompanySocialProfile";
 import { CompanySocialIcon } from "../social/CompanySocialIcon";
 import { companyContactInformation } from "../../configuration/companyContactInformation";
@@ -11,7 +11,7 @@ import { useBookCallModal } from "../book-call/hooks/useBookCallModal";
 import { OptInForm } from "../opt-in/OptInForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faSms } from "@fortawesome/free-solid-svg-icons";
-import { UC_UI } from "../usercentrics/UsercentricsProvider";
+import { UC_UI } from "../../services/UsercentricsService";
 
 declare global {
   interface Window {

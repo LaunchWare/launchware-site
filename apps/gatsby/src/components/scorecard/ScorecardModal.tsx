@@ -1,7 +1,6 @@
 import React from "react";
 
 import "@launchware/replicator/dist/css/Modal/modal.css";
-import { StaticImage } from "gatsby-plugin-image";
 
 import { ScorecardOptInForm } from "./ScorecardOptInForm";
 import "./css/scorecard-modal.css";
