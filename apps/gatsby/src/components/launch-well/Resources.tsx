@@ -15,10 +15,12 @@ export const Resources = () => {
           <div className="resources__video-wrapper">
             <iframe
               src="https://www.youtube.com/embed/5aX6VcNmlqE"
-              title="PRD Template Walkthrough"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+              title="LaunchWare&#39;s Product Requirements Document (PRD) Template Walkthrough"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
 
