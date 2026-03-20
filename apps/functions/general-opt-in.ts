@@ -1,6 +1,6 @@
 import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions"
-import { Event } from "../function-src/activeCampaign/Event"
-import { configure } from "../function-src/configure"
+import { Event } from "./src/activeCampaign/Event"
+import { configure } from "./src/configure"
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   // your server-side functionality
