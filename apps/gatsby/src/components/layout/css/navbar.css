@@ -1,3 +1,4 @@
+@reference "../../../css/index.css";
 .primary-nav {
   @apply bg-white text-launch-black-90;
 }

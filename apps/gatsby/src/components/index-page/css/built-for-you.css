@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 .built-for-you {
   @apply parent-section;

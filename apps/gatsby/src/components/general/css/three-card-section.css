@@ -1,3 +1,4 @@
+@reference "../../../css/index.css";
 .three-card-section__heading-container {
   @apply max-w-xl;
 }

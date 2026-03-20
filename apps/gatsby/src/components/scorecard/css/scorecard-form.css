@@ -1,3 +1,4 @@
+@reference "../../../css/index.css";
 .scorecard-form {
   @apply lg:py-0 relative z-30 md:overflow-x-clip;
 }

@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 div.modal__contents,
 div.modal__contents_large {

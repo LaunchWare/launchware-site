@@ -1,3 +1,4 @@
+@reference "../../../css/index.css";
 .modal__contents,
 .modal__contents_large {
   @apply p-0 border-none max-w-2xl mx-2 md:mx-auto;

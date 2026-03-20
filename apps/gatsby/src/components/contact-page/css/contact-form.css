@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 .one-small-step {
   @apply lg:py-0 relative z-30 md:overflow-x-clip;

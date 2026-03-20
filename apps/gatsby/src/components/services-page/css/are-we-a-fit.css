@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 .are-we-a-fit {
   @apply parent-section;

@@ -8,7 +8,7 @@ const globals = require("globals");
 
 module.exports = [
   {
-    ignores: [".cache/**", "public/**", "scorecard/**"],
+    ignores: ["**/.cache/**", "**/.netlify/**", "**/public/**", "scorecard/**"],
   },
   {
     files: ["src/**/*.{ts,tsx}"],

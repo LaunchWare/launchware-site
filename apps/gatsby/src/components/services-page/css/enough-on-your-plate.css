@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 .enough-on-your-plate {
   @apply parent-section;

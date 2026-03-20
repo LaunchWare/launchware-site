@@ -4,7 +4,8 @@
       "Bash(pnpm --version)",
       "Bash(pnpm view:*)",
       "Bash(pnpm --dir apps/gatsby why sharp 2>&1 | head -30)",
-      "Bash(cd node_modules/.pnpm/sharp@0.32.6/node_modules/sharp && node install/check.js 2>&1)"
+      "Bash(cd node_modules/.pnpm/sharp@0.32.6/node_modules/sharp && node install/check.js 2>&1)",
+      "Bash(pnpm remove:*)"
     ]
   }
 }

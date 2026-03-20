@@ -1,3 +1,4 @@
+@reference "./index.css";
 .error {
   @apply text-launch-orange my-2;
 }

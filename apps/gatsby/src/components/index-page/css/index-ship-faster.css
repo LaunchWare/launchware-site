@@ -1,4 +1,4 @@
-@import "../../../css/index.css";
+@reference "../../../css/index.css";
 
 .index-ship-faster {
   @apply parent-section relative z-20;
