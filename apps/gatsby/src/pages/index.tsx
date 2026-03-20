@@ -5,7 +5,6 @@ import { PageProps } from "gatsby";
 import "../css/index.css";
 
 import { Exasperation } from "../components/index-page/Exasperation";
-import { IndexScorecard } from "../components/index-page/IndexScorecard";
 import { IndexBuiltForYou } from "../components/index-page/IndexBuiltForYou";
 import { IndexHero } from "../components/index-page/IndexHero";
 import { IndexLaunched } from "../components/index-page/IndexLaunched";
@@ -42,7 +41,6 @@ const IndexPage = (pageProps: PageProps) => {
       <IndexShipFaster />
       <MoreMomentum />
       {/* <IndexStopStressing /> */}
-      <IndexScorecard />
     </Layout>
   );
 };
