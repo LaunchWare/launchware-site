@@ -16,7 +16,7 @@ export const companySocialProfiles = {
   youtube: {
     icon: faYoutube,
     title: "YouTube",
-    url: "https://www.youtube.com/@LaunchWareSoftwareDevelopment",
+    url: "https://www.youtube.com/@LaunchWareCo",
   },
   instagram: {
     icon: faInstagram,
